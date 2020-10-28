@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Source+Sans+Pro:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+/*
+font-family: 'Playfair Display SC', serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-heading;
+  font-weight: normal;
+}
+h1 {
+  font-size: 84px;
+  line-height: 90px;
+
+  letter-spacing: 1px;
+  .subheading-1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 52px;
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 40px;
+}
+h4 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+body {
+  font-family: $font;
+  font-size: 1.4rem;
+}
