@@ -1,5 +1,5 @@
 import React from 'react'
-import './LandingPage.scss';
+import './LandingPage.module.scss';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Navbar from './Navbar'
 import Sign_in from './Sign'
