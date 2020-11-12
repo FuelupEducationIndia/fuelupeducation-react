@@ -1,0 +1,60 @@
+body {
+  background-image:url("/images/background-image.png");  
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+
+.navbar {
+  margin-top: 30px;
+}
+
+
+.navbar-list > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-list {
+  color: white;
+  display: flex;
+  height: 25px;
+  width: 95%;
+  position: absolute;
+  top: 0px;
+}
+
+.navbar-list>li:hover {
+  cursor:pointer;
+}
+
+.navbar-list>li {
+  margin:  0px 20px;
+  font-size: 20px;
+  list-style: none;
+  width: 80px;
+  
+}
+
+.navbar-list  >li:nth-last-of-type(1) {
+margin-left: 22px;
+width:150px;
+}
+
+.navbar-list  >li:nth-last-of-type(2) {
+  margin-left: 40%;
+}
+
+.navbar-list  >li:nth-last-of-type(7) {
+  font-size: 30px;
+margin-top: -10px;
+margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
