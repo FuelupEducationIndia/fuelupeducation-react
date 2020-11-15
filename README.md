@@ -1,6 +1,8 @@
-# React boilerplate:
+todo: dockerizing dev and prod modes
 
-based on https://github.com/rwieruch/advanced-react-webpack-babel-setup
+# React boilerplate on port 3000:
+
+thanks and based on https://github.com/rwieruch/advanced-react-webpack-babel-setup
 
 Features:
 
@@ -30,7 +32,7 @@ or module
 
 including with @font-face definition
 
-````language
+```language
 `
  @font-face {
   font-family: 'Open Sans';
@@ -40,4 +42,8 @@ including with @font-face definition
     url('./assets/fonts/OpenSans-Regular.woff2') format('woff2'),
     url('./assets/fonts/OpenSans-Regular.woff') format('woff');
 }
-````
+```
+
+#### Docker support (dev mode) run and build
+
+docker-compose -f docker-compose.dev.yml up --build

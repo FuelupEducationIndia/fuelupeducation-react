@@ -7,16 +7,8 @@ import styles from './App.module.css';
 const App = ({ title }) => (
   <div className={styles.Container}>
     {title}
-    one more and more
-    <br />
-    here we have more styles hi there one more hi!
-    <br />
-    asdasd
-    <br />
-    asdasd
-    <br />
-    suki
-    <img src={image} alt=" here" />
+    Hi there! Enjoy fresh cornish!
+    <img src={image} alt=" Cornish" />
   </div>
 );
 
