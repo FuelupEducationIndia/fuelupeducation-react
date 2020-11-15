@@ -1,46 +1,43 @@
-# advanced-react-webpack-babel-setup
+# React boilerplate:
 
-[![Build Status](https://travis-ci.org/rwieruch/advanced-react-webpack-babel-setup.svg?branch=master)](https://travis-ci.org/rwieruch/advanced-react-webpack-babel-setup) [![Greenkeeper badge](https://badges.greenkeeper.io/rwieruch/advanced-react-webpack-babel-setup.svg)](https://greenkeeper.io/)
+based on https://github.com/rwieruch/advanced-react-webpack-babel-setup
 
-Advanced React with Webpack Setup. How to set it up yourself:
+Features:
 
-- [Minimal React + Webpack Setup](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
-- [Advanced Webpack Setup](https://www.robinwieruch.de/webpack-advanced-setup-tutorial/)
-- [ESLint](https://www.robinwieruch.de/webpack-eslint/) + [ESLint + React](https://www.robinwieruch.de/react-eslint-webpack-babel/) + [Prettier + ESLint](https://www.robinwieruch.de/prettier-eslint/)
+React17, Babel7, Webpack5, HotReload Dev server module and more
 
-[![Edit advanced-react-webpack-babel-setup](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/rwieruch/advanced-react-webpack-babel-setup/tree/master/?fontsize=14)
+#### CSS/SCSS modules enabled
 
-## Features
+`import './App.css'`
 
-- React 16
-- Webpack 5
-- Babel 7
-- Hot Module Replacement
-- Dev + Production Builds
-- Dist Folder Managagement by Webpack
-- Common and environment specific Webpack Configuration
-- Composition of Webpack Configuration
-- Source Maps
-- Environment Variables
-- Webpack Add-Ons
-- ESLint + Prettier
+or module
 
-## DIY Add-Ons
+`import styles from './App.module.scss"`
 
-- [SVG Icons](https://www.robinwieruch.de/react-svg-icon-components/)
-- [CSS Modules](https://www.robinwieruch.de/react-css-modules/)
-- [Fonts Support](https://www.robinwieruch.de/webpack-font/)
-- [Images Support](https://www.robinwieruch.de/webpack-images/)
-- [Docker](https://www.robinwieruch.de/docker-react-development)
+#### Fonts Support:
 
-## Alternatives
+`
 
-- [Minimal React Webpack Babel Setup](https://github.com/rwieruch/minimal-react-webpack-babel-setup)
+- src/
+  --- assets/
+  ----- fonts/
+  ------- OpenSans-Bold.woff
+  ------- OpenSans-Bold.woff2
+  ------- OpenSans-Regular.woff
+  ------- OpenSans-Regular.woff2
+  ------- OpenSans-Italic.woff
+  ------- OpenSans-Italic.woff2 `
 
-## Installation
+including with @font-face definition
 
-- `git clone git@github.com:rwieruch/advanced-react-webpack-babel-setup.git`
-- cd advanced-react-webpack-babel-setup
-- npm install
-- npm start
-- visit `http://localhost:8080/`
+````language
+`
+ @font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('./assets/fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('./assets/fonts/OpenSans-Regular.woff') format('woff');
+}
+````
