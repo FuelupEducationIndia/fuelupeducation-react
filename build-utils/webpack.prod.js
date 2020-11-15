@@ -9,25 +9,20 @@ module.exports = {
       {
         // Setting css-scss for prod mode
         test: /\.(css|scss)$/,
-        exclude: /\.module.(scss|css)$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-          },
-          {
-            loader: 'sass-loader',
-          },
-        ],
-      },
-      {
-        // Setting SCSS-CSS modules! for prod mode
-        test: /\.module\.(css|scss)$/,
         exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
+            options: {
+              modules: {
+                compileType: 'module',
+                mode: 'local',
+                auto: true,
+                exportGlobals: true,
+                localIdentName: '[local]--[hash:base64:5]',
+              },
+            },
           },
           {
             loader: 'sass-loader',

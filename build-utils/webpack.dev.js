@@ -7,40 +7,27 @@ module.exports = {
   module: {
     rules: [
       {
-        // Setting css-scss for dev mode
+        // Setting css-scss and css/scss-modules
         test: /\.(css|scss)$/,
-        exclude: /\.module.(scss|css)$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-          {
-            loader: 'sass-loader',
-          },
-        ],
-      },
-      {
-        // Setting SCSS-CSS modules! for dev mode
-        test: /\.module\.(css|scss)$/,
         exclude: /node_modules/,
+
         use: [
           'style-loader',
           {
             loader: 'css-loader',
             options: {
-              modules: true,
               sourceMap: true,
+              modules: {
+                compileType: 'module',
+                mode: 'local',
+                auto: true,
+                exportGlobals: true,
+                localIdentName: '[local]--[hash:base64:5]',
+              },
             },
           },
           {
             loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-            },
           },
         ],
       },

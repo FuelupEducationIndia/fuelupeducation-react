@@ -20,6 +20,7 @@ or module
 
 `
 
+````language
 - src/
   --- assets/
   ----- fonts/
@@ -28,7 +29,8 @@ or module
   ------- OpenSans-Regular.woff
   ------- OpenSans-Regular.woff2
   ------- OpenSans-Italic.woff
-  ------- OpenSans-Italic.woff2 `
+  ------- OpenSans-Italic.woff2
+``` `
 
 including with @font-face definition
 
@@ -42,7 +44,7 @@ including with @font-face definition
     url('./assets/fonts/OpenSans-Regular.woff2') format('woff2'),
     url('./assets/fonts/OpenSans-Regular.woff') format('woff');
 }
-```
+````
 
 #### Docker support (dev mode) run and build
 
