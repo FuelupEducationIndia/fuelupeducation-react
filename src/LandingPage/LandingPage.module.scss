@@ -51,6 +51,31 @@ margin-right: 30px;
 }
 
 
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  padding: 0px;
+}
+
+.dropdown-child {
+  list-style: none;  
+  width: 200px;
+  display: flex;
+  z-index: 1;
+  background-color: #4f3eae;
+  padding: 15px;
+}
+
+.dropdown-child:hover {
+  background-color: 	#7767ab;
+}
+
+.navbar-list>li:hover .dropdown-menu {
+  display: block;
+}
+
+
+
 
 
 
