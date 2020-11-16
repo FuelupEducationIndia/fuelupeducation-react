@@ -1,0 +1,262 @@
+.sign-in {
+    width: 52%;
+    background-color: white; 
+    height: 100%;   
+    margin: 0;
+    position: absolute;
+    margin-left: 50%;
+    float: right;
+    top: 0;
+    
+}
+
+.sign-in > h1, .sign-in > p {
+color: 	#41177f;
+text-align: center;
+}
+
+.input-elements {    
+    float: left;
+}
+
+.input-elements > input:nth-child(-n+5) {
+    width: 80vh;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 8px;
+    margin-left: 10vh;
+    font-size: 15px;
+    display: block;
+}
+
+.input-elements > input:nth-child(3) {
+    background-image: url(./eye.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+
+.input-elements>input:nth-child() {
+    margin-left: 50px;
+}
+
+.input-elements>input:nth-last-child(9) {
+   margin-left: 10vh;
+   margin-top: 15px;
+   display: inline-block;
+}
+
+.robot {
+    border: 1px solid  #a6a6a6;
+    background-color: #f9f9f9;    
+    margin-left: 10vh;
+    width: 40vh;
+    margin-top: 20px;  
+    padding: 12px;
+}
+
+.robot > span {
+    font-size: 25px;
+    margin-left: 60px;
+}
+
+.robot > div {
+   width: 70px;
+   height: 70px;
+   display: inline-grid; 
+ }
+
+ .robot > div > span {
+     margin: auto;
+ }
+
+ .robot > div > img {
+     margin-left: 35px;
+ }
+
+ .robot>div:nth-last-child(1) {
+ font-size: 20px;
+ margin-left: 60px;
+ }
+
+ .input-elements > button {
+     background-color: #f16601;
+     color: white;
+     border-radius: 10px;
+     border: none;
+     padding: 10px 50px;
+     font-size: 18px;
+     margin-left: 60vh;
+     margin-bottom: 20px;
+ }
+
+ .input-elements > p {
+     color: black;
+     border-bottom: 1px solid black;
+     width: 20vh;
+     margin: auto;
+ }
+
+ .img {
+     margin: auto;
+     text-align: center;
+     margin-top: 15px;
+ }
+
+ .img > img {
+     margin: 15px;     
+}
+/*first line*/
+.line {
+    text-align: center;
+    max-width: 200px;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    color: gray;
+    font-size: 18px;
+}
+
+.line:before {
+    content:"";
+    display: block;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background: gray;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+
+.line:after {
+    content:"";
+    display: block;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background: gray;
+    left: 0;
+    top: 50%;
+    z-index: -2;        
+}
+/*second line*/
+
+.second-line {
+    text-align: center;
+    font-size: 18px;
+    max-width: 350px;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    color: gray;
+}
+
+.second-line:before {
+    content:"";
+    display: block;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background: gray;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+
+.second-line:after {
+    content:"";
+    display: block;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background: gray;
+    left: 0;
+    top: 50%;
+    z-index: -2;        
+}
+
+.bottom-buttons {  
+    margin: auto;
+    text-align: center;
+
+}
+
+.bottom-buttons > button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 180px;   
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+   /* background-image: url("./images/touch.svg");*/
+    
+}
+
+p {
+    color:gray;
+}
+
+.input-elements>p:nth-last-child(1){
+color: gray;
+text-align: center;
+margin-top: 15px;
+width: 100%;
+border: none;
+}
+
+.input-elements>p>span{
+    color: 	#41177f;
+}
+
+.input-elements>p>span:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+.robot>div>:nth-last-child(1) {
+    font-size: 13px;
+    margin-top: 2px;
+  }
+
+  .input-elements>input:nth-child(2){
+      background-color: purple;
+  }
+.sign-in > img { 
+  float: right;
+}
+
+.bottom-buttons>button:nth-last-child(2) {
+   background-image: url("./touch.png");
+   background-size: 20px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-position-x: 5px;   
+}
+
+.bottom-buttons>button:nth-last-child(1) {
+    background-image: url("./face-scan.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 5px;   
+ }
+
+ #role {
+     width: 140px;
+     display: inline;
+ }
+
+ #forgot {
+    color: 	#41177f;
+ }
+
+ #forgot:hover {
+     cursor: pointer;
+     text-decoration: underline;
+ }
