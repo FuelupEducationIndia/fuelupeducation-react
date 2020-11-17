@@ -8,12 +8,13 @@ const App = ({ title }) => (
   <div className={styles.Container}>
     {title}
     Hi there! Enjoy fresh cornish!
+    <br />
     <img className={styles.Img} src={image} alt=" Cornish" />
   </div>
 );
 
 App.propTypes = {
-  title: PropTypes.string.isRequired,
+  // title: PropTypes.string.isRequired,
 };
 
 export default App;

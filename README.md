@@ -18,6 +18,11 @@ or module
 
 #### Fonts Support:
 
+For fonts support check branch with withFonts.
+
+git checkout withFonts
+as example added Muli Fonts
+
 `
 
 ````language
@@ -49,3 +54,35 @@ including with @font-face definition
 #### Docker support (dev mode) run and build
 
 docker-compose -f docker-compose.dev.yml up --build
+not yet implemented!!!
+
+### some useful github commands
+
+\$ `git checkout <existing_branch>`
+
+create and switch to it:
+\$ `git checkout -b <new_branch>`
+
+to a existiing one
+\$`git branch <branch_name>`
+
+or use switch
+
+\$ `git switch <existing_branch>`
+
+\$ `git switch -c <non_existing_branch>`
+
+push: \$`git push origin <branch_name>
+
+### About Prettier and it settings:
+
+in .eslintrc :
+disable Proptypes error:
+`"react/prop-types": 0,`
+disable no-used-var error:
+`"no-unused-vars":0`
+
+or commentat file beginning:
+/_ eslint react/prop-types: 0 _/
+or this:
+/_ eslint react/forbid-prop-types: 0 _/
