@@ -20,7 +20,7 @@ module.exports = {
                 mode: 'local',
                 auto: true,
                 exportGlobals: true,
-                localIdentName: '[local]--[hash:base64:5]',
+                localIdentName: '[local]--[fullhash:base64:5]',
               },
             },
           },
@@ -36,8 +36,8 @@ module.exports = {
       path: path.resolve(__dirname, '..', './.env.production'),
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
-      chunkFilename: '[id].[hash].css',
+      filename: '[name].[fullhash].css',
+      chunkFilename: '[id].[fullhash].css',
     }),
   ],
   devServer: {

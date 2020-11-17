@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Muli Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/Muli-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Muli Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli Italic'), url('./assets/fonts/Muli-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli ExtraLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli ExtraLight'), url('./assets/fonts/Muli-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli ExtraLight Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli ExtraLight Italic'),
+    url('./assets/fonts/Muli-ExtraLightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli Light'), url('./assets/fonts/Muli-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli Light Italic'),
+    url('./assets/fonts/Muli-LightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli SemiBold'), url('./assets/fonts/Muli-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli SemiBold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli SemiBold Italic'),
+    url('./assets/fonts/Muli-SemiBoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli Bold'), url('./assets/fonts/Muli-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli Bold Italic'),
+    url('./assets/fonts/Muli-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli ExtraBold'), url('./assets/fonts/Muli-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli ExtraBold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli ExtraBold Italic'),
+    url('./assets/fonts/Muli-ExtraBoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli Black'), url('./assets/fonts/Muli-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Muli Black Italic'),
+    url('./assets/fonts/Muli-BlackItalic.woff') format('woff');
+}
+
+body {
+  font-family: $font;
+  line-height: 1.7;
+  color: $color-font;
+}
