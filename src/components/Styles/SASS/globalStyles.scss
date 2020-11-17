@@ -1,0 +1,324 @@
+$main-color: #faf9fe;
+$secondary-color: #3b0e8a;
+$third-color: #ffffff;
+$statusr-color: #ef271b;
+$statusg-color: #2da231;
+$low-color: #ffc95f;
+$med-color: #64aad9;
+$high-color: #ef271b;
+$btn-color: #f16600;
+
+// HOME STYLES
+.navBarContainer {
+  width: 1280px;
+  height: 112px;
+  padding: 27px 34px 26px 35px;
+  background: #faf9fe;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+  .navBtns {
+    margin-left: 2rem;
+    display: flex;
+
+    .linkBtns {
+      ul {
+        a {
+          text-decoration: none;
+          display: inline;
+          margin-left: 1rem;
+          width: 70px;
+          height: 25px;
+          font-family: "Courier New", Courier, monospace;
+          font-size: 20px;
+          font-weight: 900;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.25;
+          letter-spacing: normal;
+          text-align: left;
+          color: #3b0e8a;
+          cursor: pointer;
+        }
+      }
+    }
+    .iconBtns {
+      display: flex;
+      align-items: center;
+      img {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-left: 3rem;
+        cursor: pointer;
+      }
+      .profileIcon {
+        width: 3rem;
+        height: 3rem;
+        background: $btn-color;
+        border-radius: 100%;
+        margin-left: 3rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// TICKET PAGE STYLES
+.newTicket {
+  bottom: 0;
+  right: 0;
+  margin: 3rem;
+  border-radius: 5rem;
+  position: fixed;
+  background: $btn-color;
+  height: 3rem;
+  width: 10rem;
+  text-align: center;
+
+  cursor: pointer;
+  h3 {
+    color: $third-color;
+    margin: 0.6rem;
+  }
+}
+
+.ticketPageContainer {
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 10rem;
+  .ticketContainer {
+    width: 1280px;
+    margin: 0 auto;
+    background: $third-color;
+    background: #faf9fe;
+
+    .buttonContainer {
+      margin-bottom: 2rem;
+
+      button {
+        padding: 0.5rem;
+        border-radius: 20px;
+        margin-right: 2rem;
+        width: 8rem;
+        box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);
+        border: none;
+        background: $third-color;
+        cursor: pointer;
+
+        &:hover {
+          background: $btn-color;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+// TICKET BOX STYLES
+.ticketDetails {
+  .ticketDetailsContainer {
+    margin: 0 auto;
+    margin-top: 1rem;
+    background: $third-color;
+    padding: 1rem;
+    width: 1280px;
+    .detailTicketTitle {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      h1 {
+        margin: 0;
+      }
+      p {
+        font-size: 13px;
+        color: gray;
+      }
+    }
+    .detaileTicketContent {
+      width: 70%;
+    }
+  }
+  .detailStatus {
+    display: flex;
+    align-items: center;
+
+    .unresolved {
+      background: $statusr-color;
+      padding: 0.3rem;
+      color: $third-color;
+      font-weight: 600;
+      width: 8rem;
+      text-align: center;
+    }
+    .resolved {
+      @extend .unresolved;
+      background: $statusg-color;
+    }
+    .statusRate {
+      margin-left: 1rem;
+      font-weight: 700;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// Profile Settings
+.profileSettingsContainer {
+  width: 10rem;
+  background: $btn-color;
+  border: solid rgb(204, 203, 203) 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2rem;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  opacity: 0;
+
+  .profileIconTab {
+    margin-top: 1rem;
+    h3 {
+      color: $third-color;
+      cursor: pointer;
+      &:hover {
+        color: rgb(51, 36, 9);
+      }
+    }
+  }
+}
+
+//Ticket Container
+.ticketBoxContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 80vh;
+  width: 70vw;
+  background: $third-color;
+  margin-top: 3rem;
+  border: solid gray 2px;
+  border-radius: 5px;
+  z-index: 10;
+  .close {
+    cursor: pointer;
+    span {
+      font-size: 2rem;
+      font-weight: 300;
+      position: absolute;
+      right: 0;
+      margin: 1.5rem;
+    }
+  }
+  .inputsContainer {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 5rem;
+    .newTitle {
+      display: flex;
+      justify-content: flex-start;
+      span {
+        font-weight: 500;
+        width: 5rem;
+      }
+      textarea {
+        height: 5rem;
+        width: 70%;
+        margin-left: 3rem;
+        border-radius: 8px;
+        &:focus::-webkit-input-placeholder {
+          font-size: 0.75em;
+          position: relative;
+          top: -15px;
+          transition: 0.2s ease-out;
+        }
+      }
+    }
+
+    .priority {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      height: 5rem;
+      span {
+        margin-right: 5rem;
+        font-weight: 500;
+      }
+      button {
+        width: 8rem;
+        border-radius: 5rem;
+        margin-right: 1rem;
+        box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);
+        text-align: center;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+        .low {
+          color: $low-color;
+        }
+        .med {
+          color: $med-color;
+        }
+        .high {
+          color: $high-color;
+        }
+      }
+      .not-active {
+        border: solid $btn-color;
+      }
+      .active {
+        border: solid $statusr-color;
+      }
+    }
+    .description {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: flex-start;
+      height: 5rem;
+      span {
+        font-weight: 500;
+        width: 5rem;
+      }
+      textarea {
+        height: 5rem;
+        width: 70%;
+        margin-left: 3rem;
+        border-radius: 8px;
+        &:focus::-webkit-input-placeholder {
+          font-size: 0.75em;
+          position: relative;
+          top: -15px;
+          transition: 0.2s ease-out;
+        }
+      }
+    }
+    .postTicket {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin-bottom: 8rem;
+      margin-right: 12rem;
+      button {
+        border-radius: 5rem;
+        border: none;
+        background: $btn-color;
+        padding: 1rem;
+        width: 8rem;
+        cursor: pointer;
+        &:hover {
+          background: $btn-color;
+          color: $third-color;
+        }
+      }
+    }
+  }
+}
