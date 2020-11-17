@@ -3,6 +3,8 @@ import "../Styles/SASS/globalStyles.scss";
 
 const TicketBox = ({ title, content, resolved, priority, date }) => {
   let priorityRate = "";
+
+  //turn the numbers to a string base on the value
   if (priority === 1) {
     priorityRate = "low";
   } else if (priority === 2) {

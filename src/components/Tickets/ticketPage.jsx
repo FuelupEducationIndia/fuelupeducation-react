@@ -13,15 +13,19 @@ const TicketPage = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    // Get the data from the dumb to map it to the page
     dispatch(getDataAction());
   }, [data]);
 
+  //To sort the priority
   const handlePriority = () => {
     setSortPriority(!sortPriority);
     sortPriority
       ? data.sort((a, b) => a.priority - b.priority)
       : data.sort((a, b) => b.priority - a.priority);
   };
+
+  //to sort the status
   const handleStatus = () => {
     setStatus(!status);
     status
@@ -29,6 +33,7 @@ const TicketPage = () => {
       : data.sort((a, b) => b.resolved - a.resolved);
   };
 
+  //toggle the state ticket bool to display or to close the box
   const handleNewTicket = () => {
     dispatch(clickNewTicket());
   };

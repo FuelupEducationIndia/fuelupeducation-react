@@ -4,6 +4,7 @@ import gsap from "gsap";
 const ProfileSettings = ({ profile }) => {
   let profRef = useRef(null);
 
+  // gsap to animate the logout box
   useEffect(() => {
     if (profile) {
       gsap.fromTo(

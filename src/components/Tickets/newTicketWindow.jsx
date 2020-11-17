@@ -6,6 +6,7 @@ import "../Styles/SASS/globalStyles.scss";
 const TicketWindow = () => {
   const dispatch = useDispatch();
   const newTicketWindow = useSelector((state) => state.newTicketWindow);
+  //make a new data for a newticket
   const [newTicketData, setNewTicketData] = useState({
     title: "",
     content: "",
@@ -13,14 +14,18 @@ const TicketWindow = () => {
     priority: null,
     date: new Date(),
   });
+
   const data = useSelector((state) => state.data);
 
+  //handle the title so the user can type
   const handleTitileInput = (e) => {
     setNewTicketData({
       ...newTicketData,
       title: e.target.value,
     });
   };
+
+  //handling the three buttons
   const handleButtonLow = () => {
     setNewTicketData({ ...newTicketData, priority: 1 });
   };
@@ -31,6 +36,7 @@ const TicketWindow = () => {
     setNewTicketData({ ...newTicketData, priority: 3 });
   };
 
+  //handling the description input
   const handleDescription = (e) => {
     setNewTicketData({
       ...newTicketData,
@@ -38,6 +44,7 @@ const TicketWindow = () => {
     });
   };
 
+  //to post the new ticket and to reset the data
   const handlePostNewTicket = () => {
     dispatch(postNewTicket(newTicketData));
     dispatch(clickNewTicket());
@@ -50,6 +57,7 @@ const TicketWindow = () => {
     });
   };
 
+  //close and reset the data
   const handleClose = () => {
     dispatch(clickNewTicket());
     setNewTicketData({
