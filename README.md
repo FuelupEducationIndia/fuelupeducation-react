@@ -1,12 +1,16 @@
-todo: dockerizing dev and prod modes
+_todo: dockerizing dev and prod modes
+_
 
 # React boilerplate on port 3000:
 
-thanks and based on https://github.com/rwieruch/advanced-react-webpack-babel-setup
+Features: devServer, modules,fonts, ReactRouter
 
-Features:
+### ReactRouter fixed devServer
 
-React17, Babel7, Webpack5, HotReload Dev server module and more
+**
+NOTE! important!!!
+only ubuntu style works for old and new browser.
+EOF, TTF, WOF2 missing for MULI!!!**
 
 #### CSS/SCSS modules enabled
 
@@ -29,32 +33,23 @@ as example added Muli Fonts
 - src/
   --- assets/
   ----- fonts/
-  ------- OpenSans-Bold.woff
-  ------- OpenSans-Bold.woff2
-  ------- OpenSans-Regular.woff
-  ------- OpenSans-Regular.woff2
-  ------- OpenSans-Italic.woff
-  ------- OpenSans-Italic.woff2
-``` `
+  ------- Muli-Regular.woff
+  ------- Muli-Regular.woff2
+
 
 including with @font-face definition
 
 ```language
 `
  @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Muli Regular';
   font-style: normal;
   font-weight: normal;
   src:
-    url('./assets/fonts/OpenSans-Regular.woff2') format('woff2'),
-    url('./assets/fonts/OpenSans-Regular.woff') format('woff');
+    url('./assets/fonts/Muli-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Muli-Regular.woff') format('woff');
 }
 ````
-
-#### Docker support (dev mode) run and build
-
-docker-compose -f docker-compose.dev.yml up --build
-not yet implemented!!!
 
 ### some useful github commands
 
@@ -87,13 +82,27 @@ or commentat file beginning:
 or this:
 /_ eslint react/forbid-prop-types: 0 _/
 
-<<<<<<< HEAD
-### ReactRouter
+**Note: about user roles.**
+when create a new user role/ because it can have different routes/contributions, it will have different layout.
+steps to add, for a admin role:
 
-available on branch withReactRouter
-=======
-**
-NOTE! important!!!
-only ubuntu style works for old and new browser.
-EOF, TTF, WOF2 missing for MULI!!!**
->>>>>>> withReactRouter
+1. Add it own route in a separate routing file(see ./src/publicRoutes.js).
+2. Do his AdminLayout (Navbar will be rendered for all routes, a HOC). example of Layout:
+
+```
+<>
+<NavBar/>
+{props.children}
+<Footer/>
+<>
+```
+
+3. Import Layout in App.js and put it on else block
+   if (user==="admin) {
+   layoutToDisplay = user === 'public' && (
+   <AdminLayout>
+   <AdminRenderRoutes routes={ADMINROUTES} />
+   </AdminLayout>
+   );
+   }
+4. Test it!
