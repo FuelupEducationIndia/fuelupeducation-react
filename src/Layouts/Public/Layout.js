@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import NavBar from '../components/NavBar/NavBar';
+import Footer from '../components/Footer/Footer';
+
 const Layout = ({ children }) => {
   return (
-    <div>
-      You can add here header and navigation
-      <br />
+    <>
+      <NavBar isAuth="true" />
       {children}
-      <br />
-      and you can add a footer for this layout or use from another tab
-    </div>
+      <Footer />
+    </>
   );
 };
 

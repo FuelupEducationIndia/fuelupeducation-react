@@ -1,8 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import styles from './NavBar.module.scss';
+
 const NavBar = ({ isAuth }) => {
-  return <div>sdfdsf</div>;
+  return (
+    <div className={styles.Navigation}>Navigation will be here</div>
+  );
 };
 
 NavBar.propTypes = {
