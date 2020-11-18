@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Layout1 = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <div>
       You can add here header and navigation
@@ -13,8 +13,8 @@ const Layout1 = ({ children }) => {
   );
 };
 
-Layout1.propTypes = {
+Layout.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
-export default Layout1;
+export default Layout;

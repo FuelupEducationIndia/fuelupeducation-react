@@ -3,17 +3,20 @@ import PropTypes from 'prop-types';
 
 import styles from './App.module.scss';
 
-import Layout1 from '../Layouts/Layout1/Layout1';
-import ROUTES, { RenderRoutes } from '../routes';
+import PublicLayout from '../Layouts/Public/Layout';
+import ROUTES, { RenderRoutes } from '../publicRoutes';
 import LoadingSimple from '../UI/LoadingSimple/LoadingSimple';
 
 const App = ({ title }) => {
+  let layoutToDisplay = '';
   // Switching layouts in accordance to need, it can be user type, and so on
+  // if user is public/unregistered we load his routes
+  const user = 'public';
 
-  const layoutToDisplay = (
-    <Layout1>
+  layoutToDisplay = user === 'public' && (
+    <PublicLayout>
       <RenderRoutes routes={ROUTES} />
-    </Layout1>
+    </PublicLayout>
   );
 
   return (
