@@ -86,3 +86,8 @@ or commentat file beginning:
 /_ eslint react/prop-types: 0 _/
 or this:
 /_ eslint react/forbid-prop-types: 0 _/
+
+**
+NOTE! important!!!
+only ubuntu style works for old and new browser.
+EOF, TTF, WOF2 missing for MULI!!!**

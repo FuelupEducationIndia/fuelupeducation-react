@@ -13,6 +13,7 @@ const Landing = (props) => {
       <NavBar isAuth={false} />
       <Hero />
       <div className={styles.backgroundImage} />
+      <div className={styles.backgroundImage2} />
     </div>
   );
 };
