@@ -87,6 +87,13 @@ or commentat file beginning:
 or this:
 /_ eslint react/forbid-prop-types: 0 _/
 
+<<<<<<< HEAD
 ### ReactRouter
 
 available on branch withReactRouter
+=======
+**
+NOTE! important!!!
+only ubuntu style works for old and new browser.
+EOF, TTF, WOF2 missing for MULI!!!**
+>>>>>>> withReactRouter

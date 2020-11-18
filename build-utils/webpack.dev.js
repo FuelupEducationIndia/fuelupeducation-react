@@ -43,6 +43,7 @@ module.exports = {
     contentBase: path.resolve(__dirname, '..', './dist'),
     hot: true,
     port: 3000,
+    historyApiFallback: true,
   },
   devtool: 'eval-source-map',
 };
