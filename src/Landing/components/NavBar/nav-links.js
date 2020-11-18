@@ -43,14 +43,4 @@ export default [
     hasSubmenu: false,
     linkTo: '/team',
   },
-  {
-    name: 'Sign in',
-    hasSubmenu: false,
-    linkTo: '/sign-in',
-  },
-  {
-    name: 'Start Learning',
-    hasSubmenu: false,
-    linkTo: '/start-learning',
-  },
 ];

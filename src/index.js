@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom'; 
+import { BrowserRouter } from 'react-router-dom';
 
 import App from './App/App';
 
@@ -13,8 +13,9 @@ const title = 'React with Webpack and Babel';
 ReactDOM.render(
   <BrowserRouter>
     <App title={title} />
-  </BrowserRouter>
+  </BrowserRouter>,
 
-, document.getElementById('app'));
+  document.getElementById('app')
+);
 
 module.hot.accept();

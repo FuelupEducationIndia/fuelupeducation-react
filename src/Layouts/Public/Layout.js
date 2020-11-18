@@ -1,15 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import NavBar from '../components/NavBar/NavBar';
-import Footer from '../components/Footer/Footer';
-
 const Layout = ({ children }) => {
   return (
     <>
-      <NavBar isAuth="true" />
+      Navigation goes here
       {children}
-      <Footer />
+      Here goes footer
     </>
   );
 };
