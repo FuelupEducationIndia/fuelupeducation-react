@@ -1,6 +1,8 @@
 _todo: dockerizing dev and prod modes
 _
 
+!! image not centered. another assets is requested
+
 # React boilerplate on port 3000:
 
 Features: devServer, modules,fonts, ReactRouter
