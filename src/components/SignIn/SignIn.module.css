@@ -1,0 +1,303 @@
+.signIn {
+    width: 52%;
+    background-color: white; 
+    height: 100%;   
+    margin: 0;
+    position: absolute;
+    margin-left: 50%;
+    float: right;
+    top: 0;       
+}
+
+.signIn:hover {
+   cursor: pointer;
+}
+
+.inputElements {    
+    float: left;
+}
+
+.inputElements > input:nth-child(-n+5) {
+    width: 80vh;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 8px;
+    margin-left: 10vh;
+    font-size: 15px;
+    display: block;
+}
+
+.inputElements > input:nth-child(3) {
+    background-image: url("/src/assets/images/eye.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.inputElements>input:nth-child() {
+    margin-left: 50px;
+}
+
+.inputElements>input:nth-last-child(9) {
+   margin-left: 10vh;
+   margin-top: 15px;
+   display: inline-block;
+}
+
+#role {
+    width: 140px;
+    display: inline;
+}
+
+.robot {
+    border: 1px solid  #a6a6a6;
+    background-color: #f9f9f9;    
+    margin-left: 10vh;
+    width: 40vh;
+    margin-top: 20px;  
+    padding: 12px;
+}
+
+.robot > span {
+    font-size: 25px;
+    margin-left: 60px;
+}
+
+.robot > div {
+   width: 70px;
+   height: 70px;
+   display: inline-grid; 
+ }
+
+ .robot > div > span {
+     margin: auto;
+ }
+
+ .robot > div > img {
+     margin-left: 35px;
+ }
+
+ .robot>div:nth-last-child(1) {
+ font-size: 20px;
+ margin-left: 60px;
+ margin-bottom: 12px; 
+ } 
+
+.robot>div>:nth-last-child(1) {
+    font-size: 13px;
+    margin-top: 2px;
+}
+    
+ #text {
+    vertical-align: super;
+}
+
+.signIn > h1, .signIn > p {
+    color: 	#41177f;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#signInBtn {
+    color: white;
+}
+
+.signIn > img { 
+    float: right;
+}
+
+a {
+    color: white;
+}
+
+.line {
+    text-align: center;
+    max-width: 200px;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    color: gray;
+    font-size: 18px;
+}
+
+.line:before {
+    content:"";
+    display: block;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background: gray;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+.line:after {
+    content:"";
+    display: block;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background: gray;
+    left: 0;
+    top: 50%;
+    z-index: -2;        
+}
+
+.secondLine {
+    text-align: center;
+    font-size: 18px;
+    max-width: 350px;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    color: gray;
+}
+
+.secondLine:before {
+    content:"";
+    display: block;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background: gray;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+.secondLine:after {
+    content:"";
+    display: block;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    background: gray;
+    left: 0;
+    top: 50%;
+    z-index: -2;        
+}
+
+.bottomButtons {  
+    margin-left: 25%;
+    margin-top: 10px;
+    display: inline-flex;   
+}
+
+.bottomButtons > button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 180px;   
+    font-size: 15px;
+    border-radius: 5px;      
+}
+
+.bottomButtons>button:nth-last-child(2) {
+    background-image: url("/src/assets/images/touch.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 5px;   
+    margin: 0;
+}
+ 
+.bottomButtons>button:nth-last-child(1) {
+     background-image: url("/src/assets/images/face-scan.png");
+     background-size: 20px;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-position-x: 5px;  
+     margin: 0;
+}
+
+.img {
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;     
+}
+
+.img > img {
+    margin: 15px; 
+    width: 35px;
+    height: 35px;
+    display: inline;   
+}
+
+.inputElements > button {
+    background-color: #f16601; ;
+    border-radius: 10px;  
+    border: none;
+    padding: 10px 50px;
+    font-size: 18px;
+    margin-left: 60vh;
+    margin-bottom: 20px;
+}
+
+.inputElements > button:hover {
+    cursor: pointer;  
+}
+
+.inputElements > p {
+    color: black;
+    border-bottom: 1px solid black;
+    width: 20vh;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+.inputElements>p:nth-last-child(1){
+color: gray;
+text-align: center;
+margin-top: 15px;
+width: 100%;
+border: none;
+}
+
+.inputElements>p>span{
+    color: 	#41177f;
+}
+
+.inputElements>p>span:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+  .inputElements>input:nth-child(2){
+      background-color: purple;
+  }
+
+
+
+
+ #forgot {
+    color: 	#41177f;
+    margin-left: 10vh;
+    
+ }
+
+ #forgot:hover {
+     cursor: pointer;
+     text-decoration: underline;
+ }
