@@ -8,7 +8,7 @@ class Navbar extends React.Component {
 		return (
 			<div className={classes.navbar}>
 				<ul className={classes.navbarList}>
-					<li><Link to="/" onClick={App}>Fuelup education123</Link></li>
+					<li><Link to="/" onClick={App}>Fuelup education</Link></li>
 					<li>Courses&#9662;
 						<ul className={classes.dropdownMenu}>
 							<li className={classes.dropdownChild}>Junior High School</li>
