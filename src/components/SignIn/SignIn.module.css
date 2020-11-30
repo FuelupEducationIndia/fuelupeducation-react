@@ -224,6 +224,10 @@ a {
     height: 35px;
     display: inline;   
 }
+/*
+.img>div {
+    background-image: url("/src/assets/images/microsoft.svg");
+}*/
 
 .inputElements > button {
     background-color: #f16601; ;

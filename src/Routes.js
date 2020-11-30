@@ -9,11 +9,11 @@ import CreateNewQuestion from './components/Exams/CreateQuestions/CreateNewQuest
 import CompletedExam from './components/Exams/Completed/CompletedExam';
 
 const Routes = props => {
-  const location = useLocation();
+  {/*const location = useLocation();
 
   useEffect(() => {
     props.setPathname(location.pathname);
-  }, [location]);
+  }, [location]);*/}
 
   return (
     <>

@@ -29,7 +29,7 @@ const SignIn = () => {
 				<div className={classes.img}>
 					<img src="./images/facebook.svg" alt="facebok-image" />
 					<img src="./images/google-symbol.svg" alt="google-image" />
-					<img src="./images/microsoft.svg" alt="microsoft-image" />
+					<img src="/src/assets/images/microsoft.svg" alt="microsoft-image" />
 				</div>
 				<h2 className={classes.secondLine}><span>Use biometric Sign In</span></h2>
 				<div className={classes.bottomButtons}>
