@@ -1,0 +1,32 @@
+.dots3 {
+  display: flex;  
+  margin: auto;
+  width: 49%;   
+}
+
+.dots3 > .circle3 {
+  width: 35px;
+  height: 35px;
+  background-color: gray;
+  border-radius: 100%;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+.dots3 > .line3 {
+  width: 200px;
+  height: 3px;
+  background-color: gray;
+  margin-top: 16px;
+}
+
+.dots3>.circle3:not(:nth-last-child(1)) {
+  background-color: #4f3eae;
+} 
+
+.dots3>.line:not(:nth-last-child(1)), .dots3:not(:nth-last-child(2)) {
+  background-color: #4f3eae;
+
+} 
+
+
