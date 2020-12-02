@@ -1,0 +1,54 @@
+
+
+.toolbar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: minmax(30rem, 1fr) 2fr max-content;
+
+    .navigationItems {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(6, max-content);
+
+        .navigationItem {
+            display: grid;
+            font-weight: bold;
+
+            &:link,
+            &:visited {
+                font-size: 1.15rem;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+            }
+        }
+    }
+
+    &__1{
+      //  margin: 0 1rem;
+    }
+
+    &__3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      //  margin: 1rem 2rem;
+    }
+
+    &__gear,
+    &__notification {
+        font-size: 1.4rem;
+        display: flex;
+        justify-self: center;
+        margin: 0.3rem;
+    }
+    &__avatar {
+        width: 41px;
+        height: 41px;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 1rem;
+    }
+}

@@ -1,0 +1,28 @@
+.app {
+    padding: 27px 35px 0 35px;
+}
+.content {
+    display: grid;
+    // grid-template-rows: min-content;
+    grid-template-columns: [center-start] repeat(
+            8,
+            [col-start] minmax(min-content, 14rem) [col-end]
+        ) [center-end];
+}
+
+.section-header{
+    grid-column: 1 / -1;
+}
+
+.section-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    grid-row: 5 / 6;
+}
+
+.pagination__icon{
+    color: $secondary-color;
+    font-size: 1.6rem;
+}

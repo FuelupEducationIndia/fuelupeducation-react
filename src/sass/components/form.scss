@@ -1,0 +1,55 @@
+.contactData {
+    text-align: center;
+}
+
+
+.contactForm {
+    padding: 1rem .5rem;
+    width: 50%;
+    margin: 0 auto;
+
+    input,
+    select {
+        width: 100%;
+        padding: 1rem .8rem;
+        font-size: 1rem;
+        outline: none;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+      //  box-shadow: 6px 1px 10px 5px #ccc;
+
+        &:focus {
+       //     background: #ccc;
+            outline: none;
+        }
+    }
+
+    select {
+        width: 105%;
+    }
+}
+
+.label {
+    display: block;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+
+.notValid {
+    background: rgb(179, 111, 102);
+
+    &::placeholder {
+        color: #ccc;
+    }
+}
+
+.loginForm {
+    text-align: center;
+    height: 40vh;
+    margin: 5rem 0;
+
+    &__buttonAuth{
+        margin: 2rem 0;
+    }
+}
+
