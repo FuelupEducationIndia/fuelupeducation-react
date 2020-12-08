@@ -1,4 +1,9 @@
-
+.createNewQuestion {
+  background-color:#faf9fe;
+  position: absolute;
+  width: 100%;
+  height: auto; 
+}
  .dots5 {
   display: flex;  
   margin: auto;
