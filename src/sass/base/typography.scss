@@ -1,20 +1,23 @@
 .app {
-    padding: 27px 35px 0 35px;
+    // padding: 27px 35px 0 35px;
+    overflow-x: hidden;
 }
 .content {
     display: grid;
     // grid-template-rows: min-content;
-    grid-template-columns: [center-start] repeat(
+    grid-template-columns:
+        [center-start] repeat(
             8,
             [col-start] minmax(min-content, 14rem) [col-end]
-        ) [center-end];
+        )
+        [center-end];
 }
 
-.section-header{
+.section-header {
     grid-column: 1 / -1;
 }
 
-.section-pagination{
+.section-pagination {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +25,75 @@
     grid-row: 5 / 6;
 }
 
-.pagination__icon{
+.pagination__icon {
     color: $secondary-color;
     font-size: 1.6rem;
+}
+//LANDING PAGE
+
+.landing {
+    width: 100vw;
+    height: 801px;
+    margin: 0 0 131px;
+    padding: 34px 0 0.1px;
+    background-image: linear-gradient(to bottom, #380885, #554cb8);
+
+    &__logo {
+        width: 82px;
+        height: 42px;
+        margin: 0 50px 50px 44px;
+        //font-family: Tahoma;
+        font-size: 19px;
+        font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.05;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    &__text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: -4rem;
+
+        &--content{
+            margin-top: -3rem;;
+        }
+
+        &--heading {
+            width: 500px;
+            height: 111px;
+            margin: 0 0 20px;
+            font-family: Muli;
+            font-size: 45px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.22;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        &--sub {
+            width: 450px;
+            height: 23px;
+            margin: 20px 53px 0;
+            font-family: Muli;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 3.06;
+            letter-spacing: normal;
+            text-align: center;
+            color: #b2a9d5;
+        }
+    }
 }

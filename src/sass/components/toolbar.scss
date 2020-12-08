@@ -52,3 +52,40 @@
         margin-left: 1rem;
     }
 }
+
+//LANDING PAGE
+
+.landingToolbar{
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto 2fr 1fr;
+    
+    &__list{
+        display: flex;
+    }
+    
+    &__list--auth{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    &__item{
+        list-style: none;
+        
+    }
+    
+    &__link{
+        
+        &:link,
+        &:visited{
+            padding: .5rem 1rem;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+    
+        }
+    }
+}
