@@ -1,7 +1,7 @@
 .signIn {
     width: 52%;
     background-color: white; 
-    height: 100%;   
+    height: auto;   
     margin: 0;
     position: absolute;
     margin-left: 50%;
@@ -28,7 +28,7 @@
 }
 
 .inputElements > input:nth-child(3) {
-    background-image: url("/src/assets/images/eye.svg");
+    background-image: url("../../assets/images/eye.svg");
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -195,7 +195,7 @@ a {
 }
 
 .bottomButtons>button:nth-last-child(2) {
-    background-image: url("/src/assets/images/touch.png");
+    background-image: url("../../assets/images/touch.png");   
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -204,7 +204,7 @@ a {
 }
  
 .bottomButtons>button:nth-last-child(1) {
-     background-image: url("/src/assets/images/face-scan.png");
+     background-image: url("../../assets/images/face-scan.png");
      background-size: 20px;
      background-repeat: no-repeat;
      background-position: center;
@@ -224,10 +224,6 @@ a {
     height: 35px;
     display: inline;   
 }
-/*
-.img>div {
-    background-image: url("/src/assets/images/microsoft.svg");
-}*/
 
 .inputElements > button {
     background-color: #f16601; ;
@@ -249,6 +245,8 @@ a {
     width: 20vh;
     margin: auto;
 }
+
+
 
 
 
