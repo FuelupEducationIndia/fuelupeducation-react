@@ -1,6 +1,5 @@
-body {
-  /*background-image:url("background-image.png");   */
-  background-color: #faf9fe;
+body{
+  background-image:url("../../assets/images/background-image.png");   
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%; 
@@ -8,14 +7,13 @@ body {
 
 .navbar {
   margin-top: 30px; 
-  margin-bottom: 80px;
+  margin-bottom: 80px;  
 }
 
 .navbarList > li > a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
-
 
 .navbarList {
  color: black;
@@ -35,6 +33,7 @@ body {
   font-size: 20px;
   list-style: none;
   width: 80px;  
+  color: white;
 }
 
 .navbarList  >li:nth-last-of-type(1) {
