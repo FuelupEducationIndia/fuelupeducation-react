@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const ChooseFromQuestionBank = () => {
 	return (
-		<div>
+		<div className={styles.chooseFromQuestionBank}>
 			<h1>Micro-organisms</h1>
 			<h6>Higher secondary</h6>
 			<div className={styles.dots5}>
