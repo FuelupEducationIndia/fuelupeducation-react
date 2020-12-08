@@ -1,6 +1,6 @@
 .app {
     // padding: 27px 35px 0 35px;
-    overflow-x: hidden;
+    //overflow-x: hidden;
 }
 .content {
     display: grid;
@@ -32,7 +32,8 @@
 //LANDING PAGE
 
 .landing {
-    width: 100vw;
+   // width: 100vw;
+   grid-column: 1 / -1;
     height: 801px;
     margin: 0 0 131px;
     padding: 34px 0 0.1px;
@@ -63,7 +64,7 @@
         margin-top: -4rem;
 
         &--content{
-            margin-top: -3rem;;
+            margin-top: -20rem;;
         }
 
         &--heading {
@@ -83,7 +84,7 @@
 
         &--sub {
             width: 450px;
-            height: 23px;
+            //height: 23px;
             margin: 20px 53px 0;
             font-family: Muli;
             font-size: 18px;

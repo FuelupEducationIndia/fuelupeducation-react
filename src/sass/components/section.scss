@@ -1,0 +1,49 @@
+.section {
+    grid-column: 1 / -1;
+
+    &__header {
+        width: 411px;
+        height: 111px;
+        margin: 131px 141px 20px 126px;
+        font-family: Muli;
+        font-size: 45px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: #380688;
+    }
+
+    &__text {
+        width: 415px;
+        height: 76px;
+        margin: 20px 138px 30px 125px;
+        font-family: Muli;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        text-align: left;
+        color: #7f75a5;
+    }
+
+    &__btn {
+        width: 150px;
+        height: 35px;
+        margin: 30px 402px 97px 126px;
+        padding: 9px 24px 8px;
+        border-radius: 18px;
+        background-color: #f16600;
+        border: none;
+        offset: none;
+        font-size: 16px;
+        line-height: 1.13;
+        text-align: center;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}
