@@ -1,108 +1,94 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+import FooterLogo from '../../assets/images/footerLogo.png'
+import Group54 from '../../assets/images/Group54.png'
+import Group57 from '../../assets/images/Group57.png'
 
 const Footer = () => {
     return (
-        <footer className="page-footer font-small indigo footer">
-
-            <div className="container text-center text-md-left">
-
-                <div className="row">
-
-                    <div className="col-md-3 mx-auto">
-
-                        <h5 className="font-weight-bold text-uppercase mt-3 mb-4 footer_title">City</h5>
-
-                        <ul className="list-unstyled">
-                            <li>
-                                <a href="#!" className='footer_link'>Uturu</a>
-                            </li>
-                            <li>
-                                <a href="#!" className='footer_link'>Umuahia</a>
-                            </li>
-                            <li>
-                                <a href="#!" className='footer_link'>Okigwe</a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                    <hr className="clearfix w-100 d-md-none"></hr>
-
-                    <div className="col-md-3 mx-auto">
-
-                        <h5 className="font-weight-bold text-uppercase mt-3 mb-4 footer_title">Stores</h5>
-
-                        <ul className="list-unstyled">
-                            <li>
-                                <a href="#!" className='footer_link'>Very long link</a>
-                            </li>
-                            <li>
-                                <a href="#!" className='footer_link'>Very long link</a>
-                            </li>
-                            <li>
-                                <a href="#!" className='footer_link'>Very long link</a>
-                            </li>
-                            <li>
-                                <a href="#!" className='footer_link'>Very long link</a>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                    <hr className="clearfix w-100 d-md-none"></hr>
-
-                    <div className="col-md-3 mx-auto">
-
-                        <h5 className="font-weight-bold text-uppercase mt-3 mb-4 footer_title">Popular Vendors</h5>
-
-                        <ul className="list-unstyled">
-                            <li>
-                                <a href="#!" className='footer_link'>Chinwe</a>
-                            </li>
-                            <li>
-                                <a href="#!" className='footer_link'>Very long link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" className='footer_link'>Very long link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" className='footer_link'>Very long link 1</a>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                    <hr className="clearfix w-100 d-md-none"></hr>
-
-                    <div className="col-md-3 mx-auto">
-
-                        <h5 className="font-weight-bold text-uppercase mt-3 mb-4 footer_title">ChopUp Delivery</h5>
-
-                        <ul className="list-unstyled">
-                            <li>
-                                <a href="#!" className='footer_link'>Very long link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" className='footer_link'>Very long link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" className='footer_link'>Very long link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" className='footer_link'>Very long link 1</a>
-                            </li>
-                        </ul>
-
-                    </div>
-
+        <div className='footer'>
+            <>
+                <div className='footer__logo'>
+                    <img src={FooterLogo} alt='' />
                 </div>
-
+                <div className='footer__copyright'>
+                    &copy; 2020 Safed Pankh Foundation
+                </div>
+            </>
+            <>
+                <ul className='footer__list'>
+                    <li className='footer__list--item'>
+                        <Link to='/' className='footer__link'>
+                            About Us
+                        </Link>
+                    </li>
+                    <li className='footer__list--item'>
+                        <Link to='/' className='footer__link'>
+                            Careers
+                        </Link>
+                    </li>
+                    <li className='footer__list--item'>
+                        <Link to='/' className='footer__link'>
+                            Blogs
+                        </Link>
+                    </li>
+                    <li className='footer__list--item'>
+                        <Link to='/' className='footer__link'>
+                            Privacy Policy
+                        </Link>
+                    </li>
+                    <li className='footer__list--item'>
+                        <Link to='/' className='footer__link'>
+                            Terms and Conditions
+                        </Link>
+                    </li>
+                </ul>
+            </>
+            <>
+                <ul className='footer__list'>
+                    <li className='footer__list--item'>
+                        <Link to='/' className='footer__link'>
+                            User Guildlines
+                        </Link>
+                    </li>
+                    <li className='footer__list--item'>
+                        <Link to='/' className='footer__link'>
+                            Site Map
+                        </Link>
+                    </li>
+                    <li className='footer__list--item'>
+                        <Link to='/' className='footer__link'>
+                            Refund Policy
+                        </Link>
+                    </li>
+                    <li className='footer__list--item'>
+                        <Link to='/' className='footer__link'>
+                            Legal Notices
+                        </Link>
+                    </li>
+                    <li className='footer__list--item'>
+                        <Link to='/' className='footer__link'>
+                            Plus subscriptions T&C
+                        </Link>
+                    </li>
+                </ul>
+            </>
+            <>
+            <p>Students App</p>
+            <div className='footer__assets'>
+                <img src={Group54} alt='' className='footer__assets--item'/>
+                <img src={Group57} alt='' className='footer__assets--item'/>
             </div>
-
-            <div className="footer-copyright text-center py-3">&copy; 2020 Copyright: Chop Up</div>
-
-        </footer>
+            </>
+            <>
+            <p>Contributors App</p>
+            <div className='footer__assets'>
+                <img src={Group54} alt='' className='footer__assets--item'/>
+                <img src={Group57} alt='' className='footer__assets--item'/>
+            </div>
+            </>
+        </div>
     )
 }
 
