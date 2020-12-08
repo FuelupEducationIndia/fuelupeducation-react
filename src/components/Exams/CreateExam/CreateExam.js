@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './CreateExam.module.css';
 import { Link } from 'react-router-dom';
+import classes from './CreateExam.module.css';
 
 const CreateExam = () => {
 	return (
-		<div>
+		<div className={classes.createExam}>
 			<h1>Micro-organisms</h1>
 			<h6>Higher secondary</h6>
 			<div className={styles.dots3}>
