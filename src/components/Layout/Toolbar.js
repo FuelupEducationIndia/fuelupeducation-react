@@ -7,8 +7,8 @@ import avatar from '../../assets/images/avatar/avatar.jpg'
 import NavigationItems from './Navigation/NavigationItems'
 
 const toolbar = (props) => (
-    <div className='toolbar'>
-        <div className='toolbar__1'>
+    {/*   <div className='toolbar'>
+      <div className='toolbar__1'>
         <Logo />
 
         </div>
@@ -21,7 +21,11 @@ const toolbar = (props) => (
             <BsFillGearFill className='toolbar__gear'/>
 
             <img src={avatar} alt='avatar' className='toolbar__avatar'/>
-        </div>
+            </div>
+        </div> */}
+    <div className='landingToolbar'>
+
+
     </div>
 )
 
