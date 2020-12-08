@@ -2,16 +2,13 @@
     grid-column: 1 / -1;
 
     &__header {
-        width: 411px;
+        width: 500px;
         height: 111px;
-        margin: 131px 141px 20px 126px;
+        margin: 131px 141px 10px 126px;
         font-family: Muli;
         font-size: 45px;
         font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
         line-height: 1.22;
-        letter-spacing: normal;
         text-align: left;
         color: #380688;
     }
@@ -19,7 +16,7 @@
     &__text {
         width: 415px;
         height: 76px;
-        margin: 20px 138px 30px 125px;
+        margin: 10px 138px 10px 125px;
         font-family: Muli;
         font-size: 16px;
         font-weight: normal;
@@ -45,5 +42,23 @@
         text-align: center;
         color: #ffffff;
         cursor: pointer;
+    }
+
+    &__asset{
+        margin: 30px 141px 10px 126px;
+    }
+
+    &__android {
+        width: 170px;
+        height: 55px;
+        margin: 16px 20px 0 0;
+        object-fit: contain;
+    }
+
+    &__apple {
+        width: 170px;
+        height: 55px;
+        margin: 16px 20px 0 0;
+        object-fit: contain;
     }
 }

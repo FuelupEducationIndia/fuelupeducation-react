@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom'
 import { IoMdArrowDropdown } from 'react-icons/io'
 
 import Group37 from '../assets/images/Group37.png'
+import Group54 from '../assets/images/Group54.png'
+import Group57 from '../assets/images/Group57.png'
+import Image2 from '../assets/images/Image2.png'
+
 import Section from '../components/Layout/Section'
 
 const LandingPage = () => {
@@ -80,6 +84,27 @@ const LandingPage = () => {
                 heading='Mapped to the Syllabus'
                 text="Learning journeys are mapped to a student's grade & syllabus. Each chapter comprises small concepts that are stitched together with relevant syllabus."
                 btn='Start Learning'
+            />
+            <Section
+                position='left'
+                heading='Engaging in Group Discussions'
+                text='Crafted to evoke curiosity, this all-new feature will develop student’s critical thinking abilities and strengthen their understanding of core concept'
+                btn='Start Learning'
+            />
+            <Section
+                position='right'
+                heading='Reports & analytics on student’s performance'
+                text='Rich reports are used to guide progress. These great reports are presented to students & parents/guardians via periodic email & SMS'
+                btn='Start Learning'
+            />
+            <Section
+                position='left'
+                heading='Start achieving academic excellence'
+                text='Download lessons & learn anytime, anywhere with our mobile application'
+                asset={true}
+                image={Image2}
+                android={Group54}
+                apple={Group57}
             />
         </>
     )
