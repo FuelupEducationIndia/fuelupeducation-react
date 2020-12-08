@@ -1,6 +1,10 @@
 import React from 'react';
 import classes from './SignIn.module.css';
 import { Link } from 'react-router-dom';
+import facebook from '../../assets/images/facebook.svg';
+import google from '../../assets/images/google.svg';
+import microsoft from '../../assets/images/microsoft.svg';
+import captcha from '../../assets/images/captcha.svg';
 
 const SignIn = () => {
 	return (
@@ -19,7 +23,7 @@ const SignIn = () => {
 					<input type="checkbox" id={classes.text} value="text"></input>
 					<label id={classes.text}>I`m not a robot.</label>
 					<div>
-						<img src="./images/captcha.svg" alt="captcha" />
+						<img src={captcha} alt="captcha" />
 						<span>reCAPTCHA</span>
 						<span>Privacy terms</span>
 					</div>
@@ -27,16 +31,15 @@ const SignIn = () => {
 				<button><Link to="/create-exam" id={classes.signIn}>Sign in</Link></button>
 				<h2 className={classes.line}><span>Or</span></h2>
 				<div className={classes.img}>
-					<img src="./images/facebook.svg" alt="facebok-image" />
-					<img src="./images/google-symbol.svg" alt="google-image" />
-					<img src="/src/assets/images/microsoft.svg" alt="microsoft-image" />
+					<img src={facebook} alt="facebook" />
+					<img src={google} id={classes.google} />
+					<img src={microsoft} id={classes.microsoft} />
 				</div>
 				<h2 className={classes.secondLine}><span>Use biometric Sign In</span></h2>
 				<div className={classes.bottomButtons}>
 					<button>Scan your finger</button><button>Scan your face</button>
 				</div>
 				<p>Don`t have an account? Please <span>Sign Up</span> first.</p>
-
 			</div>
 		</div >
 	)
