@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const CreateNewQuestion = () => {
 	return (
-		<div>
+		<div className={styles.createNewQuestion}>
 			<h1>Micro-organisms</h1>
 			<h6>Higher secondary</h6>
 			<div className={styles.dots5}>
