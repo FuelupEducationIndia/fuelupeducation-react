@@ -8,14 +8,12 @@ import Group57 from '../../assets/images/Group57.png'
 const Footer = () => {
     return (
         <div className='footer'>
-            <>
-                <div className='footer__logo'>
-                    <img src={FooterLogo} alt='' />
-                </div>
-                <div className='footer__copyright'>
+            <div className='footer__company'>
+                <img src={FooterLogo} alt='' className='footer__logo' />
+                <p className='footer__copyright'>
                     &copy; 2020 Safed Pankh Foundation
-                </div>
-            </>
+                </p>
+            </div>
             <>
                 <ul className='footer__list'>
                     <li className='footer__list--item'>
@@ -74,20 +72,36 @@ const Footer = () => {
                     </li>
                 </ul>
             </>
-            <>
-            <p>Students App</p>
-            <div className='footer__assets'>
-                <img src={Group54} alt='' className='footer__assets--item'/>
-                <img src={Group57} alt='' className='footer__assets--item'/>
+            <div className='footer__app'>
+                <p className='footer__app--heading'>Students App</p>
+                <div className='footer__assets'>
+                    <img
+                        src={Group54}
+                        alt=''
+                        className='footer__assets--item'
+                    />
+                    <img
+                        src={Group57}
+                        alt=''
+                        className='footer__assets--item'
+                    />
+                </div>
             </div>
-            </>
-            <>
-            <p>Contributors App</p>
-            <div className='footer__assets'>
-                <img src={Group54} alt='' className='footer__assets--item'/>
-                <img src={Group57} alt='' className='footer__assets--item'/>
+            <div className='footer__app'>
+                <p className='footer__app--heading'>Contributors App</p>
+                <div className='footer__assets'>
+                    <img
+                        src={Group54}
+                        alt=''
+                        className='footer__assets--item'
+                    />
+                    <img
+                        src={Group57}
+                        alt=''
+                        className='footer__assets--item'
+                    />
+                </div>
             </div>
-            </>
         </div>
     )
 }
