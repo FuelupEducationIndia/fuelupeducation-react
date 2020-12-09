@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './CreateNewQuestion.module.css';
 import { Link } from 'react-router-dom';
+import Navbar from '../../../Navbar/Navbar';
 
 const CreateNewQuestion = () => {
 	return (
 		<div className={styles.createNewQuestion}>
+			<Navbar />
 			<h1>Micro-organisms</h1>
 			<h6>Higher secondary</h6>
 			<div className={styles.dots5}>
