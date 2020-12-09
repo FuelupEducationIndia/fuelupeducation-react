@@ -2,7 +2,11 @@
   background-color:#faf9fe;
   position: absolute;
   width: 100%;
-  height: auto; 
+  height: 130%;  
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
  .dots5 {
   display: flex;  
