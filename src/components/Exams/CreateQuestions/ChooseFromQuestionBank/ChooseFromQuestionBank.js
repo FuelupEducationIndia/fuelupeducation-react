@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './ChooseFromQuestionBank.module.css';
 import { Link } from 'react-router-dom';
+import Navbar from '../../../Navbar/Navbar'
 
 const ChooseFromQuestionBank = () => {
 	return (
 		<div className={styles.chooseFromQuestionBank}>
+			<Navbar />
 			<h1>Micro-organisms</h1>
 			<h6>Higher secondary</h6>
 			<div className={styles.dots5}>
