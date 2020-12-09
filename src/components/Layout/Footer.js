@@ -74,7 +74,7 @@ const Footer = () => {
             </>
             <div className='footer__app'>
                 <p className='footer__app--heading'>Students App</p>
-                <div className='footer__assets'>
+                {/* <div className='footer__assets'>
                     <img
                         src={Group54}
                         alt=''
@@ -85,11 +85,11 @@ const Footer = () => {
                         alt=''
                         className='footer__assets--item'
                     />
-                </div>
+                </div> */}
             </div>
             <div className='footer__app'>
-                <p className='footer__app--heading'>Contributors App</p>
-                <div className='footer__assets'>
+                <p className='footer__app--heading'>Teachers App</p>
+                {/* <div className='footer__assets'>
                     <img
                         src={Group54}
                         alt=''
@@ -100,7 +100,7 @@ const Footer = () => {
                         alt=''
                         className='footer__assets--item'
                     />
-                </div>
+                </div> */}
             </div>
         </div>
     )
