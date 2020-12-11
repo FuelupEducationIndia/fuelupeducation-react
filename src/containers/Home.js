@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom'
 import { AiFillRightSquare } from 'react-icons/ai'
 import { AiFillLeftSquare } from 'react-icons/ai'
 
-import * as actions from '../store/actions/burgerIndex'
-import withErrorHandler from '../components/hoc/withErrorHandler'
-
 import Card from '../components/Layout/Card'
 import Header from '../components/Header'
 

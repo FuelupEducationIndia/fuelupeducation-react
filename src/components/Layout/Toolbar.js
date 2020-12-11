@@ -8,7 +8,7 @@ import NavigationItems from './Navigation/NavigationItems'
 
 const toolbar = (props) => (
     <>
-        <div className='toolbar'>
+        {/* <div className='toolbar'>
             <div className='toolbar__1'>
                 <Logo />
             </div>
@@ -22,7 +22,7 @@ const toolbar = (props) => (
 
                 <img src={avatar} alt='avatar' className='toolbar__avatar' />
             </div>
-        </div>
+        </div> */}
     </>
 )
 

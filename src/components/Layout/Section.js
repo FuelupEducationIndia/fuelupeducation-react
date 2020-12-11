@@ -30,9 +30,11 @@ const Section = ({
                     </div>
                 )}
             </div>
-            <div className='section__2'>
-                {image && <img src={image} alt='' />}
-            </div>
+            {image && (
+                <div className='section__2'>
+                    <img src={image} alt='' />
+                </div>
+            )}
         </div>
     )
 }
