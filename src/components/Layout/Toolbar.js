@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { BsFillGearFill } from 'react-icons/bs'
-import { IoMdNotifications, IoMdArrowDropdown } from 'react-icons/io'
+import { IoMdNotifications } from 'react-icons/io'
 
 import Logo from './Logo'
 import avatar from '../../assets/images/avatar/avatar.jpg'

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { AiFillRightSquare } from 'react-icons/ai'
@@ -7,7 +6,6 @@ import { AiFillLeftSquare } from 'react-icons/ai'
 
 import * as actions from '../store/actions/burgerIndex'
 import withErrorHandler from '../components/hoc/withErrorHandler'
-import axios from '../axios'
 
 import Card from '../components/Layout/Card'
 import Header from '../components/Header'
@@ -102,23 +100,4 @@ Home.propTypes = {
     selectedArea: PropTypes.string,
 }
 
-const mapStateToProps = (state) => {
-    return {
-        areas: state.burger.areas,
-        selectedArea: state.burger.selectedArea,
-        selectedCity: state.burger.selectedCity,
-    }
-}
-const mapDispatchToProps = (dispatch) => {
-    return {
-        onSelectedCity: (cityName) => dispatch(actions.selectedCity(cityName)),
-        onClearedSelectedCity: () => dispatch(actions.clearedSelectedCity()),
-        onSelectedAreas: (areaName) => dispatch(actions.addAreas(areaName)),
-        onSelectedArea: (areaName) => dispatch(actions.selectedArea(areaName)),
-    }
-}
-
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(withErrorHandler(Home, axios))
+export default Home
