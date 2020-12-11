@@ -5,7 +5,7 @@
 .content {
     display: grid;
     // grid-template-rows: min-content;
-
+    width: 1280px;
     grid-template-columns:
         [center-start] repeat(
             8,
