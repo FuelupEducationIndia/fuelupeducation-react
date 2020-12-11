@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {
+    AiFillYoutube,
+    AiFillInstagram,
+    AiFillTwitterCircle,
+} from 'react-icons/ai'
+import { FaFacebook, FaTelegram } from 'react-icons/fa'
 
 import FooterLogo from '../../assets/images/footerLogo.png'
-import Group54 from '../../assets/images/Group54.png'
-import Group57 from '../../assets/images/Group57.png'
 
 const Footer = () => {
     return (
@@ -72,35 +76,27 @@ const Footer = () => {
                     </li>
                 </ul>
             </>
+
             <div className='footer__app'>
-                <p className='footer__app--heading'>Students App</p>
-                {/* <div className='footer__assets'>
-                    <img
-                        src={Group54}
-                        alt=''
-                        className='footer__assets--item'
-                    />
-                    <img
-                        src={Group57}
-                        alt=''
-                        className='footer__assets--item'
-                    />
-                </div> */}
-            </div>
-            <div className='footer__app'>
-                <p className='footer__app--heading'>Teachers App</p>
-                {/* <div className='footer__assets'>
-                    <img
-                        src={Group54}
-                        alt=''
-                        className='footer__assets--item'
-                    />
-                    <img
-                        src={Group57}
-                        alt=''
-                        className='footer__assets--item'
-                    />
-                </div> */}
+                <p className='footer__app--heading'>Follow Us</p>
+
+                <div className='footer__social--icons'>
+                    <Link to='/'>
+                        <AiFillInstagram />
+                    </Link>
+                    <Link to='/'>
+                        <AiFillTwitterCircle />
+                    </Link>
+                    <Link to='/'>
+                        <AiFillYoutube />
+                    </Link>
+                    <Link to='/'>
+                        <FaFacebook />
+                    </Link>
+                    <Link to='/'>
+                        <FaTelegram />
+                    </Link>
+                </div>
             </div>
         </div>
     )
