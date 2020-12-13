@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './SignIn.module.css';
 import { Link } from 'react-router-dom';
 import facebook from '../../assets/images/facebook.svg';
-import google from '../../assets/images/google.svg';
+import google from '../../assets/images/google-symbol.svg';
 import microsoft from '../../assets/images/microsoft.svg';
 import captcha from '../../assets/images/captcha.svg';
 
