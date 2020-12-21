@@ -6,6 +6,7 @@ import google from '../../assets/images/google-symbol.svg';
 import microsoft from '../../assets/images/microsoft.svg';
 import captcha from '../../assets/images/captcha.svg';
 
+
 const SignIn = () => {
 	return (
 		<div className={classes.signIn}>
@@ -39,6 +40,7 @@ const SignIn = () => {
 				<div className={classes.bottomButtons}>
 					<button>Scan your finger</button><button>Scan your face</button>
 				</div>
+
 				<p>Don`t have an account? Please <span>Sign Up</span> first.</p>
 			</div>
 		</div >

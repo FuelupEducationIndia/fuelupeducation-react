@@ -3,21 +3,25 @@ import styles from './CreateExam.module.css';
 import { Link } from 'react-router-dom';
 import classes from './CreateExam.module.css';
 import Navbar from "../../Navbar/Navbar"
+import emptyCircle from '../../../assets/images/empty-circle.png';
+import fullCircle from '../../../assets/images/full-circle.png';
+
 
 const CreateExam = () => {
 	return (
 		<div className={classes.createExam}>
 			<Navbar />
+
 			<h1>Micro-organisms</h1>
 			<h6>Higher secondary</h6>
 			<div className={styles.dots3}>
-				<div className={styles.circle3}></div>
+				<img src={emptyCircle} alt="emptyCircle" />
 				<div className={styles.line3}></div>
-				<div className={styles.circle3}></div>
+				<img src={fullCircle} alt="fullCircle" />
 				<div className={styles.line3}></div>
-				<div className={styles.circle3}></div>
+				<img src={fullCircle} alt="fullCircle" />
 				<div className={styles.line3}></div>
-				<div className={styles.circle3}></div>
+				<img src={fullCircle} alt="fullCircle" />
 			</div>
 			<div className={styles.dotsText}>
 				<span>Create exam</span>

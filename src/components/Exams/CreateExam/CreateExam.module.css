@@ -28,7 +28,7 @@
   width: 200px;
   height: 3px;
   background-color: gray;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .dotsText {
@@ -53,14 +53,6 @@
 }
 
 .dotsText > span:first-child {
-  color: #4f3eae;
-}
-
-.dotsText > div:nth-last-child(3) {
-  color: #4f3eae;
-}
-
-.dotsText > span:nth-last-child(2), .dotsText > span:nth-last-child(3) {
   color: #4f3eae;
 }
 
