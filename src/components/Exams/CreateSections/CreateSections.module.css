@@ -22,7 +22,7 @@
     width: 200px;
     height: 3px;
     background-color: gray;
-    margin-top: 16px;
+    margin-top: 20px;
   }
 
   .dots4 > div:first-child, .dots4 > div:nth-last-child(6) {
@@ -44,19 +44,14 @@
   }
 
   .dotsText > span {
-    margin: 0 70px;
-   
-  }
-
-  .dotsText > span:first-child {
-    color: #4f3eae;
+    margin: 0 70px;   
   }
 
   .dotsText > div:nth-last-child(3) {
     color: #4f3eae;
   }
 
-  .dotsText > span:nth-last-child(2), .dotsText > span:nth-last-child(3) {
+  .dotsText > span:nth-last-child(3) {
     color: #4f3eae;
   }
   
