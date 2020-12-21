@@ -15,20 +15,11 @@
   width: 49%;   
 }
 
-.dots3 > .circle3 {
-  width: 35px;
-  height: 35px;
-  background-color: gray;
-  border-radius: 100%;
-  margin: 0 5px;
-  vertical-align: middle;
-}
-
 .dots3 > .line3 {
   width: 200px;
   height: 3px;
   background-color: gray;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .dots3>.circle3:not(:nth-last-child(1)) {
