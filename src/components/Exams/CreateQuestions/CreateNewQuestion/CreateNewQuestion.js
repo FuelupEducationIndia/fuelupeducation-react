@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './CreateNewQuestion.module.css';
 import { Link } from 'react-router-dom';
 import Navbar from '../../../Navbar/Navbar';
+import fullCircle from '../../../../assets/images/full-circle.png';
+import emptyCircle from '../../../../assets/images/empty-circle.png';
 
 const CreateNewQuestion = () => {
 	return (
@@ -10,13 +12,13 @@ const CreateNewQuestion = () => {
 			<h1>Micro-organisms</h1>
 			<h6>Higher secondary</h6>
 			<div className={styles.dots5}>
-				<div className={styles.circle5}></div>
+				<img src={fullCircle} alt="fullCircle" />
 				<div className={styles.line5}></div>
-				<div className={styles.circle5}></div>
+				<img src={fullCircle} alt="fullCircle" />
 				<div className={styles.line5}></div>
-				<div className={styles.circle5}></div>
+				<img src={emptyCircle} alt="emptyCircle" />
 				<div className={styles.line5}></div>
-				<div className={styles.circle5}></div>
+				<img src={fullCircle} alt="fullCircle" />
 			</div>
 			<div className={styles.dotsText}>
 				<span>Create exam</span>

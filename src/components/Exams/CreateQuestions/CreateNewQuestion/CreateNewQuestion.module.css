@@ -14,20 +14,11 @@
   width: 49%;   
 }
 
-.dots5 > .circle5 {
-  width: 35px;
-  height: 35px;
-  background-color: gray;
-  border-radius: 100%;
-  margin: 0 5px;
-  vertical-align: middle;
-}
-
 .dots5 > .line5 {
   width: 200px;
   height: 3px;
   background-color: gray;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .dots5 > div:first-child, .dots5 > div:nth-last-child(6), .dots5 > div:nth-last-child(5), .dots5 > div:nth-last-child(4) {
