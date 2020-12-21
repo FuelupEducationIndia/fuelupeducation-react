@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './ChooseFromQuestionBank.module.css';
 import { Link } from 'react-router-dom';
-import Navbar from '../../../Navbar/Navbar'
+import Navbar from '../../../Navbar/Navbar';
+import fullCircle from '../../../../assets/images/full-circle.png';
+import emptyCircle from '../../../../assets/images/empty-circle.png';
 
 const ChooseFromQuestionBank = () => {
 	return (
@@ -10,13 +12,13 @@ const ChooseFromQuestionBank = () => {
 			<h1>Micro-organisms</h1>
 			<h6>Higher secondary</h6>
 			<div className={styles.dots5}>
-				<div className={styles.circle5}></div>
+				<img src={fullCircle} alt="fullCycle" />
 				<div className={styles.line5}></div>
-				<div className={styles.circle5}></div>
+				<img src={fullCircle} alt="fullCycle" />
 				<div className={styles.line5}></div>
-				<div className={styles.circle5}></div>
+				<img src={emptyCircle} alt="emptyCycle" />
 				<div className={styles.line5}></div>
-				<div className={styles.circle5}></div>
+				<img src={fullCircle} alt="fullCycle" />
 			</div>
 			<div className={styles.dotsText}>
 				<span>Create exam</span>
