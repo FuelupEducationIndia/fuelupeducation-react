@@ -1,12 +1,13 @@
 .signIn {
     width: 52%;
     background-color: white; 
-    height: auto;   
+    height: 101%;   
     margin: 0;
     position: absolute;
     margin-left: 50%;
     float: right;
-    top: 0;       
+    top: 0;   
+    bottom: 0;    
 }
 
 .signIn:hover {
@@ -31,16 +32,18 @@
     background-image: url("../../assets/images/eye.svg");
     background-repeat: no-repeat;
     background-position: right;
+    outline: 0;
 }
 
 .inputElements>input:nth-child() {
-    margin-left: 50px;
+    margin-left: 50px;   
 }
 
 .inputElements>input:nth-last-child(9) {
    margin-left: 10vh;
    margin-top: 15px;
    display: inline-block;
+   
 }
 
 #role {
@@ -113,12 +116,12 @@ a {
 
 .line {
     text-align: center;
+    font-size: 18px;
     max-width: 200px;
     position: relative;
     margin: auto;
     z-index: 1;
-    color: gray;
-    font-size: 18px;
+    color: gray;  
 }
 
 .line:before {
@@ -145,6 +148,8 @@ a {
     z-index: -2;        
 }
 
+/*I am stying possition sticky here*/
+
 .secondLine {
     text-align: center;
     font-size: 18px;
@@ -153,6 +158,7 @@ a {
     margin: auto;
     z-index: 1;
     color: gray;
+    position: sticky;
 }
 
 .secondLine:before {
@@ -244,30 +250,8 @@ a {
     border-bottom: 1px solid black;
     width: 20vh;
     margin: auto;
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
 
 .inputElements>p:nth-last-child(1){
 color: gray;
@@ -286,17 +270,17 @@ border: none;
     text-decoration: underline;
 }
 
-  .inputElements>input:nth-child(2){
+.inputElements>input:nth-child(2){
       background-color: purple;
-  }
+}
 
-
-
+.inputElements>input:nth-child(1), .inputElements>input:nth-child(5)  {
+    outline: 0;
+}
 
  #forgot {
     color: 	#41177f;
-    margin-left: 10vh;
-    
+    margin-left: 10vh;    
  }
 
  #forgot:hover {

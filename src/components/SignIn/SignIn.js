@@ -13,7 +13,7 @@ const SignIn = () => {
 			<p>Enter your email / phone number bellow</p>
 			<div className={classes.inputElements}>
 				<input type="text" placeholder="Email / Phone number *"></input><br></br>
-				<input type="text" placeholder="Password *"></input><br></br>
+				<input type="password" placeholder="Password *"></input><br></br>
 				<input type="text" id="role" placeholder="Role *                  
                                                  &#9662;"></input><span id={classes.forgot}> Forget your password?</span><br></br>
 
