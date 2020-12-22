@@ -50,45 +50,6 @@
     width: 140px;
     display: inline;
 }
-
-.robot {
-    border: 1px solid  #a6a6a6;
-    background-color: #f9f9f9;    
-    margin-left: 10vh;
-    width: 40vh;
-    margin-top: 20px;  
-    padding: 12px;
-}
-
-.robot > span {
-    font-size: 25px;
-    margin-left: 60px;
-}
-
-.robot > div {
-   width: 70px;
-   height: 70px;
-   display: inline-grid; 
- }
-
- .robot > div > span {
-     margin: auto;
- }
-
- .robot > div > img {
-     margin-left: 35px;
- }
-
- .robot>div:nth-last-child(1) {
- font-size: 20px;
- margin-left: 60px;
- margin-bottom: 12px; 
- } 
-
-.robot>div>:nth-last-child(1) {
-    font-size: 13px;
-    margin-top: 2px;
-}
     
  #text {
     vertical-align: super;
@@ -286,4 +247,9 @@ border: none;
  #forgot:hover {
      cursor: pointer;
      text-decoration: underline;
+ }
+
+ .recaptcha {
+     margin-left: 10vh;
+     margin-top: 10px;
  }
