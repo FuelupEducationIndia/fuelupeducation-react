@@ -7,11 +7,26 @@
     margin-left: 50%;
     float: right;
     top: 0;   
-    bottom: 0;    
+    bottom: 0;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
 }
 
-.signIn:hover {
-   cursor: pointer;
+.signIn >h1 {
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+    font-size: 30px;
+    margin: 0px;  
+}
+
+.signIn >p {
+    width: 100%;
+    text-align: center; 
+    font-size: 15px;
+    margin: 15px;   
 }
 
 .inputElements {    
@@ -22,10 +37,11 @@
     width: 80vh;
     border: none;
     border-bottom: 1px solid black;
-    margin: 8px;
-    margin-left: 10vh;
-    font-size: 15px;
-    display: block;
+    margin: 5px 10px;  
+    font-size: 16px;
+    display: block;  
+    width: 90%;  
+    text-align: left;   
 }
 
 .inputElements > input:nth-child(3) {
@@ -39,11 +55,10 @@
     margin-left: 50px;   
 }
 
-.inputElements>input:nth-last-child(9) {
-   margin-left: 10vh;
+.inputElements>input:nth-last-child(9) {   
    margin-top: 15px;
-   display: inline-block;
-   
+   display: inline-block;    
+   text-align: left;   
 }
 
 #role {
@@ -63,16 +78,14 @@
     margin-right: auto;
 }
 
-#signInBtn {
+#signIn {
+    text-decoration: none;
     color: white;
+    width: 90%;
 }
 
 .signIn > img { 
     float: right;
-}
-
-a {
-    color: white;
 }
 
 .line {
@@ -83,6 +96,8 @@ a {
     margin: auto;
     z-index: 1;
     color: gray;  
+    width: 90%;  
+    text-align: center;
 }
 
 .line:before {
@@ -120,6 +135,8 @@ a {
     z-index: 1;
     color: gray;
     position: sticky;
+    width: 90%;  
+    text-align: center;
 }
 
 .secondLine:before {
@@ -146,10 +163,10 @@ a {
     z-index: -2;        
 }
 
-.bottomButtons {  
-    margin-left: 25%;
-    margin-top: 10px;
-    display: inline-flex;   
+.bottomButtons {    
+    margin-top: 10px;  
+    width: 100%;  
+    text-align: center;
 }
 
 .bottomButtons > button {
@@ -183,6 +200,7 @@ a {
     margin: auto;
     text-align: center;
     margin-top: 15px;     
+    width: 90%;     
 }
 
 .img > img {
@@ -208,10 +226,8 @@ a {
 
 .inputElements > p {
     color: black;
-    border-bottom: 1px solid black;
-    width: 20vh;
-    margin: auto;
-    
+    width: 90%;  
+    text-align: center;    
 }
 
 .inputElements>p:nth-last-child(1){
@@ -241,7 +257,9 @@ border: none;
 
  #forgot {
     color: 	#41177f;
-    margin-left: 10vh;    
+    margin-left: 10px;  
+    width: 90%;  
+    text-align: left;   
  }
 
  #forgot:hover {
@@ -250,6 +268,7 @@ border: none;
  }
 
  .recaptcha {
-     margin-left: 10vh;
-     margin-top: 10px;
+     margin-left: 10px;
+     margin-top: 10px;  
+     text-align: left; 
  }

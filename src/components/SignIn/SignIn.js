@@ -32,10 +32,8 @@ class SignIn extends React.Component {
 							render="explicit"
 							onloadCallback={this.recaptchaLoader}
 						/>
-
 					</div>
-
-					<button><Link to="/create-exam" id={classes.signIn}>Sign in</Link></button>
+					<button><Link to="/create-exam" id={classes.signIn}><span>Sign in</span></Link></button>
 					<h2 className={classes.line}><span>Or</span></h2>
 					<div className={classes.img}>
 						<img src={facebook} alt="facebook" />
