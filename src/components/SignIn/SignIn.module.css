@@ -14,23 +14,24 @@
     flex-direction: column;  
 }
 
-.signIn >h1 {
+.signIn > h1 {
     width: 100%;
     text-align: center;
     line-height: 25px;
     font-size: 30px;
-    margin: 0px;  
+    margin: 0;  
 }
 
 .signIn >p {
     width: 100%;
     text-align: center; 
-    font-size: 15px;
-    margin: 15px;   
+    font-size: 15px;  
+    margin: 1rem;                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 
 .inputElements {    
     float: left;
+    WIDTH: 81%;
 }
 
 .inputElements > input:nth-child(-n+5) {
@@ -42,6 +43,7 @@
     display: block;  
     width: 90%;  
     text-align: left;   
+   
 }
 
 .inputElements > input:nth-child(3) {
@@ -51,19 +53,22 @@
     outline: 0;
 }
 
-.inputElements>input:nth-child() {
-    margin-left: 50px;   
+.inputElements>input {   
+   margin-left: 5rem;  
 }
 
 .inputElements>input:nth-last-child(9) {   
-   margin-top: 15px;
+   margin-top: 1rem;  
+   margin-left: 1rem;
    display: inline-block;    
-   text-align: left;   
+   text-align: left;  
 }
 
 #role {
     width: 140px;
-    display: inline;
+    width: 150rem;
+    height: 100px;
+    display: block;
 }
     
  #text {
@@ -124,14 +129,12 @@
     z-index: -2;        
 }
 
-/*I am stying possition sticky here*/
-
 .secondLine {
     text-align: center;
-    font-size: 18px;
-    max-width: 350px;
+    font-size: 18px; 
+    max-width: 22rem;
     position: relative;
-    margin: auto;
+    margin: auto; 
     z-index: 1;
     color: gray;
     position: sticky;
@@ -216,8 +219,9 @@
     border: none;
     padding: 10px 50px;
     font-size: 18px;
-    margin-left: 60vh;
+    margin-left: 60%;
     margin-bottom: 20px;
+
 }
 
 .inputElements > button:hover {

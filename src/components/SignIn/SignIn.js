@@ -21,8 +21,7 @@ class SignIn extends React.Component {
 				<div className={classes.inputElements}>
 					<input type="text" placeholder="Email / Phone number *"></input><br></br>
 					<input type="password" placeholder="Password *"></input><br></br>
-					<input type="text" id="role" placeholder="Role *                  
-                                                 &#9662;"></input><span id={classes.forgot}> Forget your password?</span><br></br>
+					<input type="text" id="role" placeholder="Role * &#9662;"></input><span id={classes.forgot}> Forget your password?</span><br></br>
 
 					<input type="checkbox" value="text"></input>
 					<label >I have read and agree the terms and conditions, as well as Privacy Policy of Fuelup Education.</label>
