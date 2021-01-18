@@ -1,0 +1,165 @@
+@import '../base/settings';
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    // justify-content: center;
+    
+    padding-top: 20px;
+    height: 400px;
+
+}
+
+
+
+    .form__formLeft__text {
+        padding: 10px;
+        text-align: center;
+        color: $purple-color;
+        font-weight: 500;
+    }
+
+    .form__formLeft__input {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-size: small;
+            color: gray;
+            font-weight: 500;
+        }
+       
+        #input {
+            height: 30px;
+            border-radius: 5px;
+            outline: none;
+            border: 2px solid grey;
+            margin-top: 5px;
+        }
+
+    }
+
+
+
+
+.form__formLeft__drag {
+    height: 200px;
+    border: 1px dashed grey;
+    border-radius: 10px;
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+
+        span {
+            font-weight: 500;
+            color: grey;
+
+            span {
+                color: #ff6d00;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.form__formRight {
+ 
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 700px;
+    height: 100%;
+
+    .form__formRight__input {
+        display: flex;
+        align-items: center;
+        margin-bottom: 38px;
+      
+        
+        #input {
+            flex: 1;
+            height: 30px;
+            border-radius: 5px;
+            outline: none;
+            border: 2px solid grey;
+          
+           
+          
+        }
+
+        label {
+            font-size: 14px;
+            color:#4a148c;
+            font-weight: 500;
+            min-width: 150px;
+        }
+
+        #input1 {
+            flex: 1;
+            height: 70px;
+            border-radius: 5px;
+            outline: none;
+            border: 2px solid grey;
+           
+ 
+        }
+
+        
+        .err {
+            color: red;
+            width: 80px;
+            text-align: center;
+        }
+
+        .captcha {
+            display: flex;
+            flex: 0.2;
+            margin-left: 15px;
+            font-size: 14px;
+            color: $purple-color;
+            font-weight: 500;
+
+            div {
+                margin-left: 10px;
+                background: $purple-color;
+                outline: none;
+                color: #fff;
+                border-radius: 5px;
+                padding: 10px 20px;
+        
+
+            }
+        }
+    }
+
+   
+}
+
+.form__formRight__button {
+     display: flex;
+     justify-content: flex-end;
+     margin-top: 20px;
+     
+     button {
+         border: none;
+         outline: none;
+         background: chocolate;
+         color: #fff;
+         border-radius: 15px;
+         padding: 5px 15px;
+     }
+     .err {
+        width: 80px;
+    }
+}

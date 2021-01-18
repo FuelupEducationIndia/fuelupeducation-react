@@ -1,0 +1,16 @@
+@import '../base/settings';
+
+.headerMenu {
+    min-width: 100px;
+    min-height: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: $purple-color;
+    
+    .MuiSvgIcon-root {
+        margin-top: 5px;
+    }
+
+}
