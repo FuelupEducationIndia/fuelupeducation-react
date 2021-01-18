@@ -1,0 +1,60 @@
+#dashboard-bar {
+  .welcome-section {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background-color: $primary-color-light-2;
+    border: 1px solid $primary-color-light;
+    color: $primary-color;
+
+    h2 {
+      font-weight: 900;
+    }
+    p {
+      font-size: 18px;
+    }
+    img {
+      position: absolute;
+      right: 10px;
+      bottom: -1px;
+    }
+  }
+
+  .menu {
+    margin: 20px 0;
+
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      li {
+        position: relative;
+        margin: 0 40px 0 0;
+        font-weight: 900;
+        font-size: 18px;
+
+        a {
+          color: $primary-color-light-1;
+        }
+        .line {
+          position: absolute;
+          width: 0;
+          height: 5px;
+          margin: 0;
+          background-color: $secondary-color;
+          bottom: -6px;
+          left: 0;
+          transition: 0.5s;
+        }
+      }
+      a.active {
+        color: $primary-color-dark;
+
+        .line {
+          width: 40px;
+        }
+      }
+    }
+  }
+}

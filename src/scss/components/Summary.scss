@@ -1,0 +1,106 @@
+.summary {
+  h3 {
+    color: $primary-color-light-1;
+  }
+
+  .summary-container {
+    position: relative;
+    width: 100%;
+    padding: 10px 0px 50px 0px;
+    background-color: #ffffff;
+    border: 1px solid $primary-color-light-1;
+
+    table {
+      width: 100%;
+
+      tr {
+        height: 50px;
+      }
+
+      .top-row {
+        border-bottom: 2px solid $primary-color-light-1;
+
+        .element {
+          text-align: left;
+          padding: 0 20px;
+        }
+      }
+
+      .values-row {
+        position: relative;
+        box-shadow: 0px 20px 3px -20px $primary-color-light-1;
+
+        .element {
+          text-align: left;
+          padding: 0 20px !important;
+          color: $primary-color-light-1;
+          font-weight: 500;
+
+          span {
+            display: flex;
+            align-items: center;
+            text-decoration: underline;
+
+            &.status-text {
+              justify-content: space-between;
+              text-decoration: none;
+              color: $secondary-color;
+
+              .MuiSvgIcon-root {
+                color: $primary-color-light-1;
+              }
+            }
+          }
+
+          &.submission-text {
+            width: 300px;
+          }
+
+          &.feedback-text {
+            width: 300px;
+
+            .in-text {
+              padding: 10px 0;
+
+              span {
+                text-decoration: none;
+                display: inline;
+              }
+
+              .read-more-link {
+                font-weight: 800;
+                color: $primary-color-light-1;
+              }
+            }
+          }
+
+          &.flag-text {
+            color: $green-color;
+          }
+        }
+      }
+    }
+
+    .btn-wrapper {
+      position: absolute;
+      right: 20px;
+      bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: flex-end;
+        flex: 0.9;
+        color: $primary-color-light-1;
+
+        &:last-of-type {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

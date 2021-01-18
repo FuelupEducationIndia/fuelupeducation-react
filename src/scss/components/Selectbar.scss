@@ -1,0 +1,24 @@
+#selectbar {
+  position: relative;
+
+  .choose-section {
+    display: flex;
+
+    span {
+      display: flex;
+      margin-right: 20px;
+      font-size: 18px;
+      font-weight: 900;
+      color: $primary-color-light-1;
+      cursor: pointer;
+
+      .MuiSvgIcon-root {
+        margin-right: 5px;
+      }
+
+      &.choosed {
+        color: #000000;
+      }
+    }
+  }
+}

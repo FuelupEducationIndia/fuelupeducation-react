@@ -3,12 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
+    "destyle.css": "^2.0.2",
+    "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-dropzone": "^11.2.4",
+    "react-hook-form": "^6.14.1",
+    "react-read-more": "^1.0.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "typeface-muli": "^1.1.13",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

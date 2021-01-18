@@ -1,0 +1,191 @@
+.select-section {
+  position: relative;
+  flex-direction: column;
+  width: 80%;
+  @include center;
+
+  .part {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .title {
+      width: 200px;
+      font-weight: 700;
+      font-size: 16px;
+      color: $primary-color;
+    }
+
+    .selection {
+      width: 400px;
+
+      select,
+      input,
+      textarea,
+      .file-input {
+        height: 40px;
+        width: 100%;
+        border: 2px solid $primary-color;
+        border-radius: 5px;
+        font-family: "Mulish", sans-serif;
+        color: $primary-color;
+        margin: 10px 0;
+
+        option {
+          height: 40px;
+        }
+      }
+
+      .set-grade {
+        width: 150px;
+      }
+
+      .docs {
+        p {
+          display: flex;
+          text-decoration: underline;
+          font-size: 14px;
+        }
+      }
+
+      button {
+        @include center;
+        font-size: 12px;
+        font-weight: bold;
+        background-color: transparent;
+        border: 2px solid $secondary-color;
+        color: $secondary-color;
+        border-radius: 20px;
+        padding: 2px 7px;
+        transition: 0.3s;
+        margin: 15px 0;
+
+        .MuiSvgIcon-root {
+          margin-right: 5px;
+          font-size: 14px;
+        }
+
+        &:hover {
+          background-color: $secondary-color;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  form {
+    width: 100%;
+    margin: 15px 0;
+
+    select,
+    input,
+    textarea {
+      border-color: $primary-color-light-1 !important;
+      color: $primary-color-light-1 !important;
+    }
+
+    .feedback-input {
+      height: 80px !important;
+    }
+
+    .flag {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      input[type="radio"] {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+      }
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        font-weight: bold;
+        color: red !important;
+
+        &:last-of-type {
+          color: rgb(3, 204, 3) !important;
+        }
+      }
+    }
+
+    .grade-input {
+      width: 25% !important;
+    }
+
+    .slash {
+      margin: 0 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .submit {
+      button[type="submit"] {
+        font-size: 12px;
+        font-weight: bold;
+        background-color: $secondary-color;
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 7px 20px;
+        transition: 0.3s;
+        margin: 15px 0;
+        border: none;
+        float: right;
+        @include center;
+      }
+    }
+  }
+}
+
+.captcha {
+  display: flex;
+
+  .captcha-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .captcha-input {
+      flex: 100px;
+    }
+
+    .captcha-title {
+      width: 150px;
+      text-align: center;
+    }
+
+    .captcha-text {
+      background-color: $primary-color;
+      color: #fff;
+      height: 40px;
+      line-height: 20px;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.file-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px !important;
+  width: 100%;
+  background-color: #fff;
+  border: 2px dashed $primary-color-light-1 !important;
+  outline: none;
+
+  p {
+    @include center;
+    flex-direction: column;
+    color: $primary-color-light-1 !important;
+
+    span {
+      color: $secondary-color;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "./helpers/variables";
+@import "./helpers/mixins";
+
+@import "./layouts/Navbar";
+@import "./layouts/Reviews";
+@import "./layouts/Grades";
+
+@import "./components/Dashboardbar";
+@import "./components/Selectbar";
+@import "./components/SelectionPart";
+@import "./components/Summary";
+@import "./components/ExamsSummary.sass";
