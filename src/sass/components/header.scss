@@ -1,0 +1,27 @@
+.header {
+    display: grid;
+    padding: 1rem 2rem;
+    align-items: center;
+    background-color: $primary-color-light-2;
+    grid-column: 1 / -1;
+    grid-template-columns: max-content 1fr;
+
+    &__profile{
+        padding: 1rem;
+        color: $primary-color;
+    }
+
+    &__heading{
+        font-size: 2.7rem;
+        font-weight: 700;
+    }
+
+    &__text{
+        font-size: 1.7rem;
+    }
+
+    &__maskGroup {
+        display: grid;
+        justify-self: end;
+    }
+}
