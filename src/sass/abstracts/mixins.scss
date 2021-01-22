@@ -1,0 +1,58 @@
+//MEDIA QUERY MANAGER
+
+/*
+0 - 600px: Phone;
+600px - 900px: Tablet Portrait;
+900px - 1200px: Tablet Landscape;
+[1200px - 1800px] is where our normal styles apply;
+1800 +: For the big screens
+*/
+
+//It is the best practise to define media queries in em rather than px or rem, so that it can maintain the same state in all browsers
+// 1em = 16px;
+
+//ORDER: Base + typography > general layout + grid > page layout > components
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==smaller-phone {
+        @media (max-width: 20em) {
+            // 400px/16px
+            @content;
+        }
+    }
+
+    @if $breakpoint==phone {
+        @media (max-width: 35.31em) {
+            // 600px/16px
+            @content;
+        }
+    }
+
+    @if $breakpoint==tab-port {
+        @media (max-width: 52.85em) {
+            // 900px/16px - 55
+            @content;
+        }
+    }
+
+    @if $breakpoint==tab-land {
+        @media (max-width: 70.75em) {
+            //1200px/16px - 75px
+            @content;
+        }
+    }
+
+    @if $breakpoint==desktop {
+        @media (max-width: 112.5em) {
+            //1800/16px
+            @content;
+        }
+    }
+
+    @if $breakpoint==big-desktop {
+        @media (min-width: 113.5em) {
+            //1800/16px
+            @content;
+        }
+    }
+}
