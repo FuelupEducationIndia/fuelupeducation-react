@@ -1,51 +1,51 @@
-// .App {
-//   text-align: center;
-//   overflow: hidden;
-// }
+// // .App {
+// //   text-align: center;
+// //   overflow: hidden;
+// // }
 
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli'), url(/assets/fonts/Muli-Regular.ttf) format('truetype');
+  font-family: "Muli";
+  src: local("Muli"), url(/assets/fonts/Muli-Regular.ttf) format("truetype");
 }
 
 html,
 body {
-    width: 100%;
-    font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-        'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    box-sizing: border-box;
+  width: 100%;
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%; // 1rem = 16px therefore 10px/16px = 62.5%, because i wanna use 10px
+  font-size: 62.5%; // 1rem = 16px therefore 10px/16px = 62.5%, because i wanna use 10px
 
-    @include respond(big-desktop) {
-        font-size: 130.5%; // 1rem = 12px therefore 18/16 = 75%
-    }
-    @include respond(desktop) {
-        font-size: 100.5%; // 1rem = 12px therefore 18/16 = 75%
-    }
-    @include respond(tab-land) {
-        font-size: 90%; // 1rem = 9px therefore 9/16 = 56.25%
-    }
+  @include respond(big-desktop) {
+    font-size: 130.5%; // 1rem = 12px therefore 18/16 = 75%
+  }
+  @include respond(desktop) {
+    font-size: 100.5%; // 1rem = 12px therefore 18/16 = 75%
+  }
+  @include respond(tab-land) {
+    font-size: 90%; // 1rem = 9px therefore 9/16 = 56.25%
+  }
 
-    @include respond(tab-port) {
-        font-size: 87%; // 1rem = 8px therefore 8/16 = 50%
-    }
-    // @include respond(phone) {
-    //   font-size: 65% // 1rem = 8px therefore 8/16 = 50%
-    // }
-    @include respond(smaller-phone) {
-        font-size: 80%; // 1rem = 8px therefore 8/16 = 50%
-    }
+  @include respond(tab-port) {
+    font-size: 87%; // 1rem = 8px therefore 8/16 = 50%
+  }
+  // @include respond(phone) {
+  //   font-size: 65% // 1rem = 8px therefore 8/16 = 50%
+  // }
+  @include respond(smaller-phone) {
+    font-size: 80%; // 1rem = 8px therefore 8/16 = 50%
+  }
 }
