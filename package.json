@@ -47,6 +47,7 @@
     "node-forge": "^0.10.0",
     "node-sass": "^5.0.0",
     "prettier": "^2.1.2",
+    "pretty-quick": "^3.1.0",
     "react-hot-loader": "^4.13.0",
     "sass": "*",
     "sass-loader": "^10.1.0",
@@ -60,13 +61,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "pretty-quick --staged"
     }
-  },
-  "lint-staged": {
-    "./src/*.{js,jsx,ts,tsx}": [
-      "npx prettier --write",
-      "eslint src/*.js --fix-dry-run"
-    ]
   }
 }
