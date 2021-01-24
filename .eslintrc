@@ -13,6 +13,6 @@
     "react/jsx-filename-extension": 0,
     //  proptypes is not required : 
     // "react/prop-types": 0,
-    "no-unused-vars":0
+        "no-unused-vars":0
   }
 }

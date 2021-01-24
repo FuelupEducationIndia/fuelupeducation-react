@@ -6,12 +6,12 @@ import styles from './App.module.scss';
 
 // Landing page - for all the same
 
-import LandingPage from '../Landing/Landing';
-import LoadingSimple from '../UI/LoadingSimple/LoadingSimple';
+import LandingPage from '../../Landing/Landing';
+import LoadingSimple from '../../UI/LoadingSimple/LoadingSimple';
 
 // Routes and Layout for public/unauthorized user
-import ROUTES, { RenderRoutes } from '../publicRoutes';
-import PublicLayout from '../Layouts/Public/Layout';
+import ROUTES, { RenderRoutes } from '../../publicRoutes';
+import PublicLayout from '../../Layouts/Public/Layout';
 
 const App = ({ title }) => {
   // Get current location. if it's homepage =>  rendering landing
