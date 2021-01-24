@@ -64,13 +64,9 @@
     }
   },
   "lint-staged": {
-    "*.(js|html|css)": [
-      "prettier --write",
-      "git add"
-    ],
-    ".js": [
-      "npm run lint:fix",
-      "npm run lint"
+    "./src/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "eslint src/*.js --fix-dry-run"
     ]
   }
 }
