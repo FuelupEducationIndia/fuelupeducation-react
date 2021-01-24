@@ -1,10 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import styles from './NavBar.module.scss';
-import navData from './nav-links';
+import styles from './NavBar.module.scss'
 
-import arrowDown from '../../../assets/images/arrow-down.png';
+import arrowDown from '../../../../assets/images/arrow-down.png'
 
 const NavBar = ({ isAuth }) => {
   return (
@@ -30,11 +29,11 @@ const NavBar = ({ isAuth }) => {
         <li className={styles.NavSecondItem}>Start Learning</li>
       </ul>
     </nav>
-  );
-};
+  )
+}
 
 NavBar.propTypes = {
   isAuth: PropTypes.bool.isRequired,
-};
+}
 
-export default NavBar;
+export default NavBar

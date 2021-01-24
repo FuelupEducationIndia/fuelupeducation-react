@@ -1,4 +1,5 @@
 # Added pre-commit hooks
+
 lint and prettify before sending to server
 
 _todo: dockerizing dev and prod modes
@@ -27,6 +28,7 @@ or module
 
 #### Fonts Support:
 
+( WOFF - Web Open Font Format - REC - not supports IE6-8 Opera Mini all)
 For fonts support check branch with withFonts.
 
 git checkout withFonts

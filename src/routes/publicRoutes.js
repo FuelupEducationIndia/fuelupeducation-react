@@ -1,12 +1,9 @@
 /* eslint-disable no-use-before-define */
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable prettier/prettier */
-/* eslint react/prop-types: 0 */
 
-import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React from 'react'
+import { Route, Switch } from 'react-router-dom'
 
-import LandingPage from './Landing/Landing';
+import LandingPage from '../pages/Landing'
 
 const ROUTES = [
   { path: '/', key: 'ROOT', exact: true, component: LandingPage },
@@ -29,26 +26,26 @@ const ROUTES = [
       },
     ],
   },
-];
+]
 function RouteWithSubRoutes(route) {
   return (
     <Route
       path={route.path}
       exact={route.exact}
-      render={(props) => <route.component {...props} routes={route.routes} />}
+      render={props => <route.component {...props} routes={route.routes} />}
     />
-  );
+  )
 }
 
 export function RenderRoutes({ routes }) {
   return (
     <Switch>
       {routes.map((route, i) => {
-        return <RouteWithSubRoutes key={route.key} {...route} />;
+        return <RouteWithSubRoutes key={route.key} {...route} />
       })}
       <Route component={() => <h1>Not Found!</h1>} />
     </Switch>
-  );
+  )
 }
 
-export default ROUTES;
+export default ROUTES

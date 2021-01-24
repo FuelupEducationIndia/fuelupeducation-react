@@ -1,21 +1,19 @@
-/* eslint-disable prettier/prettier */
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import App from './components/App/App'
 
-import App from './App/App';
+import './index.scss'
 
-import './index.scss';
-
-const title = 'React with Webpack and Babel';
+const title = 'React with Webpack and Babel'
 
 ReactDOM.render(
   <BrowserRouter>
     <App title={title} />
   </BrowserRouter>,
 
-  document.getElementById('app')
-);
+  document.getElementById('app'),
+)
 
-module.hot.accept();
+module.hot.accept()
