@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.js'),
@@ -16,7 +16,7 @@ module.exports = {
       },
       // Adding fonts to fonts folder
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: 'file-loader',
@@ -26,6 +26,11 @@ module.exports = {
             },
           },
         ],
+      },
+      // add svg as a components
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack', 'url-loader'],
       },
       // Adding images to project
       {
@@ -52,4 +57,4 @@ module.exports = {
     path: path.resolve(__dirname, '..', 'dist'),
     filename: 'bundle.js',
   },
-};
+}
