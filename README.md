@@ -1,3 +1,6 @@
+# Added pre-commit hooks
+lint and prettify before sending to server
+
 _todo: dockerizing dev and prod modes
 _
 
