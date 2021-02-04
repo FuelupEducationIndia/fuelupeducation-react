@@ -5,7 +5,22 @@ import styles from './NavBar.module.scss'
 
 import arrowDown from '../../../../assets/images/arrow-down.png'
 
-const NavBar = ({ isAuth }) => {
+const NavBar = ({
+  showSignIn,
+  setShowSignIn,
+  showSignUp,
+  setShowSignUp,
+  isAuth,
+}) => {
+  const handleClick = () => {
+    setShowSignIn(!showSignIn)
+    setShowSignUp(false)
+  }
+  const handleClick2 = () => {
+    setShowSignUp(!showSignUp)
+    setShowSignIn(false)
+  }
+
   return (
     <nav className={styles.Navigation}>
       <div className={styles.logo}>
@@ -22,11 +37,15 @@ const NavBar = ({ isAuth }) => {
           <img src={arrowDown} alt="Subjects" />
         </li>
         <li className={styles.NavItem}>For Kids</li>
-        <li className={styles.NavItem}>Team</li>
+        <li className={styles.NavItem}>Pricing</li>
       </ul>
       <ul className={styles.NavigationSecond}>
-        <li className={styles.NavSecondItem}>Sign in</li>
-        <li className={styles.NavSecondItem}>Start Learning</li>
+        <li className={styles.NavSecondItem} onClick={handleClick}>
+          Sign in
+        </li>
+        <li className={styles.NavSecondItem} onClick={handleClick2}>
+          Sign up
+        </li>
       </ul>
     </nav>
   )
