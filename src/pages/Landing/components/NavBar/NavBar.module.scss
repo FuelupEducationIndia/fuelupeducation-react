@@ -11,7 +11,7 @@
   display: flex;
   padding: 3.4rem 4.4rem 0;
   align-content: center;
-  color: #ffffff;
+  color: $color-body;
   font-weight: 500;
 }
 .logo {
@@ -50,4 +50,5 @@
 }
 .NavSecondItem {
   padding: 0 2.5rem;
+  cursor: pointer;
 }

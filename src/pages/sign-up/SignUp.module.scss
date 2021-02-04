@@ -1,0 +1,33 @@
+@import '../../assets/styles/sass/variables';
+
+.Close {
+    cursor: pointer;
+    margin-left: 91%;
+}
+
+.SignInDiv {
+    background-color: $color-body;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 50%;
+    width: 50%;
+
+    .SignInInnerDiv {
+        width: 75%;
+        margin: auto;
+        margin-top: 6%;
+    }
+}
+
+.LastSpan {
+    color: #554cb8;
+    display: inherit;
+    text-align: center;
+}
+
+.Link {
+    text-decoration: underline;
+    color: #380885;
+    cursor: pointer;
+}

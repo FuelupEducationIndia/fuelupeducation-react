@@ -1,0 +1,51 @@
+.input:focus {
+    outline: none;
+    border-bottom: 1px solid #380885;
+}
+
+input:focus::placeholder {
+    font-size: 10px;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #74648d;
+    /* margin-bottom: 8%; */
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+    width: 100%;
+}
+
+.InputDiv {
+    position: relative;
+    margin-bottom: 5%;
+    margin-top: 8%;
+}
+
+.AsteriskInput1::after, .AsteriskInput2::after {
+    content:" *"; 
+    color: #ff0000;
+    position: absolute; 
+}
+
+.AsteriskInput1::after {
+    left: 34%;
+}
+
+.AsteriskInput2::after {
+    left: 10%;
+}
+
+#Name::after {
+    left: 40%;
+}
+
+/* input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before, input[type="date"]:valid:before {
+    content: "";
+} */
