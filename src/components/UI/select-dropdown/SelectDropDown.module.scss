@@ -1,0 +1,68 @@
+select {
+    border: none;
+    border-bottom: 1px solid #74648d;
+    /* margin-bottom: 8%; */
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+    width: 100%;
+}
+
+select {
+    display: inline-block;
+    font: inherit;  
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+  
+.Select:focus {
+    border-color: rgb(26, 3, 88);
+    outline: none;
+}
+  
+  
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+.InputDiv, .InputDiv1 {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.InputDiv1 {
+    margin-top: 10%;
+}
+
+.AsteriskInput3::after, .AsteriskInput4::after {
+    content:" *"; 
+    color: #ff0000;
+    position: absolute; 
+}
+
+.AsteriskInput3::after {
+    left: 19%;
+    /* left: 9%; */
+}
+
+.AsteriskInput4::after {
+    left: 42%;
+}
+
+.Caret {
+    position: absolute;
+    right: 0;
+    top: 65%;
+    cursor: pointer;
+    width: 5%;
+}
+
+#CountrySelect {
+    margin-top: 5%;
+    margin-bottom: 17%;
+}

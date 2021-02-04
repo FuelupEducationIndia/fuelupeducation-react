@@ -1,0 +1,115 @@
+@import '../../assets/styles/sass/variables';
+
+.Close {
+    cursor: pointer;
+    margin-left: 91%;
+}
+
+.SignInDiv {
+    background-color: $color-body;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 50%;
+    width: 50%;
+
+    .SignInInnerDiv {
+        width: 75%;
+        margin: auto;
+        margin-top: 3%;
+    }
+}
+
+.input:focus {
+    outline: none;
+    border-bottom: 1px solid #380885;
+}
+
+input:focus::placeholder {
+    font-size: 10px;
+}
+
+.InputsDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.input, select {
+    border: none;
+    border-bottom: 1px solid #74648d;
+    /* margin-bottom: 8%; */
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+    width: 100%;
+}
+
+.InputDiv {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.AsteriskInput4::after {
+    content:" *"; 
+    color: #ff0000;
+    position: absolute; 
+}
+
+.Biometric {
+    overflow: hidden;
+    text-align: center;
+}
+
+.Biometric:before, .Biometric:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+}
+
+.Biometric:before {
+    right: 0.5em;
+    margin-left: 10%;
+}
+
+.Biometric:after {
+    left: 0.5em;
+    /* margin-right: -50%; */
+}
+
+#bio {
+    margin-top: 5%;
+}
+
+select {
+    display: inline-block;
+    font: inherit;  
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+  
+.Select:focus {
+    border-color: rgb(26, 3, 88);
+    outline: none;
+}
+  
+  
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+.Caret {
+    position: absolute;
+    right: 0;
+    top: 65%;
+    cursor: pointer;
+    width: 5%;
+}
