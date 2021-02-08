@@ -1,18 +1,12 @@
 import React from 'react'
 
-import styles from './Button.module.scss'
+// import styles from './Button.module.scss'
 
-const Button = ({ onClick, value, continueBtn }) => {
+const Button = ({ type, children, className }) => {
   return (
-    <div>
-      <input
-        type="button"
-        onClick={onClick}
-        className={styles.SignInBtn}
-        value={value}
-        id={continueBtn && styles.ContinueBtn}
-      />
-    </div>
+    <button type={type} className={className}>
+      { children }
+    </button>
   )
 }
 

@@ -3,7 +3,6 @@ import React from 'react'
 import AgreementAndCaptcha from '../../components/UI/agreement-and-captcha/AgreementAndCaptcha'
 import Input from '../../components/UI/input/Input'
 import SelectDropDown from '../../components/UI/select-dropdown/SelectDropDown'
-import Button from '../../components/UI/button/Button'
 
 import styles from './WelcomePage.module.scss'
 
@@ -40,7 +39,7 @@ const WelcomePage = () => {
       </div>
       <AgreementAndCaptcha />
       <div className={styles.WelcomeSpace} />
-      <Button continueBtn value="Continue" />
+      <input type="button" id={styles.ContinueBtn} value="Continue" />
     </div>
   )
 }

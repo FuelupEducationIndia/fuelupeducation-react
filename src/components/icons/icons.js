@@ -8,9 +8,10 @@ import { ReactComponent as ArrowDownSvgIcon } from './icons-svg/arrow-down.svg'
 import { ReactComponent as CloseSvgIcon } from './icons-svg/close.svg'
 
 function makeIconComponent(IconComponent, displayName, extraClassName) {
-  const Component = ({ className }) => (
+  const Component = ({ className, onClick }) => (
     <IconComponent
       className={buildClassName('svg-icon', className, extraClassName)}
+      onClick={onClick}
     />
   )
   Component.displayName = displayName

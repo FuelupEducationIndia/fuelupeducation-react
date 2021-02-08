@@ -18,7 +18,7 @@ const App = ({ title }) => {
 
   let layoutToDisplay = ''
 
-  if (location.pathname === '/' || location.pathname === '/sign-in') {
+  if (location.pathname === '/') {
     layoutToDisplay = <Layout />
   }
   return <div className={styles.Container}>{layoutToDisplay}</div>
