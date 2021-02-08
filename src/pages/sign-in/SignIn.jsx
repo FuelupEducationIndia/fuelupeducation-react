@@ -5,12 +5,11 @@ import Input from '../../components/UI/input/Input'
 import PasswordInput from '../../components/UI/password-input/PasswordInput'
 import SocialMediaSignIn from '../../components/UI/social-media-sign-in/SocialMediaSignIn'
 import AgreementAndCaptcha from '../../components/UI/agreement-and-captcha/AgreementAndCaptcha'
-import Button from '../../components/UI/button/Button'
 import SelectDropDown from '../../components/UI/select-dropdown/SelectDropDown'
 
 import styles from './SignIn.modules.scss'
 
-import { ReactComponent as Close } from '../../components/icons/icons-svg/close.svg'
+import { CloseIcon } from '../../components/icons/icons'
 
 const SignIn = ({ showSignIn, setShowSignIn }) => {
   const handleClick = () => {
@@ -20,7 +19,7 @@ const SignIn = ({ showSignIn, setShowSignIn }) => {
   return (
     <div className={styles.SignInDiv}>
       <div className={styles.SignInInnerDiv}>
-        <Close onClick={handleClick} className={styles.Close} />
+        <CloseIcon className={styles.Close} onClick={handleClick} />  
         <SignInAndUpHeading
           h1Text="Sign In"
           spanText="Please sign in to start your lesson"
@@ -36,9 +35,8 @@ const SignIn = ({ showSignIn, setShowSignIn }) => {
             />
           </div>
           <AgreementAndCaptcha />
-          <Button value="Sign In" />
+          <input type="submit" value="Sign In" className={styles.SignInBtn}/>
         </form>
-
         <SocialMediaSignIn />
 
         <span className={styles.Biometric}>Use Biometric Sign In</span>

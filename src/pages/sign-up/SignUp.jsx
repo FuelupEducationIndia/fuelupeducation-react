@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 
 import WelcomePage from '../welcome-page/WelcomePage'
-import { ReactComponent as Close } from '../../components/icons/icons-svg/close.svg'
+import { CloseIcon } from '../../components/icons/icons'
 import SignInAndUpHeading from '../../components/UI/sign-in-up-heading/SignInAndUpHeading'
 import Input from '../../components/UI/input/Input'
 import PasswordInput from '../../components/UI/password-input/PasswordInput'
-import Button from '../../components/UI/button/Button'
 
 import styles from './SignUp.module.scss'
 import SocialMediaSignIn from '../../components/UI/social-media-sign-in/SocialMediaSignIn'
@@ -30,7 +29,7 @@ const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
   return (
     <div className={styles.SignInDiv}>
       <div className={styles.SignInInnerDiv}>
-        <Close onClick={handleClick} className={styles.Close} />
+        <CloseIcon className={styles.Close} onClick={handleClick} />
         {!welcome ? (
           <div className={styles.SignUpDivContent}>
             <SignInAndUpHeading
@@ -46,7 +45,7 @@ const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
                   forgotPw={false}
                 />
               </div>
-              <Button onClick={goToWelcomePage} value="Sign Up" />
+              <input type="button" className={styles.SignUpBtn} onClick={goToWelcomePage} value="Sign Up" />
             </form>
             <SocialMediaSignIn />
             <span className={styles.LastSpan}>

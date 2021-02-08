@@ -27,3 +27,19 @@
         width: 45%;
     }
 }
+
+#ContinueBtn {
+    margin-top: 5%;
+    border: none;
+    background-color: #fd4500;
+    color: #ffffff;
+    padding: 2.5% 15%;
+    border-radius: 20px;
+    margin-left: 60%;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+
+#ContinueBtn:focus {
+    outline: none;
+}
