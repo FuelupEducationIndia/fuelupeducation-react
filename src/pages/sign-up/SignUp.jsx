@@ -1,16 +1,23 @@
 import React, { useState } from 'react'
+import { useForm, FormProvider } from 'react-hook-form'
 
 import WelcomePage from '../welcome-page/WelcomePage'
 import { CloseIcon } from '../../components/icons/icons'
 import SignInAndUpHeading from '../../components/UI/sign-in-up-heading/SignInAndUpHeading'
 import Input from '../../components/UI/input/Input'
-import PasswordInput from '../../components/UI/password-input/PasswordInput'
 
 import styles from './SignUp.module.scss'
 import SocialMediaSignIn from '../../components/UI/social-media-sign-in/SocialMediaSignIn'
 
 const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
-  const [welcome, setWelcome] = useState(false)
+  const [welcome, setWelcome] = useState(false);
+
+  const methods = useForm();
+  const onFormSubmit = data => {
+    console.log(data)
+    setWelcome(!welcome)
+  };
+
 
   const handleClick = () => {
     setShowSignUp(!showSignUp)
@@ -19,11 +26,6 @@ const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
   const handleClick2 = () => {
     setShowSignUp(!showSignUp)
     setShowSignIn(!showSignIn)
-  }
-
-  const goToWelcomePage = e => {
-    e.preventDefault()
-    setWelcome(!welcome)
   }
 
   return (
@@ -36,17 +38,23 @@ const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
               h1Text="Sign Up"
               spanText="Please register your lesson account here"
             />
-            <form>
-              <div className={styles.InputsDiv}>
-                <Input placeholder="Email" />
-                <PasswordInput placeholder="Password" forgotPw={false} />
-                <PasswordInput
-                  placeholder="Confirm Password"
-                  forgotPw={false}
+            <FormProvider { ...methods }>
+              <form onSubmit={methods.handleSubmit(onFormSubmit)}>
+                <div className={styles.InputsDiv}>
+                  <Input name="email" type="email" labelInputId="Email" label="Email" />
+                  { methods.errors.email && <span className={styles.Error}>Email Field Is Required</span> }
+                  <Input name="password" type="password" labelInputId="Password" label="Password" />
+                  { methods.errors.password && <span className={styles.Error}>Password Field Is Required</span> }
+                  <Input name="confirm_password" type="password" labelInputId="ConfirmPassword" label="Confirm Password" />
+                  { methods.errors.confirm_password && <span className={styles.Error}>Confirm Password Field Is Required</span> }
+                </div>
+                <input
+                  type="submit"
+                  className={styles.SignUpBtn}
+                  value="Sign Up"
                 />
-              </div>
-              <input type="button" className={styles.SignUpBtn} onClick={goToWelcomePage} value="Sign Up" />
-            </form>
+              </form>
+            </FormProvider>
             <SocialMediaSignIn />
             <span className={styles.LastSpan}>
               Already have an account?{' '}
