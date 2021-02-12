@@ -20,10 +20,8 @@ function makeIconComponent(IconComponent, displayName, extraClassName) {
   return Component
 }
 
-
 export const ArrowDownIcon = makeIconComponent(
   ArrowDownSvgIcon,
   'ArrowDownIcon',
 )
 export const CloseIcon = makeIconComponent(CloseSvgIcon, 'CloseIcon')
-
