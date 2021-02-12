@@ -7,10 +7,10 @@
     "start": "webpack serve --config build-utils/webpack.config.js --env env=dev",
     "build": "webpack --config build-utils/webpack.config.js --env env=prod",
     "build:analyze": "npm run build -- --env addon=bundleanalyze",
-    "lint:fix": "eslint src/*.js --fix",
+    "lint:fix": "eslint --ext src/*.js --ext src/*.jsx",
     "lint": "eslint src/*.js",
     "test": "lint-staged",
-    "prettify": "prettier src/*.js --write"
+    "prettify": "prettier --write \"./**/*.{js,jsx,json}\""
   },
   "keywords": [],
   "author": "fargusMD",
@@ -62,7 +62,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run lint:fix "
     }
   },
   "lint-staged": {
