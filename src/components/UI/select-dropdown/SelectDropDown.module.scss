@@ -37,21 +37,14 @@ select:-moz-focusring {
 
 .InputDiv1 {
     margin-top: 10%;
+    position: relative;
 }
 
-.AsteriskInput3::after, .AsteriskInput4::after {
+.AsteriskInput::after {
     content:" *"; 
     color: #ff0000;
     position: absolute; 
-}
-
-.AsteriskInput3::after {
-    left: 19%;
-    /* left: 9%; */
-}
-
-.AsteriskInput4::after {
-    left: 42%;
+    left: 20%;
 }
 
 .Caret {
@@ -65,4 +58,12 @@ select:-moz-focusring {
 #CountrySelect {
     margin-top: 5%;
     margin-bottom: 17%;
+}
+
+.ShowModal {
+    display: block;
+}
+
+.HideModal {
+    display: none;
 }

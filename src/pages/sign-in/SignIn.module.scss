@@ -54,6 +54,38 @@ input:focus::placeholder {
     position: absolute; 
 }
 
+.CheckBoxDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .CheckBoxSpan {
+        width: 92%;
+        font-size: 15px;
+    }
+}
+
+.recaptchaDiv {
+    display: flex;
+    background-color: #f2f2f2;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4%;
+    margin-top: 3%;
+    width: 75%;
+    margin-bottom: 5%;
+
+    img {
+        width: 15%;
+    }
+}
+
+.recaptchaInnerDiv {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
 .Biometric {
     overflow: hidden;
     text-align: center;
@@ -127,4 +159,8 @@ select:-moz-focusring {
 
 .SignInBtn:focus {
     outline: none;
+}
+
+.Error {
+    color: red;
 }

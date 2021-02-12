@@ -1,57 +1,59 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import { useFormContext } from 'react-hook-form'
 
 import styles from './Input.module.scss'
 
-const Input = ({ placeholder, type }) => {
-  const [hideAsterisk, setHideAsterisk] = useState(false)
-  const [inputValue, setInputValue] = useState('')
-  const [dateType, setDateType] = useState('text')
+const Input = ({ labelInputId, label, type, name }) => {
+  const { register } = useFormContext();
 
-  const handleChange = e => {
-    setInputValue(e.target.value)
-  }
+  const [hideAsterisk, setHideAsterisk] = useState(false);
+  const [dateType, setDateType] = useState('text');
+
+  const labelRef = useRef(null);
+  const input = document.getElementById(labelInputId);
 
   const hide = () => {
-    setHideAsterisk(!hideAsterisk)
+    setHideAsterisk(true);
+   
     if (type === 'date') {
-      setDateType(type)
+      setDateType('date')
     }
+    // input && console.log(input.value, labelInputId);
+    labelRef.current.style.display = 'none';
   }
 
   const show = () => {
-    setHideAsterisk(!hideAsterisk)
     if (type === 'date') {
       setDateType('text')
+    }
+
+    if(input) {
+      if(input.value === '') {
+        labelRef.current.style.display = '';
+        setHideAsterisk(false)
+      }
     }
   }
 
   return (
     <div className={styles.InputDiv}>
+      <div className={styles.LabelAsterisk}>
+        <label htmlFor={labelInputId} ref={labelRef} className={styles.Label}>{label}</label>
+        {
+          !hideAsterisk ? (
+            <span className={styles.AsteriskInput} />
+          ) : null
+        }
+      </div>
       <input
         className={styles.input}
-        type={dateType}
-        placeholder={placeholder}
-        onChange={handleChange}
+        name={name}
+        id={labelInputId}
+        type={type === 'date' ? dateType : type }
         onFocus={hide}
         onBlur={show}
-        value={inputValue}
-        required
+        ref={register({ required: true })}
       />
-      {!hideAsterisk && inputValue === '' ? (
-        <span
-          className={
-            placeholder === 'Email/Phone number'
-              ? styles.AsteriskInput1
-              : styles.AsteriskInput2
-          }
-          id={
-            (placeholder === 'First Name' ||
-              placeholder === 'Last Name' ||
-              'Birth Date') &&
-            styles.Name
-          }
-        />
-      ) : null}
     </div>
   )
 }
