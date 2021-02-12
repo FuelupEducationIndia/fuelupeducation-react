@@ -11,7 +11,8 @@
     "lint": "eslint --ext .js --ext .jsx src",
     "test": "lint-staged",
     "prettify:fix": "prettier --write  src/*.{js,jsx,scss,css}",
-    "pre-commit": "npm run prettify:fix  && npm run lint:fix "
+    "pre-commit": "npm run prettify:fix  && npm run lint:fix ",
+    "info": "echo \"\\x1b[30m\\x1b[103mRunning Linters and Prettify Code. In case of errors - commiting disabled\\x1b[0m\""
   },
   "keywords": [],
   "author": "fargusMD",
@@ -63,7 +64,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && npm run pre-commit",
+      "pre-commit": "npm run info && npm run pre-commit && lint-staged ",
       "pre-add": "npm run pre-commit"
     }
   },
