@@ -12,7 +12,7 @@
     "test": "lint-staged",
     "prettify:fix": "prettier --write  src/*.{js,jsx,scss,css}",
     "pre-commit": "npm run prettify:fix  && npm run lint:fix ",
-    "info": "echo \"\\x1b[30m\\x1b[103mRunning Linters and Prettify Code. In case of errors - commiting disabled\\x1b[0m\""
+    "info": "node echo \"[ Linting and Prettifying Code ]. ps:  Errors wont permit to commit & push code to repos \" -f 30 -b 103"
   },
   "keywords": [],
   "author": "fargusMD",
