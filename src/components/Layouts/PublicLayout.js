@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import ROUTES, { RenderRoutes } from '../../routes/publicRoutes'
 
@@ -12,3 +13,7 @@ const Layout = ({ children }) => {
 }
 
 export default Layout
+
+Layout.propTypes = {
+  children: PropTypes.element.isRequired,
+}

@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import buildClassName from '../../utils/buildClassName'
 
 // import *.svg files and convert the, to React Icons Component
@@ -12,11 +14,16 @@ function makeIconComponent(IconComponent, displayName, extraClassName) {
     />
   )
   Component.displayName = displayName
+  Component.propTypes = {
+    className: PropTypes.string.isRequired,
+  }
   return Component
 }
+
 
 export const ArrowDownIcon = makeIconComponent(
   ArrowDownSvgIcon,
   'ArrowDownIcon',
 )
 export const CloseIcon = makeIconComponent(CloseSvgIcon, 'CloseIcon')
+

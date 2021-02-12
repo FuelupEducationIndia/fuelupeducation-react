@@ -1,6 +1,5 @@
-/* eslint-disable no-use-before-define */
-
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
 
 import LandingPage from '../pages/Landing'
@@ -10,6 +9,7 @@ const ROUTES = [
   {
     path: '/page1',
     key: 'page1',
+    // eslint-disable-next-line no-use-before-define
     component: RenderRoutes,
     routes: [
       {
@@ -46,6 +46,10 @@ export function RenderRoutes({ routes }) {
       <Route component={() => <h1>Not Found!</h1>} />
     </Switch>
   )
+}
+
+RenderRoutes.propTypes = {
+  routes: PropTypes.arrayOf.isRequired,
 }
 
 export default ROUTES
