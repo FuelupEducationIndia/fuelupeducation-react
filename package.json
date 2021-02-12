@@ -12,7 +12,7 @@
     "test": "lint-staged",
     "prettify:fix": "prettier --write  src/*.{js,jsx,scss,css}",
     "pre-commit": "npm run prettify:fix  && npm run lint:fix ",
-    "info": "echo \"\\x1b[30m\\x1b[103mRunning Linters and Prettify Code. In case of errors - commiting disabled\\x1b[0m\""
+    "info": "node echo \"[ Linting and Prettifying Code ]. ps:  Errors wont permit to commit & push code to repos \" -f 30 -b 103"
   },
   "keywords": [],
   "author": "fargusMD",
@@ -22,6 +22,7 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-hook-form": "^6.15.1",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
@@ -37,6 +38,7 @@
     "eslint": "^7.13.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^6.15.0",
+    "eslint-import-resolver-webpack": "^0.13.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
