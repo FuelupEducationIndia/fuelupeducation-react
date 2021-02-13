@@ -12,7 +12,7 @@
     "import/no-extraneous-dependencies": 0,
     "react/jsx-filename-extension": 0,
     //  proptypes is not required : 
-    "react/prop-types": 2,
+    "react/prop-types": "error",
     "no-unused-vars":0,
     "react/jsx-props-no-spreading":0,
     // Label must have a htmlFor attr
