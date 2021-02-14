@@ -1,9 +1,10 @@
 import React, { useState, useRef } from 'react'
 import { useFormContext } from 'react-hook-form'
+import PropTypes from 'prop-types'
 
 import styles from './Input.module.scss'
 
-const Input = ({ labelInputId, label, type, name }) => {
+const Input = ({ labelInputId, label, type, name, required }) => {
   const { register } = useFormContext();
 
   const [hideAsterisk, setHideAsterisk] = useState(false);
@@ -40,7 +41,7 @@ const Input = ({ labelInputId, label, type, name }) => {
       <div className={styles.LabelAsterisk}>
         <label htmlFor={labelInputId} ref={labelRef} className={styles.Label}>{label}</label>
         {
-          !hideAsterisk ? (
+          !hideAsterisk && required ? (
             <span className={styles.AsteriskInput} />
           ) : null
         }
@@ -52,10 +53,18 @@ const Input = ({ labelInputId, label, type, name }) => {
         type={type === 'date' ? dateType : type }
         onFocus={hide}
         onBlur={show}
-        ref={register({ required: true })}
+        ref={register({ required })}
       />
     </div>
   )
+}
+
+Input.propTypes = {
+  name: PropTypes.string.isRequired,
+  labelInputId: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  required: PropTypes.bool
 }
 
 export default Input

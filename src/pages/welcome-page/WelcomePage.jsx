@@ -24,12 +24,13 @@ const WelcomePage = () => {
         <form onSubmit={methods.handleSubmit(onFormSubmit)}>
           <div className={styles.FieldDiv}>
             <div className={styles.LeftDiv}>
-              <Input name="first_name" type="text" labelInputId="FirstName" label="First Name" />
+              <Input name="first_name" required={true} type="text" labelInputId="FirstName" label="First Name" />
               { methods.errors.first_name && <span className={styles.Error}>First Name Field Is Required</span> }
-              <Input name="birth_date" type="date" labelInputId="BirthDate" label="Birth Date" />
+              <Input name="birth_date" required={true} type="date" labelInputId="BirthDate" label="Birth Date" />
               { methods.errors.birth_date && <span className={styles.Error}>Birth Date Field Is Required</span> }
               <SelectDropDown
                 name="city"
+                required={true}
                 defaultValue='- City -'
                 otherValues={ ['Mumbai', 'Delhi'] }
               />
@@ -40,6 +41,7 @@ const WelcomePage = () => {
               { methods.errors.last_name && <span className={styles.Error}>Last Name Field Is Required</span> }
               <SelectDropDown
                 name="country"
+                required={true}
                 defaultValue='- Country -'
                 otherValues={ ['India', 'Germany', 'Australia'] }
               />

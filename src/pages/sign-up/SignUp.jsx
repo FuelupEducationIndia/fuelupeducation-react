@@ -41,11 +41,11 @@ const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
             <FormProvider { ...methods }>
               <form onSubmit={methods.handleSubmit(onFormSubmit)}>
                 <div className={styles.InputsDiv}>
-                  <Input name="email" type="email" labelInputId="Email" label="Email" />
+                  <Input name="email" required={true} type="email" labelInputId="Email" label="Email" />
                   { methods.errors.email && <span className={styles.Error}>Email Field Is Required</span> }
-                  <Input name="password" type="password" labelInputId="Password" label="Password" />
+                  <Input name="password" required={true} type="password" labelInputId="Password" label="Password" />
                   { methods.errors.password && <span className={styles.Error}>Password Field Is Required</span> }
-                  <Input name="confirm_password" type="password" labelInputId="ConfirmPassword" label="Confirm Password" />
+                  <Input name="confirm_password" required={true} type="password" labelInputId="ConfirmPassword" label="Confirm Password" />
                   { methods.errors.confirm_password && <span className={styles.Error}>Confirm Password Field Is Required</span> }
                 </div>
                 <input

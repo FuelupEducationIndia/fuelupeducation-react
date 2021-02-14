@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useFormContext } from 'react-hook-form'
+import PropTypes from 'prop-types'
 
 import BiometricSignIn from '../biometric-sign-in/BiometricSignIn'
 import caretDown from '../../../assets/signIn-signUpImages/caret_down.png'
@@ -9,7 +10,7 @@ import faceId from '../../../assets/signIn-signUpImages/faceId.jpeg'
 
 import styles from './SelectDropDown.module.scss'
 
-const SelectDropDown = ({ otherValues, defaultValue, name, signIn }) => {
+const SelectDropDown = ({ otherValues, defaultValue, name, signIn, required }) => {
   const [hideAsterisk, setHideAsterisk] = useState(false);
   const [ modal, setModal ] = useState(false);
   const { register } = useFormContext();
@@ -80,10 +81,10 @@ const SelectDropDown = ({ otherValues, defaultValue, name, signIn }) => {
 
   return (
     <div
-      className={styles.InputDiv1}
+      className={styles.SelectDiv}
     >
       {
-        !hideAsterisk /* && value === defaultValue */ ? (
+        !hideAsterisk && required ? (
           <span
             className={styles.AsteriskInput}
           />
@@ -92,11 +93,11 @@ const SelectDropDown = ({ otherValues, defaultValue, name, signIn }) => {
       <BiometricSignIn 
         displayModal={modal}
         closeModal={ () => setModal(!modal) } 
-        bioSignInInfo={ bioSignInInfo.image !== null && bioSignInInfo }
+        bioSignInInfo={ bioSignInInfo.image !== null ? bioSignInInfo : {} }
       />
       <select
         name={name}
-        ref={register({ required: true })}
+        ref={register({ required })}
         className={styles.Select}
         onChange={ signIn && handleModalClick }
         onFocus={hide}
@@ -109,9 +110,18 @@ const SelectDropDown = ({ otherValues, defaultValue, name, signIn }) => {
           ))
         }
       </select>
+      <hr id={styles.Hr}/>
       <img src={caretDown} className={styles.Caret} alt="caret" />
     </div>
   )
+}
+
+SelectDropDown.propTypes = {
+  name: PropTypes.string.isRequired,
+  defaultValue: PropTypes.string.isRequired,
+  otherValues: PropTypes.array.isRequired,
+  signIn: PropTypes.bool,
+  required: PropTypes.bool
 }
 
 export default SelectDropDown

@@ -10,7 +10,8 @@ select {
 select {
     display: inline-block;
     font: inherit;  
-    margin: 0;      
+    margin: 0;   
+    width: 50%;   
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -30,13 +31,17 @@ select:-moz-focusring {
     text-shadow: 0 0 0 #000;
 }
 
-.InputDiv, .InputDiv1 {
-    position: relative;
-    margin-bottom: 5%;
+#Hr {
+    width: 0%;
+    border: thick;
 }
 
-.InputDiv1 {
-    margin-top: 10%;
+.SelectDiv {
+    position: relative;
+}
+
+.SelectDiv {
+    margin-top: 5%;
     position: relative;
 }
 
@@ -44,7 +49,7 @@ select:-moz-focusring {
     content:" *"; 
     color: #ff0000;
     position: absolute; 
-    left: 20%;
+    left: 50%;
 }
 
 .Caret {

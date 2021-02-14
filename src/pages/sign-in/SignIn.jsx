@@ -32,14 +32,15 @@ const SignIn = ({ showSignIn, setShowSignIn }) => {
         <FormProvider {...methods}>
           <form onSubmit={methods.handleSubmit(onFormSubmit)}>
             <div className={styles.InputsDiv}>
-              <Input name="email_or_phone_number" type="text" labelInputId="EmailPhone" label="Email/Phone Number" />
+              <Input name="email_or_phone_number" required={true} type="text" labelInputId="EmailPhone" label="Email/Phone Number" />
               { methods.errors.email_or_phone_number && <span className={styles.Error}>Email/Phone Field Is Required</span> }
-              <Input name="password" type="password" labelInputId="Password" label="Password" />
-              { methods.errors.email_or_phone_number && <span className={styles.Error}>Password Field Is Required</span> }
+              <Input name="password" required={true} type="password" labelInputId="Password" label="Password" />
+              { methods.errors.password && <span className={styles.Error}>Password Field Is Required</span> }
               <SelectDropDown
                 name="role"
                 defaultValue='- Role -'
                 otherValues={ ['Student', 'Contributor'] }
+                required={true}
               />
               { methods.errors.role && <span className={styles.Error}>Select Your Role</span> }
               <div className={styles.CheckBoxDiv}>

@@ -1,16 +1,11 @@
-import React/* , { useRef }  */from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import { useFormContext } from 'react-hook-form'
 
 import styles from './CustomCheckbox.module.scss'
 
-const CustomCheckbox = (props) => {
-  const { labelInputId, name, size } = props;
+const CustomCheckbox = ({ labelInputId, name, size }) => {
   const { register } = useFormContext();
-  /* const labelRef = useRef(null);
-
-  const lightUp = () => {
-    labelRef.current.style.border = '1px solid red';
-  } */
 
   return (
     <div className={styles.checkBoxInnerDiv}>
@@ -21,9 +16,15 @@ const CustomCheckbox = (props) => {
         type="checkbox"
         ref={register({ required: true })}
       />
-      <label /* ref={labelRef}  */htmlFor={labelInputId} />
+      <label htmlFor={labelInputId} />
     </div>
   )
+}
+
+CustomCheckbox.propTypes = {
+  labelInputId: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired
 }
 
 export default CustomCheckbox

@@ -58,6 +58,8 @@ input:focus::placeholder {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 6%;
+    margin-bottom: 1%;
 
     .CheckBoxSpan {
         width: 92%;
@@ -163,4 +165,6 @@ select:-moz-focusring {
 
 .Error {
     color: red;
+    font-size: 12px;
+    font-weight: 600;
 }

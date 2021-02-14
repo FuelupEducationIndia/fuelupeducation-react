@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import PropTypes from 'prop-types'
 
 import checkmark from '../../../assets/signIn-signUpImages/checkmark.jpg'
 import styles from './BiometricSignIn.module.scss'
@@ -63,6 +63,12 @@ const BiometricSignIn = ({ closeModal, displayModal, bioSignInInfo }) => {
             </div>
         </div>
     );
+}
+
+BiometricSignIn.propTypes = {
+    closeModal: PropTypes.func.isRequired,
+    displayModal: PropTypes.bool.isRequired,
+    bioSignInInfo: PropTypes.object.isRequired
 }
 
 export default BiometricSignIn
