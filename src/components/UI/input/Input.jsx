@@ -5,22 +5,22 @@ import PropTypes from 'prop-types'
 import styles from './Input.module.scss'
 
 const Input = ({ labelInputId, label, type, name, required }) => {
-  const { register } = useFormContext();
+  const { register } = useFormContext()
 
-  const [hideAsterisk, setHideAsterisk] = useState(false);
-  const [dateType, setDateType] = useState('text');
+  const [hideAsterisk, setHideAsterisk] = useState(false)
+  const [dateType, setDateType] = useState('text')
 
-  const labelRef = useRef(null);
-  const input = document.getElementById(labelInputId);
+  const labelRef = useRef(null)
+  const input = document.getElementById(labelInputId)
 
   const hide = () => {
-    setHideAsterisk(true);
-   
+    setHideAsterisk(true)
+
     if (type === 'date') {
       setDateType('date')
     }
-    // input && console.log(input.value, labelInputId);
-    labelRef.current.style.display = 'none';
+    
+    labelRef.current.style.display = 'none'
   }
 
   const show = () => {
@@ -28,9 +28,9 @@ const Input = ({ labelInputId, label, type, name, required }) => {
       setDateType('text')
     }
 
-    if(input) {
-      if(input.value === '') {
-        labelRef.current.style.display = '';
+    if (input) {
+      if (input.value === '') {
+        labelRef.current.style.display = ''
         setHideAsterisk(false)
       }
     }
@@ -39,18 +39,18 @@ const Input = ({ labelInputId, label, type, name, required }) => {
   return (
     <div className={styles.InputDiv}>
       <div className={styles.LabelAsterisk}>
-        <label htmlFor={labelInputId} ref={labelRef} className={styles.Label}>{label}</label>
-        {
-          !hideAsterisk && required ? (
-            <span className={styles.AsteriskInput} />
-          ) : null
-        }
+        <label htmlFor={labelInputId} ref={labelRef} className={styles.Label}>
+          {label}
+        </label>
+        {!hideAsterisk && required ? (
+          <span className={styles.AsteriskInput} />
+        ) : null}
       </div>
       <input
         className={styles.input}
         name={name}
         id={labelInputId}
-        type={type === 'date' ? dateType : type }
+        type={type === 'date' ? dateType : type}
         onFocus={hide}
         onBlur={show}
         ref={register({ required })}
@@ -64,7 +64,7 @@ Input.propTypes = {
   labelInputId: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  required: PropTypes.bool
+  required: PropTypes.bool,
 }
 
 export default Input

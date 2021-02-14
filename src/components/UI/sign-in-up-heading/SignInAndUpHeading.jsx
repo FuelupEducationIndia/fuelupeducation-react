@@ -14,7 +14,7 @@ const SignInAndUpHeading = ({ h1Text, spanText }) => {
 
 SignInAndUpHeading.propTypes = {
   h1Text: PropTypes.string.isRequired,
-  spanText: PropTypes.string.isRequired
+  spanText: PropTypes.string.isRequired,
 }
 
 export default SignInAndUpHeading

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import { useForm, FormProvider } from 'react-hook-form'
 
 import WelcomePage from '../welcome-page/WelcomePage'
@@ -10,14 +11,13 @@ import styles from './SignUp.module.scss'
 import SocialMediaSignIn from '../../components/UI/social-media-sign-in/SocialMediaSignIn'
 
 const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
-  const [welcome, setWelcome] = useState(false);
+  const [welcome, setWelcome] = useState(false)
 
-  const methods = useForm();
+  const methods = useForm()
   const onFormSubmit = data => {
     console.log(data)
     setWelcome(!welcome)
-  };
-
+  }
 
   const handleClick = () => {
     setShowSignUp(!showSignUp)
@@ -38,15 +38,45 @@ const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
               h1Text="Sign Up"
               spanText="Please register your lesson account here"
             />
-            <FormProvider { ...methods }>
+            <FormProvider {...methods}>
               <form onSubmit={methods.handleSubmit(onFormSubmit)}>
                 <div className={styles.InputsDiv}>
-                  <Input name="email" required={true} type="email" labelInputId="Email" label="Email" />
-                  { methods.errors.email && <span className={styles.Error}>Email Field Is Required</span> }
-                  <Input name="password" required={true} type="password" labelInputId="Password" label="Password" />
-                  { methods.errors.password && <span className={styles.Error}>Password Field Is Required</span> }
-                  <Input name="confirm_password" required={true} type="password" labelInputId="ConfirmPassword" label="Confirm Password" />
-                  { methods.errors.confirm_password && <span className={styles.Error}>Confirm Password Field Is Required</span> }
+                  <Input
+                    name="email"
+                    required
+                    type="email"
+                    labelInputId="Email"
+                    label="Email"
+                  />
+                  {methods.errors.email && (
+                    <span className={styles.Error}>
+                      Email Field Is Required
+                    </span>
+                  )}
+                  <Input
+                    name="password"
+                    required
+                    type="password"
+                    labelInputId="Password"
+                    label="Password"
+                  />
+                  {methods.errors.password && (
+                    <span className={styles.Error}>
+                      Password Field Is Required
+                    </span>
+                  )}
+                  <Input
+                    name="confirm_password"
+                    required
+                    type="password"
+                    labelInputId="ConfirmPassword"
+                    label="Confirm Password"
+                  />
+                  {methods.errors.confirm_password && (
+                    <span className={styles.Error}>
+                      Confirm Password Field Is Required
+                    </span>
+                  )}
                 </div>
                 <input
                   type="submit"
@@ -57,7 +87,8 @@ const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
             </FormProvider>
             <SocialMediaSignIn />
             <span className={styles.LastSpan}>
-              Already have an account?{' '}
+              Already have an account?
+              {' '}
               <span onClick={handleClick2} className={styles.Link}>
                 Sign In
               </span>
@@ -69,6 +100,13 @@ const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
       </div>
     </div>
   )
+}
+
+SignUp.propTypes = {
+  showSignUp: PropTypes.bool.isRequired,
+  setShowSignUp: PropTypes.func.isRequired,
+  showSignIn: PropTypes.bool.isRequired,
+  setShowSignIn: PropTypes.func.isRequired,
 }
 
 export default SignUp

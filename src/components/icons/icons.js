@@ -17,6 +17,7 @@ function makeIconComponent(IconComponent, displayName, extraClassName) {
   Component.displayName = displayName
   Component.propTypes = {
     className: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
   }
   return Component
 }

@@ -53,6 +53,10 @@ const NavBar = ({
 
 NavBar.propTypes = {
   isAuth: PropTypes.bool.isRequired,
+  showSignIn: PropTypes.bool.isRequired,
+  setShowSignIn: PropTypes.func.isRequired,
+  showSignUp: PropTypes.bool.isRequired,
+  setShowSignUp: PropTypes.func.isRequired,
 }
 
 export default NavBar

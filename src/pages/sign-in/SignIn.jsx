@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import { useForm, FormProvider } from 'react-hook-form'
 
 import SignInAndUpHeading from '../../components/UI/sign-in-up-heading/SignInAndUpHeading'
@@ -12,9 +13,9 @@ import styles from './SignIn.module.scss'
 
 import { CloseIcon } from '../../components/icons/icons'
 
-const SignIn = ({ showSignIn, setShowSignIn }) => {  
-  const methods = useForm();
-  const methods2 = useForm();
+const SignIn = ({ showSignIn, setShowSignIn }) => {
+  const methods = useForm()
+  const methods2 = useForm()
   const handleClick = () => {
     setShowSignIn(!showSignIn)
   }
@@ -32,33 +33,61 @@ const SignIn = ({ showSignIn, setShowSignIn }) => {
         <FormProvider {...methods}>
           <form onSubmit={methods.handleSubmit(onFormSubmit)}>
             <div className={styles.InputsDiv}>
-              <Input name="email_or_phone_number" required={true} type="text" labelInputId="EmailPhone" label="Email/Phone Number" />
-              { methods.errors.email_or_phone_number && <span className={styles.Error}>Email/Phone Field Is Required</span> }
-              <Input name="password" required={true} type="password" labelInputId="Password" label="Password" />
-              { methods.errors.password && <span className={styles.Error}>Password Field Is Required</span> }
+              <Input
+                name="email_or_phone_number"
+                required
+                type="text"
+                labelInputId="EmailPhone"
+                label="Email/Phone Number"
+              />
+              {methods.errors.email_or_phone_number && (
+                <span className={styles.Error}>
+                  Email/Phone Field Is Required
+                </span>
+              )}
+              <Input
+                name="password"
+                required
+                type="password"
+                labelInputId="Password"
+                label="Password"
+              />
+              {methods.errors.password && (
+                <span className={styles.Error}>Password Field Is Required</span>
+              )}
               <SelectDropDown
                 name="role"
-                defaultValue='- Role -'
-                otherValues={ ['Student', 'Contributor'] }
-                required={true}
+                defaultValue="- Role -"
+                otherValues={['Student', 'Contributor']}
+                required
               />
-              { methods.errors.role && <span className={styles.Error}>Select Your Role</span> }
+              {methods.errors.role && (
+                <span className={styles.Error}>Select Your Role</span>
+              )}
               <div className={styles.CheckBoxDiv}>
-                <CustomCheckbox name="terms_and_agreement" size="small" labelInputId="agreement" />
+                <CustomCheckbox
+                  name="terms_and_agreement"
+                  size="small"
+                  labelInputId="agreement"
+                />
                 <span className={styles.CheckBoxSpan}>
-                  I have read and agree with the terms and conditions as well as the
-                  Privacy Policy of Fuelup Education
+                  I have read and agree with the terms and conditions as well as
+                  the Privacy Policy of Fuelup Education
                 </span>
               </div>
               <div className={styles.recaptchaDiv}>
                 <div className={styles.recaptchaInnerDiv}>
-                  <CustomCheckbox name="recaptcha" size="big" labelInputId="recaptcha" />
+                  <CustomCheckbox
+                    name="recaptcha"
+                    size="big"
+                    labelInputId="recaptcha"
+                  />
                   <span className={styles.CheckBoxSpan}>I'm not a robot</span>
                 </div>
                 <img src={recaptcha} alt="recaptcha" />
               </div>
             </div>
-            <input className={styles.SignInBtn} type="submit" value="Sign In"/>
+            <input className={styles.SignInBtn} type="submit" value="Sign In" />
           </form>
         </FormProvider>
         <SocialMediaSignIn />
@@ -67,15 +96,20 @@ const SignIn = ({ showSignIn, setShowSignIn }) => {
           <form onSubmit={methods2.handleSubmit(onFormSubmit)}>
             <SelectDropDown
               name="biometric_sign_in"
-              defaultValue='- Select bio method -'
-              otherValues={ ['Fingerprint', 'Face ID', 'QR Code'] }
-              signIn={true}
+              defaultValue="- Select bio method -"
+              otherValues={['Fingerprint', 'Face ID', 'QR Code']}
+              signIn
             />
           </form>
         </FormProvider>
       </div>
     </div>
   )
+}
+
+SignIn.propTypes = {
+  showSignIn: PropTypes.bool.isRequired, 
+  setShowSignIn: PropTypes.func.isRequired,
 }
 
 export default SignIn

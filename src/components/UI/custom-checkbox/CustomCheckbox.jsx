@@ -5,12 +5,12 @@ import { useFormContext } from 'react-hook-form'
 import styles from './CustomCheckbox.module.scss'
 
 const CustomCheckbox = ({ labelInputId, name, size }) => {
-  const { register } = useFormContext();
+  const { register } = useFormContext()
 
   return (
     <div className={styles.checkBoxInnerDiv}>
       <input
-        className={ size === "big" ? styles.bigCheckboxR : styles.bigCheckbox }
+        className={size === 'big' ? styles.bigCheckboxR : styles.bigCheckbox}
         id={labelInputId}
         name={name}
         type="checkbox"
@@ -24,7 +24,7 @@ const CustomCheckbox = ({ labelInputId, name, size }) => {
 CustomCheckbox.propTypes = {
   labelInputId: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired
+  size: PropTypes.string.isRequired,
 }
 
 export default CustomCheckbox

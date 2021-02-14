@@ -127,14 +127,19 @@
     display: none;
 }
 
+.SuccessDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .SuccessText {
     color: green;
     font-weight: 600;
-    display: block;
-    text-align: center;
-    margin-top: 1%;
+    font-size: 18px;
+    margin-top: 10%;
 }
 
 .CheckMarkIcon {
-    width: 25%;
+    width: 60%;
 }
