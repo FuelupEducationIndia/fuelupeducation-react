@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap');
+@import './fonts/style.css';
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: #faf9fe;
+}
+
+.headingpic{
+    img{
+        width: 100vw;
+    }
+}
+
+@mixin flexprop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin buttonid{
+    list-style: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.header{
+    @include flexprop;
+    height: 14vh;
+    width: 100vw - margin;
+    // padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    .head-image{
+        @include flexprop;
+        flex:1;
+        // width: 15vw;
+        margin: 2%;
+        margin-top:3%;
+    }
+    .header-names{
+        // width: 65vw;
+        flex: 7;
+        flex-direction: row;
+        white-space: nowrap;
+        /* padding-left: 3vw; */
+        margin-right: 0vh -1vw;
+        height: 6vh;
+        ul{
+            float: right;
+            padding-left: 1rem;
+            margin-right: -3rem;
+            button{
+                @include buttonid;
+                // font-size: 1.2rem;
+                // margin: 2%;
+                // margin: 0px 2%;
+                color: #3b0e8a;
+                // @include flexprop;
+                flex-direction: row;
+                h2{
+                    margin: 0vh 1vw;
+                    // font-family: 'Muli SemiBold';
+                    font-family: 'Muli';
+                } 
+                img{
+                    height: 0.6rem;
+                }
+            } 
+        }  
+    }
+    .header-profile{
+        @include flexprop;
+        flex:2;
+        // width: 23vw;
+        button{
+            // flex: 1;
+            @include buttonid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    }
+}
+
+.classsheetal{
+    // padding: 1%;
+    width: 100vw; 
+}
+
+.helloclass{
+    display: flex;
+    // position: absolute;
+    width: 95vw;
+    margin-top: 1rem;
+    padding: 0vh 1vw;
+    .Sheetal{
+        background-color: #e7e3f4 ;
+        border: 1px solid #3b0e8a;
+        padding: 1.6%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 94vw  ;
+        height: 15vh;
+        position: absolute;
+        z-index: -1;
+        h1{
+            color: #3b0e8a;
+            font-family: 'Muli ExtraBold';
+            padding-left: 2%;
+        }  
+        p{
+            color: #3b0e8a;
+            font-family: 'Muli Regular';
+            padding-left: 2%;
+
+        }
+    }
+    .sheetalimage{
+        width: 95vw;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            height: 15rem;
+            padding-right: 5%;
+        }
+    }
+
+}
+
+.thebloodybigdiv{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.thebloodydiv{
+    flex: 3;
+}
+
+.middlestart{
+    white-space:nowrap;
+    width: 100vw;
+    // padding-top: 13rem;
+    ul{
+        width: 80vw;
+        button{
+            @include buttonid;
+            font-family: 'Muli';
+            font-size: 1.3rem;
+            list-style: none;
+            margin: 0vh 1vw;
+            .abcd{
+                text-decoration: none;
+                list-style: none;
+                color: rgb(119, 119, 119);
+            }
+            
+            :hover {
+                text-decoration:none;
+                list-style: none;
+                color: black;
+            }
+            :focus{
+                color: black;
+            }
+            :active{
+                font: bolder;
+            }
+        }
+    }
+}
+
+.checkbox{
+    display: flex;
+    padding: 3vh 3vw;
+    div{
+        display: flex;
+        align-items: center;
+        @include buttonid;
+        margin: 0% 2%;
+        input{
+            height: 1.5rem;
+            width: 1.5rem;
+            cursor: pointer;
+        }
+        label{
+           font-size: 1.5rem;
+           font-family: 'Muli Regular';
+        }
+    }    
+        
+}
+
+.board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    h3{
+        flex: 2;
+    
+        color: #3b0e8a;
+    }
+    .select{
+        flex: 3;
+        width: 78vw;
+        position: static;
+    }.khali{
+        flex: 4;
+    }
+}
+.course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    h3{
+        flex: 2;
+        color: #3b0e8a;
+    }
+    .select{
+        flex: 3;
+    }.khali{
+        flex: 4;
+    }
+}
+.language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    h3{
+        flex: 5;
+        color: #3b0e8a;
+    }
+    .select{
+        flex: 6;
+        margin-left: 1%;
+    }.khali{
+        flex: 12;
+    }
+}
+
+.bloodydancinggirl{
+    flex: 2;
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    position: absolute;
+    padding-left: 70vw;
+    padding-top: -5rem;
+    z-index: -1;
+        img{ 
+            width: 24rem;
+            margin-top: -6rem;
+    }
+}
+
+.startques{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    width: max-content;
+    padding: 8vh 3vw;
+}
+
+.gol{
+    height: 0.5rem;
+    width: 0.5rem;
+    border: 6px solid #3b0e8a;
+    border-radius: 100rem;
+}
+.gol1{
+    height: 0rem;
+    width: 0rem;
+    border: 10px solid #6d6d6d;
+    border-radius: 100rem;
+}
+
+.quesclass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0% 0.5vw;
+}
+
+.line{
+    width: 5vw;
+    height: 0vh;
+    border: 3px solid #3b0e8a;
+    border-radius: 100rem;
+    margin: 0.9vh 0vw;
+}
+.line1{
+    width: 5vw;
+    height: 0vh;
+    border: 3px solid #6d6d6d;
+    border-radius: 100rem;
+    margin: 0.9vh 0vw;
+}
+
+.bigcard{
+    height: 30rem;
+    width: 55vw;
+    border: 2px solid white;
+    box-shadow: whitesmoke;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(211, 211, 211);
+    display: flex;
+    padding: 1%;
+    .leftofcard{
+        flex: 1;
+        padding-left: 3%;
+        .savedsection{
+            font-family: 'Muli';
+        }
+        .select2{
+            color: #3b0e8a;
+            padding-right: 20%;
+            font-family: 'Muli';
+            p{
+                font-family: 'Muli';
+                color: #6d6d6d;
+            }
+        }
+        .svg{
+            margin-top: 5vh;
+           img{
+            height: 24vh;
+            width: 22vw;
+            margin-left: -2vw;
+           }
+        }
+    }
+    .rightofcard{
+        flex: 1;
+        h3{
+            font-family: 'Muli';
+        }
+        .rightsectionthings{
+            .bachayofthings{
+                display: flex;
+                background-color: rgb(255, 255, 255);
+                margin: 2vh 0vw;
+                height: 7vh;
+                padding: 1%;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgb(211, 211, 211);
+                .fazoolclass{
+                    flex: 1;
+                    h4{
+                        margin-top: -1vh;
+                        font-family: 'Muli';
+                    }
+                    p{
+                        font-family: 'Muli';
+                        color: #6d6d6d;
+
+                    }
+                }
+                .examtime{
+                    flex: 1;
+                    h4{
+                        margin-top: -1vh;
+                        font-family: 'Muli';
+                    }
+                    p{
+                        font-family: 'Muli';
+                        color: #6d6d6d;
+                    }
+                }
+            }
+            .nextbutton{
+                // margin-left: 10vw;
+                float: right;
+                margin: 5px;
+                @include buttonid;
+                border: 2px #3b0e8a;
+                background-color: #3b0e8a;
+                color: white;
+                padding: 1% 6%;
+                border-radius: 13px;
+            }
+        }
+    }
+}
