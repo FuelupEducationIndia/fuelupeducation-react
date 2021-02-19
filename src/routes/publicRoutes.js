@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
 
 import LandingPage from '../pages/Landing'
-import SignIn from '../pages/sign-in/SignIn'
 
 const ROUTES = [
   { path: '/', key: 'ROOT', exact: true, component: LandingPage },
