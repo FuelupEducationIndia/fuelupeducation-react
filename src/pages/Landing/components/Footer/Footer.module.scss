@@ -1,0 +1,75 @@
+@import '../../../../assets/styles/sass/variables';
+
+.footer {
+  padding: 3rem 12rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: $background-color-1;
+
+  &__company {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 0.4;
+  }
+
+  &__logo {
+    height: 6rem;
+    object-fit: contain;
+  }
+
+  &__copyright {
+    font-size: 1.4rem;
+    text-align: left;
+    color: $text-color;
+  }
+
+  &__app {
+    color: $primary-color;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.08;
+    letter-spacing: normal;
+    text-align: left;
+    flex: 0.1;
+
+    &__heading {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: $text-color;
+  }
+
+  &__link {
+    &:visited,
+    &:link {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+
+  &__assets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    &__item {
+      width: 11.7rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
