@@ -1,6 +1,6 @@
-const Dotenv = require('dotenv-webpack');
-const path = require('path');
-const webpack = require('webpack');
+const Dotenv = require('dotenv-webpack')
+const path = require('path')
+const webpack = require('webpack')
 
 module.exports = {
   mode: 'development',
@@ -43,7 +43,8 @@ module.exports = {
     contentBase: path.resolve(__dirname, '..', './dist'),
     hot: true,
     port: 3000,
+    host: '0.0.0.0',
     historyApiFallback: true,
   },
   devtool: 'eval-source-map',
-};
+}
