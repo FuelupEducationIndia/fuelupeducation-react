@@ -1,0 +1,71 @@
+@import 'sass/variables';
+
+.Message {
+    display: flex;
+    align-items: start;
+
+    > img {
+        margin-right: .8rem;
+    }
+
+    .Heading {
+        display: flex;
+        align-items: center;
+        margin-bottom: .5rem;
+
+        &Dot {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: #f16600;
+            margin: 0 .8rem;
+        }
+
+        > div {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        > span {
+            color: #f16600;
+            font-size: 1rem;
+        }
+    }
+
+    .Content {
+        .FileBox {
+            background-color: $primary-color;
+            padding: .8rem 1.8rem;
+            display: flex;
+            align-items: center;
+            border-radius: 1rem;
+            width: 15.2rem;
+            color: $secondary-color;
+            margin-right: 1.8rem;
+
+            > div:first-child {
+                background-color: #8c67d1;
+                margin-right: 1rem;
+                border-radius: .5rem;
+                padding: .7rem;
+                display: flex;
+                align-items: center;
+            }
+
+            .FileName {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            .FileSize {
+                font-size: 1rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.Row {
+    display: flex;
+    align-items: center;
+}

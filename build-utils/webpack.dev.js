@@ -46,5 +46,13 @@ module.exports = {
     host: '0.0.0.0',
     historyApiFallback: true,
   },
+  resolve: {
+    alias: {
+      assets: path.resolve(__dirname, '..', 'src/assets/'),
+      pages: path.resolve(__dirname, '..', 'src/pages/'),
+      components: path.resolve(__dirname, '..', 'src/components/'),
+      sass: path.resolve(__dirname, '..', 'src/assets/styles/sass/'),
+    },
+  },
   devtool: 'eval-source-map',
 }
