@@ -1,7 +1,14 @@
 .ProfileDiv {
     width: 95%;
+    background-color: #faf9fe;
     margin: auto;
     margin-top: 3%;
+}
+
+.ProfileDiv::after {
+    content: '';
+    position: absolute;
+    width: 100%;
 }
 
 .ProfileDetailsDiv {
@@ -11,8 +18,11 @@
     // position: relative;
 }
 
-.FloatingGirl {
-    // position: absolute;
-    // top: -1000%;
-    margin-top: -16%;
+.FloatingGirlProfile {
+    margin-top: -120%;
+}
+
+.FloatingGirlEdit {
+    margin-top: -168%;
+    width: 30%;
 }

@@ -18,6 +18,7 @@
     align-items: center;
     color: #858587;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .EditImage {
@@ -25,130 +26,8 @@
     margin-right: 15%;
 }
 
-.NameAndPicture {
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
 .Heading {
     font-weight: bold;
     color: #858587;
     font-size: 18px;
-}
-
-.PictureAndNick {
-    margin-left: 5%;
-    display: flex;
-    align-items: center;
-    margin-top: 2%;
-
-    .NickNameLabel {
-        color: #3a1286;
-        font-weight: bold;
-        margin: 0 10%;
-        margin-right: 12%;
-    }
-
-    .NickName {
-        color: #858587;
-    }
-}
-
-.ContactInformationDiv, .PersonalInformationDiv, .EducationalInformationDiv, .SocialNetworkDiv, .SignInInformationDiv {
-    margin-left: 10%;
-    margin-top: 10%;
-
-    h2 {
-        margin-bottom: 2%;
-    }
-}
-
-.ProfileDiv {
-    display: flex;
-    margin-left: 5%;
-    margin-bottom: 7%;
-
-    &Label {
-        color: #3a1286;
-        font-weight: bold;
-        width: 50%;
-    }
-
-    &Content {
-        color: #858587;
-    }
-}
-
-#LinkedIn {
-    background-color: #0b77ae;
-}
-
-#GooglePlus {
-    background-color: #de4b39;
-}
-
-#FaceBook {
-    background-color: #47569b;
-}
-
-#Instagram {
-    background-color: #f66301;
-}
-
-#Twitter {
-    background-color: #50abf1;
-}
-
-.SocialLinkButton {
-    border: none;
-    border-radius: 5px;
-    width: 30%;
-    height: 45px;
-    color: #ffffff;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    margin-bottom: 5%;
-
-    &Icon {
-        width: 30%;
-
-        i {
-            font-size: 25px;
-        }
-
-        img {
-            width: 50%;
-            display: inline-block;
-            margin-top: 10%;
-        }
-    }
-
-    &Content {
-        font-size: 16px;
-        margin-top: 3%;
-        margin-left: 3%;
-    }
-}
-
-.SignInMethod {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #c1b8d4;
-    border-radius: 5px;
-    width: 60%;
-
-    &InnerDiv {
-        display: flex;
-        margin-right: 3%;
-    }
-}
-
-.SignInDivContent {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    color: #3a1286;
-    font-weight: bold;
 }

@@ -20,7 +20,7 @@ const App = ({ title }) => {
 
   if (location.pathname === '/') {
     layoutToDisplay = <Layout />
-  } else if(location.pathname === '/profile') {
+  } else if (location.pathname === '/profile') {
     layoutToDisplay = <Profile />
   }
   return <div className={styles.Container}>{layoutToDisplay}</div>

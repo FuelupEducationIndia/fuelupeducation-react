@@ -15,7 +15,6 @@ const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
 
   const methods = useForm()
   const onFormSubmit = data => {
-    console.log(data)
     setWelcome(!welcome)
   }
 
@@ -44,9 +43,12 @@ const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
                   <Input
                     name="email"
                     required
+                    asteriskOnInput
                     type="email"
                     labelInputId="Email"
                     label="Email"
+                    classNameProps={styles.SignUpInput}
+                    inputDivClassNameProps={styles.InputDivComponent}
                   />
                   {methods.errors.email && (
                     <span className={styles.Error}>
@@ -56,9 +58,12 @@ const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
                   <Input
                     name="password"
                     required
+                    asteriskOnInput
                     type="password"
                     labelInputId="Password"
                     label="Password"
+                    classNameProps={styles.SignUpInput}
+                    inputDivClassNameProps={styles.InputDivComponent}
                   />
                   {methods.errors.password && (
                     <span className={styles.Error}>
@@ -68,9 +73,12 @@ const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
                   <Input
                     name="confirm_password"
                     required
+                    asteriskOnInput
                     type="password"
                     labelInputId="ConfirmPassword"
                     label="Confirm Password"
+                    classNameProps={styles.SignUpInput}
+                    inputDivClassNameProps={styles.InputDivComponent}
                   />
                   {methods.errors.confirm_password && (
                     <span className={styles.Error}>

@@ -81,3 +81,34 @@
     font-size: 12px;
     font-weight: 600;
 }
+
+.SelectWelcome {
+    border: none;
+    border-bottom: 1px solid #74648d;
+}
+
+.SelectDivWelcome {
+    margin-top: 5%;
+    position: relative;
+}
+
+.GeneralCaret {
+    position: absolute;
+    right: 0;
+    top: 65%;
+    cursor: pointer;
+    width: 5%;
+    pointer-events: none;
+}
+
+.WelcomeInput {
+    border: none;
+    border-bottom: 1px solid #74648d;
+    padding-bottom: 2.5%;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.InputDivComponent {
+    margin-top: 4%;
+}

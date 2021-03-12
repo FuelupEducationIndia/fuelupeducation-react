@@ -7,7 +7,7 @@ import Input from '../../components/UI/input/Input'
 import CustomCheckbox from '../../components/UI/custom-checkbox/CustomCheckbox'
 import SocialMediaSignIn from '../../components/UI/social-media-sign-in/SocialMediaSignIn'
 import SelectDropDown from '../../components/UI/select-dropdown/SelectDropDown'
-import recaptcha from '../../assets/signIn-signUpImages/recaptcha_logo.png'
+import recaptcha from 'assets/signIn-signUpImages/recaptcha_logo.png'
 
 import styles from './SignIn.module.scss'
 
@@ -36,9 +36,12 @@ const SignIn = ({ showSignIn, setShowSignIn }) => {
               <Input
                 name="email_or_phone_number"
                 required
+                asteriskOnInput
                 type="text"
                 labelInputId="EmailPhone"
                 label="Email/Phone Number"
+                classNameProps={styles.SignInInput}
+                inputDivClassNameProps={styles.InputDivComponent}
               />
               {methods.errors.email_or_phone_number && (
                 <span className={styles.Error}>
@@ -48,9 +51,12 @@ const SignIn = ({ showSignIn, setShowSignIn }) => {
               <Input
                 name="password"
                 required
+                asteriskOnInput
                 type="password"
                 labelInputId="Password"
                 label="Password"
+                classNameProps={styles.SignInInput}
+                inputDivClassNameProps={styles.InputDivComponent}
               />
               {methods.errors.password && (
                 <span className={styles.Error}>Password Field Is Required</span>
@@ -59,7 +65,11 @@ const SignIn = ({ showSignIn, setShowSignIn }) => {
                 name="role"
                 defaultValue="- Role -"
                 otherValues={['Student', 'Contributor']}
-                required
+                required={true}
+                showAsteriskOnSelect={true}
+                classNameProps={styles.SelectSignIn}
+                selectDropDownDivStyle={styles.SelectDivSignIn}
+                caretSelectStyle={styles.GeneralCaret}
               />
               {methods.errors.role && (
                 <span className={styles.Error}>Select Your Role</span>
@@ -99,6 +109,9 @@ const SignIn = ({ showSignIn, setShowSignIn }) => {
               defaultValue="- Select bio method -"
               otherValues={['Fingerprint', 'Face ID', 'QR Code']}
               signIn
+              classNameProps={styles.SelectSignIn}
+              selectDropDownDivStyle={styles.SelectDivSignIn}
+              caretSelectStyle={styles.GeneralCaret}
             />
           </form>
         </FormProvider>
@@ -108,7 +121,7 @@ const SignIn = ({ showSignIn, setShowSignIn }) => {
 }
 
 SignIn.propTypes = {
-  showSignIn: PropTypes.bool.isRequired, 
+  showSignIn: PropTypes.bool.isRequired,
   setShowSignIn: PropTypes.func.isRequired,
 }
 

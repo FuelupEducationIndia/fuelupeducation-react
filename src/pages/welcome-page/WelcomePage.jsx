@@ -5,7 +5,7 @@ import Input from '../../components/UI/input/Input'
 import SelectDropDown from '../../components/UI/select-dropdown/SelectDropDown'
 import CustomCheckbox from '../../components/UI/custom-checkbox/CustomCheckbox'
 
-import recaptcha from '../../assets/signIn-signUpImages/recaptcha_logo.png'
+import recaptcha from 'assets/signIn-signUpImages/recaptcha_logo.png'
 
 import styles from './WelcomePage.module.scss'
 
@@ -27,9 +27,12 @@ const WelcomePage = () => {
               <Input
                 name="first_name"
                 required
+                asteriskOnInput
                 type="text"
                 labelInputId="FirstName"
                 label="First Name"
+                classNameProps={styles.WelcomeInput}
+                inputDivClassNameProps={styles.InputDivComponent}
               />
               {methods.errors.first_name && (
                 <span className={styles.Error}>
@@ -39,9 +42,12 @@ const WelcomePage = () => {
               <Input
                 name="birth_date"
                 required
+                asteriskOnInput
                 type="date"
                 labelInputId="BirthDate"
                 label="Birth Date"
+                classNameProps={styles.WelcomeInput}
+                inputDivClassNameProps={styles.InputDivComponent}
               />
               {methods.errors.birth_date && (
                 <span className={styles.Error}>
@@ -51,8 +57,12 @@ const WelcomePage = () => {
               <SelectDropDown
                 name="city"
                 required
+                showAsteriskOnSelect={true}
                 defaultValue="- City -"
                 otherValues={['Mumbai', 'Delhi']}
+                classNameProps={styles.SelectWelcome}
+                selectDropDownDivStyle={styles.SelectDivWelcome}
+                caretSelectStyle={styles.GeneralCaret}
               />
               {methods.errors.city && (
                 <span className={styles.Error}>Select Your City</span>
@@ -62,8 +72,12 @@ const WelcomePage = () => {
               <Input
                 name="last_name"
                 type="text"
+                required
+                asteriskOnInput
                 labelInputId="LastName"
                 label="Last Name"
+                classNameProps={styles.WelcomeInput}
+                inputDivClassNameProps={styles.InputDivComponent}
               />
               {methods.errors.last_name && (
                 <span className={styles.Error}>
@@ -73,8 +87,12 @@ const WelcomePage = () => {
               <SelectDropDown
                 name="country"
                 required
+                showAsteriskOnSelect={true}
                 defaultValue="- Country -"
                 otherValues={['India', 'Germany', 'Australia']}
+                classNameProps={styles.SelectWelcome}
+                selectDropDownDivStyle={styles.SelectDivWelcome}
+                caretSelectStyle={styles.GeneralCaret}
               />
               {methods.errors.country && (
                 <span className={styles.Error}>Select Your Country</span>
@@ -83,6 +101,9 @@ const WelcomePage = () => {
                 name="role"
                 defaultValue="- Role -"
                 otherValues={['Student', 'Contributor']}
+                classNameProps={styles.SelectWelcome}
+                selectDropDownDivStyle={styles.SelectDivWelcome}
+                caretSelectStyle={styles.GeneralCaret}
               />
               {methods.errors.role && (
                 <span className={styles.Error}>Select Your Role</span>

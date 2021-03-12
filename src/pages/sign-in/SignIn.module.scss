@@ -34,13 +34,18 @@ input:focus::placeholder {
     flex-direction: column;
 }
 
-.input, select {
+.input {
     border: none;
     border-bottom: 1px solid #74648d;
     /* margin-bottom: 8%; */
     font-size: 1.5rem;
     padding-bottom: 1%;
     width: 100%;
+}
+
+.SelectSignIn {
+    border: none;
+    border-bottom: 1px solid #74648d;
 }
 
 .InputDiv {
@@ -140,12 +145,30 @@ select:-moz-focusring {
     text-shadow: 0 0 0 #000;
 }
 
-.Caret {
+.SelectDivSignIn {
+    margin-top: 5%;
+    position: relative;
+}
+
+.GeneralCaret {
     position: absolute;
     right: 0;
     top: 65%;
     cursor: pointer;
     width: 5%;
+    pointer-events: none;
+}
+
+.SignInInput {
+    border: none;
+    border-bottom: 1px solid #74648d;
+    padding-bottom: 2.5%;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.InputDivComponent {
+    margin-top: 4%;
 }
 
 .SignInBtn {

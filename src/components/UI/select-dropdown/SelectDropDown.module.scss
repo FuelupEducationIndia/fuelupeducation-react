@@ -1,13 +1,4 @@
 select {
-    border: none;
-    border-bottom: 1px solid #74648d;
-    /* margin-bottom: 8%; */
-    font-size: 1.5rem;
-    padding-bottom: 1%;
-    width: 100%;
-}
-
-select {
     display: inline-block;
     font: inherit;  
     margin: 0;   
@@ -18,6 +9,10 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
+    /* margin-bottom: 8%; */
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+    width: 100%;
 }
   
 .Select:focus {
@@ -36,28 +31,11 @@ select:-moz-focusring {
     border: thick;
 }
 
-.SelectDiv {
-    position: relative;
-}
-
-.SelectDiv {
-    margin-top: 5%;
-    position: relative;
-}
-
 .AsteriskInput::after {
     content:" *"; 
     color: #ff0000;
     position: absolute; 
     left: 50%;
-}
-
-.Caret {
-    position: absolute;
-    right: 0;
-    top: 65%;
-    cursor: pointer;
-    width: 5%;
 }
 
 #CountrySelect {

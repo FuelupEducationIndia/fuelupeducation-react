@@ -1,22 +1,22 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-import checkmark from '../../../assets/signIn-signUpImages/checkmark.jpg'
+import checkmark from 'assets/signIn-signUpImages/checkmark.jpg'
 import styles from './BiometricSignIn.module.scss'
 
 const BiometricSignIn = ({ closeModal, displayModal, bioSignInInfo }) => {
-  const [success, setSuccess] = useState(false)
+    const [success, setSuccess] = useState(false)
 
-  const divStyle = {
-    display: displayModal ? 'flex' : 'none',
-  }
+    const divStyle = {
+        display: displayModal ? 'flex' : 'none',
+    }
 
-  const handleClick = () => setSuccess(!success)
+    const handleClick = () => setSuccess(!success)
 
-  const closeTheModal = e => {
-    e.stopPropagation()
-    closeModal()
-  }
+    const closeTheModal = e => {
+        e.stopPropagation()
+        closeModal()
+    }
 
     return (
         <div className={styles.modal} onClick={closeTheModal} style={divStyle}>
@@ -32,11 +32,11 @@ const BiometricSignIn = ({ closeModal, displayModal, bioSignInInfo }) => {
                         <span className={styles.Purple}>Fuelup Education</span>
                     </div>
                     <div className={styles.FairlyStatic}>
-                        <span className={styles.Grey}>{ bioSignInInfo.message }</span>
+                        <span className={styles.Grey}>{bioSignInInfo.message}</span>
                             &nbsp;
                         <span className={styles.Purple}>Fuelup Education can verify it's you</span>
                     </div>
-                    <div className={styles.SignInImage}> 
+                    <div className={styles.SignInImage}>
                         {
                             !success ? (
                                 <img style={bioSignInInfo.styles} src={bioSignInInfo.image} />
@@ -66,9 +66,9 @@ const BiometricSignIn = ({ closeModal, displayModal, bioSignInInfo }) => {
 }
 
 BiometricSignIn.propTypes = {
-  closeModal: PropTypes.func.isRequired,
-  displayModal: PropTypes.bool.isRequired,
-  bioSignInInfo: PropTypes.object.isRequired,
+    closeModal: PropTypes.func.isRequired,
+    displayModal: PropTypes.bool.isRequired,
+    bioSignInInfo: PropTypes.object.isRequired,
 }
 
 export default BiometricSignIn

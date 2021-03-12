@@ -3,10 +3,10 @@ import { useFormContext } from 'react-hook-form'
 import PropTypes from 'prop-types'
 
 import BiometricSignIn from '../biometric-sign-in/BiometricSignIn'
-import caretDown from '../../../assets/signIn-signUpImages/caret_down.png'
-import fingerPrint from '../../../assets/signIn-signUpImages/fingerprint.jpg'
-import qrCode from '../../../assets/signIn-signUpImages/qrCode.jpg'
-import faceId from '../../../assets/signIn-signUpImages/faceId.jpeg'
+import caretDown from 'assets/signIn-signUpImages/caret_down.png'
+import fingerPrint from 'assets/signIn-signUpImages/fingerprint.jpg'
+import qrCode from 'assets/signIn-signUpImages/qrCode.jpg'
+import faceId from 'assets/signIn-signUpImages/faceId.jpeg'
 
 import styles from './SelectDropDown.module.scss'
 
@@ -16,6 +16,10 @@ const SelectDropDown = ({
   name,
   signIn,
   required,
+  showAsteriskOnSelect,
+  classNameProps,
+  selectDropDownDivStyle,
+  caretSelectStyle,
 }) => {
   const [hideAsterisk, setHideAsterisk] = useState(false)
   const [modal, setModal] = useState(false)
@@ -84,8 +88,8 @@ const SelectDropDown = ({
   }
 
   return (
-    <div className={styles.SelectDiv}>
-      {!hideAsterisk && required ? (
+    <div className={selectDropDownDivStyle}>
+      {!hideAsterisk && showAsteriskOnSelect ? (
         <span className={styles.AsteriskInput} />
       ) : null}
       <BiometricSignIn
@@ -96,7 +100,7 @@ const SelectDropDown = ({
       <select
         name={name}
         ref={register({ required })}
-        className={styles.Select}
+        className={classNameProps}
         onChange={signIn && handleModalClick}
         onFocus={hide}
         onBlur={show}
@@ -109,7 +113,7 @@ const SelectDropDown = ({
         ))}
       </select>
       <hr id={styles.Hr} />
-      <img src={caretDown} className={styles.Caret} alt="caret" />
+      <img src={caretDown} className={caretSelectStyle} alt="caret" />
     </div>
   )
 }
@@ -120,6 +124,10 @@ SelectDropDown.propTypes = {
   otherValues: PropTypes.array.isRequired,
   signIn: PropTypes.bool,
   required: PropTypes.bool,
+  showAsteriskOnSelect: PropTypes.bool,
+  classNameProps: PropTypes.string,
+  selectDropDownDivStyle: PropTypes.string,
+  caretSelectStyle: PropTypes.string,
 }
 
 export default SelectDropDown

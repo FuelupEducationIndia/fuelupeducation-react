@@ -32,6 +32,18 @@
     cursor: pointer;
 }
 
+.SignUpInput {
+    border: none;
+    border-bottom: 1px solid #74648d;
+    padding-bottom: 2.5%;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.InputDivComponent {
+    margin-top: 4%;
+}
+
 .SignUpBtn {
     border: none;
     background-color: #fd4500;

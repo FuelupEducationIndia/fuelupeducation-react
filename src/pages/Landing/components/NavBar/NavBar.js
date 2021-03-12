@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import styles from './NavBar.module.scss'
 
-import arrowDown from '../../../../assets/images/arrow-down.png'
+import arrowDown from 'assets/images/arrow-down.png'
 
 const NavBar = ({
   showSignIn,
