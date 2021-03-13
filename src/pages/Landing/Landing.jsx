@@ -7,6 +7,7 @@ import SignIn from '../sign-in/SignIn'
 import styles from './Landing.module.scss'
 import Hero from './components/Hero/Hero'
 import SignUp from '../sign-up/SignUp'
+import Body from './components/Body/Body'
 
 const Landing = props => {
   const [showSignIn, setShowSignIn] = useState(false)
@@ -37,6 +38,9 @@ const Landing = props => {
         />
       )}
       {/* <Footer /> */}
+    <div className={styles.Landing}>
+      <NavBar isAuth={false} />
+      <Body />
     </div>
   )
 }
