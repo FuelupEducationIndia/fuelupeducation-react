@@ -5,6 +5,16 @@
 .Navigation {
   font-family: $font;
   display: flex;
+  padding: 3.4rem 4.4rem 0;
+  align-content: center;
+  color: $color-body;
+  font-weight: 500;
+}
+.logo {
+  font-weight: 500;
+  width: 8.2rem;
+  line-height: 1.05;
+  font-size: 1.9rem;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 2.6rem;
@@ -68,4 +78,12 @@
     }
     
   }
+}
+
+.NavigationSecond {
+  justify-content: flex-end;
+}
+.NavSecondItem {
+  padding: 0 2.5rem;
+  cursor: pointer;
 }
