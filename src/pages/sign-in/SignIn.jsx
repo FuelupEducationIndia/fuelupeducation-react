@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { useForm, FormProvider } from 'react-hook-form'
 
+import recaptcha from '../../assets/signIn-signUpImages/recaptcha_logo.png'
 import SignInAndUpHeading from '../../components/UI/sign-in-up-heading/SignInAndUpHeading'
 import Input from '../../components/UI/input/Input'
 import CustomCheckbox from '../../components/UI/custom-checkbox/CustomCheckbox'
 import SocialMediaSignIn from '../../components/UI/social-media-sign-in/SocialMediaSignIn'
 import SelectDropDown from '../../components/UI/select-dropdown/SelectDropDown'
-import recaptcha from 'assets/signIn-signUpImages/recaptcha_logo.png'
 
 import styles from './SignIn.module.scss'
 
@@ -65,8 +65,8 @@ const SignIn = ({ showSignIn, setShowSignIn }) => {
                 name="role"
                 defaultValue="- Role -"
                 otherValues={['Student', 'Contributor']}
-                required={true}
-                showAsteriskOnSelect={true}
+                required
+                showAsteriskOnSelect
                 classNameProps={styles.SelectSignIn}
                 selectDropDownDivStyle={styles.SelectDivSignIn}
                 caretSelectStyle={styles.GeneralCaret}

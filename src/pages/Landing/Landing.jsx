@@ -5,7 +5,7 @@ import NavBar from './components/NavBar/NavBar'
 import SignIn from '../sign-in/SignIn'
 
 import styles from './Landing.module.scss'
-import Hero from './components/Hero/Hero'
+// import Hero from '../,,.components/Hero/Hero'
 import SignUp from '../sign-up/SignUp'
 import Body from './components/Body/Body'
 
@@ -22,7 +22,7 @@ const Landing = props => {
           setShowSignUp={setShowSignUp}
           isAuth={false}
         />
-        <Hero />
+        {/* <Hero /> */}
         <div className={styles.backgroundImage} />
         <div className={styles.backgroundImage2} />
       </div>
@@ -38,9 +38,10 @@ const Landing = props => {
         />
       )}
       {/* <Footer /> */}
-    <div className={styles.Landing}>
-      <NavBar isAuth={false} />
-      <Body />
+      <div className={styles.Landing}>
+        <NavBar isAuth={false} />
+        <Body />
+      </div>
     </div>
   )
 }

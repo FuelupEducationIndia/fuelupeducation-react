@@ -1,6 +1,6 @@
 import React from 'react'
 
-import recaptcha from 'assets/signIn-signUpImages/recaptcha_logo.png'
+import recaptcha from '../../../assets/signIn-signUpImages/recaptcha_logo.png'
 
 import styles from './AgreementAndCaptcha.module.scss'
 

@@ -10,8 +10,6 @@ import profileIcon from 'assets/images/avatar.png'
 import buildClassName from '../../../../utils/buildClassName'
 import styles from './NavBar.module.scss'
 
-import arrowDown from 'assets/images/arrow-down.png'
-
 const NavBar = ({
   showSignIn,
   setShowSignIn,
@@ -28,7 +26,6 @@ const NavBar = ({
     setShowSignIn(false)
   }
 
-const NavBar = ({ isAuth }) => {
   return (
     <nav className={styles.Navigation}>
       <div>

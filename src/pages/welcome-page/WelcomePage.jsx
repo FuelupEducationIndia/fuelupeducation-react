@@ -4,15 +4,16 @@ import { useForm, FormProvider } from 'react-hook-form'
 import Input from '../../components/UI/input/Input'
 import SelectDropDown from '../../components/UI/select-dropdown/SelectDropDown'
 import CustomCheckbox from '../../components/UI/custom-checkbox/CustomCheckbox'
-
-import recaptcha from 'assets/signIn-signUpImages/recaptcha_logo.png'
+import recaptcha from '../../assets/signIn-signUpImages/recaptcha_logo.png'
 
 import styles from './WelcomePage.module.scss'
 
 const WelcomePage = () => {
   const methods = useForm()
 
-  const onFormSubmit = data => console.log(data)
+  const onFormSubmit = data => {
+    console.log(data)
+  }
 
   return (
     <div>
@@ -57,7 +58,7 @@ const WelcomePage = () => {
               <SelectDropDown
                 name="city"
                 required
-                showAsteriskOnSelect={true}
+                showAsteriskOnSelect
                 defaultValue="- City -"
                 otherValues={['Mumbai', 'Delhi']}
                 classNameProps={styles.SelectWelcome}
@@ -87,7 +88,7 @@ const WelcomePage = () => {
               <SelectDropDown
                 name="country"
                 required
-                showAsteriskOnSelect={true}
+                showAsteriskOnSelect
                 defaultValue="- Country -"
                 otherValues={['India', 'Germany', 'Australia']}
                 classNameProps={styles.SelectWelcome}

@@ -16,7 +16,9 @@ const CustomCheckbox = ({ labelInputId, name, size }) => {
         type="checkbox"
         ref={register({ required: true })}
       />
-      <label htmlFor={labelInputId} />
+      <label htmlFor={labelInputId} id={labelInputId}>
+        {name}
+      </label>
     </div>
   )
 }

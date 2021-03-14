@@ -12,7 +12,7 @@ const getAddons = (addonsArgs) => {
 
   return addons
     .filter(Boolean)
-    .map((name) => require(`./addons/webpack.${name}.js`));
+    .map((name) => require(`./addons/webpack.${name}.js`))
 };
 
 module.exports = ({ env, addon }) => {

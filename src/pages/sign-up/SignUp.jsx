@@ -96,7 +96,6 @@ const SignUp = ({ showSignUp, setShowSignUp, showSignIn, setShowSignIn }) => {
             <SocialMediaSignIn />
             <span className={styles.LastSpan}>
               Already have an account?
-              {' '}
               <span onClick={handleClick2} className={styles.Link}>
                 Sign In
               </span>

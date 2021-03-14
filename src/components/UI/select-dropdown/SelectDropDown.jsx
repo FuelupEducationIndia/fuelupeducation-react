@@ -1,12 +1,14 @@
+/** eslint-disable */
+
 import React, { useState } from 'react'
 import { useFormContext } from 'react-hook-form'
 import PropTypes from 'prop-types'
 
+import caretDown from '../../../assets/signIn-signUpImages/caret_down.png'
+import fingerPrint from '../../../assets/signIn-signUpImages/fingerprint.jpg'
+import qrCode from '../../../assets/signIn-signUpImages/qrCode.jpg'
+import faceId from '../../../assets/signIn-signUpImages/faceId.jpeg'
 import BiometricSignIn from '../biometric-sign-in/BiometricSignIn'
-import caretDown from 'assets/signIn-signUpImages/caret_down.png'
-import fingerPrint from 'assets/signIn-signUpImages/fingerprint.jpg'
-import qrCode from 'assets/signIn-signUpImages/qrCode.jpg'
-import faceId from 'assets/signIn-signUpImages/faceId.jpeg'
 
 import styles from './SelectDropDown.module.scss'
 
@@ -36,7 +38,7 @@ const SelectDropDown = ({
   const selectTag = document.querySelector('select')
 
   const handleModalClick = e => {
-    e.target.value !== '' && setModal(!modal)
+    // e.target.value !== '' && setModal(!modal)
     if (selectTag) {
       if (e.target.value === 'Fingerprint') {
         setBioSignInInfo({
@@ -82,9 +84,9 @@ const SelectDropDown = ({
   }
 
   const show = () => {
-    if (selectTag) {
-      selectTag.value === '' && setHideAsterisk(false)
-    }
+    // if (selectTag) {
+    //   selectTag.value === '' && setHideAsterisk(false)
+    // }
   }
 
   return (
@@ -103,8 +105,7 @@ const SelectDropDown = ({
         className={classNameProps}
         onChange={signIn && handleModalClick}
         onFocus={hide}
-        onBlur={show}
-      >
+        onBlur={show}>
         <option value="">{defaultValue}</option>
         {otherValues.map(other => (
           <option key={other} value={other}>

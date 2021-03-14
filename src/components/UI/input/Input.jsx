@@ -4,7 +4,16 @@ import PropTypes from 'prop-types'
 
 import styles from './Input.module.scss'
 
-const Input = ({ labelInputId, label, type, name, required, classNameProps, inputDivClassNameProps, asteriskOnInput }) => {
+const Input = ({
+  labelInputId,
+  label,
+  type,
+  name,
+  required,
+  classNameProps,
+  inputDivClassNameProps,
+  asteriskOnInput,
+}) => {
   const { register } = useFormContext()
 
   const [hideAsterisk, setHideAsterisk] = useState(false)
