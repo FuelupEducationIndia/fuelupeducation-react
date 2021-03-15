@@ -28,7 +28,6 @@ const ROUTES = [
   },
 ]
 function RouteWithSubRoutes(route) {
-  // console.log(route)
   return (
     <Route
       path={route.path}
@@ -50,7 +49,7 @@ export function RenderRoutes({ routes }) {
 }
 
 RenderRoutes.propTypes = {
-  routes: PropTypes.arrayOf(PropTypes.object).isRequired,
+  routes: PropTypes.arrayOf.isRequired,
 }
 
 export default ROUTES
