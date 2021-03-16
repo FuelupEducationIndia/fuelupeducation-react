@@ -1,0 +1,30 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error", {
+      "endOfLine":"auto"
+    }],
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-filename-extension": 0,
+    //  proptypes is not required : 
+    "react/prop-types": 2,
+    "no-unused-vars":0,
+    "react/jsx-props-no-spreading":0,
+    // Label must have a htmlFor attr
+    "jsx-a11y/label-has-for": [ 2, {
+      "components": [ "Label" ],
+      "required": {
+          "every": [ "nesting", "id" ]
+      },
+      "allowChildren": false
+  }],
+    "react/no-array-index-key": 0
+  }
+}

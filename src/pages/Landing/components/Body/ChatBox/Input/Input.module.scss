@@ -1,0 +1,29 @@
+.Input {
+    padding: 1.6rem 1.3rem;
+    height: 7.2rem;
+    background: #ebe7f3;
+    display: flex;
+    align-items: center;
+
+    img:first-child {
+        margin-right: .8rem;
+    }
+
+    img:nth-child(2) {
+        margin-right: 1.6rem;
+    }
+
+    input {
+        flex: 1;
+        margin-right: .8rem;
+        padding: 1.2rem 1.6rem;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+    }
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}

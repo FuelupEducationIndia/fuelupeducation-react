@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="171" height="60" viewBox="0 0 171 60">
+    <g>
+        <g>
+            <path fill="#5a3c90" d="M632.041 325.657l12.216-3.969c3.306-1.075 3.019-6.405-.383-7.119l-10.54-2.069-6.84 7.265z" transform="translate(-568.603 -249.952) translate(568.603 257.674) translate(-601.64 -293.707)"/>
+            <path fill="#f16711" d="M600.3 287.07l11.357-12.062a4.194 4.194 0 0 0-3.054-7.07h-40l14.913 15.838z" transform="translate(-568.603 -249.952) translate(568.603 257.674) translate(-568.603 -267.939)"/>
+            <path fill="#8d1118" d="M613.28 315.389l6.84-7.265-16.781-3.293z" transform="translate(-568.603 -249.952) translate(568.603 257.674) translate(-588.426 -289.291)"/>
+            <path fill="#442076" d="M602.184 340.507l15.984-5.194-5.547-5.891z" transform="translate(-568.603 -249.952) translate(568.603 257.674) translate(-587.767 -303.423)"/>
+            <path fill="#df4018" d="M568.6 359.926v10.627l14.417-15.312z" transform="translate(-568.603 -249.952) translate(568.603 257.674) translate(-568.603 -318.275)"/>
+            <path fill="#da3d19" d="M568.6 267.939v12.912l14.913 2.926z" transform="translate(-568.603 -249.952) translate(568.603 257.674) translate(-568.603 -267.939)"/>
+            <path fill="#8c0e18" d="M593.457 311.5l-9.941-10.557-14.916-2.928v29.253l14.417-4.685z" transform="translate(-568.603 -249.952) translate(568.603 257.674) translate(-568.603 -285.428)"/>
+        </g>
+        <text fill="#380688" font-family="Tahoma-Bold, Tahoma" font-size="26px" font-weight="700" transform="translate(-568.603 -249.952) translate(626.603 275.952)">
+            <tspan x="0" y="0">Fuelup</tspan><tspan font-family="Tahoma" font-weight="400"><tspan x="0" y="27">Education</tspan></tspan>
+        </text>
+    </g>
+</svg>
