@@ -19,6 +19,16 @@
   "license": "MIT",
   "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "axios": "^0.21.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-hook-form": "^6.15.1",
+    "react-router-dom": "^5.2.0"
+=======
+>>>>>>> a316e1ceae96eb2a200dcd7c24180b9ed6bdc70b
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
@@ -34,6 +44,7 @@
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-super-tab": "^1.1.6"
+<<<<<<< HEAD
 =======
     "axios": "^0.21.1",
     "prop-types": "^15.7.2",
@@ -42,6 +53,9 @@
     "react-hook-form": "^6.15.1",
     "react-router-dom": "^5.2.0"
 >>>>>>> 5d7d154e6b058f4087f985c2f182d89b3a656618
+=======
+>>>>>>> a0cb0a32699eecd1bdcecb8bf164e5f537c51120
+>>>>>>> a316e1ceae96eb2a200dcd7c24180b9ed6bdc70b
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -54,10 +68,17 @@
     "css-loader": "^5.0.1",
     "dotenv-webpack": "^5.1.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "eslint": "^7.22.0",
 =======
     "eslint": "^7.13.0",
 >>>>>>> 5d7d154e6b058f4087f985c2f182d89b3a656618
+=======
+    "eslint": "^7.13.0",
+=======
+    "eslint": "^7.22.0",
+>>>>>>> a0cb0a32699eecd1bdcecb8bf164e5f537c51120
+>>>>>>> a316e1ceae96eb2a200dcd7c24180b9ed6bdc70b
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^6.15.0",
     "eslint-import-resolver-webpack": "^0.13.0",
@@ -67,9 +88,15 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "eslint-plugin-react-button-has-type": "^0.0.3",
 =======
 >>>>>>> 5d7d154e6b058f4087f985c2f182d89b3a656618
+=======
+=======
+    "eslint-plugin-react-button-has-type": "^0.0.3",
+>>>>>>> a0cb0a32699eecd1bdcecb8bf164e5f537c51120
+>>>>>>> a316e1ceae96eb2a200dcd7c24180b9ed6bdc70b
     "eslint-plugin-react-hooks": "^4.2.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
