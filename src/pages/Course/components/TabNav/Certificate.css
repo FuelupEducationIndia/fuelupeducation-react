@@ -1,0 +1,40 @@
+
+form {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    font-size: 12px;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-right: none;
+    border-radius: 4px 0px 0px 4px
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button .download {
+    color: #380E84;
+    margin: 0px 10px;
+    border: 1px solid #380E84;
+    border-radius: 16px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+}
+.button .print img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.cerificate{
+    max-width: 200px;
+    max-height: 400px;
+    margin: auto;
+}

@@ -7,10 +7,7 @@ import logo from 'assets/images/logo.png'
 import bellIcon from 'assets/images/bell.png'
 import settingIcon from 'assets/images/settings.png'
 import profileIcon from 'assets/images/avatar.png'
-<<<<<<< HEAD
-=======
 import { Link, NavLink } from 'react-router-dom'
->>>>>>> a0cb0a32699eecd1bdcecb8bf164e5f537c51120
 import buildClassName from '../../../../utils/buildClassName'
 import styles from './NavBar.module.scss'
 
@@ -23,13 +20,9 @@ const NavBar = ({ isAuth }) => {
       <ul className={styles.NavItems}>
         <li className={styles.NavItem}>Dashboard</li>
         <li className={styles.NavItem}>
-<<<<<<< HEAD
-          Courses
-=======
           <NavLink to="/Course" exact>
             Courses
           </NavLink>
->>>>>>> a0cb0a32699eecd1bdcecb8bf164e5f537c51120
           <img src={arrowDown} alt="Courses" />
         </li>
         <li className={styles.NavItem}>Schedule</li>

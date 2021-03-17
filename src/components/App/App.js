@@ -19,6 +19,11 @@ const App = ({ title }) => {
 
   if (location.pathname === '/') {
     layoutToDisplay = <Layout />
+<<<<<<< HEAD
+=======
+  } else {
+    layoutToDisplay = <Layout />
+>>>>>>> a0cb0a32699eecd1bdcecb8bf164e5f537c51120
   }
   return <div className={styles.Container}>{layoutToDisplay}</div>
 }
