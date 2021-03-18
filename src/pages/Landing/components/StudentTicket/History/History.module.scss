@@ -1,0 +1,127 @@
+.history{
+   
+    @mixin text {
+     
+font-family: "Muli Bold";
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1.25;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;       
+    }
+    .history_text{
+       
+    width: 20rem;
+    height: 25px;
+    margin: 3rem 0rem 1rem 2.7rem;
+        font-family: "Muli Bold";
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: left;
+        color: #707070;
+      }
+    .history_table{
+        width: 99rem;
+        height: 50rem;
+        overflow-y:auto; 
+        overflow-x: hidden; 
+        margin: 12px 205px 0 25px;
+        padding: 0 0 47.5px;
+        border: solid 1px #707070;
+        background-color: #ffffff;
+       
+        .header{
+            width: 98.9rem;
+  height: 4.9rem;
+  margin: 0 0 17px;
+  padding: 13px 110px 15px 24px;
+  border-bottom: solid 1px #707070;
+  border-right: solid 1px #707070;
+  background-color: #ffffff;
+  display: flex;
+        flex-direction: row;
+        .Instructor{
+            width: 17rem;
+            height: 20px;
+            // margin: 0 90px 0 0;
+            @include text;
+        }
+        .Issue_Title {
+            width: 23rem;
+            height: 20px;
+            margin: 0 0.4rem 0.4rem 0rem;
+            @include text;
+          }
+          .Priority {
+            width: 12rem;
+            height: 20px;
+            // margin: 0 0px 0 80px;
+            @include text;
+          }
+          .Description {
+            width: 26rem;
+            height: 20px;
+            // margin: 0 172px 0 69px;
+            @include text;
+          }
+          .Status {
+            width: 7rem;
+            height: 20px;
+        //  margin: 0px 40px 0 0px;
+            @include text;
+          }
+        }
+        .detail{
+            display: flex;
+            flex-direction: row;
+            margin: 3rem;
+            height: 15vh;
+            border-bottom: 1px solid #707070;
+            text-align: left;
+           @mixin detail_text{
+         
+  font-family: "Muli Regular";
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
+            }
+            .Instructor{
+                width: 10rem;
+                margin: 0px 62px 42px 0;
+                // margin: 0 90px 0 0;
+                @include detail_text
+            }
+            .Issue_Title {
+                width: 20rem;
+                margin: 0px 30px 42px 0;
+                @include detail_text
+              }
+              .Priority {
+                width: 12rem;
+                margin: 0px 1px 42px 6px;
+                @include detail_text
+              }
+              .Description {
+                width: 20rem;
+                margin: 0px 60px 42px 0rem;
+                @include detail_text
+              }
+              .Status {
+                width: 7rem;
+                @include detail_text
+              }
+              .delete{
+                width: 25px;
+                height: 30px;
+    margin: 0rem 0rem 0rem 4rem;  
+              }
+        }
+    }
+   
+}
