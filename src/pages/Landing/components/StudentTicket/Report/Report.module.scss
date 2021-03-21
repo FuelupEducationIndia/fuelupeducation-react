@@ -128,7 +128,7 @@
             border: 2px solid #ef271b;
           }
         }
-        .Captcha_Text{
+        .CaptchaText{
             width: 13rem;
             height: 23px;
             margin: 10px -15px 44px 24px;
@@ -148,7 +148,7 @@
         border: solid 1px #707070;
         background-color: #ffffff;
        }
-       .Captcha_Code {
+       .CaptchaCode {
         width: 14rem;
         height: 4rem;
         margin: 1rem 1rem 0rem 3rem;
@@ -158,7 +158,7 @@
       }
       
     }
-    .Row_Send{
+    .RowSend{
         display: flex;
         flex-direction: row-reverse;
       .Send{

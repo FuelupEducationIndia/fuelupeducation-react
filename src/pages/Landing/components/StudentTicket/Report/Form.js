@@ -66,7 +66,7 @@ export const Form = () => {
         </div>
       </div>
       <div className={styles.Row}>
-        <h5 className={styles.Captcha_Text}>Enter Captcha</h5>
+        <h5 className={styles.CaptchaText}>Enter Captcha</h5>
         <input
           className={styles.Captcha}
           name="userInput"
@@ -74,16 +74,16 @@ export const Form = () => {
           placeholder=""
         />
         <div className={styles.Row}>
-          <h5 className={styles.Captcha_Text}>Captcha Code</h5>
+          <h5 className={styles.CaptchaText}>Captcha Code</h5>
           <input
-            className={styles.Captcha_Code}
+            className={styles.CaptchaCode}
             name="userInput"
             type="text"
             placeholder=""
           />
         </div>
       </div>
-      <div className={styles.Row_send}>
+      <div className={styles.RowSend}>
         <button type="submit" className={styles.Send}>
           Send
         </button>
