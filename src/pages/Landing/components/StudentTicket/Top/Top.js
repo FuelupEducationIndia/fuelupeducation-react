@@ -9,8 +9,8 @@ export const Top = () => {
   //     ];
   return (
     <div className={styles.TopSection}>
-      <div className={styles.head}>
-        <div className={styles.welcome}>Welcome Sheela!</div>
+      <div className={styles.Head}>
+        <div className={styles.Welcome}>Welcome Sheela!</div>
         <div>
           <img src={call} alt="none" className={styles.TopImg} />
         </div>

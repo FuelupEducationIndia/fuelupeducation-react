@@ -41,12 +41,12 @@
     box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);
     cursor: pointer;
   }
-.form{
+.Form{
   width: -webkit-fill-available;
-    .row{
+    .Row{
         display: flex;
         flex-direction: row;
-        .label{
+        .Label{
             width: 9rem;
             height: 20px;
             margin: 0px 13px 44px 24px;
@@ -71,7 +71,7 @@
             outline:1px solid #e4e4e4 ;
             border:none;
         } 
-          .wrapper{
+          .Wrapper{
             position: relative;
           }
           img{
@@ -94,33 +94,33 @@
             outline:1px solid #e4e4e4 ;
             border:none;
         }
-        .discription{
+        .Discription{
             width: 569px;
             height: 165px;
             
          
         }
-        .buttons{
+        .Buttons{
             margin: 0 0 24px 79px;
          display: flex;
          flex-direction: row;
             color: white;
 
-            .low_buttons{
+            .Low_Buttons{
                @include reset-button;
                 margin: 0 13px 0 0;
                 padding: 2px 35px 6px 36px;
                 background-color: #ffc95f;
                 border: 2px solid #ffc95f;
             }  
-          .medium_buttons{
+          .Medium_Buttons{
             @include reset-button;
             margin: 0 14px 0 13px;
             padding: 4px 23px 6px;
             background-color: #64aad9;
             border: 2px solid #64aad9;
           }
-          .high_buttons{
+          .High_Buttons{
             @include reset-button;
             margin: 0 0 0 14px;
             padding: 2px 33px 6px 34px;
@@ -128,7 +128,7 @@
             border: 2px solid #ef271b;
           }
         }
-        .captcha_text{
+        .Captcha_Text{
             width: 13rem;
             height: 23px;
             margin: 10px -15px 44px 24px;
@@ -140,7 +140,7 @@
             text-align: left;
             color: $primary-color; 
         }
-       .captcha{
+       .Captcha{
         width: 17rem;
         height: 4rem;
         margin: 10px 88px 25px 67px;
@@ -148,7 +148,7 @@
         border: solid 1px #707070;
         background-color: #ffffff;
        }
-       .captcha_code {
+       .Captcha_Code {
         width: 14rem;
         height: 4rem;
         margin: 1rem 1rem 0rem 3rem;
@@ -158,10 +158,10 @@
       }
       
     }
-    .row_send{
+    .Row_Send{
         display: flex;
         flex-direction: row-reverse;
-      .send{
+      .Send{
           cursor: pointer;
             width: 85px;
             height: 24px;

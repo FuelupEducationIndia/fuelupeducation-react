@@ -22,9 +22,9 @@ export const Form = () => {
   // setrecord([...record,newRecord]);
   //   }
   return (
-    <form className={styles.form}>
-      <div className={styles.row}>
-        <h5 className={styles.label}>Full Name</h5>
+    <form className={styles.Form}>
+      <div className={styles.Row}>
+        <h5 className={styles.Label}>Full Name</h5>
         <input
           name="Fullname"
           type="text"
@@ -33,8 +33,8 @@ export const Form = () => {
           placeholder=""
         />
       </div>
-      <div className={styles.row}>
-        <h5 className={styles.label}>Issue Title</h5>
+      <div className={styles.Row}>
+        <h5 className={styles.Label}>Issue Title</h5>
         <input
           name="Issue Title"
           type="text"
@@ -43,48 +43,48 @@ export const Form = () => {
           placeholder=""
         />
       </div>
-      <div className={styles.row}>
-        <h5 className={styles.label}>Priority</h5>
-        <div className={styles.buttons}>
-          <div className={styles.low_buttons}>Low</div>
-          <button className={styles.medium_buttons}>Medium</button>
-          <div className={styles.high_buttons}>High</div>
+      <div className={styles.Row}>
+        <h5 className={styles.Label}>Priority</h5>
+        <div className={styles.Buttons}>
+          <div className={styles.Low_Buttons}>Low</div>
+          <button className={styles.Medium_Buttons}>Medium</button>
+          <div className={styles.High_Buttons}>High</div>
         </div>
       </div>
-      <div className={styles.row}>
-        <h5 className={styles.label}>Discription</h5>
-        <div className={styles.wrapper}>
+      <div className={styles.Row}>
+        <h5 className={styles.Label}>Discription</h5>
+        <div className={styles.Wrapper}>
           <textarea
             name="description"
             // value={user.description}
             // onChange={handleInput}
             type="text"
             placeholder=""
-            className={styles.discription}
+            className={styles.Discription}
           />
           <img src={attachment} alt="attach" />
         </div>
       </div>
-      <div className={styles.row}>
-        <h5 className={styles.captcha_text}>Enter Captcha</h5>
+      <div className={styles.Row}>
+        <h5 className={styles.Captcha_Text}>Enter Captcha</h5>
         <input
-          className={styles.captcha}
+          className={styles.Captcha}
           name="userInput"
           type="text"
           placeholder=""
         />
-        <div className={styles.row}>
-          <h5 className={styles.captcha_text}>Captcha Code</h5>
+        <div className={styles.Row}>
+          <h5 className={styles.Captcha_Text}>Captcha Code</h5>
           <input
-            className={styles.captcha_code}
+            className={styles.Captcha_Code}
             name="userInput"
             type="text"
             placeholder=""
           />
         </div>
       </div>
-      <div className={styles.row_send}>
-        <button type="submit" className={styles.send}>
+      <div className={styles.Row_send}>
+        <button type="submit" className={styles.Send}>
           Send
         </button>
       </div>
