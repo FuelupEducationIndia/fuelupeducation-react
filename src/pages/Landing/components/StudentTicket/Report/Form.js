@@ -1,9 +1,9 @@
 import React, { useReducer, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import attachment from 'assets/images/attachment.png'
+import attachment from '../../../../../assets/images/attachment.png'
 import styles from './Report.module.scss'
 
-export const Form = () => {
+const Form = () => {
   //   const {user,setuser}=useState({
   //     name:"",
   //     title:"",
@@ -46,9 +46,15 @@ export const Form = () => {
       <div className={styles.Row}>
         <h5 className={styles.Label}>Priority</h5>
         <div className={styles.Buttons}>
-          <div className={styles.Low_Buttons}>Low</div>
-          <button className={styles.Medium_Buttons}>Medium</button>
-          <div className={styles.High_Buttons}>High</div>
+          <button type="button" className={styles.LowButtons}>
+            Low
+          </button>
+          <button type="button" className={styles.MediumButtons}>
+            Medium
+          </button>
+          <button type="button" className={styles.HighButtons}>
+            High
+          </button>
         </div>
       </div>
       <div className={styles.Row}>
@@ -91,3 +97,4 @@ export const Form = () => {
     </form>
   )
 }
+export default Form

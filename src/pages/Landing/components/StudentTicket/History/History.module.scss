@@ -1,6 +1,6 @@
 .History{
    
-    @mixin text {
+    @mixin Text {
      
 font-family: "Muli Bold";
                 font-size: 16px;
@@ -10,7 +10,7 @@ font-family: "Muli Bold";
                 text-align: left;
                 color: #000000;       
     }
-    .History_Text{
+    .HistoryText{
        
     width: 20rem;
     height: 25px;
@@ -23,7 +23,7 @@ font-family: "Muli Bold";
         text-align: left;
         color: #707070;
       }
-    .History_Table{
+    .HistoryTable{
         width: 99rem;
         height: 50rem;
         overflow-y:auto; 
@@ -47,31 +47,31 @@ font-family: "Muli Bold";
             width: 17rem;
             height: 20px;
             // margin: 0 90px 0 0;
-            @include text;
+            @include Text;
         }
-        .Issue_Title {
+        .IssueTitle {
             width: 23rem;
             height: 20px;
             margin: 0 0.4rem 0.4rem 0rem;
-            @include text;
+            @include Text;
           }
           .Priority {
             width: 12rem;
             height: 20px;
             // margin: 0 0px 0 80px;
-            @include text;
+            @include Text;
           }
           .Description {
             width: 26rem;
             height: 20px;
             // margin: 0 172px 0 69px;
-            @include text;
+            @include Text;
           }
           .Status {
             width: 7rem;
             height: 20px;
         //  margin: 0px 40px 0 0px;
-            @include text;
+            @include Text;
           }
         }
         .Detail{
@@ -97,7 +97,7 @@ font-family: "Muli Bold";
                 // margin: 0 90px 0 0;
                 @include detail_text
             }
-            .Issue_Title {
+            .IssueTitle {
                 width: 20rem;
                 margin: 0px 30px 42px 0;
                 @include detail_text

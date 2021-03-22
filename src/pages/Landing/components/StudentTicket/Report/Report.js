@@ -1,12 +1,12 @@
 import React from 'react'
-import Girl from 'assets/images/Girl.png'
+import Girl from '../../../../../assets/images/Girl.png'
 import stlyes from './Report.module.scss'
-import { Form } from './Form'
+import Form from './Form'
 
-export const Report = () => {
+function Report() {
   return (
-    <div className={stlyes.Prob_Report}>
-      <h5 className={stlyes.Technical_Problem_Report}>
+    <div className={stlyes.ProbReport}>
+      <h5 className={stlyes.TechnicalProblemReport}>
         Technical Problem Report
       </h5>
       <div className={stlyes.Report}>
@@ -18,3 +18,4 @@ export const Report = () => {
     </div>
   )
 }
+export default Report

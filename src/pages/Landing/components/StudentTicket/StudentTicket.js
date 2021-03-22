@@ -1,9 +1,9 @@
 import React from 'react'
-import { History } from './History/History'
-import { Report } from './Report/Report'
-import { Top } from './Top/Top'
+import History from './History/History'
+import Report from './Report/Report'
+import Top from './Top/Top'
 
-const StudentTicket = () => {
+function StudentTicket() {
   return (
     <div>
       <Top />

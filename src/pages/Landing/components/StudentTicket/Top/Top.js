@@ -1,8 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
-import call from 'assets/images/call.png'
+import call from '../../../../../assets/images/call.png'
 import styles from './Top.module.scss'
 
-export const Top = () => {
+const Top = () => {
   //    const Student=[
   //         {id:1,
   //             name:"Sheela"},
@@ -19,3 +20,4 @@ export const Top = () => {
     </div>
   )
 }
+export default Top

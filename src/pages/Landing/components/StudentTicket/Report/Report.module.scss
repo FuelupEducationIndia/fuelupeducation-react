@@ -1,7 +1,7 @@
 @import 'sass/variables';
 // @import 'sass/typography';
-.Prob_Report{
-    .Technical_Problem_Report{
+.ProbReport{
+    .TechnicalProblemReport{
         width: 35rem;
   height: 25px;
   margin: 32px 247px 37px 1px;
@@ -30,7 +30,7 @@
     }
 }
 }
-@mixin reset-button {
+@mixin ResetButton {
     width: 99px;
     height: 31px;
     font-size: 14px;
@@ -106,22 +106,22 @@
          flex-direction: row;
             color: white;
 
-            .Low_Buttons{
-               @include reset-button;
+            .LowButtons{
+               @include ResetButton;
                 margin: 0 13px 0 0;
                 padding: 2px 35px 6px 36px;
                 background-color: #ffc95f;
                 border: 2px solid #ffc95f;
             }  
-          .Medium_Buttons{
-            @include reset-button;
+          .MediumButtons{
+            @include ResetButton;
             margin: 0 14px 0 13px;
             padding: 4px 23px 6px;
             background-color: #64aad9;
             border: 2px solid #64aad9;
           }
-          .High_Buttons{
-            @include reset-button;
+          .HighButtons{
+            @include ResetButton;
             margin: 0 0 0 14px;
             padding: 2px 33px 6px 34px;
             background-color: #ef271b;

@@ -1,18 +1,20 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-nested-ternary */
 import React, { useState } from 'react'
-import attachment from 'assets/images/attachment.png'
+import attachment from '../../../../../assets/images/attachment.png'
 import styles from './History.module.scss'
 import head from './mockData'
 import deleteIcon from '../../../../../components/icons/icons-svg/delete.svg'
 
-export const History = () => {
+const History = () => {
   return (
     <div className={styles.History}>
-      <h4 className={styles.History_Text}>Report History</h4>
+      <h4 className={styles.HistoryText}>Report History</h4>
 
-      <div className={styles.History_Table}>
+      <div className={styles.HistoryTable}>
         <div className={styles.Header}>
           <h2 className={styles.Instructor}>Instructor</h2>
-          <h2 className={styles.Issue_Title}>Issue Title</h2>
+          <h2 className={styles.IssueTitle}>Issue Title</h2>
           <h2 className={styles.Priority}>Priority</h2>
           <h2 className={styles.Description}>Description</h2>
           <h2 className={styles.Status}>Status</h2>
@@ -22,19 +24,20 @@ export const History = () => {
           return (
             <div className={styles.Detail}>
               <h2 className={styles.Instructor}>{item.Instructor}</h2>
-              <h2 className={styles.Issue_Title}>{item.IssueTitle}</h2>
-              {item.Priority == 'Low' ? (
+              <h2 className={styles.IssueTitle}>{item.IssueTitle}</h2>
+              {item.Priority === 'Low' ? (
                 <h2
                   className={styles.Priority}
                   style={{
                     color: '#ffc95f',
                     fontSize: 14,
                     fontWeight: 'bold',
+                    // eslint-disable-next-line prettier/prettier
                   }}
                 >
                   {item.Priority}
                 </h2>
-              ) : item.Priority == 'High' ? (
+              ) : item.Priority === 'High' ? (
                 <h2
                   className={styles.Priority}
                   style={{
@@ -58,7 +61,7 @@ export const History = () => {
                 </h2>
               )}
               <h2 className={styles.Description}>{item.Description}</h2>
-              {item.status == 'Pending' ? (
+              {item.status === 'Pending' ? (
                 <h2 className={styles.Status} style={{ color: '#f16600' }}>
                   {' '}
                   {item.status}
@@ -77,3 +80,4 @@ export const History = () => {
     </div>
   )
 }
+export default History
