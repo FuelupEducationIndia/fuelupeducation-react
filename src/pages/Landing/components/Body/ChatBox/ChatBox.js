@@ -6,6 +6,7 @@ import emmyIcon from 'assets/images/avatar.png'
 import styles from './ChatBox.module.scss'
 import Message from './Message/Message'
 import Input from './Input/Input'
+import Showcase from '../../showcase/Showcase'
 
 const messages2 = [
   {

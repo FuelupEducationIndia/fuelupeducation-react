@@ -1,4 +1,5 @@
 import React from 'react'
+import Showcase from '../showcase/Showcase'
 
 import styles from './Body.module.scss'
 import ChatBox from './ChatBox/ChatBox'

@@ -5,6 +5,7 @@ import arrowUpIcon from 'assets/images/arrow-up.png'
 import styles from './FileBox.module.scss'
 import Item from './Item/Item'
 import { files, links } from './mockData'
+import Showcase from '../../showcase/Showcase'
 
 export default () => (
   <div className={styles.FileBox}>
@@ -29,5 +30,6 @@ export default () => (
         <Item key={index} detail={link} />
       ))}
     </div>
+    {/* <Showcase /> */}
   </div>
 )

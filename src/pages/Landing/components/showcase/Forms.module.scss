@@ -1,0 +1,18 @@
+
+@import './variables';
+
+.Forms{
+    &input{
+        font-family: cursive;
+        padding:$pad+3 ;
+    }
+    &Button{
+       padding: $pad + 1 ;
+       font-variant: small-caps;
+       background-color: $background-color;
+        color: $color;
+       border-radius: $radius + 8 ;
+       border:none
+       
+    }
+}

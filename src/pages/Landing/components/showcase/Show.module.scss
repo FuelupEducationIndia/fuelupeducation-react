@@ -1,0 +1,47 @@
+
+
+@import './variables';
+
+.Show {
+  text-align: center;
+  margin-top: $margin +4;
+  &line{
+    width: 36%;
+    height: 2px;
+    background-color: blue;
+   
+    margin-left:$margin + 34;
+  }
+    
+    &h1{
+      font-family: cursive;
+      padding: $pad +1
+    }
+    &p{
+      font-family: serif;
+      padding-left: $margin + 5;
+    }
+    &Div{
+      margin-left: $margin + 19;
+      margin-top: $margin +1 ;
+      margin-bottom:$margin +2;
+    }
+    &DivIn{
+      padding: $pad +1;
+    }
+    &Forms{
+      text-align: center;
+      
+    }
+
+    
+  }
+
+  .Line{
+    width: 100%;
+    height: 2px;
+    background-color: green;
+    margin: 1.5rem 0;
+
+  }
+  
