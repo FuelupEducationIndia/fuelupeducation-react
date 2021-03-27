@@ -25,4 +25,5 @@ const head = [
     status: 'Pending',
   },
 ]
+
 export default head

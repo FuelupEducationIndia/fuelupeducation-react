@@ -1,12 +1,12 @@
+/* eslint-disable react/jsx-indent */
 /* eslint-disable prettier/prettier */
 /* eslint-disable no-nested-ternary */
-import React, { useState } from 'react'
-import attachment from '../../../../../assets/images/attachment.png'
+import React from 'react'
 import styles from './History.module.scss'
 import head from './mockData'
 import deleteIcon from '../../../../../components/icons/icons-svg/delete.svg'
 
-const History = () => {
+function History() {
   return (
     <div className={styles.History}>
       <h4 className={styles.HistoryText}>Report History</h4>
@@ -19,63 +19,49 @@ const History = () => {
           <h2 className={styles.Description}>Description</h2>
           <h2 className={styles.Status}>Status</h2>
         </div>
+        <div className={styles.DetailTable}>
+          {head.map(item => {
+            return (
+              <div className={styles.Detail}>
+                <h2 className={styles.Instructor}>{item.Instructor}</h2>
+                <h2 className={styles.IssueTitle}>{item.IssueTitle}</h2>
+                {item.Priority === 'Low' ? (
+                  <h2
+                    className={styles.PriorityLow}
+                  >
+                    {item.Priority}
+                  </h2>
+                ) : item.Priority === 'High' ? (
+                  <h2
+                    className={styles.PriorityHigh}
+                  >
+                    {item.Priority}
+                  </h2>
+                ) : (
+                  <h2
+                    className={styles.PriorityMedium}
+                  >
+                    {item.Priority}
+                  </h2>
+                )}
+                <h2 className={styles.Description}>{item.Description}</h2>
+                {item.status === 'Pending' ? (
+                  <h2 className={styles.StatusP}>
+                    {' '}
+                    {item.status}
+                  </h2>
+                ) : (
+                  <h2 className={styles.StatusS}>
+                    {' '}
+                    {item.status}
+                  </h2>
+                )}
+                <img className={styles.Delete} src={deleteIcon} alt="delete" />
+              </div>
+            )
+          })}
 
-        {head.map(item => {
-          return (
-            <div className={styles.Detail}>
-              <h2 className={styles.Instructor}>{item.Instructor}</h2>
-              <h2 className={styles.IssueTitle}>{item.IssueTitle}</h2>
-              {item.Priority === 'Low' ? (
-                <h2
-                  className={styles.Priority}
-                  style={{
-                    color: '#ffc95f',
-                    fontSize: 14,
-                    fontWeight: 'bold',
-                    // eslint-disable-next-line prettier/prettier
-                  }}
-                >
-                  {item.Priority}
-                </h2>
-              ) : item.Priority === 'High' ? (
-                <h2
-                  className={styles.Priority}
-                  style={{
-                    color: '#ef271b',
-                    fontSize: 14,
-                    fontWeight: 'bold',
-                  }}
-                >
-                  {item.Priority}
-                </h2>
-              ) : (
-                <h2
-                  className={styles.Priority}
-                  style={{
-                    color: '#64aad9',
-                    fontSize: 14,
-                    fontWeight: 'bold',
-                  }}
-                >
-                  {item.Priority}
-                </h2>
-              )}
-              <h2 className={styles.Description}>{item.Description}</h2>
-              {item.status === 'Pending' ? (
-                <h2 className={styles.Status} style={{ color: '#f16600' }}>
-                  {' '}
-                  {item.status}
-                </h2>
-              ) : (
-                <h2 className={styles.Status} style={{ color: '#2da231' }}>
-                  {' '}
-                  {item.status}
-                </h2>
-              )}
-              <img className={styles.Delete} src={deleteIcon} alt="delete" />
-            </div>
-          )
-        })}
+        </div>
       </div>
     </div>
   )

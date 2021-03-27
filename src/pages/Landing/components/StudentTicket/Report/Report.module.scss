@@ -1,12 +1,12 @@
 @import 'sass/variables';
-// @import 'sass/typography';
+
 .ProbReport{
     .TechnicalProblemReport{
-        width: 35rem;
-  height: 25px;
-  margin: 32px 247px 37px 1px;
+      width: 35rem;
+      height: 2.5rem;
+      margin: 3rem 0rem 3.2rem .1rem;
   font-family: "Muli Bold";
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1.25;
   text-align: left;
@@ -20,26 +20,26 @@
 }
 .ReportImg{
    
-    width: 410px;
+    width: 40rem;
     max-height: 50vh;
     img{
       width: 100%;
       height: auto;
-        margin: -19rem 0 0px -6rem;
+        margin: -19rem 0 0 -6rem;
         object-fit: contain;
     }
 }
 }
 @mixin ResetButton {
-    width: 99px;
-    height: 31px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: 'Muli Bold';
-    border-radius: 20px;
-    color: white;
-    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);
-    cursor: pointer;
+  width: 9.9rem;
+            height: 3.1rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            font-family: "Muli Bold";
+            border-radius: 2rem;
+            color: white;
+            box-shadow: 0.3rem 0.3rem 0.6rem 0 rgb(0 0 0 / 16%);
+            cursor: pointer;
   }
 .Form{
   width: -webkit-fill-available;
@@ -47,28 +47,28 @@
         display: flex;
         flex-direction: row;
         .Label{
-            width: 9rem;
-            height: 20px;
-            margin: 0px 13px 44px 24px;
-            font-family: 'Muli SemiBold';
-            font-size: 16px;
+          width: 9rem;
+          height: 2rem;
+          margin: 0rem 2rem 4.5rem 4rem;
+          font-family: "Muli SemiBold";
+          font-size: 1.6rem;
             font-weight: 600;
             line-height: 1.25;
             text-align: left;
             color: $primary-color; 
         }
         input{
-            width: 569px;
-            height: 40px;
-            margin: 0 0 24px 79px;
-            border-radius: 5px;
-            border: solid 1px #e4e4e4;
-            background-color: #ffffff;
-            padding-left: 1rem;
+          width: 56.9rem;
+          height: 4rem;
+          margin: 0 0 2.4rem 7.9rem;
+          border-radius: .3rem;
+          border: solid .1rem #e4e4e4;
+          background-color: #ffffff;
+          padding-left: 1rem;
         }
         input:focus{
-            border: solid 1px ;
-            outline:1px solid #e4e4e4 ;
+            border: solid .1rem ;
+            outline:.1rem solid #e4e4e4 ;
             border:none;
         } 
           .Wrapper{
@@ -76,64 +76,60 @@
           }
           img{
             position: absolute;
-            left: 606px;
+            left: calc(95% - 0.9rem);
             top: calc(74% - 0.5em); /* Keep icon in right of input, regardless of the input height */
           }
           textarea{
-            width: 569px;
-            height: 40px;
-            margin: 0 0 2px 79px;
-            border-radius: 5px;
-            border: solid 1px #e4e4e4;
+            margin: 0 0 .2rem 7.9rem;
+            border-radius: .5rem;
+            border: solid .1rem #e4e4e4;
             background-color: #ffffff;
-            // padding-left: 1rem;
             padding: 1rem;
         }
         textarea:focus{
-            border: solid 1px ;
-            outline:1px solid #e4e4e4 ;
+            border: solid .1rem ;
+            outline:.1rem solid #e4e4e4 ;
             border:none;
         }
         .Discription{
-            width: 569px;
-            height: 165px;
-            
-         
+            width: 56.9rem;
+            height: 16.5rem;
         }
         .Buttons{
-            margin: 0 0 24px 79px;
+          margin: 0 0 2.4rem 7.9rem;
          display: flex;
          flex-direction: row;
             color: white;
 
             .LowButtons{
                @include ResetButton;
-                margin: 0 13px 0 0;
-                padding: 2px 35px 6px 36px;
+                margin: 0 1.3rem 0 0;
+                padding: .2rem 3.5rem .6rem 3.6rem;
                 background-color: #ffc95f;
-                border: 2px solid #ffc95f;
+                border: .2rem solid #ffc95f;
             }  
           .MediumButtons{
             @include ResetButton;
-            margin: 0 14px 0 13px;
-            padding: 4px 23px 6px;
+            margin: 0 1.4rem 0 1.3rem;
+            padding: .4rem 2.3rem .6rem;
             background-color: #64aad9;
-            border: 2px solid #64aad9;
+            border: .2rem solid #64aad9;
+           
           }
           .HighButtons{
             @include ResetButton;
-            margin: 0 0 0 14px;
-            padding: 2px 33px 6px 34px;
+            margin: 0 0 0 1.4rem;
+            padding: .2rem 3.3rem .6rem 3.4rem;
             background-color: #ef271b;
-            border: 2px solid #ef271b;
+            border: .2rem solid #ef271b;
           }
         }
         .CaptchaText{
-            width: 13rem;
-            height: 23px;
-            margin: 10px -15px 44px 24px;
-            font-family: "Muli Regular";
-            font-size: 18px;
+          width: 13rem;
+          height: 2.3rem;
+          margin: 1rem -1.5rem 4.4rem 3.1rem;
+          font-family: "Muli Regular";
+          font-size: 1.8rem;
             font-weight: 600;
             line-height: 1.28;
             letter-spacing: normal;
@@ -143,40 +139,40 @@
        .Captcha{
         width: 17rem;
         height: 4rem;
-        margin: 10px 88px 25px 67px;
-        border-radius: 5px;
-        border: solid 1px #707070;
+        margin: 1rem 7.8rem 2.5rem 8.7rem;
+        border-radius: .5rem;
+        border: solid .1rem #707070;
         background-color: #ffffff;
        }
        .CaptchaCode {
         width: 14rem;
         height: 4rem;
         margin: 1rem 1rem 0rem 3rem;
-        padding: 7px 26px 8px;
-        border-radius: 5px;
+        padding: .7rem 2.6rem .8rem;
+        border-radius: .5rem;
         background-color: $primary-color;
       }
       
     }
     .RowSend{
         display: flex;
+        width: 80.1rem;
         flex-direction: row-reverse;
       .Send{
-          cursor: pointer;
-            width: 85px;
-            height: 24px;
-            margin: .5rem 24rem .4rem 0rem;
-            padding: .3rem 29.4px 4.8px 28.6px;
-            border-radius: 50px;
-            color: white;
-            border: solid 2px #f16600;
-            background-color:  #f16600;
-            font-family: "Muli Bold";
-            font-size: 11px;
-            font-weight: bold;
-            line-height: 1.27;
-            text-align: left;
-            color: #ffffff;
+        cursor: pointer;
+        width: 8.5rem;
+        height: 2.4rem;
+        padding: 0.3rem 2.9rem .8rem 2.8rem;
+        border-radius: 5rem;
+        color: white;
+        border: solid .2rem #f16600;
+        background-color: #f16600;
+        font-family: "Muli Bold";
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.27;
+        text-align: left;
+        color: #ffffff;
       }  
       }
 }

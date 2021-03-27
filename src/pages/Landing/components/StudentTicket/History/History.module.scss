@@ -1,127 +1,149 @@
-.History{
-   
-    @mixin Text {
-     
-font-family: "Muli Bold";
-                font-size: 16px;
-                font-weight: bold;
-                line-height: 1.25;
-                letter-spacing: normal;
-                text-align: left;
-                color: #000000;       
-    }
-    .HistoryText{
-       
+.History {
+  @mixin Text {
+    font-family: 'Muli Bold';
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    height: 60rem;
+  }
+
+  .HistoryText {
     width: 20rem;
-    height: 25px;
+    height: 2.7rem;
     margin: 3rem 0rem 1rem 2.7rem;
-        font-family: "Muli Bold";
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 1.25;
-        letter-spacing: normal;
-        text-align: left;
-        color: #707070;
+    font-family: 'Muli Bold';
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #707070;
+  }
+  .HistoryTable {
+    width: 99rem;
+    height: 55rem;
+    margin: 1rem 5rem 0 2.3rem;
+    padding: 0 0 3.8rem;
+    border: solid 0.1rem #707070;
+    background-color: #ffffff;
+
+    .Header {
+      width: 98.9rem;
+      height: 4.9rem;
+      margin: 0 0 0.3rem;
+      padding: 1rem 8rem 1rem 1.9rem;
+      border-bottom: solid 0.1rem #707070;
+      border-right: solid 0.1rem #707070;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      .Instructor {
+        width: 17rem;
+        @include Text;
       }
-    .HistoryTable{
-        width: 99rem;
-        height: 50rem;
-        overflow-y:auto; 
-        overflow-x: hidden; 
-        margin: 12px 205px 0 25px;
-        padding: 0 0 47.5px;
-        border: solid 1px #707070;
-        background-color: #ffffff;
-       
-        .Header{
-            width: 98.9rem;
-  height: 4.9rem;
-  margin: 0 0 17px;
-  padding: 13px 110px 15px 24px;
-  border-bottom: solid 1px #707070;
-  border-right: solid 1px #707070;
-  background-color: #ffffff;
-  display: flex;
+      .IssueTitle {
+        width: 23rem;
+        margin: 0 0.4rem 0.4rem 0rem;
+        @include Text;
+      }
+      .Priority {
+        width: 12rem;
+        @include Text;
+      }
+
+      .Description {
+        width: 26rem;
+        @include Text;
+      }
+      .Status {
+        width: 7rem;  
+        @include Text;
+      }
+     
+    }
+    .DetailTable {
+      height: 49rem;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      .Detail {
+        display: flex;
         flex-direction: row;
-        .Instructor{
-            width: 17rem;
-            height: 20px;
-            // margin: 0 90px 0 0;
-            @include Text;
+        margin: 3rem;
+        height: 15vh;
+        border-bottom: 0.1rem solid #707070;
+        text-align: left;
+
+        @mixin detail_text {
+          font-family: 'Muli Regular';
+          font-size: 1.4rem;
+          font-weight: normal;
+          line-height: 1.29;
+          letter-spacing: normal;
+          text-align: left;
+          color: #707070;
+        }
+        @mixin PriorityText {
+          font-family: 'Muli Regular';
+          font-size: 1.4rem;
+          font-weight: normal;
+          line-height: 1.29;
+          letter-spacing: normal;
+          text-align: left;
+          margin: 0rem 0.1rem 3.2rem 0rem;
+        }
+        .Instructor {
+          width: 10rem;
+          margin: 0rem 6.2rem 3.2rem 0;
+          @include detail_text;
         }
         .IssueTitle {
-            width: 23rem;
-            height: 20px;
-            margin: 0 0.4rem 0.4rem 0rem;
-            @include Text;
-          }
-          .Priority {
-            width: 12rem;
-            height: 20px;
-            // margin: 0 0px 0 80px;
-            @include Text;
-          }
-          .Description {
-            width: 26rem;
-            height: 20px;
-            // margin: 0 172px 0 69px;
-            @include Text;
-          }
-          .Status {
-            width: 7rem;
-            height: 20px;
-        //  margin: 0px 40px 0 0px;
-            @include Text;
-          }
+          width: 20rem;
+          margin: 0rem 3rem 4.2rem 0;
+          @include detail_text;
         }
-        .Detail{
-            display: flex;
-            flex-direction: row;
-            margin: 3rem;
-            height: 15vh;
-            border-bottom: 1px solid #707070;
-            text-align: left;
-           @mixin detail_text{
-         
-  font-family: "Muli Regular";
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
-  text-align: left;
-  color: #707070;
-            }
-            .Instructor{
-                width: 10rem;
-                margin: 0px 62px 42px 0;
-                // margin: 0 90px 0 0;
-                @include detail_text
-            }
-            .IssueTitle {
-                width: 20rem;
-                margin: 0px 30px 42px 0;
-                @include detail_text
-              }
-              .Priority {
-                width: 12rem;
-                margin: 0px 1px 42px 6px;
-                @include detail_text
-              }
-              .Description {
-                width: 20rem;
-                margin: 0px 60px 42px 0rem;
-                @include detail_text
-              }
-              .Status {
-                width: 7rem;
-                @include detail_text
-              }
-              .Delete{
-                width: 25px;
-                height: 30px;
-    margin: 0rem 0rem 0rem 4rem;  
-              }
+        .PriorityLow {
+          width: 12rem;
+          color: #ffc95f !important;
+          @include PriorityText;
         }
+        .PriorityMedium {
+          width: 12rem;
+
+          color: #64aad9;
+
+          @include PriorityText;
+        }
+        .PriorityHigh {
+          width: 12rem;
+          color: #ef271b;
+
+          @include PriorityText;
+        }
+        .Description {
+          width: 20rem;
+          margin: 0rem 6rem 3.2rem 0rem;
+          @include detail_text;
+        }
+        .StatusP {
+          width: 7rem;
+          color: #f16600;
+          @include PriorityText;
+        }
+        .StatusS {
+          width: 7rem;
+          color: #2da231;
+          @include PriorityText;
+        }
+        .Delete {
+          width: 2.5rem;
+          height: 2.1rem;
+          margin: 0rem 0rem 0rem 4rem;
+        }
+      }
     }
-   
+  }
 }

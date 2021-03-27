@@ -1,7 +1,7 @@
 import React from 'react'
 import Girl from '../../../../../assets/images/Girl.png'
 import stlyes from './Report.module.scss'
-import Form from './Form'
+import ReportForm from './ReportForm'
 
 function Report() {
   return (
@@ -10,7 +10,7 @@ function Report() {
         Technical Problem Report
       </h5>
       <div className={stlyes.Report}>
-        <Form />
+        <ReportForm />
         <div className={stlyes.ReportImg}>
           <img src={Girl} alt="girl" />
         </div>

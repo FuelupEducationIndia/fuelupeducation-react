@@ -3,45 +3,16 @@ import { useForm } from 'react-hook-form'
 import attachment from '../../../../../assets/images/attachment.png'
 import styles from './Report.module.scss'
 
-const Form = () => {
-  //   const {user,setuser}=useState({
-  //     name:"",
-  //     title:"",
-  //     discription:"",
-  //   });
-  //   const {record,setrecord}=useState([]);
-  //   const handleInput=(e)=>{
-  //     const name=e.target.name;
-  //     const value=e.target.value;
-  //     console.log(name,value);
-  //     setuser({...user,[nsme]:value});
-  //   }
-  //   const Onsubmit=(e)=>{
-  //     e.preventDefault();
-  // const newRecord={...user};
-  // setrecord([...record,newRecord]);
-  //   }
+const ReportForm = () => {
   return (
     <form className={styles.Form}>
       <div className={styles.Row}>
         <h5 className={styles.Label}>Full Name</h5>
-        <input
-          name="Fullname"
-          type="text"
-          // value={user.name}
-          // onChange={handleInput}
-          placeholder=""
-        />
+        <input name="Fullname" type="text" placeholder="" />
       </div>
       <div className={styles.Row}>
         <h5 className={styles.Label}>Issue Title</h5>
-        <input
-          name="Issue Title"
-          type="text"
-          // value={user.title}
-          // onChange={handleInput}
-          placeholder=""
-        />
+        <input name="Issue Title" type="text" placeholder="" />
       </div>
       <div className={styles.Row}>
         <h5 className={styles.Label}>Priority</h5>
@@ -62,8 +33,6 @@ const Form = () => {
         <div className={styles.Wrapper}>
           <textarea
             name="description"
-            // value={user.description}
-            // onChange={handleInput}
             type="text"
             placeholder=""
             className={styles.Discription}
@@ -97,4 +66,4 @@ const Form = () => {
     </form>
   )
 }
-export default Form
+export default ReportForm
