@@ -7,6 +7,16 @@ import head from './mockData'
 import deleteIcon from '../../../../../components/icons/icons-svg/delete.svg'
 
 function History() {
+  const Priorities={
+    Low :"Low",
+    Medium:"Medium",
+    High:"High"
+  };
+  const Status={
+    Pending :"Pending",
+    Solved:"Solved",
+    
+  };
   return (
     <div className={styles.History}>
       <h4 className={styles.HistoryText}>Report History</h4>
@@ -25,13 +35,13 @@ function History() {
               <div className={styles.Detail}>
                 <h2 className={styles.Instructor}>{item.Instructor}</h2>
                 <h2 className={styles.IssueTitle}>{item.IssueTitle}</h2>
-                {item.Priority === 'Low' ? (
+                {item.Priority === Priorities.Low ? (
                   <h2
                     className={styles.PriorityLow}
                   >
                     {item.Priority}
                   </h2>
-                ) : item.Priority === 'High' ? (
+                ) : item.Priority === Priorities.High ? (
                   <h2
                     className={styles.PriorityHigh}
                   >
@@ -45,7 +55,7 @@ function History() {
                   </h2>
                 )}
                 <h2 className={styles.Description}>{item.Description}</h2>
-                {item.status === 'Pending' ? (
+                {item.status === Status.Pending ? (
                   <h2 className={styles.StatusP}>
                     {' '}
                     {item.status}

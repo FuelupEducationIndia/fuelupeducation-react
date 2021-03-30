@@ -89,7 +89,7 @@
         @mixin PriorityText {
           font-family: 'Muli Regular';
           font-size: 1.4rem;
-          font-weight: normal;
+          font-weight: bold;
           line-height: 1.29;
           letter-spacing: normal;
           text-align: left;
@@ -139,6 +139,7 @@
           @include PriorityText;
         }
         .Delete {
+          cursor: pointer;
           width: 2.5rem;
           height: 2.1rem;
           margin: 0rem 0rem 0rem 4rem;
