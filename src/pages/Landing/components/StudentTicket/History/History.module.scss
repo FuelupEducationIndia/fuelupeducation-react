@@ -24,7 +24,8 @@
   }
   .HistoryTable {
     width: 99rem;
-    height: 55rem;
+    // height: 46rem;
+    height: 42rem;
     margin: 1rem 5rem 0 2.3rem;
     padding: 0 0 3.8rem;
     border: solid 0.1rem #707070;
@@ -65,7 +66,7 @@
      
     }
     .DetailTable {
-      height: 49rem;
+      height: 36rem;
       overflow-y: auto;
       overflow-x: hidden;
 
@@ -73,7 +74,7 @@
         display: flex;
         flex-direction: row;
         margin: 3rem;
-        height: 15vh;
+        height: fit-content;
         border-bottom: 0.1rem solid #707070;
         text-align: left;
 
@@ -86,15 +87,6 @@
           text-align: left;
           color: #707070;
         }
-        @mixin PriorityText {
-          font-family: 'Muli Regular';
-          font-size: 1.4rem;
-          font-weight: bold;
-          line-height: 1.29;
-          letter-spacing: normal;
-          text-align: left;
-          margin: 0rem 0.1rem 3.2rem 0rem;
-        }
         .Instructor {
           width: 10rem;
           margin: 0rem 6.2rem 3.2rem 0;
@@ -105,38 +97,30 @@
           margin: 0rem 3rem 4.2rem 0;
           @include detail_text;
         }
-        .PriorityLow {
+        .priority {
+          font-family: 'Muli Regular';
+          font-size: 1.4rem;
+          font-weight: bold;
+          line-height: 1.29;
+          letter-spacing: normal;
+          text-align: left;
+          margin: 0rem 0.1rem 3.2rem 0rem;
           width: 12rem;
-          color: #ffc95f !important;
-          @include PriorityText;
-        }
-        .PriorityMedium {
-          width: 12rem;
-
-          color: #64aad9;
-
-          @include PriorityText;
-        }
-        .PriorityHigh {
-          width: 12rem;
-          color: #ef271b;
-
-          @include PriorityText;
         }
         .Description {
           width: 20rem;
           margin: 0rem 6rem 3.2rem 0rem;
           @include detail_text;
         }
-        .StatusP {
+        .status {
+          font-family: 'Muli Regular';
+          font-size: 1.4rem;
+          font-weight: bold;
+          line-height: 1.29;
+          letter-spacing: normal;
+          text-align: left;
+          margin: 0rem 0.1rem 3.2rem 0rem;
           width: 7rem;
-          color: #f16600;
-          @include PriorityText;
-        }
-        .StatusS {
-          width: 7rem;
-          color: #2da231;
-          @include PriorityText;
         }
         .Delete {
           cursor: pointer;

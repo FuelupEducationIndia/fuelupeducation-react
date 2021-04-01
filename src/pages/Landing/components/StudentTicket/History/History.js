@@ -1,22 +1,46 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-return-assign */
+/* eslint-disable no-else-return */
 /* eslint-disable react/jsx-indent */
 /* eslint-disable prettier/prettier */
 /* eslint-disable no-nested-ternary */
 import React from 'react'
 import styles from './History.module.scss'
-import head from './mockData'
+import reportHistories from './mockData'
 import deleteIcon from '../../../../../components/icons/icons-svg/delete.svg'
+// eslint-disable-next-line import/no-duplicates
+import Priorities from './enums'
+// eslint-disable-next-line import/no-duplicates
+import Status from './status'
 
 function History() {
-  const Priorities={
-    Low :"Low",
-    Medium:"Medium",
-    High:"High"
+  
+  //  eslint-disable-next-line consistent-return
+   const getColor=(priority,status)=> {
+
+    console.log("Low",Priorities.Low);
+     if(priority === 'Low'){
+       return "#ffc95f";
+      }
+      console.log("High",Priorities.High);
+       if(priority === Priorities.High){
+        // eslint-disable-next-line no-undef
+        return "#ef271b" ;
+      }
+      if(priority === Priorities.Medium) {
+          return "#64aad9";
+      }
   };
-  const Status={
-    Pending :"Pending",
-    Solved:"Solved",
-    
-  };
+  // eslint-disable-next-line consistent-return
+  function getColr(status) {
+    if (status === Status.Pending) {
+      return "#f16600"
+    }
+    if (status === Status.Solved) {
+      return "#2da231"
+    }
+
+  }
   return (
     <div className={styles.History}>
       <h4 className={styles.HistoryText}>Report History</h4>
@@ -30,42 +54,31 @@ function History() {
           <h2 className={styles.Status}>Status</h2>
         </div>
         <div className={styles.DetailTable}>
-          {head.map(item => {
+          {reportHistories.map(item => {
             return (
               <div className={styles.Detail}>
-                <h2 className={styles.Instructor}>{item.Instructor}</h2>
-                <h2 className={styles.IssueTitle}>{item.IssueTitle}</h2>
-                {item.Priority === Priorities.Low ? (
+                <h2 className={styles.Instructor}>{item.instructor}</h2>
+                <h2 className={styles.IssueTitle}>{item.issueTitle}</h2>
+              
                   <h2
-                    className={styles.PriorityLow}
-                  >
-                    {item.Priority}
+                    className={styles.priority} 
+                  
+                    // eslint-disable-next-line react/jsx-props-no-multi-spaces
+                    style={{'color': getColor(item.priority)}}
+                  > 
+                    {item.priority}
                   </h2>
-                ) : item.Priority === Priorities.High ? (
+                  
+               
+                <h2 className={styles.Description}>{item.description}</h2>
                   <h2
-                    className={styles.PriorityHigh}
+                    className={styles.status}
+                    style={{'color': getColr(item.status)}}
                   >
-                    {item.Priority}
-                  </h2>
-                ) : (
-                  <h2
-                    className={styles.PriorityMedium}
-                  >
-                    {item.Priority}
-                  </h2>
-                )}
-                <h2 className={styles.Description}>{item.Description}</h2>
-                {item.status === Status.Pending ? (
-                  <h2 className={styles.StatusP}>
                     {' '}
                     {item.status}
                   </h2>
-                ) : (
-                  <h2 className={styles.StatusS}>
-                    {' '}
-                    {item.status}
-                  </h2>
-                )}
+              
                 <img className={styles.Delete} src={deleteIcon} alt="delete" />
               </div>
             )

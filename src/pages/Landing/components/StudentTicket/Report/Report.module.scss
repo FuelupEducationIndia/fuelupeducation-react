@@ -150,7 +150,16 @@
         margin: 1rem 1rem 0rem 3rem;
         padding: .7rem 2.6rem .8rem;
         border-radius: .5rem;
+        font-family: "Muli Regular";
+        font-weight: 500;
         background-color: $primary-color;
+        color: white !important;
+        font-size: 2.6rem;
+        letter-spacing: 0.1rem;
+       
+      }
+      ::placeholder{
+        color: white
       }
       
     }

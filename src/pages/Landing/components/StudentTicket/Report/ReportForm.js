@@ -54,7 +54,7 @@ const ReportForm = () => {
             className={styles.CaptchaCode}
             name="userInput"
             type="text"
-            placeholder=""
+            placeholder="532dif"
           />
         </div>
       </div>

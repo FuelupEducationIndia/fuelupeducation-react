@@ -1,29 +1,30 @@
-const head = [
+const reportHistories = [
   {
     id: 1,
-    Instructor: 'waseem',
-    IssueTitle: 'Odio facilisis mauris sit Odio facilisis mauris sit',
-    Priority: 'Low',
-    Description:
+    instructor: 'waseem',
+    issueTitle: 'Odio facilisis mauris sit Odio facilisis mauris sit',
+    priority: 'Low',
+    description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  … See more',
     status: 'Pending',
   },
   {
     id: 2,
-    Instructor: 'Ali rehman',
-    IssueTitle: 'title issues',
-    Priority: 'Medium',
-    Description: 'Lorem ipsum dolor sit amet',
+    instructor: 'Ali rehman',
+    issueTitle: 'title issues',
+    priority: 'Medium',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ',
     status: 'Solved',
   },
   {
     id: 3,
-    Instructor: 'Rahul',
-    IssueTitle: 'title issues',
-    Priority: 'High',
-    Description: 'Lorem ipsum dolor sit amet',
+    instructor: 'Rahul',
+    issueTitle: 'title issues',
+    priority: 'High',
+    description: 'Lorem ipsum dolor sit amet',
     status: 'Pending',
   },
 ]
 
-export default head
+export default reportHistories
