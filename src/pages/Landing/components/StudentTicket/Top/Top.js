@@ -1,13 +1,10 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
-import call from '../../../../../assets/images/call.png'
+import call from 'assets/images/call.png'
 import styles from './Top.module.scss'
 
 const Top = () => {
-  //    const Student=[
-  //         {id:1,
-  //             name:"Sheela"},
-  //     ];
   return (
     <div className={styles.TopSection}>
       <div className={styles.Head}>

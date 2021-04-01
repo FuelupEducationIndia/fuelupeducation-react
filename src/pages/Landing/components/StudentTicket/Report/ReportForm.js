@@ -1,6 +1,7 @@
+/* eslint-disable import/no-unresolved */
 import React, { useReducer, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import attachment from '../../../../../assets/images/attachment.png'
+import attachment from 'assets/images/attachment.png'
 import styles from './Report.module.scss'
 
 const ReportForm = () => {
