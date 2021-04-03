@@ -1,0 +1,22 @@
+@media screen and (min-width: 100px) and (max-width: 1023px){
+  .App{
+    display:none
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .for-mobile{
+    display:none
+  }
+}
+.for-mobile{
+  text-align: center;
+  margin-top: 50px;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(./assets/font/Poppins-Regular.ttf);
+}
+body{
+  font-family: myFirstFont;
+}

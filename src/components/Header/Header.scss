@@ -1,0 +1,93 @@
+$textColor: white;
+
+@media screen and (max-width: 1024px){
+    .mid-section {
+        padding: 20px 40px !important
+    }
+
+    .options{
+            margin: auto 15px !important;
+    }
+}
+.header-main {
+    background-image: url('../../assets/imgs/background.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+
+    .mid-section {
+        display: flex;
+        padding: 20px 80px;
+        color: $textColor;
+        justify-content: space-between;
+    }
+
+    .donate-now-btn{
+        background: white;
+        color: #ff8311;
+        padding: 7px 20px;
+        outline: none;
+        margin: auto 10px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: none;
+        cursor: pointer;
+        &:hover{
+            color:white;
+            background: #ff8311;
+        }
+    }
+
+    .menu-options {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .login-div {
+        display: flex;
+
+        .login-text {
+            margin: auto 20px;
+            cursor:pointer;
+            &:hover{
+                transform: scale(1.2)
+            }
+        }
+
+        .start-learning-btn {
+            background: #ff8311;
+            color: white;
+            padding: 7px 20px;
+            outline: none;
+            margin: auto 10px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: none;
+            cursor: pointer;
+            &:hover{
+                color:#ff8311;
+                background: white;
+            }
+        }
+    }
+
+    .options {
+        margin: auto 30px;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.2)
+        }
+    }
+    .bottom-section{
+        color:$textColor;
+        text-align: center;
+        margin-top: 100px;
+        .banner-heading{
+            font-size: 50px;
+        }
+        .banner-text{
+            font-size: 20px;
+        }
+    }
+}

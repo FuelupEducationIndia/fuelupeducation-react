@@ -1,0 +1,45 @@
+@media screen and (max-width: 1024px){
+    .footer-main{
+        width:95% !important
+    }
+}
+
+.footer-main{
+    width: 80%;
+    margin: 150px auto ;
+    display: flex;
+    color: #4b22be;
+    justify-content: space-between;
+    .logo-div{
+        margin:30px 0;
+        .logo{
+            width: 30%;
+            margin: auto 0;
+        }
+        h1{
+            margin: auto 0;
+        }
+        p{
+            margin: auto 0;
+        }
+       
+    }
+    .options-menu{
+        list-style-type: none;
+        .options{
+            margin:10px 0;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.2)
+            }
+        }
+    }
+    .icon{
+        width: 20%;
+        height: 40px;  cursor: pointer;
+    }
+    .social-icons{
+        width:15%;
+        cursor: pointer;
+    }
+}
