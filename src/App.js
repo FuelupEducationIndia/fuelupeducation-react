@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <Navber/>
       <Home/>
+      {/* Eslint and Prettier is installed */}
     </div>
   );
 }
