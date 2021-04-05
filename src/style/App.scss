@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+   
+}
+
+.cardShadow{
+    min-height:100vh;
+    width: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.5);
+
+    
+
+
+}
+
+.card{
+    height:58vh;
+    width:33%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color:white;
+    border-radius: 0.5rem;
+    
+}
+.faqrcode{
+
+    padding:1rem;
+    font-size:6rem;
+}
+body{
+    background: #FAF9FE;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+@import "./EditIntro";
+@import "./EditForm";
+@import "./SignInInfo";
+@import "./ToggleSwitch";
+@import "./FingerPrint";
+@import "./faceId"
+
+
+
+
+
+
+
+
+
+
+
+

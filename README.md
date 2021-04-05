@@ -1,115 +1,70 @@
-# Added pre-commit hooks
+# Getting Started with Create React App
 
-lint and prettify before sending to server
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-_todo: dockerizing dev and prod modes
-_
+## Available Scripts
 
-!! image not centered. another assets is requested
+In the project directory, you can run:
 
-# React boilerplate on port 3000:
+### `npm start`
 
-Features: devServer, modules,fonts, ReactRouter
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### ReactRouter fixed devServer
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-**
-NOTE! important!!!
-only ubuntu style works for old and new browser.
-EOF, TTF, WOF2 missing for MULI!!!**
+### `npm test`
 
-#### CSS/SCSS modules enabled
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-`import './App.css'`
+### `npm run build`
 
-or module
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-`import styles from './App.module.scss"`
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-#### Fonts Support:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-( WOFF - Web Open Font Format - REC - not supports IE6-8 Opera Mini all)
-For fonts support check branch with withFonts.
+### `npm run eject`
 
-git checkout withFonts
-as example added Muli Fonts
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-`
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-````language
-- src/
-  --- assets/
-  ----- fonts/
-  ------- Muli-Regular.woff
-  ------- Muli-Regular.woff2
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-including with @font-face definition
+## Learn More
 
-```language
-`
- @font-face {
-  font-family: 'Muli Regular';
-  font-style: normal;
-  font-weight: normal;
-  src:
-    url('./assets/fonts/Muli-Regular.woff2') format('woff2'),
-    url('./assets/fonts/Muli-Regular.woff') format('woff');
-}
-````
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### some useful github commands
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-\$ `git checkout <existing_branch>`
+### Code Splitting
 
-create and switch to it:
-\$ `git checkout -b <new_branch>`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-to a existiing one
-\$`git branch <branch_name>`
+### Analyzing the Bundle Size
 
-or use switch
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-\$ `git switch <existing_branch>`
+### Making a Progressive Web App
 
-\$ `git switch -c <non_existing_branch>`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-push: \$`git push origin <branch_name>
+### Advanced Configuration
 
-### About Prettier and it settings:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-in .eslintrc :
-disable Proptypes error:
-`"react/prop-types": 0,`
-disable no-used-var error:
-`"no-unused-vars":0`
+### Deployment
 
-or commentat file beginning:
-/_ eslint react/prop-types: 0 _/
-or this:
-/_ eslint react/forbid-prop-types: 0 _/
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-**Note: about user roles.**
-when create a new user role/ because it can have different routes/contributions, it will have different layout.
-steps to add, for a admin role:
+### `npm run build` fails to minify
 
-1. Add it own route in a separate routing file(see ./src/publicRoutes.js).
-2. Do his AdminLayout (Navbar will be rendered for all routes, a HOC). example of Layout:
-
-```
-<>
-<NavBar/>
-{props.children}
-<Footer/>
-<>
-```
-
-3. Import Layout in App.js and put it on else block
-   if (user==="admin) {
-   layoutToDisplay = user === 'public' && (
-   <AdminLayout>
-   <AdminRenderRoutes routes={ADMINROUTES} />
-   </AdminLayout>
-   );
-   }
-4. Test it!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

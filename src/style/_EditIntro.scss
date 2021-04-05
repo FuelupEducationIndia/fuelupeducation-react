@@ -1,0 +1,35 @@
+.EditIntro {
+  min-height: 20vh;
+  border:0.1rem solid #D3B6F3;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.1rem 1.5rem;
+  padding: 0rem 3rem;
+  background-color: rgb(228, 222, 240);
+  position: relative;
+  h1 {
+    color: #3e1882;
+    font-weight: 800;
+    line-height: 2rem;
+  }
+  h3{
+      color:#6A48A6;
+      font-weight:200;
+      line-height: 4rem;
+
+  }
+}
+
+.img{
+ 
+    img{
+        position: absolute;
+        left:70rem;
+        top:1rem;
+        width:20%;
+        height:21vh;
+        object-fit:cover;
+    }
+}

@@ -1,0 +1,95 @@
+.upperCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  background-color: #f5f4f4;
+  h3 {
+    font-size: 1rem;
+  }
+  .fatimes {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #2c2c2c;
+    cursor: pointer;
+  }
+}
+
+.contentCard{
+    width:100%;
+    height: 38vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+    div{
+        color:#5a5959;
+       
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        h5{
+            font-weight:500;
+        }
+    }
+    .fingerprint{
+   
+        border:1px solid #BCBBBF;
+        padding:2rem;
+        border-radius: 50%;
+    
+        .faFingerprint{
+            font-size:6rem;
+            color:#BCBBBF;
+            cursor: pointer;
+        }
+
+        
+    }
+    .touch{
+        color:#BCBBBF;
+        font-weight:100;
+    }
+    
+   
+}
+
+.cardTools{
+    width:100%; 
+    display:flex;
+    justify-content:flex-end;
+    height:20vh;
+    div{
+        padding:1.5rem 1.4rem;
+        button{
+           margin:0.5rem;
+        }
+        
+        .done{
+            cursor: pointer;
+            background-color:#3B0E8A;
+            padding:0.3rem 1.6rem;;
+            color: white;
+            font-weight: 100;
+            font-size:0.6rem;
+            border-radius:2rem;
+            &:focus-within {
+                outline: none;
+              }
+            
+
+        }
+        .addFinger{
+            cursor: pointer;
+            background-color: transparent;
+            border:none;
+            color:#3B0E8A;
+            &:focus-within {
+                outline: none;
+              }
+        }
+    }
+
+
+}

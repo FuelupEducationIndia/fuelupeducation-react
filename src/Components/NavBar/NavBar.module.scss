@@ -1,0 +1,71 @@
+// Loading variables for styling
+
+@import '../../assets/styles/sass/variables';
+
+.Navigation {
+  font-family: $font;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:2rem 1rem;
+  color: #ffffff;
+  background-color: $background-color;
+}
+
+.Nav {
+  &Items {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+  }
+
+  &Item:not(:last-child) {
+    margin-right: 3rem;
+    line-height: 1.13;
+  }
+
+  &Item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-color;
+    font-weight: 900;
+    font-size: 1rem;
+
+    &Relative {
+      position: relative;
+    }
+
+    &Badge {
+      color: white;
+      background-color: $primary-color;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      font-size: 1rem;
+      top: 0;
+      right: -5px;
+    }
+
+    &Active {
+      position: absolute;
+      width: 1.1rem;
+      height: 1.1rem;
+      background-color: #2da231;
+      border-radius: 50%;
+      top: 0;
+      right: 0;
+    }
+
+    img {
+      padding-left: 0.5rem;
+      color: $primary-color;
+    }
+    
+  }
+}
