@@ -1,0 +1,33 @@
+.ProfileDetails {
+    width: 100%;
+}
+
+.ProfileHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProfileHeadingText {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.EditText {
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    color: #858587;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.EditImage {
+    width: 30%;
+    margin-right: 15%;
+}
+
+.Heading {
+    font-weight: bold;
+    color: #858587;
+    font-size: 18px;
+}

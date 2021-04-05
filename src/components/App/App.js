@@ -10,6 +10,7 @@ import LoadingSimple from '../UI/LoadingSimple/LoadingSimple'
 
 // Routes and Layout for public/unauthorized user
 import Layout from '../Layouts/PublicLayout'
+import Profile from '../../pages/profile/Profile'
 
 const App = ({ title }) => {
   // Get current location. if it's homepage =>  rendering landing
@@ -19,6 +20,8 @@ const App = ({ title }) => {
 
   if (location.pathname === '/') {
     layoutToDisplay = <Layout />
+  } else if (location.pathname === '/profile') {
+    layoutToDisplay = <Profile />
   }
   return <div className={styles.Container}>{layoutToDisplay}</div>
 }

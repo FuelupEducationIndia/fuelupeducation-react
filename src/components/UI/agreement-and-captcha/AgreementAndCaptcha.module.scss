@@ -1,0 +1,76 @@
+.CheckBoxDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .CheckBoxSpan {
+        width: 92%;
+        font-size: 15px;
+    }
+}
+
+.bigCheckbox, .bigCheckboxR {
+	display: none;
+}
+
+.bigCheckbox + label, .bigCheckboxR + label {
+    background-color: #fafafa;
+    border: 1px solid #797c7c;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%), inset 0px -15px 10px -12px rgb(0 0 0 / 5%);
+    /* border-radius: 3px; */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.bigCheckbox + label {
+    padding: 8px;
+}
+.bigCheckboxR + label {
+    padding: 11px;
+}
+
+.bigCheckbox:checked + label:after, .bigCheckboxR:checked + label:after {
+    content: '\2714';
+    position: absolute;
+    
+}
+
+.bigCheckbox:checked + label:after {
+    color: #99a1a7;
+    top: -30%;
+    font-size: 16px;
+    left: 8%;
+}
+
+.bigCheckboxR:checked + label:after {
+    color: #40ee40;
+    top: -30%;
+    font-size: 20px;
+    left: 10%;
+}
+
+.recaptchaDiv {
+    display: flex;
+    background-color: rgba(245, 238, 238, 0.979);
+    align-items: center;
+    justify-content: space-between;
+    padding: 4%;
+    margin-top: 3%;
+    width: 75%;
+    margin-bottom: 5%;
+
+    img {
+        width: 15%;
+    }
+}
+
+.recaptchaInnerDiv {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.checkBoxInnerDiv {
+    display: flex;
+    align-items: center;
+}
