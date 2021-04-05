@@ -1,2 +1,4 @@
 node_modules/
 public/
+rules: { ... 'react/prop-types': ['off'], 
+}

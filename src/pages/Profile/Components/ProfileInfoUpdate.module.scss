@@ -1,0 +1,61 @@
+@import 'sass/variables';
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url('../assets/Group\ 1595.png');// delete this when the profile page is made , it will pop up over that page
+  background-size: 720px 1010px; // delete this when the profile page is made 
+  background-repeat: no-repeat;// delete this when the profile page is made 
+  background-position-x: center;// delete this when the profile page is made 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.CoursesContainer {
+  
+  background-color:$secondary-color;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  width: 440px;
+  height: 120px;
+  display: inline-grid;
+  grid-template-columns: 47px 1fr 24px;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    'tickmark Title closeApp'
+    'tickmark description closeApp';
+  .CompleteMark {
+    grid-area: tickmark;
+    align-self: center;
+    > img {
+      height: 34px;
+      width: 47px;
+      padding-right: 10px;
+    }
+  }
+
+  .title {
+    grid-area: Title;
+    font-size: 18px;
+    color: $primary-color;
+    align-self: end;
+  }
+  .closeApp {
+    grid-area: closeApp;
+  }
+  .description {
+    grid-area: description;
+    font-size: 16px;
+    color: #707070;
+    align-self: start;
+  }
+}
+
