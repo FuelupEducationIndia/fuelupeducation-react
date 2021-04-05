@@ -24,7 +24,7 @@ const messages2 = [
   },
 ]
 
-export default ({
+const ChatBox = ({
   messages = [
     {
       name: 'Emily Smith',
@@ -69,3 +69,7 @@ export default ({
     <Input />
   </div>
 )
+
+ChatBox.displayName = 'ChatBox'
+
+export default ChatBox

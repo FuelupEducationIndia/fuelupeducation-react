@@ -6,7 +6,7 @@ import microIcon from 'assets/images/micro.png'
 import { useForm } from 'react-hook-form'
 import styles from './Input.module.scss'
 
-export default () => {
+const Input = () => {
   const { register, handleSubmit, errors } = useForm() // initialize the hook
   const onSubmit = data => {
     console.log(data)
@@ -27,3 +27,7 @@ export default () => {
     </form>
   )
 }
+
+Input.displayName = 'Input'
+
+export default Input

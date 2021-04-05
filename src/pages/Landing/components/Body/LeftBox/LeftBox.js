@@ -9,7 +9,7 @@ import moreIcon from 'assets/images/more.png'
 import avatar from 'assets/images/avatar.png'
 import styles from './LeftBox.module.scss'
 
-export default () => (
+const LeftBox = () => (
   <div className={styles.LeftBox}>
     <div className={styles.LeftBoxActions}>
       <div className={styles.LeftBoxAction}>
@@ -74,3 +74,7 @@ export default () => (
     </div>
   </div>
 )
+
+LeftBox.displayName = 'LeftBox'
+
+export default LeftBox

@@ -6,7 +6,7 @@ import styles from './FileBox.module.scss'
 import Item from './Item/Item'
 import { files, links } from './mockData'
 
-export default () => (
+const FileBox = () => (
   <div className={styles.FileBox}>
     <img src={groupIcon} alt="Group" />
     <div className={styles.GroupName}>General</div>
@@ -31,3 +31,7 @@ export default () => (
     </div>
   </div>
 )
+
+FileBox.displayName = 'FileBox'
+
+export default FileBox

@@ -1,0 +1,16 @@
+.table{
+    border:1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    thead{
+        border-bottom: 1px solid rgb(204, 194, 194);
+    }
+    tbody{
+        tr{
+        border-bottom: 1px solid rgb(204, 194, 194);
+        td{
+            text-align: center;
+        }
+        }
+    }
+}

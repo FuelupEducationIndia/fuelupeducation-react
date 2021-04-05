@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer'
 
 import styles from './Landing.module.scss'
 import Body from './components/Body/Body'
-
+import Teacher from '../Teacher/Teacher'
 const Landing = props => {
   return (
     <div className={styles.Landing}>

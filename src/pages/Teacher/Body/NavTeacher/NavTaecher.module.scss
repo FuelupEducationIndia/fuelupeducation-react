@@ -1,0 +1,36 @@
+@import 'assets/styles/sass/variables';
+
+.nav{
+    margin-top: 2rem;
+    background-image: url('assets/images/girl.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 100% ;
+}
+
+.navul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li{
+        display: inline-block;
+        padding-right: 1rem;
+            display:inline-block;
+            color: #707070;
+            font-size: 1.5rem;
+            font-weight:bold;
+            line-height: 1.2;
+            &:after {
+                display:block;
+                content: '';
+                border-bottom: solid 3px #f16600;  
+                transform: scaleX(0);  
+                transition: transform 250ms ease-in-out;
+                transform-origin:  0% 50%;
+        }
+        &:hover:after{
+            transform: scaleX(1);
+        }
+        
+  }
+}
