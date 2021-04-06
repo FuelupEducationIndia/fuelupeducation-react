@@ -10,6 +10,24 @@ import profileIcon from 'assets/images/avatar.png'
 import buildClassName from '../../../../utils/buildClassName'
 import styles from './NavBar.module.scss'
 
+import arrowDown from 'assets/images/arrow-down.png'
+
+const NavBar = ({
+  showSignIn,
+  setShowSignIn,
+  showSignUp,
+  setShowSignUp,
+  isAuth,
+}) => {
+  const handleClick = () => {
+    setShowSignIn(!showSignIn)
+    setShowSignUp(false)
+  }
+  const handleClick2 = () => {
+    setShowSignUp(!showSignUp)
+    setShowSignIn(false)
+  }
+
 const NavBar = ({ isAuth }) => {
   return (
     <nav className={styles.Navigation}>
@@ -42,6 +60,16 @@ const NavBar = ({ isAuth }) => {
             <div className={styles.NavItemActive} />
           </div>
         </li>
+        <li className={styles.NavItem}>For Kids</li>
+        <li className={styles.NavItem}>Pricing</li>
+      </ul>
+      <ul className={styles.NavigationSecond}>
+        <li className={styles.NavSecondItem} onClick={handleClick}>
+          Sign in
+        </li>
+        <li className={styles.NavSecondItem} onClick={handleClick2}>
+          Sign up
+        </li>
       </ul>
     </nav>
   )
@@ -49,6 +77,10 @@ const NavBar = ({ isAuth }) => {
 
 NavBar.propTypes = {
   isAuth: PropTypes.bool.isRequired,
+  showSignIn: PropTypes.bool.isRequired,
+  setShowSignIn: PropTypes.func.isRequired,
+  showSignUp: PropTypes.bool.isRequired,
+  setShowSignUp: PropTypes.func.isRequired,
 }
 
 export default NavBar

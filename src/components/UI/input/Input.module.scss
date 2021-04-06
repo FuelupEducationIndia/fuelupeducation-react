@@ -1,0 +1,31 @@
+.input:focus {
+    outline: none;
+    border-bottom: 1px solid #380885;
+}
+
+.LabelAsterisk {
+    position: absolute;
+    color: grey;
+}
+
+.Label {
+    cursor: auto;
+}
+
+/* .input {
+    border: none;
+    border-bottom: 1px solid #74648d;
+    padding-bottom: 2.5%;
+    font-size: 1.5rem;
+    width: 100%;
+} */
+
+.InputDivGeneral {
+    position: relative;
+}
+
+.AsteriskInput::after {
+    content:" *"; 
+    color: #ff0000;
+    position: absolute; 
+}

@@ -1,0 +1,32 @@
+.or {
+    overflow: hidden;
+    text-align: center;
+}
+
+.or:before, .or:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+}
+
+.or:before {
+    right: 0.5em;
+    margin-left: 28%;
+}
+
+.or:after {
+    left: 0.5em;
+    /* margin-right: -50%; */
+}
+
+.LogosDiv {
+    width: 65%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}

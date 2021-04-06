@@ -1,0 +1,28 @@
+.Heading {
+    font-weight: bold;
+    color: #858587;
+    font-size: 18px;
+}
+
+.NameAndPicture {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.PictureAndNick {
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+
+    .NickNameLabel {
+        color: #3a1286;
+        font-weight: bold;
+        margin: 0 10%;
+        margin-right: 12%;
+    }
+
+    .NickName {
+        color: #858587;
+    }
+}
