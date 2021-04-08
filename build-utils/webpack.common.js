@@ -9,6 +9,11 @@ module.exports = {
   module: {
     // Setting rules
     rules: [
+      // Add loader css | sass
+      {
+        test: /\.(sass|css)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -34,7 +39,7 @@ module.exports = {
       },
       // Adding images to project
       {
-        test: /\.(jpg|png|jpeg)$/,
+        test: /\.(jpg|png|jpeg|gif)$/,
         use: {
           loader: 'url-loader',
         },

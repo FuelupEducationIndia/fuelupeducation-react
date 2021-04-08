@@ -6,6 +6,9 @@ import buildClassName from '../../utils/buildClassName'
 // import *.svg files and convert the, to React Icons Component
 import { ReactComponent as ArrowDownSvgIcon } from './icons-svg/arrow-down.svg'
 import { ReactComponent as CloseSvgIcon } from './icons-svg/close.svg'
+import { ReactComponent as ArrowRightSvgIcon } from './icons-svg/arrow-right.svg'
+import { ReactComponent as LogoSvgIcon } from './icons-svg/group-64.svg'
+import { ReactComponent as CopyRightSvgIcon } from './icons-svg/copyright.svg'
 
 function makeIconComponent(IconComponent, displayName, extraClassName) {
   const Component = ({ className }) => (
@@ -25,3 +28,15 @@ export const ArrowDownIcon = makeIconComponent(
   'ArrowDownIcon',
 )
 export const CloseIcon = makeIconComponent(CloseSvgIcon, 'CloseIcon')
+
+export const ArrowRightIcon = makeIconComponent(
+  ArrowRightSvgIcon,
+  'ArrowRightIcon',
+)
+
+export const LogoIcon = makeIconComponent(LogoSvgIcon, 'LogoSvgIcon')
+
+export const CopyRightIcon = makeIconComponent(
+  CopyRightSvgIcon,
+  'CopyRightSvgIcon',
+)

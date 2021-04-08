@@ -3,9 +3,11 @@
 @import '../../../../assets/styles/sass/variables';
 
 .Navigation {
+  position: absolute;
   box-sizing: content-box;
   top: 0;
   left: 0;
+  width: 100%;
   font-family: $font-secondary;
   height: 4.4rem;
   display: flex;
@@ -13,24 +15,29 @@
   align-content: center;
   color: #ffffff;
   font-weight: 500;
+  z-index: 20;
 }
 .logo {
   font-weight: 500;
-  width: 8.2rem;
   line-height: 1.05;
   font-size: 1.9rem;
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
 }
 
 .Nav {
   &Items,
   &igationSecond {
-    width: 100%;
     margin-left: 5rem;
     display: flex;
-    height: 100%;
     align-items: center;
     list-style: none;
   }
+  &Items {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+
   &Item:not(:last-child) {
     padding-right: 3rem;
     line-height: 1.13;

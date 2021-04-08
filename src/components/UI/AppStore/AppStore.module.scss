@@ -1,0 +1,21 @@
+.AppStore {
+  & p {
+    color: #978fb6;
+    padding: 2rem 0;
+  }
+
+  & img:first-of-type {
+    margin-right: 2rem;
+  }
+
+  &--small {
+    & p {
+      color: #4a1d93;
+      font-weight: bold;
+    }
+
+    & img {
+      transform: scale(0.8) translateX(-2rem);
+    }
+  }
+}

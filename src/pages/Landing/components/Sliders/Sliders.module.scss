@@ -1,0 +1,18 @@
+.SliderCustom {
+  & button:first-of-type {
+    left: 0;
+    z-index: 20;
+    &::before {
+      opacity: 1;
+      font-size: 4rem;
+    }
+  }
+  & button:last-of-type {
+    z-index: 20;
+    right: 2rem;
+    &::before {
+      opacity: 1;
+      font-size: 4rem;
+    }
+  }
+}

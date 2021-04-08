@@ -49,7 +49,7 @@ export function RenderRoutes({ routes }) {
 }
 
 RenderRoutes.propTypes = {
-  routes: PropTypes.arrayOf.isRequired,
+  routes: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 
 export default ROUTES

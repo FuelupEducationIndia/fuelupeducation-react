@@ -1,0 +1,29 @@
+.Button {
+  border-radius: 2rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.6rem;
+
+  &StartLearning {
+    @extend .Button;
+    background: #f16600;
+    border: none;
+    color: #fff;
+    &:hover {
+      cursor: pointer;
+      background: #ff710c;
+    }
+  }
+
+  &Donate {
+    @extend .Button;
+    background: #fff;
+    color: #f16600;
+    font-size: 1.6rem;
+    border: 2px solid #f16600;
+    &:hover {
+      cursor: pointer;
+      background: #f16600;
+      color: #fff;
+    }
+  }
+}

@@ -5,16 +5,52 @@ import Footer from './components/Footer/Footer'
 
 import styles from './Landing.module.scss'
 import Hero from './components/Hero/Hero'
+import Course from './components/Course/Course'
+import Places from './components/Places/Places'
+import App from './components/App/App'
+import SimpleSwiper from './components/Sliders/Sliders'
 
 const Landing = props => {
   return (
     <>
       <div className={styles.Landing}>
         <NavBar isAuth={false} />
-        <Hero />
-        <div className={styles.backgroundImage} />
-        <div className={styles.backgroundImage2} />
+        <SimpleSwiper />
       </div>
+      <Course
+        className="Course"
+        header="Interactive quizzess, tests &amp; exams"
+        paragraph="Videos that help you visualize each concept, making it easier to
+        understand. Clearer concepts lead to higher scores!"
+      />
+      <Course
+        className="CourseRight"
+        header="Interactive quizzess, tests &amp; exams"
+        paragraph="Videos that help you visualize each concept, making it easier to
+        understand. Clearer concepts lead to higher scores!"
+      />
+      <Course
+        className="Course"
+        header="Interactive quizzess, tests &amp; exams"
+        paragraph="Videos that help you visualize each concept, making it easier to
+        understand. Clearer concepts lead to higher scores!"
+      />
+      <Course
+        className="CourseRight"
+        header="Interactive quizzess, tests &amp; exams"
+        paragraph="Videos that help you visualize each concept, making it easier to
+        understand. Clearer concepts lead to higher scores!"
+      />
+      <Places
+        className="Places"
+        header="Give Where Most Needed"
+        paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut unde, maxime dolore obcaecati corrupti repudiandae minima molestias dolor soluta id in architecto debitis voluptates, accusamus laborum nisi repellendus optio temporibus."
+      />
+      <App
+        className="App"
+        header="Start achieving academic excellence"
+        paragraph="Download lessons &amp; learn anytime, anywhere with our mobile application"
+      />
       <Footer />
     </>
   )

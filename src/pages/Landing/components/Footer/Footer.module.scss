@@ -1,0 +1,33 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 10rem 2rem;
+  background: #faf9fc;
+  & .Logo {
+    p {
+      color: #978fb6;
+      svg {
+        width: 1.2rem;
+        margin-right: 0.3rem;
+        & path {
+          fill: #978fb6;
+        }
+      }
+    }
+  }
+
+  & .Link {
+    & ul {
+      list-style-type: none;
+      & a {
+        text-decoration: none;
+        color: #978fb6;
+        text-transform: capitalize;
+      }
+
+      & a:hover { 
+        color: #4a1d93;
+      }
+    }
+  }
+}

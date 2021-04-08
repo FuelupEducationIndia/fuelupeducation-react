@@ -1,6 +1,6 @@
 .Landing {
   margin: 0 auto;
-  width: 128rem;
+  width: 100%;
   height: 80rem;
   position: relative;
   // background-image: linear-gradient(to bottom, #380885, #554cb8),
@@ -11,16 +11,4 @@
     clear: both;
     display: table;
   }
-}
-
-.backgroundImage {
-  width: 128rem;
-  height: 73.7rem;
-  position: absolute;
-  top: 6rem;
-  left: 0;
-  background: url('./images/hero-image-x1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }

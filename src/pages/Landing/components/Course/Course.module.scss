@@ -1,0 +1,17 @@
+.Course {
+  padding: 10rem;
+  max-width: 50%;
+  & h1 {
+    color: #4a1d93;
+  }
+  & p {
+    color: #978fb6;
+    padding: 2rem 0;
+  }
+  &Right {
+    @extend .Course;
+    margin-left: 50%;
+    position: relative;
+    z-index: 10;
+  }
+}

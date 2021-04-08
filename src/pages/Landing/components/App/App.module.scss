@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  padding: 10rem 10rem 0 10rem;
+  &__Info {
+    flex-basis: 50%;
+    padding-right: 10rem;
+    & h1 {
+      color: #4a1d93;
+    }
+  }
+
+  &__Demo {
+    flex-basis: 50%;
+    text-align: center;
+  }
+}
