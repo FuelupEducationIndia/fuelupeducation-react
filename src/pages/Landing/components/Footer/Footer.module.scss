@@ -1,16 +1,18 @@
+@import '../../../../assets/styles/sass/variables';
+
 footer {
   display: flex;
   justify-content: space-between;
   padding: 5rem 10rem 2rem;
-  background: #faf9fc;
+  background: $color-gray;
   & .Logo {
     p {
-      color: #978fb6;
+      color: $color-paragraph;
       svg {
         width: 1.2rem;
         margin-right: 0.3rem;
         & path {
-          fill: #978fb6;
+          fill: $color-paragraph;
         }
       }
     }
@@ -21,12 +23,12 @@ footer {
       list-style-type: none;
       & a {
         text-decoration: none;
-        color: #978fb6;
+        color: $color-paragraph;
         text-transform: capitalize;
       }
 
-      & a:hover { 
-        color: #4a1d93;
+      & a:hover {
+        color: $color-header;
       }
     }
   }

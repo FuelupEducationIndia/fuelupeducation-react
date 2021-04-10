@@ -2,18 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './AppStore.module.scss'
 
-import GoogleStore from '../../../assets/images/group-54.png'
-import AppleStore from '../../../assets/images/group-57.png'
+import { GoogleStoreIcon, AppleStoreIcon } from '../../icons/icons'
 
 const AppStore = ({ text, className }) => {
   return (
     <div className={styles[className]}>
       <p>{text}</p>
       <a href="/googlestore">
-        <img src={GoogleStore} alt="GoogleStore" />
+        <GoogleStoreIcon className="GoogleStore" />
       </a>
       <a href="/appsore">
-        <img src={AppleStore} alt="AppleStore" />
+        <AppleStoreIcon className="AppleStore" />
       </a>
     </div>
   )

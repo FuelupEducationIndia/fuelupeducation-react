@@ -1,11 +1,19 @@
+@import '../../../assets/styles/sass/variables';
+
 .SocialLink {
   & p {
-    color: #4a1d93;
+    color: $color-header;
     font-weight: bold;
     padding: 1rem 0;
   }
 
   & a {
     margin-right: 2rem;
+  }
+
+  & svg {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 0.5rem;
   }
 }

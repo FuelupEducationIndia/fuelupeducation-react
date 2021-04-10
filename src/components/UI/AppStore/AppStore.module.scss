@@ -1,21 +1,26 @@
+@import '../../../assets/styles/sass/variables';
+
 .AppStore {
   & p {
-    color: #978fb6;
+    color: $color-paragraph;
     padding: 2rem 0;
   }
 
-  & img:first-of-type {
+  & a:first-of-type {
     margin-right: 2rem;
   }
 
   &--small {
     & p {
-      color: #4a1d93;
+      color: $color-header;
       font-weight: bold;
     }
 
-    & img {
+    & a:first-of-type svg {
       transform: scale(0.8) translateX(-2rem);
+    }
+    & a:last-of-type svg {
+      transform: scale(0.8) translateX(-4rem);
     }
   }
 }

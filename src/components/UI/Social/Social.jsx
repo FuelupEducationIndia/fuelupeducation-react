@@ -2,34 +2,36 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './Social.module.scss'
 
-import Instagram from '../../../assets/images/instagram.png'
-import Twitter from '../../../assets/images/twitter.png'
-import Telegram from '../../../assets/images/telegram.png'
-import Youtube from '../../../assets/images/youtube.png'
-import Facebook from '../../../assets/images/facebook.png'
-import Linkedin from '../../../assets/images/linkedin.jpg'
+import {
+  TwitterIcon,
+  InstagramIcon,
+  TelegramIcon,
+  FacebookIcon,
+  YoutubeIcon,
+  LinkedinIcon,
+} from '../../icons/icons'
 
 const Social = ({ text, className }) => {
   return (
     <div className={styles[className]}>
       <p>{text}</p>
-      <a href="/googlestore">
-        <img src={Instagram} alt="Instagram" />
+      <a href="/twitter">
+        <TwitterIcon className="Twitter" />
       </a>
-      <a href="/appsore">
-        <img src={Twitter} alt="Twitter" />
+      <a href="/instagram">
+        <InstagramIcon className="Instagram" />
       </a>
       <a href="/telegram">
-        <img src={Telegram} alt="Telegram" />
+        <TelegramIcon className="Telegram" />
       </a>
       <a href="/facebook">
-        <img src={Facebook} alt="Facebook" />
+        <FacebookIcon className="Facebook" />
       </a>
       <a href="/youtube">
-        <img src={Youtube} alt="Youtube" />
+        <YoutubeIcon className="Youtube" />
       </a>
       <a href="/linkedin">
-        <img src={Linkedin} alt="Linkedin" />
+        <LinkedinIcon className="Linkedin" />
       </a>
     </div>
   )

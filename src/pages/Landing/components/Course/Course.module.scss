@@ -1,11 +1,13 @@
+@import '../../../../assets/styles/sass/variables';
+
 .Course {
   padding: 10rem;
   max-width: 50%;
   & h1 {
-    color: #4a1d93;
+    color: $color-header;
   }
   & p {
-    color: #978fb6;
+    color: $color-paragraph;
     padding: 2rem 0;
   }
   &Right {
