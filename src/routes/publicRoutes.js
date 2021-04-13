@@ -1,14 +1,19 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import PropTypes, { string } from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
 
 import LandingPage from '../pages/Landing'
+import Team from '../pages/Team/components/Team'
+import Donate from '../pages/Donate/Donate'
 
 const ROUTES = [
   { path: '/', key: 'ROOT', exact: true, component: LandingPage },
+  { path: '/team', key: 'team', exact: true, component: Team },
+  { path: '/donate', key: 'team', exact: true, component: Donate },
   {
     path: '/page1',
     key: 'page1',
+    exact: true,
     // eslint-disable-next-line no-use-before-define
     component: RenderRoutes,
     routes: [
@@ -49,7 +54,14 @@ export function RenderRoutes({ routes }) {
 }
 
 RenderRoutes.propTypes = {
-  routes: PropTypes.arrayOf.isRequired,
+  routes: PropTypes.arrayOf(
+    PropTypes.shape({
+      path: PropTypes.string.isRequired,
+      key: PropTypes.string.isRequired,
+      exact: PropTypes.bool.isRequired,
+      component: PropTypes.func.isRequired,
+    }),
+  ).isRequired,
 }
 
 export default ROUTES

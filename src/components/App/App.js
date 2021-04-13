@@ -2,6 +2,9 @@ import React, { Suspense } from 'react'
 import PropTypes from 'prop-types'
 import { Route, Switch, useLocation } from 'react-router-dom'
 
+import { Provider } from 'react-redux'
+import store from '../../store/store'
+
 import styles from './App.module.scss'
 
 // Landing page - for all the same
@@ -19,8 +22,14 @@ const App = ({ title }) => {
 
   if (location.pathname === '/') {
     layoutToDisplay = <Layout />
+  } else {
+    layoutToDisplay = <Layout />
   }
-  return <div className={styles.Container}>{layoutToDisplay}</div>
+  return (
+    <Provider store={store}>
+      <div className={styles.Container}>{layoutToDisplay}</div>
+    </Provider>
+  )
 }
 
 App.propTypes = {

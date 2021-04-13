@@ -12,8 +12,8 @@ const Layout = ({ children }) => {
   )
 }
 
-export default Layout
-
 Layout.propTypes = {
   children: PropTypes.element.isRequired,
 }
+
+export default Layout
