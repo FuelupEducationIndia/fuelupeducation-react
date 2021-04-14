@@ -24,6 +24,7 @@ const NavBar = ({ isAuth }) => {
         </li>
         <li className={styles.NavItem}>For Kids</li>
         <li className={styles.NavItem}>Team</li>
+        <li className={styles.NavItem}>Blog</li>
         <li className={styles.NavItem}>
           <Button
             typeBtn="button"
