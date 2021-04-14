@@ -1,0 +1,35 @@
+@import '../../../../assets/styles/sass/variables';
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 10rem 2rem;
+  background: $color-gray;
+  & .Logo {
+    p {
+      color: $color-paragraph;
+      svg {
+        width: 1.2rem;
+        margin-right: 0.3rem;
+        & path {
+          fill: $color-paragraph;
+        }
+      }
+    }
+  }
+
+  & .Link {
+    & ul {
+      list-style-type: none;
+      & a {
+        text-decoration: none;
+        color: $color-paragraph;
+        text-transform: capitalize;
+      }
+
+      & a:hover {
+        color: $color-header;
+      }
+    }
+  }
+}
