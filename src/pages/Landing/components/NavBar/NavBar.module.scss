@@ -1,6 +1,8 @@
 // Loading variables for styling
 
 @import '../../../../assets/styles/sass/variables';
+@import '../../../../assets/styles/sass/mixin';
+
 
 .Navigation {
   position: absolute;
@@ -9,14 +11,17 @@
   left: 0;
   width: 100%;
   font-family: $font-secondary;
+  background-color: $primary-color;
   height: 4.4rem;
-  display: flex;
+  @include center;
+  // display: flex;
   padding: 3.4rem 4.4rem 0;
-  align-content: center;
+  // align-content: center;
   color: #ffffff;
   font-weight: 500;
   z-index: 20;
 }
+
 .logo {
   font-weight: 500;
   line-height: 1.05;
@@ -43,13 +48,12 @@
     line-height: 1.13;
   }
   &Item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include center;
     img {
       padding-left: 0.5rem;
     }
   }
+  
 }
 
 .NavigationSecond {

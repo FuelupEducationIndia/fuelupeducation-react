@@ -1,0 +1,61 @@
+@import '../../assets/styles/sass/variables';
+@import '../../assets/styles/sass/mixin';
+
+.Donate { 
+
+  &Container{
+    height: 55rem;
+    margin-top: 20px;
+    display: flex;
+    border-bottom: 1px solid $primary-color;
+    border-top: 1px solid $primary-color;
+  }
+
+  &SidebarLeft{
+    width: 30%;
+    height: 100%;    
+    background-image: url("./images/group-1705.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  &RightContainer{
+    width: 70%;
+    padding:30px;
+    h1{
+      font-weight: bold;
+      color: $primary-color;
+    }
+    p{
+      margin-bottom: 10px;
+      font-weight: lighter;
+      color: $primary-color;
+      font-size: small;
+    }
+  }
+
+  &TitleCards{
+    @include center;
+    border-bottom: 2px solid lightgray;
+    margin-top: 30px;
+    h4{
+      margin: 10px
+    }
+    .donateTabs{
+      @include center;
+      flex-direction: column;
+      width: 30%;
+      color: lightgray;
+      border-bottom: 1px solid lightgray;
+      cursor: pointer;
+    }
+    .donateActiveTabs{
+      color: $primary-color;
+      border-bottom: 2px solid $primary-color;
+       @include center;
+      flex-direction: column;
+      width: 30%;
+      cursor: pointer;
+
+    }
+  }
+}
