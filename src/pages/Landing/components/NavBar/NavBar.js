@@ -1,3 +1,7 @@
+/* eslint-disable prettier/prettier */
+// eslint-disable-next-line prettier/prettier
+/* eslint-disable react/jsx-first-prop-new-line */
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
@@ -11,7 +15,9 @@ const NavBar = ({ isAuth }) => {
   return (
     <nav className={styles.Navigation}>
       <div className={styles.logo}>
-        <Link to="/">
+        <Link to="/"
+          style={{color:"white",textDecoration:"none"}}
+        >
           <strong>Fuelup </strong>
           Education
         </Link>
@@ -31,7 +37,9 @@ const NavBar = ({ isAuth }) => {
         </Link>
         <li className={styles.NavItem}>Blog</li>
         <li className={styles.NavItem}>
-          <Link to="/donate" className={styles.NavItem}>
+          <Link to="/donate"
+            className={styles.NavDonate} 
+          >
             Donate Now
           </Link>
         </li>

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { Suspense } from 'react'
 import PropTypes from 'prop-types'
 import { Route, Switch, useLocation } from 'react-router-dom'

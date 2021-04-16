@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-return-assign */
 import { activeTab as activeTabActionType } from '../actions'

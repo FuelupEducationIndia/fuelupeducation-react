@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useState, useRef } from 'react'
 import Slider from 'react-slick'
 

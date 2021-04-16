@@ -1,5 +1,4 @@
-/* eslint-disable no-underscore-dangle */
-/* eslint-disable import/no-unresolved */
+/* eslint-disable prettier/prettier */
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
 import thunk from 'redux-thunk'
 import rootReducer from './reducers'

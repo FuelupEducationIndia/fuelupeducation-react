@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable react/jsx-closing-bracket-location */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -20,6 +21,7 @@ import NavBar from '../Landing/components/NavBar/NavBar'
 import YourGift from './components/YourGift/YourGift'
 import DonorInformation from './components/DonateInformation/DonorInformation'
 import Payment from './components/Payment/Payment'
+import Footer from '../Landing/components/Footer/Footer'
 
 const Donate = props => {
   const { activeTab, setActiveTab } = props
@@ -77,6 +79,7 @@ const Donate = props => {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import donorInformation from './donorInformationActions'
 import yourGift from './yourgiftActions'
 import payment from './paymentActions'

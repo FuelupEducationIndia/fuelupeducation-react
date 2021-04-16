@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { donorInformation } from '../actions'
 
 const InitialState = {

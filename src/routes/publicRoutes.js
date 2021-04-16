@@ -1,7 +1,7 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
-
 import LandingPage from '../pages/Landing'
 import Donate from '../pages/Donate/Donate'
 import Team from '../pages/Team/components/Team'

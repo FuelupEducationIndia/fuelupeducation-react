@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/jsx-closing-bracket-location */
 /* eslint-disable prettier/prettier */
 import React, { useEffect, useState } from 'react'

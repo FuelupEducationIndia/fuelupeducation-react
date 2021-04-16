@@ -5,19 +5,22 @@
 
 
 .Navigation {
-  position: absolute;
+  position: relative;
   box-sizing: content-box;
   top: 0;
   left: 0;
   width: 100%;
   font-family: $font-secondary;
   background-color: $primary-color;
-  height: 4.4rem;
+  color: #ffffff !important;
+  // height: 4.4rem;
+  height: 8.4rem;
   @include center;
   // display: flex;
-  padding: 3.4rem 4.4rem 0;
+  padding: .6rem 0rem;
+  /* padding: 3.4rem 4.4rem 0; */
   // align-content: center;
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: 500;
   z-index: 20;
 }
@@ -28,6 +31,7 @@
   font-size: 1.9rem;
   flex: 0 0 8.33333%;
   max-width: 8.33333%;
+  color: #ffffff;
 }
 
 .Nav {
@@ -37,15 +41,19 @@
     display: flex;
     align-items: center;
     list-style: none;
+    color: #ffffff;
   }
   &Items {
     flex: 0 0 58.33333%;
     max-width: 58.33333%;
+    color: #ffffff;
   }
 
   &Item:not(:last-child) {
     padding-right: 3rem;
     line-height: 1.13;
+    color: #ffffff;
+    text-decoration: none
   }
   &Item {
     @include center;
@@ -53,8 +61,21 @@
       padding-left: 0.5rem;
     }
   }
-  
+
+  &Donate{
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1.13;
+    text-align: center;
+    padding: .7rem;
+    color: #f16600;
+    border-radius: 2rem;
+    border: solid .1rem #f16600;
+    background-color: #ffffff;
+    text-decoration: none;
 }
+  }
+
 
 .NavigationSecond {
   justify-content: flex-end;
