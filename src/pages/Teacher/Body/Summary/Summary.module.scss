@@ -1,16 +1,41 @@
+.d100{
+    width: 100%;
+}
 .table{
     border:1px solid black;
     border-collapse: collapse;
     width: 100%;
     thead{
         border-bottom: 1px solid rgb(204, 194, 194);
+        color: black;
     }
     tbody{
         tr{
         border-bottom: 1px solid rgb(204, 194, 194);
         td{
             text-align: center;
+            color: rgb(102, 102, 102);
         }
         }
     }
+}
+.d10{
+    display: inline-block;
+    vertical-align: top;
+    min-width: 10%;
+}
+.d90{
+    display: inline-block;
+    width: 90%;
+    word-wrap:break-word;
+    word-break: break-all;
+}
+.red{
+    color: red !important;
+}
+.green{
+    color: green !important;
+}
+.orange{
+    color: orange !important;
 }

@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
-
+import PropTypes from 'prop-types'
 import CreateAssignment from '../CreateAssignment/createAssignment'
+import ReviewAssignment from '../ReviewAssignment/ReviewAssignment'
 import style from './Assignment.module.scss'
+
 const Assignment = () => {
   const [createAss, setcreateAss] = useState('Create')
   const onChange = e => {
@@ -45,7 +47,9 @@ const Assignment = () => {
         />
         <label htmlFor="flexRadio3">Grading</label>
       </div>
+
       {createAss === 'Create' ? <CreateAssignment /> : ''}
+      {createAss === 'Review' ? <ReviewAssignment /> : ''}
     </div>
   )
 }

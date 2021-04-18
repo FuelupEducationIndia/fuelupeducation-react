@@ -2,6 +2,7 @@ import React from 'react'
 import imgFile from '../../../../assets/images/file2.png'
 import style from './CreatAssignment.module.scss'
 import DropDownSelect from '../DropDownSelect/DropDownSelect'
+import Summary from '../Summary/Summary'
 const CreateAssignment = props => {
   var University = ['Rajasthan board', 'my University']
   var Semester = [
@@ -19,8 +20,35 @@ const CreateAssignment = props => {
   var Language = ['English', 'Hindi', 'Gujarati', 'Marathi']
   var Due = ['Choose your due']
 
+  //table summary information
+  var tabledata = [
+    {
+      'Board/Uni': 'Rajasthan',
+      Semester: 'Semester 6',
+      Courses: 'SS2021-The Solar System',
+      Instructors: 'Sarah william',
+      'Students/Groups': 'Student Name',
+      Type: 'Group Project',
+      Language: 'Hindi',
+      Submissions: 'Assignment1.pdf',
+      Status: 'Pending',
+    },
+    {
+      'Board/ Uni': 'Rajasthan',
+      Semester: 'Semester 6',
+      Courses: 'SS2021-The Solar System',
+      Instructors: 'Sarah william',
+      'Students/Groups': 'Student Name',
+      Type: 'Group Project',
+      Language: 'Hindi',
+      Submissions: 'Assignment1.pdf',
+      Status: 'Approved',
+    },
+  ]
+  //end table summary information
+
   return (
-    <div className={style.createDiv}>
+    <div className={style.mainDiv}>
       <div className={style.div100W}>
         <label className={style.unlabel}>Board/University</label>
         <DropDownSelect getoptions={University} />
@@ -124,6 +152,7 @@ const CreateAssignment = props => {
           <button className={style.btnUp}>Upload</button>
         </div>
       </div>
+      <Summary tabledata={tabledata} name="Assignments" />
     </div>
   )
 }

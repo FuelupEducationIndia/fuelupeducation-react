@@ -12,10 +12,9 @@ const LandingTeacher = props => {
   }
   return (
     <div className={style.padding}>
-      <NavBar />
+      <NavBar isAuth={false} />
       <WelcomeTeacher auth={auth} />
       <NavTeacher />
-      <Summary />
     </div>
   )
 }

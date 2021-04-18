@@ -1,65 +1,64 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
+import imglargFile from '../../../../assets/images/filelogo.png'
 import styles from './Summary.module.scss'
 
 const Summary = props => {
-  const [viewIn, setViewIn] = useState('')
-  var tabledata = [
-    {
-      Board: 'Rajasthan',
-      Semester: 'Semester 6',
-      Courses: 'SS2021-The Solar System',
-      Instructors: 'Sarah william',
-      Students: 'Student Name',
-      Type: 'Group Project',
-      Language: 'Hindi',
-      Submissions: 'Assignment1.pdf',
-      Status: 'Pending',
-    },
-    {
-      Board: 'Rajasthan',
-      Semester: 'Semester 6',
-      Courses: 'SS2021-The Solar System',
-      Instructors: 'Sarah william',
-      Students: 'Student Name',
-      Type: 'Group Project',
-      Language: 'Hindi',
-      Submissions: 'Assignment1.pdf',
-      Status: 'Approved',
-    },
-  ]
-
+  console.log(props)
   return (
-    <div>
-      <h2>Assignments Summary</h2>
+    <div className={styles.d100}>
+      <h2>{props.name} Summary</h2>
       <table className={styles.table}>
         <thead>
-          <tr>
-            <th>Board/ Uni</th>
-            <th>Semester</th>
-            <th>Courses</th>
-            <th>Instructors</th>
-            <th>Students/Groups</th>
-            <th>Type</th>
-            <th>Language</th>
-            <th>submissions</th>
-            <th>status</th>
-          </tr>
+          {props.tabledata.map((item, index) => {
+            if (index == 0) {
+              return (
+                <tr key={index}>
+                  {Object.keys(item).map((element, i) => {
+                    return <th key={i}>{element}</th>
+                  })}
+                </tr>
+              )
+            }
+          })}
         </thead>
         <tbody>
-          {tabledata.map((item, index) => {
+          {props.tabledata.map((item, index) => {
             return (
               <tr key={index}>
-                <td>{item.Board}</td>
-                <td>{item.Semester}</td>
-                <td>{item.Courses}</td>
-                <td>{item.Instructors}</td>
-                <td>{item.Students}</td>
-                <td>{item.Type}</td>
-                <td>{item.Language}</td>
-                <td>{item.Submissions}</td>
-                <td>{item.Status}</td>
+                {Object.entries(item).map((element, i) => {
+                  if (element[0] == 'Submissions') {
+                    return (
+                      <td key={i}>
+                        <img className={styles.d10} src={imglargFile} />
+                        <span className={styles.d90}>
+                          {element[1].substring(0, 35)}
+                        </span>
+                      </td>
+                    )
+                  } else if (element[1] == 'Need to improve') {
+                    return (
+                      <td key={i} className={styles.red}>
+                        {element[1].substring(0, 35)}
+                      </td>
+                    )
+                  } else if (element[1] == 'Good') {
+                    return (
+                      <td key={i} className={styles.green}>
+                        {element[1].substring(0, 35)}
+                      </td>
+                    )
+                  } else if (element[1] == 'Pending') {
+                    return (
+                      <td key={i} className={styles.orange}>
+                        {element[1].substring(0, 35)}
+                      </td>
+                    )
+                  } else {
+                    return <td key={i}>{element[1].substring(0, 35)}</td>
+                  }
+                })}
               </tr>
             )
           })}
@@ -69,6 +68,9 @@ const Summary = props => {
   )
 }
 
-Summary.propTypes = {}
+Summary.propTypes = {
+  name: PropTypes.string.isRequired,
+  tabledata: PropTypes.arrayOf(PropTypes.object).isRequired,
+}
 
 export default Summary

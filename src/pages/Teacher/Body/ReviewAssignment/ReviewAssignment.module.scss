@@ -1,4 +1,3 @@
-
 .mainDiv{
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +18,10 @@
 .div60W{
     display: inline-block;
     width: 66%;
+}
+.divempty{
+    display: inline-block;
+    width: 17%;
 }
 .unlabel{
     line-height: 5rem;
@@ -103,4 +106,73 @@
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
 }
-  
+
+.pdftext{
+    color:black;
+    margin: 5px;
+}
+.dflex{
+    display: flex;
+}
+.filelogo{
+    width: 30px;
+}
+.downloadCloud{
+    color:#F16600;
+    width: 130px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 3px;
+    border:2px solid #F16600 ;
+    background-color: transparent;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+.formCheckCont{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.formCheck{
+    display: inline-block;
+    min-height: 1.5rem;
+    margin-bottom: .125rem;
+    margin-right: .5rem;
+}
+.formCheckInput{
+    width: 1em;
+    height: 1em;
+    margin: 6px;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    &:checked[type=radio],&:focus[type=radio]{
+        background-image: url('../../../../assets/images/blackdot.svg') !important;
+        background-color: #ffffff;
+        border-color: #000000;
+        outline: none;
+    }
+}
+
+.red{
+    color: red;
+}
+.greed{
+    color: green;
+}
