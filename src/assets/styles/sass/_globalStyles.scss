@@ -6,7 +6,6 @@
   box-sizing: inherit;
 }
 html {
-  /* 1rem=10px */
   font-size: 62.5%;
   background-color: $color-white;
 }
@@ -14,8 +13,6 @@ html {
 body {
   background-color: $color-white;
   box-sizing: border-box;
-  // width: 128rem;
-  // margin: 0 auto;
   font-size: 1.6rem;
   font-family: $font, sans-serif;
   

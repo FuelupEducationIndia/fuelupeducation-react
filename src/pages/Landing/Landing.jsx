@@ -1,14 +1,13 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
-
-import NavBar from './components/NavBar/NavBar'
+import App from './components/App/App'
+import Course from './components/Course/Course'
 import Footer from './components/Footer/Footer'
+import Hero from './components/Hero/Hero'
+import NavBar from './components/NavBar/NavBar'
+import Places from './components/Places/Places'
 
 import styles from './Landing.module.scss'
-import Hero from './components/Hero/Hero'
-import Course from './components/Course/Course'
-import Places from './components/Places/Places'
-import App from './components/App/App'
 import SimpleSwiper from './components/Sliders/Sliders'
 
 const Landing = props => {
@@ -61,30 +60,6 @@ const Landing = props => {
         <SimpleSwiper />
       </div>
       {itemList}
-      {/* <Course
-        className="Course"
-        header="Interactive quizzess, tests &amp; exams"
-        paragraph="Videos that help you visualize each concept, making it easier to
-        understand. Clearer concepts lead to higher scores!"
-      />
-      <Course
-        className="CourseRight"
-        header="Interactive quizzess, tests &amp; exams"
-        paragraph="Videos that help you visualize each concept, making it easier to
-        understand. Clearer concepts lead to higher scores!"
-      />
-      <Course
-        className="Course"
-        header="Interactive quizzess, tests &amp; exams"
-        paragraph="Videos that help you visualize each concept, making it easier to
-        understand. Clearer concepts lead to higher scores!"
-      />
-      <Course
-        className="CourseRight"
-        header="Interactive quizzess, tests &amp; exams"
-        paragraph="Videos that help you visualize each concept, making it easier to
-        understand. Clearer concepts lead to higher scores!"
-      /> */}
       <Places
         className="Places"
         header="Give Where Most Needed"

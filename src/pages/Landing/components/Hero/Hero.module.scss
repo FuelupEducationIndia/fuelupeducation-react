@@ -1,3 +1,4 @@
+@import '../../../../assets/styles/sass/variables';
 .Hero {
   height: 80rem;
   padding-top: 20rem;
@@ -12,7 +13,7 @@
     font-size: 4.5rem;
     font-weight: bold;
     line-height: 1.22;
-    color: #ffffff;
+    color: $color-white;
     text-align: center;
   }
 
@@ -20,7 +21,7 @@
     line-height: 3.06;
     letter-spacing: normal;
     text-align: center;
-    color: #ffffff;
+    color: $color-white;
     padding-top: 2rem;
     font-size: 1.8rem;
     font-weight: 500;
