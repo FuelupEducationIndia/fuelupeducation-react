@@ -21,14 +21,14 @@
     line-height: 1.25;
     letter-spacing: normal;
     text-align: left;
-    color: $gray-color;
+    color: $gray-fontcolor;
   }
   .HistoryTable {
     width: 99rem;
     height: 42rem;
     margin: 1rem 5rem 0 2.3rem;
     padding: 0 0 3.8rem;
-    border: solid 0.1rem $gray-color;
+    border: solid 0.1rem $gray-fontcolor;
     background-color: $secondary-color;
 
     .Header {
@@ -36,8 +36,8 @@
       height: 4.9rem;
       margin: 0 0 0.3rem;
       padding: 1rem 8rem 1rem 1.9rem;
-      border-bottom: solid 0.1rem $gray-color;
-      border-right: solid 0.1rem $gray-color;
+      border-bottom: solid 0.1rem $gray-fontcolor;
+      border-right: solid 0.1rem $gray-fontcolor;
       background-color: $secondary-color;
       display: flex;
       flex-direction: row;
@@ -75,7 +75,7 @@
         flex-direction: row;
         margin: 3rem;
         height: fit-content;
-        border-bottom: 0.1rem solid $gray-color;
+        border-bottom: 0.1rem solid $gray-fontcolor;
         text-align: left;
 
         @mixin detail_text {
@@ -85,7 +85,7 @@
           line-height: 1.29;
           letter-spacing: normal;
           text-align: left;
-          color: $gray-color;
+          color: $gray-fontcolor;
         }
         .Instructor {
           width: 10rem;
