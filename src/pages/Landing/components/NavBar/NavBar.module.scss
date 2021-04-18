@@ -1,6 +1,6 @@
 // Loading variables for styling
 
-@import 'assets/styles/sass/variables';
+@import 'sass/variables';
 
 .Navigation {
   font-family: $font;
@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 2.6rem;
-  color: #ffffff;
+  color:$secondary-color;
   background-color: $background-color;
 }
 
@@ -38,7 +38,7 @@
     }
 
     &Badge {
-      color: white;
+      color: $secondary-color;
       background-color: $primary-color;
       width: 1.5rem;
       height: 1.5rem;
@@ -56,7 +56,7 @@
       position: absolute;
       width: 1.1rem;
       height: 1.1rem;
-      background-color: #2da231;
+      background-color: $active-color;
       border-radius: 50%;
       top: 0;
       right: 0;

@@ -17,7 +17,7 @@
             width: 3px;
             height: 3px;
             border-radius: 50%;
-            background-color: #f16600;
+            background-color: $orange-color;
             margin: 0 .8rem;
         }
 
@@ -27,7 +27,7 @@
         }
 
         > span {
-            color: #f16600;
+            color: $orange-color;
             font-size: 1rem;
         }
     }
