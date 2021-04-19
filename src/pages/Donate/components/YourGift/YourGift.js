@@ -166,15 +166,15 @@ const mapDispatchToProps = dispatch =>
 
 YourGift.propTypes = {
   yourGift: PropTypes.shape({
-    firstRowButtons: {
+    firstRowButtons: PropTypes.shape({
       oneTimeDonation: PropTypes.bool.isRequired,
       monthlyDonation: PropTypes.bool.isRequired,
-    },
-    secondRowButtons: {
+    }),
+    secondRowButtons: PropTypes.shape({
       $25: PropTypes.bool.isRequired,
       $50: PropTypes.bool.isRequired,
       $75: PropTypes.bool.isRequired,
-    },
+    }),
     customAmount: PropTypes.string.isRequired,
   }).isRequired,
   setDonationMethod: PropTypes.func.isRequired,

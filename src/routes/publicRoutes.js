@@ -8,8 +8,8 @@ import Donate from '../pages/Donate/Donate'
 
 const ROUTES = [
   { path: '/', key: 'ROOT', exact: true, component: LandingPage },
-  { path: '/team', key: 'team', exact: true, component: Team },
-  { path: '/donate', key: 'team', exact: true, component: Donate },
+  { path: '/team', key: 'TEAM', exact: false, component: Team },
+  { path: '/donate', key: 'DONATE', exact: false, component: Donate },
   {
     path: '/page1',
     key: 'page1',
@@ -59,7 +59,7 @@ RenderRoutes.propTypes = {
       path: PropTypes.string.isRequired,
       key: PropTypes.string.isRequired,
       exact: PropTypes.bool.isRequired,
-      component: PropTypes.func.isRequired,
+      component: PropTypes.objectOf.isRequired,
     }),
   ).isRequired,
 }

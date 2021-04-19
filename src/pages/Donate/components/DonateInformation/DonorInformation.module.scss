@@ -1,0 +1,9 @@
+@import '../../../../assets/styles/sass/variables';
+@import '../../../../assets/styles/sass/mixin';
+
+.DonorInformation{
+    margin-top: 30px;
+    &FirstRow{
+        @include center
+    }
+}
