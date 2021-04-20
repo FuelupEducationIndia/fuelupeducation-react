@@ -9,7 +9,7 @@ const Landing = props => {
     <div className={styles.Landing}>
       <NavBar isAuth={false} />
       <StudentTicket />
-      {/* <Body/> */}
+      {/* <Body /> */}
     </div>
   )
 }
