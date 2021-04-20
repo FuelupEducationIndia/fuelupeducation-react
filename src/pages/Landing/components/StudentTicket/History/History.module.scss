@@ -1,0 +1,134 @@
+@import 'sass/variables';
+.History {
+  @mixin Text {
+    font-family: 'Muli Bold';
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: $color-font;
+    height: 60rem;
+  }
+
+  .HistoryText {
+    width: 20rem;
+    height: 2.7rem;
+    margin: 3rem 0rem 1rem 2.7rem;
+    font-family: 'Muli Bold';
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: $gray-fontcolor;
+  }
+  .HistoryTable {
+    width: 99rem;
+    height: 42rem;
+    margin: 1rem 5rem 0 2.3rem;
+    padding: 0 0 3.8rem;
+    border: solid 0.1rem $gray-fontcolor;
+    background-color: $secondary-color;
+
+    .Header {
+      width: 98.9rem;
+      height: 4.9rem;
+      margin: 0 0 0.3rem;
+      padding: 1rem 8rem 1rem 1.9rem;
+      border-bottom: solid 0.1rem $gray-fontcolor;
+      border-right: solid 0.1rem $gray-fontcolor;
+      background-color: $secondary-color;
+      display: flex;
+      flex-direction: row;
+      .Instructor {
+        width: 17rem;
+        @include Text;
+      }
+      .IssueTitle {
+        width: 23rem;
+        margin: 0 0.4rem 0.4rem 0rem;
+        @include Text;
+      }
+      .Priority {
+        width: 12rem;
+        @include Text;
+      }
+
+      .Description {
+        width: 26rem;
+        @include Text;
+      }
+      .Status {
+        width: 7rem;  
+        @include Text;
+      }
+     
+    }
+    .DetailTable {
+      height: 36rem;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      .Detail {
+        display: flex;
+        flex-direction: row;
+        margin: 3rem;
+        height: fit-content;
+        border-bottom: 0.1rem solid $gray-fontcolor;
+        text-align: left;
+
+        @mixin detail_text {
+          font-family: 'Muli Regular';
+          font-size: 1.4rem;
+          font-weight: normal;
+          line-height: 1.29;
+          letter-spacing: normal;
+          text-align: left;
+          color: $gray-fontcolor;
+        }
+        .Instructor {
+          width: 10rem;
+          margin: 0rem 6.2rem 3.2rem 0;
+          @include detail_text;
+        }
+        .IssueTitle {
+          width: 20rem;
+          margin: 0rem 3rem 4.2rem 0;
+          @include detail_text;
+        }
+        .priority {
+          font-family: 'Muli Regular';
+          font-size: 1.4rem;
+          font-weight: bold;
+          line-height: 1.29;
+          letter-spacing: normal;
+          text-align: left;
+          margin: 0rem 0.1rem 3.2rem 0rem;
+          width: 12rem;
+        }
+        .Description {
+          width: 20rem;
+          margin: 0rem 6rem 3.2rem 0rem;
+          @include detail_text;
+        }
+        .status {
+          font-family: 'Muli Regular';
+          font-size: 1.4rem;
+          font-weight: bold;
+          line-height: 1.29;
+          letter-spacing: normal;
+          text-align: left;
+          margin: 0rem 0.1rem 3.2rem 0rem;
+          width: 7rem;
+        }
+        .Delete {
+          cursor: pointer;
+          width: 2.5rem;
+          height: 2.1rem;
+          margin: 0rem 0rem 0rem 4rem;
+        }
+      }
+    }
+  }
+}

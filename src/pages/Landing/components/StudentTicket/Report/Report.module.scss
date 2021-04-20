@@ -1,0 +1,187 @@
+@import 'sass/variables';
+
+.ProbReport{
+    .TechnicalProblemReport{
+      width: 35rem;
+      height: 2.5rem;
+      margin: 3rem 0rem 3.2rem .1rem;
+  font-family: "Muli Bold";
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: $color-font;
+    }
+.Report {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+   
+}
+.ReportImg{
+   
+    width: 40rem;
+    max-height: 50vh;
+    img{
+      width: 100%;
+      height: auto;
+        margin: -19rem 0 0 -6rem;
+        object-fit: contain;
+    }
+}
+}
+@mixin ResetButton {
+  width: 9.9rem;
+            height: 3.1rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            font-family: "Muli Bold";
+            border-radius: 2rem;
+            color: $secondary-color;
+            box-shadow: 0.3rem 0.3rem 0.6rem 0 rgb(0 0 0 / 16%);
+            cursor: pointer;
+  }
+.Form{
+  width: -webkit-fill-available;
+    .Row{
+        display: flex;
+        flex-direction: row;
+        .Label{
+          width: 9rem;
+          height: 2rem;
+          margin: 0rem 2rem 4.5rem 4rem;
+          font-family: "Muli SemiBold";
+          font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 1.25;
+            text-align: left;
+            color: $primary-color; 
+        }
+        input{
+          width: 56.9rem;
+          height: 4rem;
+          margin: 0 0 2.4rem 7.9rem;
+          border-radius: .3rem;
+          border: solid .1rem $outline-color;
+          background-color: $secondary-color;
+          padding-left: 1rem;
+        }
+        input:focus{
+            border: solid .1rem ;
+            outline:.1rem solid $outline-color ;
+            border:none;
+        } 
+          .Wrapper{
+            position: relative;
+          }
+          img{
+            position: absolute;
+            left: calc(95% - 0.9rem);
+            top: calc(74% - 0.5em); 
+          }
+          textarea{
+            margin: 0 0 .2rem 7.9rem;
+            border-radius: .5rem;
+            border: solid .1rem $outline-color;
+            background-color: $secondary-color;
+            padding: 1rem;
+        }
+        textarea:focus{
+            border: solid .1rem ;
+            outline:.1rem solid $outline-color ;
+            border:none;
+        }
+        .Discription{
+            width: 56.9rem;
+            height: 16.5rem;
+        }
+        .Buttons{
+          margin: 0 0 2.4rem 7.9rem;
+         display: flex;
+         flex-direction: row;
+            color: $secondary-color;
+
+            .LowButtons{
+               @include ResetButton;
+                margin: 0 1.3rem 0 0;
+                padding: .2rem 3.5rem .6rem 3.6rem;
+                background-color: $low-color;
+                border: .2rem solid $low-color;
+            }  
+          .MediumButtons{
+            @include ResetButton;
+            margin: 0 1.4rem 0 1.3rem;
+            padding: .4rem 2.3rem .6rem;
+            background-color: $medium-color;
+            border: .2rem solid $medium-color;
+           
+          }
+          .HighButtons{
+            @include ResetButton;
+            margin: 0 0 0 1.4rem;
+            padding: .2rem 3.3rem .6rem 3.4rem;
+            background-color: $high-color;
+            border: .2rem solid $high-color;
+          }
+        }
+        .CaptchaText{
+          width: 13rem;
+          height: 2.3rem;
+          margin: 1rem -1.5rem 4.4rem 3.1rem;
+          font-family: "Muli Regular";
+          font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.28;
+            letter-spacing: normal;
+            text-align: left;
+            color: $primary-color; 
+        }
+       .Captcha{
+        width: 17rem;
+        height: 4rem;
+        margin: 1rem 7.8rem 2.5rem 8.7rem;
+        border-radius: .5rem;
+        border: solid .1rem $gray-fontcolor;
+        background-color: $secondary-color;
+       }
+       .CaptchaCode {
+        width: 14rem;
+        height: 4rem;
+        margin: 1rem 1rem 0rem 3rem;
+        padding: .7rem 2.6rem .8rem;
+        border-radius: .5rem;
+        font-family: "Muli Regular";
+        font-weight: 500;
+        background-color: $primary-color;
+        color: $secondary-color;
+        font-size: 2.6rem;
+        letter-spacing: 0.1rem;
+       
+      }
+      ::placeholder{
+        color: $secondary-color
+      }
+      
+    }
+    .RowSend{
+        display: flex;
+        width: 80.1rem;
+        flex-direction: row-reverse;
+      .Send{
+        cursor: pointer;
+        width: 8.5rem;
+        height: 2.4rem;
+        padding: 0.3rem 2.9rem .8rem 2.8rem;
+        border-radius: 5rem;
+        color: $secondary-color;
+        border: solid .2rem $orange-color;
+        background-color: $orange-color;
+        font-family: "Muli Bold";
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.27;
+        text-align: left;
+        color: $secondary-color;
+      }  
+      }
+}
