@@ -58,7 +58,7 @@ const Landing = props => {
       <div className={styles.Landing}>
         <NavBar isAuth={false} />
         <SimpleSwiper />
-      </div>g
+      </div>
       {itemList}
       <Places
         className="Places"
