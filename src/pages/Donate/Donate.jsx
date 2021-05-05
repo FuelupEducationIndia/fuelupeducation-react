@@ -5,8 +5,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 import { activeTab as activeTabActionType } from '../../store/actions'
 
@@ -22,7 +21,8 @@ import DonorInformation from './components/DonateInformation/DonorInformation'
 import Payment from './components/Payment/Payment'
 
 const Donate = props => {
-  const { activeTab, setActiveTab } = props
+  const dispatch = useDispatch()
+  const activeTab = useSelector(state => state.activeTab)
 
   return (
     <div className={styles.Donate}>
@@ -47,7 +47,7 @@ const Donate = props => {
               className={
                 activeTab === 0 ? styles.donateActiveTabs : styles.donateTabs
               }
-              onClick={() => setActiveTab(0)}>
+              onClick={() => dispatch(activeTabActionType.setActiveTab(0))}>
               <Heart fill={activeTab === 0 ? '#3b0e8a' : 'lightgray'} />
               <h4>YOUR GIFT</h4>
             </div>
@@ -55,7 +55,7 @@ const Donate = props => {
               className={
                 activeTab === 1 ? styles.donateActiveTabs : styles.donateTabs
               }
-              onClick={() => setActiveTab(1)}>
+              onClick={() => dispatch(activeTabActionType.setActiveTab(1))}>
               <AddressCard fill={activeTab === 1 ? '#3b0e8a' : 'lightgray'} />
               <h4>DONOR INFORMATION</h4>
             </div>
@@ -63,7 +63,7 @@ const Donate = props => {
               className={
                 activeTab === 2 ? styles.donateActiveTabs : styles.donateTabs
               }
-              onClick={() => setActiveTab(2)}>
+              onClick={() => dispatch(activeTabActionType.setActiveTab(2))}>
               <CreditCard fill={activeTab === 2 ? '#3b0e8a' : 'lightgray'} />
               <h4>PAYMENT</h4>
             </div>
@@ -81,21 +81,4 @@ const Donate = props => {
   )
 }
 
-const mapStateToProps = state => ({
-  activeTab: state.activeTab,
-})
-
-const mapDispatchToProps = dispatch =>
-  bindActionCreators(
-    {
-      setActiveTab: activeTabActionType.setActiveTab,
-    },
-    dispatch,
-  )
-
-Donate.propTypes = {
-  activeTab: PropTypes.number.isRequired,
-  setActiveTab: PropTypes.func.isRequired,
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Donate)
+export default Donate

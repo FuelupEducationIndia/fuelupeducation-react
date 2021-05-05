@@ -1,6 +1,6 @@
-import donorInformationReducer from './donorInformationReducer'
+import donorInformation from './donorInformationReducer'
 import yourGift from './yourgiftReducer'
 import payment from './paymentReducer'
 import activeTab from './activeTabReducer'
 
-export default { donorInformationReducer, yourGift, payment, activeTab }
+export default { donorInformation, yourGift, payment, activeTab }

@@ -3,19 +3,28 @@ import { donorInformation } from '../actions'
 const InitialState = {
   activeTab: 0,
   yourGift: {
-    firstRowButtons: {
-      oneTimeDonation: true,
-      monthlyDonation: false,
-    },
-    secondRowButtons: {
-      $25: true,
-      $50: false,
-      $75: false,
-    },
-    customAmount: '',
+    typeOfDonation: 'oneTimeDonation',
+    amount: 25,
+    customAmount: null,
   },
-  donorInformation: {},
-  payment: {},
+  donorInformation: {
+    title: {},
+    firstName: '',
+    lastName: '',
+    companyName: '',
+    email: '',
+    phoneNumber: null,
+    ext: '',
+    addres: '',
+    city: '',
+    userCountry: '',
+    userRegion: '',
+    postalCode: '',
+  },
+  payment: {
+    paymentType: 'creditCard',
+    creditCardInfo: {},
+  },
 }
 
 export default InitialState

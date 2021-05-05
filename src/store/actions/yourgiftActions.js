@@ -1,8 +1,8 @@
 const yourGift = {
-  SET_DONATION_METHOD: 'SET_DONATION_METHOD',
+  SET_DONATION_TYPE: 'SET_DONATION_TYPE',
 
-  setDonationMethod: data => ({
-    type: yourGift.SET_DONATION_METHOD,
+  setDonationType: data => ({
+    type: yourGift.SET_DONATION_TYPE,
     data,
   }),
 }

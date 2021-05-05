@@ -4,7 +4,7 @@
 .Donate { 
 
   &Container{
-    height: 55rem;
+    height: 80rem;
     margin-top: 20px;
     display: flex;
     border-bottom: 1px solid $primary-color;
@@ -35,7 +35,6 @@
 
   &TitleCards{
     @include center;
-    border-bottom: 2px solid lightgray;
     margin-top: 30px;
     h4{
       margin: 10px
@@ -43,9 +42,9 @@
     .donateTabs{
       @include center;
       flex-direction: column;
-      width: 30%;
+      flex: 1;
       color: lightgray;
-      border-bottom: 1px solid lightgray;
+      border-bottom: 2px solid lightgray;
       cursor: pointer;
     }
     .donateActiveTabs{
@@ -53,7 +52,7 @@
       border-bottom: 2px solid $primary-color;
        @include center;
       flex-direction: column;
-      width: 30%;
+      flex: 1;
       cursor: pointer;
 
     }

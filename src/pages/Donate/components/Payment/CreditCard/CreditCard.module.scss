@@ -1,0 +1,31 @@
+.CreditCard {
+    margin-top: 50px;
+
+    label {
+    font-size: 13px;
+    height: 20px;
+    color: gray;
+  }
+    &Logo{
+      margin-top: 20px;
+      height: 30px;
+      img{
+          margin-right: 10px;
+          height: 100%;
+          width: 40px;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+  }
+  &Form{
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    &CardNumber{
+        width: 35%;
+    }
+    &Divs{
+        width: 20%;
+    }
+  }
+}

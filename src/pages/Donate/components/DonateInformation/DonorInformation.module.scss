@@ -1,9 +1,90 @@
 @import '../../../../assets/styles/sass/variables';
 @import '../../../../assets/styles/sass/mixin';
 
-.DonorInformation{
-    margin-top: 30px;
-    &FirstRow{
-        @include center
+.DonorInformation {
+  margin-top: 20px;
+  
+  label {
+    font-size: 13px;
+    height: 20px;
+    color: gray;
+  }
+
+  &Rows {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    .formDivs {
+      width: 45%;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
     }
+
+    .GenderStyles {
+      width: 20%;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      label::after{
+        content: '*';
+        color: red;
+        margin-left: 5px;
+      }
+    }
+    .firstNamelastNameDivs {
+      width: 35%;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      label::after{
+        content: '*';
+        color: red;
+        margin-left: 5px;
+      }
+    }
+    .extDiv {
+      width: 25%;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 166px;
+    }
+  }
+
+  &Buttons {
+    @include center;
+    justify-content: space-between;
+    &RightDiv {
+      @include center;
+      align-items: flex-end;
+      flex-direction: column;
+      span {
+        font-size: 1.2rem;
+        margin-top: 8px;
+      }
+    }
+    > div > button {
+      border: none;
+      color: $primary-color;
+      margin-left: 10px;
+      outline: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .paymentDetails {
+      @include OrangeButton(orangered);
+    }
+  }
+  &CountryRegion {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    appearance: none;
+    background: url('../../images/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px top 60%;
+    cursor: pointer;
+  }
 }

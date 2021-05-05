@@ -1,0 +1,56 @@
+@import '../../../../assets/styles/sass/variables';
+@import '../../../../assets/styles/sass/mixin';
+
+.Payment {
+  margin-top: 30px;
+  &PaymentTypeButtons {
+    display: flex;
+    justify-content: space-between;
+    button {
+      @include VioletButton(50px);
+    }
+    .activePaymentButton {
+      color: white;
+      background-color: $primary-color;
+    }
+  }
+  &OfflineDonation {
+    margin-top: 30px;
+    p {
+      margin-bottom: 5px;
+      color: gray;
+    }
+  }
+  &Footer {
+    margin-top: 20px;
+    &Main {
+      display: flex;
+      justify-content: space-between;
+      &LeftBox {
+        @include center;
+        img {
+          margin-right: 10px;
+          cursor: pointer;
+        }
+        button {
+          color: $primary-color;
+          border: none;
+          background-color: none;
+          cursor: pointer0;
+        }
+      }
+      &RightBox {
+        @include center;
+
+        button {
+          @include OrangeButton(orangered);
+          margin-left: 20px;
+        }
+      }
+    }
+    p {
+      margin-top: 20px;
+      color: gray;
+    }
+  }
+}
