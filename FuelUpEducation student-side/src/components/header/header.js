@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../../assets/styling/studentSide.scss'
 
 const Header = () => {
-  let image = require('../../assets/images/logo.png');
+  let image = require('../../assets/images/logo.svg');
 
   const [menu, setMenu] = useState(false);
 
@@ -54,11 +54,7 @@ const Header = () => {
             : ''
             }
             <div className="image">
-              <img src={image.default} alt="" height="50px" width="50px" />
-            </div>
-            <div className="text">
-              <h3>Fuelup<br />Education</h3>
-              <p>Spreading Education</p>
+              <img src={image.default} alt="" />
             </div>
           </div>
           <div className="nav-links">

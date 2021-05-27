@@ -2,7 +2,7 @@ import React from 'react';
 
 const Chat = () => {
 
-  let image = require('../../../assets/images/logo.png');
+  let image = require('../../../assets/images/pic1.png');
 
   return (
     <div>

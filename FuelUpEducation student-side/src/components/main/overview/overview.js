@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Overview = () => {
-  let profileImage = require('../../../assets/images/logo.png')
+  let profileImage = require('../../../assets/images/pic1.png')
   return (
     <div className="overview">
       <div className="courseInstructor">
@@ -22,12 +22,15 @@ const Overview = () => {
           <h2>Related to this Course</h2>
           <span><i class="fas fa-users"></i><b>Study Groups</b></span><br />
           <span><i class="far fa-file-alt"></i><b>Certificate</b></span>
-          <a href=""><p>Show All</p></a>
+          <a href=""><p><i>•</i> Show All</p></a>
         </div>
       </div>
 
       <div className="courseDetails">
-        <h2>Course Details</h2>
+        <div className="course-detail-head">
+          <h2>Course Details</h2>
+          <a href=""><i>•</i> Show All</a>
+        </div>
         <h5>4h 40m <i>•</i>  Released: 2months ago</h5>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et quod nostrum deserunt?Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, non?</p>
