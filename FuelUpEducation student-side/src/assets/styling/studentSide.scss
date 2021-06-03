@@ -1,14 +1,34 @@
+// Color Variables..
+$body-color: #FAF9FE;
+$content-grey: #F5F4F4;
+$nav-purple-dark: #6440A3;
+$orange: #F16600;
+$gold-star: #FFC107;
+$silver-shadow: rgb(204, 204, 204);
+$scrollbar-border: #8d83a0; 
+$scrollbar-thumb: #C8BCDE;
+$scrollbar-thumb-hover: #8d859c;
+$chat-scroll-track: #d8d8d8;
+$chat-scroll-thumb: rgb(177, 177, 177);
+$chat-scroll-hover: rgb(124, 123, 123);
+$chatBox-background: #F5F4F4;
+$chatBox-message-shadow: #9473ce;
+$silver-icon-color: rgb(235, 235, 235);
+$light-purple-icon: #C698F3;
+$light-green-icon: #2DA231;
+
 * {
-	// font-family: Muli Regular;
+	// font-family: calibri;
 	box-sizing: border-box;
+
 }
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #FAF9FE;
+	background-color: $body-color;
 }
 header {
-	background-color: #FAF9FE;
+	background-color: $body-color;
 	padding: 1.5rem 2rem 0 2rem;
 
 	nav {
@@ -42,7 +62,7 @@ nav {
 			padding: 2rem;
 			background-color: white;
 			border-radius: 10px;
-			box-shadow: 0 0 10px 1px rgb(204, 204, 204);
+			box-shadow: 0 0 10px 1px $silver-shadow;
 			transition: .5s all;
 			z-index: 1;
 			.nav-profile-icons {
@@ -64,7 +84,7 @@ nav {
 					margin: 5px 1rem;
 					font-size: 22px;
 					font-weight: bolder;
-					color: #6440A3;
+					color: $nav-purple-dark;
 					cursor: pointer;
 					i {
 						margin-left: 5px;
@@ -77,7 +97,7 @@ nav {
 						li {
 							font-size: 20px;
 							cursor: pointer;
-
+							font-weight: 600;
 						}
 					}
 					&:hover ul {
@@ -116,6 +136,7 @@ nav {
 		ul {
 			display: flex;
 			list-style-type: none;
+			padding-left: 0;
 		}
 	}
 }
@@ -123,9 +144,9 @@ nav {
 	ul {
 		li {
 			margin: 5px 1rem;
-			font-size: 22px;
+			font-size: 20px;
 			font-weight: 1000;
-			color: #6440A3;
+			color: $nav-purple-dark;
 			position: relative;					
 			cursor: pointer;
 			i {
@@ -143,7 +164,7 @@ nav {
 				width: 180px;
 				padding: 1rem 1.5rem;
 				background-color: white;
-				box-shadow: 0 0 10px 1px rgb(204, 204, 204);
+				box-shadow: 0 0 10px 1px $silver-shadow;
 				display: none;
 				border-radius: 5px;
 				z-index: 10;
@@ -189,7 +210,7 @@ main {
 		// border: 1px solid green;
 	}
 	.right-section {
-		background-color: #F5F4F4;
+		background-color: $content-grey;
 		flex: 1;
 		margin: 2rem;
 		margin-left: 0;
@@ -205,11 +226,11 @@ main {
 		align-items: center;
 		h2 {
 			font-size: 30px;
-			color: #6440A3;
+			color: $nav-purple-dark;
 			margin-right: 1rem;
 		}
 		span {
-			color: #F16600;
+			color: $orange;
 			font-size: 23px;
 		}
 	}
@@ -237,12 +258,12 @@ main {
 			text-align: center;
 			background-color: white;
 			border-radius: 5px;
-			box-shadow: 0 0 4px 1px rgb(197, 196, 196);
+			box-shadow: 0 0 4px 1px $silver-shadow;
 			p {
 				font-weight: normal;
 				font-size: 13px;
 				margin: 0;
-				color: #F16600;
+				color: $orange;
 			}
 			h3 {
 				margin: 0;
@@ -272,13 +293,13 @@ main {
 			width: 200px;
 			background-color: white;
 			border-radius: 5px;
-			box-shadow: 0 0 4px 1px rgb(197, 196, 196);
+			box-shadow: 0 0 4px 1px $silver-shadow;
 			
 			p {
 				font-weight: normal;
 				font-size: 13px;
 				margin: 0;
-				color: #F16600;
+				color: $orange;
 				text-align: center;
 			}
 			.share-options {
@@ -308,17 +329,15 @@ main {
 						// height: 22px;
 						width: 45px;
 						border-radius: 1rem;
-						background-color: #3B0E8A;
+						background-color: $nav-purple-dark;
 						padding: 3px;
 						display: flex;
 						justify-content: flex-end;
 						align-items: center;
-						// border: 2px solid #3B0E8A;
 						.toggle-circle {
 							height: 18px;
 							width: 18px;
 							border-radius: 50%;
-							// border: 2px solid #3B0E8A;
 							background-color: white;
 						}
 					}
@@ -337,23 +356,23 @@ main {
 	}
 	.dotted-menu {
 		display: none;
-	
+		align-self: flex-end;
 	}
 	.select-screen-option {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		width: 180px;
+		width: 190px;
 		padding: 13px 10px;
 		position: absolute;
 		right: 0;
 		top: 1.5rem;
 		background-color: white;
-		box-shadow: 0 0 2px 1px rgb(224, 224, 224);
+		box-shadow: 0 0 2px 1px $silver-shadow;
 		border-radius: 2px;
 		.recording{
 			text-align: center;
-			color: #F16600;
+			color: $orange;
 		}
 		.share-screen {
 			text-align: center;
@@ -370,12 +389,12 @@ main {
 			text-align: center;
 			background-color: white;
 			border-radius: 5px;
-			box-shadow: 0 0 4px 1px rgb(197, 196, 196);
+			box-shadow: 0 0 4px 1px $silver-shadow;
 			p {
 				font-weight: normal;
 				font-size: 13px;
 				margin: 0;
-				color: #F16600;
+				color: $orange;
 			}
 			h3 {
 				margin: 0;
@@ -402,13 +421,13 @@ main {
 			width: 200px;
 			background-color: white;
 			border-radius: 5px;
-			box-shadow: 0 0 4px 1px rgb(197, 196, 196);
+			box-shadow: 0 0 4px 1px $silver-shadow;
 			
 			p {
 				font-weight: normal;
 				font-size: 13px;
 				margin: 0;
-				color: #F16600;
+				color: $orange;
 				text-align: center;
 			}
 			.share-options {
@@ -437,17 +456,15 @@ main {
 						// height: 22px;
 						width: 45px;
 						border-radius: 1rem;
-						background-color: #3B0E8A;
+						background-color: $nav-purple-dark;
 						padding: 3px;
 						display: flex;
 						justify-content: flex-end;
 						align-items: center;
-						// border: 2px solid #3B0E8A;
 						.toggle-circle {
 							height: 18px;
 							width: 18px;
 							border-radius: 50%;
-							// border: 2px solid #3B0E8A;
 							background-color: white;
 						}
 					}
@@ -458,7 +475,7 @@ main {
 }
 .video-details {
 	span {
-		color: #3B0E8A;
+		color: $nav-purple-dark;
 		font-weight: 600;
 	}
 	.rating {
@@ -469,7 +486,7 @@ main {
 			margin-right: 5px;
 		}
 		i {
-			color: #FFC107;
+			color: $gold-star;
 		}
 	}
 	.time {
@@ -497,10 +514,10 @@ main {
 		margin-right: 1rem;
 		i {
 			font-size: 20px;
-			color: #F16600;
+			color: $orange;
 		}
 		p {
-			color: #F16600;
+			color: $orange;
 		}
 	}
 	.share-screen {
@@ -533,25 +550,26 @@ main {
 			/* Track */
 			*::-webkit-scrollbar-track {
 				background: transparent;
-				border: 1px solid #8d83a0; 
+				border: 1px solid $scrollbar-border; 
 				border-radius: 10px;
 			}
 			
 			/* Handle */
 			*::-webkit-scrollbar-thumb {
-				background: #C8BCDE;
+				background: $scrollbar-thumb;
 				border-radius: 10px; 
 			}
 
 			/* Handle on hover */
 			*::-webkit-scrollbar-thumb:hover {
-				background: #8d859c; 
+				background: $scrollbar-thumb-hover; 
 			}
 		// ========================
 
   .overview-desktop{
 		height: 650px;
 		padding: 1.5rem 2rem;
+		margin-bottom: 1rem;
 		overflow-y: scroll;
 
 		// =======================
@@ -563,19 +581,19 @@ main {
 
 			/* Track */
 			*::-webkit-scrollbar-track {
-				background: #d8d8d8; 
+				background: $chat-scroll-track; 
 				border: none;
 				
 			}
 			
 			/* Handle */
 			*::-webkit-scrollbar-thumb {
-				background: rgb(177, 177, 177); 
+				background: $chat-scroll-thumb; 
 			}
 
 			/* Handle on hover */
 			*::-webkit-scrollbar-thumb:hover {
-				background: #555; 
+				background: $chat-scroll-hover; 
 			}
 		// ========================
 
@@ -603,7 +621,7 @@ main {
 				margin-top: 2rem;
 					h2{
 						text-transform: uppercase;
-						color: #6440A3;
+						color: $nav-purple-dark;
 						margin-bottom: 10px;
 						margin-top: 0;
 					}
@@ -634,7 +652,7 @@ main {
 									font-size: 15px;
 								}
 								a {
-									color: #F16600;
+									color: $orange;
 									text-decoration: none;
 								}
 						}
@@ -653,7 +671,7 @@ main {
 					}
 					a {
 						text-decoration: none;
-						color: #F16600;
+						color: $orange;
 						p {
 							margin: 0;
 							text-align: right;
@@ -672,12 +690,12 @@ main {
 					justify-content: flex-start;
 					align-items: center;
 					h2 {
-						color: #6440A3;
+						color: $nav-purple-dark;
 						margin-bottom: 10px;
 					}
 					a{
 						text-decoration: none;
-						color: #F16600;
+						color: $orange;
 						margin-top: 5px;
 						margin-left: 30%;
 						i{
@@ -705,7 +723,7 @@ main {
 			}
 			.objectives {
 				h2 {
-					color: #6440A3;
+					color: $nav-purple-dark;
 					margin-bottom: 10px;
 				}
 				ul {
@@ -719,7 +737,7 @@ main {
 
 			.language {
 				h2 {
-					color: #6440A3;
+					color: $nav-purple-dark;
 					margin-bottom: 10px;
 				}
 				p {
@@ -728,7 +746,7 @@ main {
 			}
 			.board {
 				h2 {
-					color: #6440A3;
+					color: $nav-purple-dark;
 					margin-bottom: 10px;
 				}
 				p {
@@ -738,7 +756,7 @@ main {
 			}
 			.learner {
 				h2 {
-					color:  #6440A3;
+					color: $nav-purple-dark;
 					margin-bottom: 10px;
 				}
 				
@@ -759,15 +777,15 @@ main {
 					.icon1 {
 						background-color: silver;
 						i {
-							color: rgb(235, 235, 235);
+							color: $silver-icon-color;
 						}
 					}
 					.icon2 {
-						background-color: #C698F3;
+						background-color: $light-purple-icon;
 						transform: translateX(-14px);
 					}
 					.icon3 {
-						background-color: #2DA231;
+						background-color: $light-green-icon;
 						transform: translateX(-24px);
 					}
 					span {
@@ -782,15 +800,15 @@ main {
 			height: 550px;
 			width: 460px;
 			margin-top: 1.5rem;
-			background-color: #F5F4F4;
+			background-color: $chatBox-background;
 			h2 {
 				background-color: white;
-				color: #6440A3;
+				color: $nav-purple-dark;
 				margin: 0;
 				text-transform: uppercase;
 				padding: 10px 0;
 				i {
-					color: #F16600;
+					color: $orange;
 					margin-left: 5px;
 					font-size: 26px;
 				}
@@ -824,7 +842,7 @@ main {
 					.messageText {
 						span {
 							font-size: 14px;
-							color: rgb(173, 173, 173);
+							color: $chat-scroll-thumb;
 							b {
 								font-size: 16px;
 								color: black;
@@ -838,7 +856,7 @@ main {
 						p{
 							margin: 0;
 							font-size: 15px;
-							color: rgb(128, 128, 128);
+							color: $chat-scroll-hover;
 						}
 
 					}
@@ -856,10 +874,10 @@ main {
 						padding: 10px 12px;
 						width: 100%;
 						border-radius: 5px;
-						border: 1px solid #6440A3;
+						border: 1px solid $nav-purple-dark;
 						&:focus{
 							outline: 0;
-							box-shadow: 0 0 2px 1px #9473ce;
+							box-shadow: 0 0 2px 1px $chatBox-message-shadow;
 						}
 					}
 				}
@@ -871,7 +889,7 @@ main {
 					i {
 						font-size: 20px;
 						margin-right: 1rem;
-						color: #6440A3
+						color: $nav-purple-dark
 					}
 				}
 			}
@@ -879,19 +897,18 @@ main {
 				margin: 8px 1rem;
 				font-size: 12px;
 				font-weight: bold;
-				color: #6440A3;
+				color: $nav-purple-dark;
 			}
 		}
 		.attendanceBox {
 			width: 100%;
 			height: 500px;
 			margin-top: 1.5rem;
-			// background-color: rgb(248, 248, 248);
 			h2 {
 				text-transform: uppercase;
-				color: #6440A3;
+				color: $nav-purple-dark;
 				i {
-					color: #F16600;
+					color: $orange;
 					margin-left: 10px;
 				}
 			}
@@ -910,7 +927,7 @@ main {
 					flex: 1;
 					padding: 1rem 1.5rem;
 					border-radius: 10px;
-					box-shadow: 0px 2px 5px 2px rgb(223, 223, 223);
+					box-shadow: 0px 2px 5px 2px $silver-icon-color;
 					.selectBox{	
 						width: 100%;
 						padding-right: 12px;
@@ -942,7 +959,7 @@ main {
 					padding: 1rem 1.5rem;
 					margin-left: 2rem;
 					border-radius: 10px;
-					box-shadow: 0px 2px 5px 2px rgb(223, 223, 223);
+					box-shadow: 0px 2px 5px 2px $silver-icon-color;
 					.options {
 						display: flex;
 						justify-content: flex-start;
@@ -979,7 +996,6 @@ main {
 							display: flex;
 							flex-direction: column;
 							flex: 1;
-							// background-color: silver;
 							padding-right: 1rem;
 						}	
 						.rightOptions {
@@ -1023,15 +1039,15 @@ main {
 						.timer {
 							flex: 1;
 							.cdHeading {
-								color: #6440A3;
-								font-size: 15px;
+								color: $nav-purple-dark;
+								font-size: 13px;
 								font-weight: bold;
 							}
 							.countdown{
 								display: flex;
 								h2 {
 									margin: 0;
-									color: #F16600;
+									color: $orange;
 								}
 								p {
 									margin: 0 3px;
@@ -1110,7 +1126,6 @@ main {
 		.body {
 			position: relative;
 			overflow: hidden;
-			/* margin-top: 14px; */
 			padding: 0 25px;
 			opacity: 1;
 			cursor: default;
@@ -1121,7 +1136,7 @@ main {
 				align-items: center;
 				margin: 5px 0;
 				&:hover {
-					color: #F16600;
+					color: $orange;
 				}
 				.left {
 					display: flex;
@@ -1148,13 +1163,13 @@ main {
 	display: none;
 	margin: 2rem;
 	margin-top: 0;
-	border: 1px solid red;
+	// border: 1px solid red;
 	width: 63%;
 	.tabs {
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		border: 1px solid green;
+		// border: 1px solid green;
 	}
 }
 }
@@ -1179,6 +1194,7 @@ main {
 		}
 	}
 	header {
+		padding-bottom: 1.5rem;
 		nav {
 			.nav-links {
 				display: none;
@@ -1249,7 +1265,7 @@ main {
 	.overview-desktop{
 		.chatBox {
 			width: 100% !important;
-			background-color: red;
+			// background-color: red;
 		}
 	}
 	.attendanceBox {
@@ -1291,7 +1307,7 @@ main {
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 516px) {
 	.left-section {
 		.overview-desktop{
 			padding-left: 0 !important;
@@ -1312,7 +1328,7 @@ main {
 	}
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 453px) {
 	header {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -1537,7 +1553,7 @@ main {
 	padding: 1rem 2rem;
 	background-color: white;
 	border-radius: 5px;
-	box-shadow: 0 0 10px 1px rgb(221, 221, 221);
+	box-shadow: 0 0 10px 1px $silver-shadow;
 	z-index: 10;
 	.modal-content {
 		.head {
@@ -1563,7 +1579,7 @@ main {
 			text-align: right;
 			button {
 				border: none;
-				background-color: #6440A3;
+				background-color: $nav-purple-dark;
 				color: white;
 				padding: 7px 15px;
 				border-radius: 1rem;
@@ -1572,7 +1588,7 @@ main {
 		}
 	}
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 385px) {
 	header {
 		nav {
 			.logo {
@@ -1638,7 +1654,7 @@ main {
 				align-items: flex-start;
 			}
 			.select-screen-option {
-				top: 3.6rem !important;
+				top: 6rem !important;
 			}
 		}
 	}
@@ -1703,6 +1719,34 @@ main {
 					
 				}
 			}
+		}
+	}
+}
+
+@media only screen and (max-width: 310px) {
+
+	.left-section{
+		.overview-desktop {
+			.d-tabs {
+				.tab {
+					font-size: 13px !important;
+					margin-right: .7rem !important;
+				}
+			}
+		}
+	}
+	.overview{
+		.courseDetails {
+			.course-detail-head {
+				a {
+					margin-left: 1rem !important;				
+				}
+			}
+		}
+	}
+	.video-options{
+		.select-rec-options {
+			left: -3.5rem !important;
 		}
 	}
 }
