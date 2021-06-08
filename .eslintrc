@@ -8,7 +8,9 @@
   "extends": ["airbnb", "prettier"],
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": ["error"],
+    "prettier/prettier": ["error", {
+      "endOfLine":"auto"
+    }],
     "import/no-extraneous-dependencies": 0,
     "react/jsx-filename-extension": 0,
     //  proptypes is not required : 
@@ -22,6 +24,7 @@
           "every": [ "nesting", "id" ]
       },
       "allowChildren": false
-  }]
+  }],
+    "react/no-array-index-key": 0
   }
 }
