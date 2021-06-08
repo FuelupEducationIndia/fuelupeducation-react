@@ -1,0 +1,178 @@
+.mainDiv{
+    display: flex;
+    flex-wrap: wrap;
+    color: #3b0e8a;
+}
+.div100W{
+    width: 80%;
+    margin-top: 1rem;
+}
+.div30W{
+    display: inline-block;
+    width: 66%;
+    textarea {
+        width: 100%;
+        height: 150px;
+      }
+}
+.div60W{
+    display: inline-block;
+    width: 66%;
+}
+.divempty{
+    display: inline-block;
+    width: 17%;
+}
+.unlabel{
+    line-height: 5rem;
+    flex: 0 0 auto;
+    min-width:16.6666666667% ;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.inputText {
+    min-height: calc(1.5em + 1rem + 5px);
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #b1b1b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    &:focus{
+        border-color: #b1b1b1;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(88, 88, 88, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(55, 56, 56, 0.6);
+    }
+}
+
+.dragArea{
+    border: 2px dashed rgb(0, 0, 0);
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    button{
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        background: #fff;
+        color: #f3620e;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  }
+
+  .smallInput{
+      width: 150px;
+      display: inline-block;
+      margin-right: 10px;
+  }
+  .spanC{
+    color: #fff;
+    background-color: #3b0e8a;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  .btnUp{
+      color: #fff;
+      background-color: #f16600;
+      border:1px solid  #f16600;
+      height: 30px;
+      width: 100px;
+      float: right;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+}
+
+.pdftext{
+    color:black;
+    margin: 5px;
+}
+.dflex{
+    display: flex;
+}
+.filelogo{
+    width: 30px;
+}
+.downloadCloud{
+    color:#F16600;
+    width: 130px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 3px;
+    border:2px solid #F16600 ;
+    background-color: transparent;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+.formCheckCont{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.formCheck{
+    display: inline-block;
+    min-height: 1.5rem;
+    margin-bottom: .125rem;
+    margin-right: .5rem;
+}
+.formCheckInput{
+    width: 1em;
+    height: 1em;
+    margin: 6px;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    &:checked[type=radio],&:focus[type=radio]{
+        background-image: url('../../../../assets/images/blackdot.svg') !important;
+        background-color: #ffffff;
+        border-color: #000000;
+        outline: none;
+    }
+}
+
+.red{
+    color: red;
+}
+.greed{
+    color: green;
+}

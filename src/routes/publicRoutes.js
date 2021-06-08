@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
 
 import LandingPage from '../pages/Landing'
-
+const hIndex = () => <h1>page1 Index</h1>
+const hRing = () => <h1>page1 Rings</h1>
 const ROUTES = [
   { path: '/', key: 'ROOT', exact: true, component: LandingPage },
   {
@@ -16,13 +17,13 @@ const ROUTES = [
         path: '/page1',
         key: 'PAGE1_ROOT',
         exact: true,
-        component: () => <h1>page1 Index</h1>,
+        component: hIndex(),
       },
       {
         path: '/page1/page1-child',
         key: 'PAGE1_CHILD',
         exact: true,
-        component: () => <h1>page1 Rings</h1>,
+        component: hRing(),
       },
     ],
   },

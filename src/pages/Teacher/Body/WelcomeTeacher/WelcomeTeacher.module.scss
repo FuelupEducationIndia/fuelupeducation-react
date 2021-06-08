@@ -1,0 +1,37 @@
+@import 'assets/styles/sass/variables';
+
+.welcome{
+    background-color: #e6e0f2;
+    border: 1px solid #bfaee0;
+    padding: 2rem;
+    position: relative;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+.textname{
+    color: $primary-color;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    line-height: 1.2;
+
+}
+.subtextname{
+    color: $primary-color;
+    font-size: 2.5rem;
+
+}
+.welcomeimg{
+    position: absolute;
+    width: 250px;
+    right: 20px ;
+    bottom: -23px;
+}
+.div50W{
+    flex: 0 0 auto;
+    width: 50%;
+}

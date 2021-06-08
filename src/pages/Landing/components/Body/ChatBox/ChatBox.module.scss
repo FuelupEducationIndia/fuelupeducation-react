@@ -1,0 +1,53 @@
+@import 'sass/variables';
+
+.ChatBox {
+    flex: 1;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    height: 64rem;
+
+    .Header {
+        padding: 1.5rem 1.3rem;
+        display: flex;
+        border-bottom: 1px solid $primary-color;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        
+        img {
+            margin-right: 1rem;
+        }
+
+        div {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+    }
+
+    .Content {
+        padding: 1.5rem 5rem 3rem 1.3rem;
+        flex: 1;
+        overflow-y: auto;
+        
+        > * {
+            margin-bottom: 1.4rem;
+        }
+
+        .TimeLine {
+            display: flex;
+            align-items: center;
+    
+            > div:nth-child(1), > div:nth-child(3) {
+                flex: 1;
+                height: 1px;
+                background-color: #c1c1c1;
+            }
+    
+            > div {
+                margin: 0 1.5rem;
+                color: #c1c1c1;
+            }
+        }
+    }
+
+    
+}

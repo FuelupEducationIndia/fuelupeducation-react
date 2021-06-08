@@ -1,0 +1,39 @@
+@import 'sass/variables';
+
+.FileBox {
+    width: 29.4rem;
+    background-color: $secondary-color;
+    padding: 1.6rem 1.4rem 0 .8rem;
+    text-align: center;
+
+    .SharedFiles {
+        margin-left: 1.6rem;
+    }
+
+    .GroupName {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    > *:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .Heading {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $primary-color;
+    }
+}
+
+.Line {
+    width: 100%;
+    height: .2rem;
+    background-color: $primary-color;
+    margin: 1.5rem 0;
+}
