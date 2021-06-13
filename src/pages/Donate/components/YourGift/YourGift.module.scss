@@ -1,0 +1,44 @@
+@import '../../../../assets/styles/sass/variables';
+@import '../../../../assets/styles/sass/mixin';
+
+.YourGift {
+  @include center;
+  flex-direction: column;
+
+  &FirstRowButtons {
+    margin-top: 50px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    button {
+      @include VioletButton(60px);
+    }
+  }
+
+  &SecondRowButtons {
+    margin-top: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    button {
+      @include VioletButton(25px);
+    }
+    input{
+      @include VioletButton;
+    }
+  }
+
+  &ThirdRowButtons {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    button {
+      @include OrangeButton(orangered);
+    }
+  }
+  .activeDonateButton{
+    color: white;
+    background-color: $primary-color;
+  }
+}

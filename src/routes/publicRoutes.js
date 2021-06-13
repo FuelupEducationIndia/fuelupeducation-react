@@ -1,11 +1,15 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
-
 import LandingPage from '../pages/Landing'
+import Donate from '../pages/Donate/Donate'
+import Team from '../pages/Team/components/Team'
 
 const ROUTES = [
   { path: '/', key: 'ROOT', exact: true, component: LandingPage },
+  { path: '/donate', component: Donate },
+  { path: '/team', component: Team },
   {
     path: '/page1',
     key: 'page1',
@@ -49,7 +53,14 @@ export function RenderRoutes({ routes }) {
 }
 
 RenderRoutes.propTypes = {
-  routes: PropTypes.arrayOf.isRequired,
+  routes: PropTypes.arrayOf(
+    PropTypes.shape({
+      path: PropTypes.string.isRequired,
+      key: PropTypes.string.isRequired,
+      exact: PropTypes.bool.isRequired,
+      component: PropTypes.func.isRequired,
+    }),
+  ).isRequired,
 }
 
 export default ROUTES
