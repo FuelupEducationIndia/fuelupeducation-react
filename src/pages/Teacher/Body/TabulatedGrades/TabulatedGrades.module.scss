@@ -1,0 +1,84 @@
+.d100{
+  width: 100%;
+
+  .table{
+    border:1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 15px 0 15px 0;
+    background-color: #faf9fe;
+
+    thead{
+      border-bottom: 1px solid rgb(204, 194, 194);
+      color: black;
+      
+      th {
+        padding: 15px 0 15px 15px;
+        text-align: left;
+      }
+    }
+
+    tbody{
+
+        tr{
+          border-bottom: 1px solid rgb(204, 194, 194);
+
+        td{
+          text-align: left;
+          color: rgb(102, 102, 102);
+          padding: 15px 15px 15px 15px;
+
+          &.green{
+            color: green !important;
+          }
+          &.orange{
+            color: orange !important;
+          }
+          &.red{
+            color: red !important;
+          }
+        }
+      }
+
+    }
+
+    tfoot {
+      tr {
+        td {
+          div {
+            display: flex;
+            text-align: center;
+            font-weight: bolder;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-right: 10px;
+            padding-left: 10px;
+            
+            img {
+              padding-top: 3px;
+              padding-bottom: 4px;
+              padding-right: 10px;
+              padding-left: 10px;
+              vertical-align: middle;
+            }
+          }
+          &.orange{
+            color: orange !important;
+          }
+        }
+      }
+    }
+  }
+  
+  .d10{
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 5%;
+  }
+  .d90{
+    display: inline-block;
+    width: 90%;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+}

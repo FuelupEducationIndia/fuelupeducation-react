@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import CreateAssignment from '../CreateAssignment/createAssignment'
 import ReviewAssignment from '../ReviewAssignment/ReviewAssignment'
+import CheckGrades from '../CheckGrades/CheckGrades'
 import style from './Assignment.module.scss'
 
 const Assignment = () => {
@@ -50,6 +51,7 @@ const Assignment = () => {
 
       {createAss === 'Create' ? <CreateAssignment /> : ''}
       {createAss === 'Review' ? <ReviewAssignment /> : ''}
+      {createAss === 'Grading' ? <CheckGrades /> : ''}
     </div>
   )
 }
