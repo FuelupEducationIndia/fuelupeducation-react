@@ -1,0 +1,163 @@
+
+ @mixin inputprops{
+    width: 100%;
+    font-size: 15px;
+    position: relative;
+    z-index: 101;
+    background: transparent;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    border-top:0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1.5px solid #ccc;
+ }
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .modal_dialog{
+        background-color: white;
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        width: 550px;
+        top: 0;
+        .modal_header{
+            text-align: end;
+        }
+        .modal_body{
+           padding: 50px;
+          .heading_text{
+              text-align: center;
+              color: #3B0A85;
+          }
+          .heading_para{
+              text-align: center;
+              color: gray;
+              margin-bottom: 30px;
+          }
+          .form_group{
+            position: relative;
+            input{
+                @include inputprops;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+                &:valid + label{
+                    display: none;
+                }
+            }
+            label{
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                z-index: 100;
+                color: #ccc;
+                &::after{
+                    content: " *";
+                    color: rgb(212, 0, 0);
+                }
+            }
+          }
+          select{
+            @include inputprops;
+            color: black;
+            &:not(:valid){
+                color: #ccc;
+            }
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            } 
+          }
+          .select_wrapper{
+            position: relative;
+          }
+          a{
+              color: #3B0A85;
+          }
+          .customCheckbox{
+              display: flex;
+              align-items: center;
+            INPUT[type=checkbox]:focus
+            {
+                outline: 1px solid white;
+                box-shadow: none;
+            }
+            INPUT[type=checkbox]
+            {
+                background-color: #fff;
+                border-radius: 2px;
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                position: relative;
+                top: 5px;
+                margin-right: 15px;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+            }
+            INPUT[type=checkbox]:checked
+            {   
+                border: none;
+                background-color: #F16601;
+                background: #F16601 url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 4px 5px no-repeat;
+            }
+            label{
+                font-size: 15px;
+                line-height: 2.1rem;
+                color: gray;
+            }
+          }
+          .btnContainer{
+              text-align: end;
+              .btn{
+                background-color: #F16601;
+                border-radius: 20px;
+                border: none;
+                color: white;
+                padding: 6px 35px;
+                margin: 20px 0px;
+            }
+          }
+          .customOr{
+              text-align: center;
+              margin-top: 20px;
+              .borderAfter{
+                  text-align: center;
+                  width: 200px;
+                  height: 0px;
+                  margin-left: 30%;
+                  border-top: 1px solid rgb(77, 76, 76);
+              }
+              .or{
+                  top: -14px;
+                  position: relative;
+                  padding: 12px;
+                  border-radius: 50%;
+                  background-color: white;
+              }
+          }
+          .otherImg{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img{
+                  margin: 0px 8px;
+              }
+          }
+          
+
+        }
+    }
+}
