@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import imglargFile from '../../../../assets/images/filelogo.png'
-import arrowLeft from '../../../../assets/images/arrow-left.png'
-import arrowRight from '../../../../assets/images/arrow-right.png'
+import imglargFile from '../../../../assets/images/filelogo.png';
+import {ReactComponent as ArrowLeft } from '../../../../assets/svgs/arrow-left.svg';
+import {ReactComponent as ArrowRight } from '../../../../assets/svgs/arrow-right.svg';
 
-import styles from './TabulatedGrades.module.scss'
+import styles from './TabulatedGrades.module.scss';
 
 const TabulatedGrades = props => {
   return (
@@ -30,14 +30,17 @@ const TabulatedGrades = props => {
               <tr key={index}>
                 {Object.entries(item).map((element, i) => {
                   return (
-                    <td key={i} className={`${element[0] == 'Status' && (
-                      element[1] == 'Approved' ? styles.green : 
-                      element[1] == 'Pending' ? styles.orange : 
-                      element[1] == 'Failed' ? styles.red : ''
-                      )}`}
-                    >
+                    <td key={i} className={`
+                      ${element[0] == 'Status' ? (
+                        element[1] == 'Approved' ? styles.green : 
+                        element[1] == 'Pending' ? styles.orange : 
+                        element[1] == 'Failed' ? styles.red : ''
+                      ) : (
+                        element[0] == 'Submissions' ? styles.submissions : ''
+                      )}
+                    `}>
                         {element[0] === 'Submissions' && (
-                          <img className={styles.d10} src={imglargFile} />
+                          <img src={imglargFile} />
                         )}
                           {element[1]}
                     </td>
@@ -53,14 +56,14 @@ const TabulatedGrades = props => {
               <td></td><td></td><td></td><td></td><td></td>
               <td>
                 <div> 
-                  <img src={arrowLeft}/>
+                  <ArrowLeft />
                   <span>Previous</span>
                 </div>
               </td>
               <td>
-                <div> 
-                  Next
-                  <img src={arrowRight} />
+                <div className={styles.orange}> 
+                  <span>Next</span>
+                  <ArrowRight className={styles.orange}/>
                 </div>
               </td>
           </tr>

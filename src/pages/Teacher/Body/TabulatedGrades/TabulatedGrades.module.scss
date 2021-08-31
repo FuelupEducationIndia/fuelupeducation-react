@@ -1,79 +1,101 @@
-.d100{
-  width: 100%;
+.d100 {
+  font-family: 'Muli Regular';
+  padding-top: 50px;
 
   .table{
-    border:1px solid black;
     border-collapse: collapse;
     width: 100%;
     padding: 15px 0 15px 0;
     background-color: #faf9fe;
+    border: 2px solid rgb(204, 194, 194);
 
     thead{
-      border-bottom: 1px solid rgb(204, 194, 194);
-      color: black;
-      
+      border-bottom: 2px solid rgb(204, 194, 194);
       th {
-        padding: 15px 0 15px 15px;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 15px 15px 15px 15px;
         text-align: left;
       }
     }
 
-    tbody{
-
-        tr{
-          border-bottom: 1px solid rgb(204, 194, 194);
+    tbody {
+      tr {
+        position:relative;
+        width: 100%;
+        display: table-row;
 
         td{
+          font-size: 14px;
           text-align: left;
           color: rgb(102, 102, 102);
-          padding: 15px 15px 15px 15px;
-
+          padding: 15px 15px 15px 20px;
+          
+          img {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 5px;
+          }
+          &.submissions{
+            text-decoration: underline;
+          }
           &.green{
-            color: green !important;
+            color: #2DA231;
           }
           &.orange{
-            color: orange !important;
+            color: #F16600;
           }
           &.red{
-            color: red !important;
+            color: red;
           }
         }
       }
 
+      tr:after {
+        position: absolute;
+        width: 98%;
+        height: 1px;
+        content: '';
+        border-bottom: 2px solid #ccc2c2;
+        border: 0%;
+        left: 1%;
+        bottom: 1%;
+        margin: 0px auto;
+      }
     }
 
     tfoot {
       tr {
         td {
           div {
+            font-size: 16px;
             display: flex;
-            text-align: center;
-            font-weight: bolder;
+            justify-content: center;
+            
+            font-weight: bold;
             padding-top: 25px;
             padding-bottom: 25px;
-            padding-right: 10px;
-            padding-left: 10px;
             
-            img {
-              padding-top: 3px;
-              padding-bottom: 4px;
-              padding-right: 10px;
-              padding-left: 10px;
-              vertical-align: middle;
+            color: #C1C1C1;
+            
+            &.orange{
+              color: #F16600 !important;
             }
-          }
-          &.orange{
-            color: orange !important;
+
+            svg {
+              margin: 6px 6px 0 6px;
+              
+              
+              &.orange{
+                path {
+                  stroke: #F16600 !important;
+                }
+              }
+            }
           }
         }
       }
     }
-  }
-  
-  .d10{
-    display: inline-block;
-    vertical-align: middle;
-    min-width: 5%;
   }
   .d90{
     display: inline-block;
