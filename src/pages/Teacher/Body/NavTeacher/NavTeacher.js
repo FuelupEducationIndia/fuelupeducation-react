@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
-import styles from './NavTaecher.module.scss'
+import styles from './NavTaecher.module.scss';
 
-import Assignment from '../Assignment/Assignment'
+import Assignment from '../Assignment/Assignment';
 
 const NavTeacher = props => {
   const [viewIn, setViewIn] = useState('')
@@ -11,6 +11,7 @@ const NavTeacher = props => {
   const onClick = e => {
     setViewIn(e.currentTarget.getAttribute('render'))
   }
+  
   return (
     <div className={styles.nav}>
       <ul className={styles.navul}>
@@ -26,22 +27,28 @@ const NavTeacher = props => {
         <li render="Exams" onClick={onClick}>
           Exams
         </li>
-        <li render="Assignments" onClick={onClick}>
+        <li 
+          render="Assignments" 
+          onClick={onClick}
+          className={`${
+            viewIn === 'Assignments' ? styles.renderedSection : ''
+          }`}
+        >
           Assignments
         </li>
         <li render="Attendance" onClick={onClick}>
           Attendance
         </li>
         <li render="certificate" onClick={onClick}>
-          certificate
+          Certificate
         </li>
       </ul>
 
       {viewIn === 'Assignments' ? <Assignment /> : ''}
     </div>
   )
-}
+};
 
-NavTeacher.propTypes = {}
+NavTeacher.propTypes = {};
 
-export default NavTeacher
+export default NavTeacher;
