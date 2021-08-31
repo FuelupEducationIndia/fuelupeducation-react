@@ -7,18 +7,23 @@
     display: inline-block;
     min-height: 1.5rem;
     margin-bottom: .125rem;
-    margin-right: .5rem;
+    margin-right: 70px;
+    font-size: 20px;
+    color: #707070;
+    font-family: 'Muli Bold';
+    .formCheckedInput {
+        color: black !important;
+        font-weight: bold;
+    }
 }
+
 .formCheckInput{
-    width: 1em;
-    height: 1em;
-    margin: 6px;
-    vertical-align: top;
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 22px;
+    height: 22px;
+    margin: 0 12px 2px 0;
+    vertical-align: text-bottom;
     background-size: contain;
-    border: 1px solid rgba(0, 0, 0, 0.25);
+    border: 3px solid #707070;
     border-radius: 50%;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -28,12 +33,12 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    &:checked[type=radio],&:focus[type=radio]{
+    &:checked[type=radio],&:focus[type=radio] {
         background-image: url('../../../../assets/images/blackdot.svg') !important;
-        background-color: #ffffff;
+        background-size: 150%;
+        background-position: center;
         border-color: #000000;
+        color: black;
         outline: none;
     }
 }
-
-
