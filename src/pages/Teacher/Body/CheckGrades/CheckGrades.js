@@ -29,8 +29,8 @@ const CheckGrades = props => {
         'Student/Groups': 'LastName FirstName',
         Folder: 'Assignment-1 Submission',
         Submissions: 'LastName_Assign1_AssignName.pdf',
-        Grades: '',
-        Status: 'Pending'
+        Grades: '26/30',
+        Status: 'Approved'
       },
       {
         Coures: 'AA2021 - The Solar System',
@@ -39,7 +39,7 @@ const CheckGrades = props => {
         Folder: 'Assignment-1 Submission',
         Submissions: 'LastName_Assign1_AssignName.pdf',
         Grades: '10/30',
-        Status: 'Failed'
+        Status: 'Approved'
       },
       {
         Coures: 'AA2021 - The Solar System',
