@@ -13,20 +13,26 @@
     margin: 0;
     padding: 0;
     li{
+        &.renderedSection {
+            color:black;
+        }
         display: inline-block;
-        padding-right: 1rem;
-            display:inline-block;
-            color: #707070;
-            font-size: 1.5rem;
-            font-weight:bold;
-            line-height: 1.2;
-            &:after {
-                display:block;
-                content: '';
-                border-bottom: solid 3px #f16600;  
-                transform: scaleX(0);  
-                transition: transform 250ms ease-in-out;
-                transform-origin:  0% 50%;
+        padding-top: 10px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+        display:inline-block;
+        color: #707070;
+        font-family: Muli Black;
+        font-size: 25px;
+        opacity: 90%;
+        line-height: 1.2;
+        &:after {
+            display:block;
+            content: '';
+            border-bottom: solid 3px #f16600;  
+            transform: scaleX(0);  
+            transition: transform 250ms ease-in-out;
+            transform-origin:  0% 50%;
         }
         &:hover:after{
             transform: scaleX(1);

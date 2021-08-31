@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
-import CreateAssignment from '../CreateAssignment/createAssignment'
-import ReviewAssignment from '../ReviewAssignment/ReviewAssignment'
-import style from './Assignment.module.scss'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import CreateAssignment from '../CreateAssignment/createAssignment';
+import ReviewAssignment from '../ReviewAssignment/ReviewAssignment';
+import CheckGrades from '../CheckGrades/CheckGrades';
+import style from './Assignment.module.scss';
 
 const Assignment = () => {
   const [createAss, setcreateAss] = useState('Create')
@@ -21,7 +22,14 @@ const Assignment = () => {
           value="Create"
           checked={createAss === 'Create'}
         />
-        <label htmlFor="flexRadio1">Create Assignments</label>
+        <label 
+          htmlFor="flexRadio1"
+          className={`${
+            createAss === 'Create' ? style.formCheckedInput : ''
+          }`}
+        >
+          To be submitted
+        </label>
       </div>
       <div className={style.formCheck}>
         <input
@@ -33,7 +41,14 @@ const Assignment = () => {
           value="Review"
           checked={createAss === 'Review'}
         />
-        <label htmlFor="flexRadio2">Review Assignments</label>
+        <label 
+          htmlFor="flexRadio2"
+          className={`${
+            createAss === 'Review' ? style.formCheckedInput : ''
+          }`}
+        >
+          Assignment reviews
+        </label>
       </div>
       <div className={style.formCheck}>
         <input
@@ -45,15 +60,23 @@ const Assignment = () => {
           value="Grading"
           checked={createAss === 'Grading'}
         />
-        <label htmlFor="flexRadio3">Grading</label>
+        <label 
+          htmlFor="flexRadio3"
+          className={`${
+            createAss === 'Grading' ? style.formCheckedInput : ''
+          }`}
+        >
+          Check grades
+        </label>
       </div>
 
       {createAss === 'Create' ? <CreateAssignment /> : ''}
       {createAss === 'Review' ? <ReviewAssignment /> : ''}
+      {createAss === 'Grading' ? <CheckGrades /> : ''}
     </div>
   )
 }
 
-Assignment.propTypes = {}
+Assignment.propTypes = {};
 
-export default Assignment
+export default Assignment;
