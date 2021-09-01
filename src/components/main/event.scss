@@ -1,0 +1,19 @@
+.event{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    border-radius: 1rem;
+    padding: 0 1rem;
+    margin-bottom: .8rem;
+    
+    h6{
+        font-size: 1rem;
+        margin: .6rem 0 0;
+    }
+
+    p{
+        font-size: .9rem;
+        margin: .6rem 0;
+    }
+}
