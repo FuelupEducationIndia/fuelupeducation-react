@@ -17,7 +17,6 @@ function Discussion() {
         <div className='discussion'>
               <div className='top-discussion'>
               <h5>DISCUSSIONS</h5>
-             
               <select onChange={(e) => setChatType(e.target.value) } className='dropdown'>
                   <option value='dms'>DMs</option>
                   <option value='team'>Teams</option>
