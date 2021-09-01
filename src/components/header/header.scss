@@ -5,14 +5,14 @@ $mobile: 450px;
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 1rem;
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 1rem;
 
     .welcome{
         display: flex;
         flex-direction: column;
         background-color: #3B0E8A;
         color: white;
-        padding: .4rem 4rem;
+        padding: 1rem 4rem;
         border-radius: 1.5rem;
         justify-content: center ;
         
@@ -39,7 +39,7 @@ $mobile: 450px;
         flex-direction: column;
         background-color: #ffffff;
         color: rgb(0, 0, 0);
-        padding: .4rem 5rem;
+        padding: 1rem 5rem 1rem 2rem;
         border-radius: 1.5rem;
         justify-content: center ;
 
@@ -93,12 +93,23 @@ $mobile: 450px;
         
 
         .welcome{
-            padding: 0 2rem;
+            padding: .5rem 2rem;
         }
 
         .certificates{
-            padding: 0 2rem;
+            padding: .5rem 2rem;
         }
     }
 
+}
+
+@media  screen and (max-width: 750px) {
+    .header{
+        grid-template-columns: auto;
+        grid-row-gap: 1rem;
+    }
+
+    .welcome,.certificates{
+        height: 9rem;
+    }
 }

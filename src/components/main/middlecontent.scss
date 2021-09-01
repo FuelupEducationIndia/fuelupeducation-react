@@ -1,14 +1,17 @@
 .middle-content{
   
-    max-width: 400px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 1rem;
+
     .content-block{
         border-radius: 20px;
-        padding: 20px;
+        padding: 0 20px;
         background-color: #ffff;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 10px 0;
+        margin: 0;
            .block-divider{
                 height: 2px;
                 width: 90%;

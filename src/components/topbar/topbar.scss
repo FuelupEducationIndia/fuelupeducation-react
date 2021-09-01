@@ -1,13 +1,13 @@
 .topbar{
     display: grid;
-    grid-template-columns: 20vw 80vw;
-    padding-top: 1rem;
+    grid-template-columns: 20% 80%;
+    padding: 1rem 2rem;
     
     .logo{
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 0 2rem;
+        justify-content: left;
+        padding: 0;
         img{
             width: 7rem;
             height: 4rem;
@@ -29,8 +29,6 @@
             display: flex;
             width: 100%;
             list-style-type: none;
-            // align-items: center;
-            // justify-content: center;
             
             
     
@@ -41,7 +39,9 @@
                     text-decoration: none;
                     color: #713EA2;
                     font-weight: 700;
+
                 }
+                
             }
     
             :first-child{
@@ -79,7 +79,7 @@
             display: flex;
             align-items: left;
             justify-content: left;
-
+            padding: 0 1rem;
             .menuBtn,.closeBtn{
                 display: inherit;
             }
@@ -87,28 +87,49 @@
 
         .topbarItems{
             display: none;
+        }
+
+        .topbarItemstab{
+            display: none;
             display: flex;
-            position: relative;
-            width: 100vw;
+            justify-content: space-between  ;
             .topbarList{
                 flex-direction: column;
                 align-items: left !important;
                 justify-content: left !important;
+                list-style-type: none;
                 .topbarListItem{
                     margin-left: 0;
-                    font-size: .8rem;
+                    font-size: 1rem;
                     padding: .5rem;
+
+                    a{
+                        text-decoration: none;
+                        color: #713EA2;
+                        font-weight: 700;
+                    }
                 }
             }
 
+            
             .topbarProfileItems{
+                display: flex;
                 justify-content: start;
                 align-items: left;
+        
                 .profileList{
-                    margin-top: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 !important;
+                    list-style-type: none;
+                    font-size: 1.7rem;
+                    margin: 0;
+            
                     .topbarIcons{
-                        margin: 1rem;
+                        margin: auto 1rem;
+                        color: #9C9B9E;
                     }
+                    
                 }
             }
         } 
