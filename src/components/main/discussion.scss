@@ -1,0 +1,158 @@
+.discussion{
+    background-color: #fff;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    .top-discussion{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        outline: none;
+        .dropdown{
+            height: 50px;
+            border: none;
+            font-size: 14px;
+            font-weight: 900;
+            color: #a3a3a3;
+
+        }
+    }
+    .divider{
+        background-color: #f4f4f4;
+        height: 4px;
+        width: 100%;
+    }
+    .discussion-content{
+        width: 100% !important;   
+        overflow-y: scroll;
+        height: 600px;
+
+        &::-webkit-scrollbar {
+            display: none;
+          }
+
+        .each-chat{
+            padding: 5px;
+            display: flex;
+            align-items: center;
+       ;
+            border-radius: 20px;
+            transition:all 250ms linear;
+            &:hover{
+                cursor: pointer;
+                background-color: rgba(0,0,0,0.1);
+            }
+            .chat-img{
+                position: relative;
+                img{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                }
+                .online-dot{
+                    position: absolute;
+                    bottom: 10px;
+                    right: 0;
+                    height: 8px;
+                    width: 8px;
+                    background-color: rgb(57, 129, 63);
+                    border-radius: 50%;
+                    
+
+                }
+            }
+ 
+            .each-chat-content{
+                flex: 1;
+                padding: 0 20px;
+                display: flex;
+                flex-direction: column;
+
+                p,h4{
+                    margin: 0;
+                }
+                p,span{
+                    font-weight: 500;
+                    color: #a3a3a3;
+                }
+
+               
+            }
+            .chat-count{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 900;
+                color: #ffffff;
+                height: 40px;
+                width: 40px;
+                background-color: #F16600;
+                border-radius: 50%;
+            }
+        }
+        .each-team-chat{
+            padding: 10px;
+            position: relative;
+            border-radius: 20px;
+            transition:all 250ms linear;
+            &:hover{
+                cursor: pointer;
+                background-color: rgba(0,0,0,0.1);
+            }
+            .team-chat-content{
+                h2{
+                    margin: 0;
+                    padding: 0;
+                }
+                span{
+                    font-weight: 600;
+                    color: #a3a3a3;
+           
+                }
+                .profile-images{
+                    display: flex;
+                    margin-top: 10px;
+
+                    img{
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        margin: 0 5px;
+                    }
+                    .team-member-count{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 900;
+                color: gray;
+                height: 40px;
+                width: 40px;
+                background-color: #f4f4f4;
+                border-radius: 30%;
+                    }
+                }
+            }
+            .team-chat-count{
+                position: absolute;
+                top: 50px;
+                right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 900;
+                color: #ffffff;
+                height: 40px;
+                width: 40px;
+                background-color: #F16600;
+                border-radius: 50%;
+            }
+        }
+    }
+
+
+}
