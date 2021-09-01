@@ -1,15 +1,23 @@
 .topbar{
     display: grid;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 20vw 80vw;
     padding-top: 1rem;
     
     .logo{
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0 2rem;
         img{
             width: 7rem;
             height: 4rem;
+        }
+
+        .menuBtn,.closeBtn{
+            display: none;
+            cursor: pointer;
+            font-size: 2rem;
+            margin-left: auto;
         }
     }
 
@@ -21,8 +29,8 @@
             display: flex;
             width: 100%;
             list-style-type: none;
-            align-items: center;
-            justify-content: center;
+            // align-items: center;
+            // justify-content: center;
             
             
     
@@ -40,24 +48,69 @@
                 margin-left: auto;
             }
         }
-    }
 
 
-    .topbarProfileItems{
-        display: flex;
-
-        .profileList{
+        .topbarProfileItems{
             display: flex;
-            margin: auto;
-            padding: 0 !important;
-            list-style-type: none;
-            font-size: 1.7rem;
     
-            .topbarIcons{
-                margin: auto 1rem;
-                color: #9C9B9E;
+            .profileList{
+                display: flex;
+                margin: auto;
+                padding: 0 !important;
+                list-style-type: none;
+                font-size: 1.7rem;
+        
+                .topbarIcons{
+                    margin: auto 1rem;
+                    color: #9C9B9E;
+                }
+                
             }
-            
         }
+    }    
+}
+
+
+@media screen and (max-width: 950px) {
+    
+    .topbar{
+        grid-template-columns: auto;
+        .logo{
+            display: flex;
+            align-items: left;
+            justify-content: left;
+
+            .menuBtn,.closeBtn{
+                display: inherit;
+            }
+        }
+
+        .topbarItems{
+            display: flex;
+            position: relative;
+            width: 100vw;
+            .topbarList{
+                flex-direction: column;
+                align-items: left !important;
+                justify-content: left !important;
+                .topbarListItem{
+                    margin-left: 0;
+                    font-size: .8rem;
+                    padding: .5rem;
+                }
+            }
+
+            .topbarProfileItems{
+                justify-content: start;
+                align-items: left;
+                .profileList{
+                    margin-top: 1rem;
+                    .topbarIcons{
+                        margin: 1rem;
+                    }
+                }
+            }
+        } 
     }
+
 }
