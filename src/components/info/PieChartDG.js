@@ -12,7 +12,7 @@ function PieChartDG() {
 
     return (
         <div className='chart'>
-            <PieChart width={300} height={350}>
+            <PieChart className='piechart' width={300} height={350}>
                 <Pie data={data} label='name' dataKey="value" nameKey="name" innerRadius={50} outerRadius={100} >
                 {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
