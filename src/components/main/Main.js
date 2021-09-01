@@ -1,10 +1,12 @@
 import React from 'react'
 import Discussion from './Discussion'
-
+import MiddleContent from './MiddleContent'
+import './main.scss'
 function Main() {
     return (
-        <div>
+        <div className='main'>
             <Discussion />
+            <MiddleContent />
         </div>
     )
 }
