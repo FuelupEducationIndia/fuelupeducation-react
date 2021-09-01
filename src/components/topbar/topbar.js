@@ -5,12 +5,38 @@ import { MdAccountCircle } from "react-icons/md";
 import { MdMenu } from "react-icons/md";
 import { MdClose } from "react-icons/md";
 import Logo from '../../images/fuelup.jpg'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 export default function Topbar(){
 
     const[istablet,setTablet] = useState(false)
+
+    useEffect(() => {
+        let list = document.querySelector(".topbarItems");
+
+        window.addEventListener('resize', () => {
+           
+            if(window.innerWidth < 950){
+                    if(list.style.display === "none")
+                         list.style.display = "flex"
+                // list.style.display = "none"
+            }
+                 
+        });
+    
+    }, [])
+    const handleClostClick = () => {
+        setTablet(false);
+        let list = document.querySelector(".topbarItems");
+        list.style.display = "none"
+    }
+
+    const handleMenuClick = () => {
+        setTablet(true)
+        let list = document.querySelector(".topbarItems");
+        list.style.display = "flex"
+    }
 
     return(
 
@@ -18,12 +44,12 @@ export default function Topbar(){
             <div className='logo'>
                 <img className='compLogo' src={Logo} alt="" />
                 {
-                    istablet ? ( <MdClose className='closeBtn' onClick={()=>setTablet(false)}/>):
-                    (<MdMenu className='menuBtn' onClick={()=>setTablet(true)}/>)
+                    istablet ? ( <MdClose className='closeBtn' onClick={handleClostClick}/>):
+                    (<MdMenu className='menuBtn' onClick={handleMenuClick}/>)
                 }
             </div>
 
-            {istablet && (
+        
 
                 <div className='topbarItems'>
 
@@ -47,7 +73,7 @@ export default function Topbar(){
                     </div>
 
                 </div>
-            )}
+          
             
         </div>
     );
