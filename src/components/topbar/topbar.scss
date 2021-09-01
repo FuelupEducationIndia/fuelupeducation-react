@@ -1,0 +1,63 @@
+.topbar{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    padding-top: 1rem;
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 7rem;
+            height: 4rem;
+        }
+    }
+
+    .topbarItems{
+        display: flex;
+        justify-content: right;
+
+        .topbarList{
+            display: flex;
+            width: 100%;
+            list-style-type: none;
+            align-items: center;
+            justify-content: center;
+            
+            
+    
+            .topbarListItem{
+    
+                margin: auto 2rem;
+                a{
+                    text-decoration: none;
+                    color: #713EA2;
+                    font-weight: 700;
+                }
+            }
+    
+            :first-child{
+                margin-left: auto;
+            }
+        }
+    }
+
+
+    .topbarProfileItems{
+        display: flex;
+
+        .profileList{
+            display: flex;
+            margin: auto;
+            padding: 0 !important;
+            list-style-type: none;
+            font-size: 1.7rem;
+    
+            .topbarIcons{
+                margin: auto 1rem;
+                color: #9C9B9E;
+            }
+            
+        }
+    }
+}
