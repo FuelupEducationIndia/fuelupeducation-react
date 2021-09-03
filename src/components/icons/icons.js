@@ -24,4 +24,5 @@ export const ArrowDownIcon = makeIconComponent(
   ArrowDownSvgIcon,
   'ArrowDownIcon',
 )
+
 export const CloseIcon = makeIconComponent(CloseSvgIcon, 'CloseIcon')

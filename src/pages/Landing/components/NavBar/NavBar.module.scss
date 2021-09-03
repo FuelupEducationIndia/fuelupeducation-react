@@ -1,53 +1,71 @@
 // Loading variables for styling
 
-@import '../../../../assets/styles/sass/variables';
+@import 'sass/variables';
 
 .Navigation {
-  box-sizing: content-box;
-  top: 0;
-  left: 0;
-  font-family: $font-secondary;
-  height: 4.4rem;
+  font-family: $font;
   display: flex;
-  padding: 3.4rem 4.4rem 0;
-  align-content: center;
-  color: #ffffff;
-  font-weight: 500;
-}
-.logo {
-  font-weight: 500;
-  width: 8.2rem;
-  line-height: 1.05;
-  font-size: 1.9rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2.6rem;
+  color:$secondary-color;
+  background-color: $background-color;
 }
 
 .Nav {
-  &Items,
-  &igationSecond {
-    width: 100%;
-    margin-left: 5rem;
+  &Items {
     display: flex;
     height: 100%;
     align-items: center;
     list-style: none;
   }
+
   &Item:not(:last-child) {
-    padding-right: 3rem;
+    margin-right: 3rem;
     line-height: 1.13;
   }
+
   &Item {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: $primary-color;
+    font-weight: 900;
+    font-size: 2rem;
+
+    &Relative {
+      position: relative;
+    }
+
+    &Badge {
+      color: $secondary-color;
+      background-color: $primary-color;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      font-size: 1rem;
+      top: 0;
+      right: -5px;
+    }
+
+    &Active {
+      position: absolute;
+      width: 1.1rem;
+      height: 1.1rem;
+      background-color: $active-color;
+      border-radius: 50%;
+      top: 0;
+      right: 0;
+    }
+
     img {
       padding-left: 0.5rem;
+      color: $primary-color;
     }
+    
   }
-}
-
-.NavigationSecond {
-  justify-content: flex-end;
-}
-.NavSecondItem {
-  padding: 0 2.5rem;
 }
