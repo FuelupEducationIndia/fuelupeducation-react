@@ -1,0 +1,116 @@
+$tablet: 950px;
+$mobile: 450px;
+
+.header{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 4rem;
+    padding: 1rem 4rem 1rem;
+    margin-top: 3rem;
+
+    .welcome{
+        display: flex;
+        flex-direction: column;
+        background-color: #3B0E8A;
+        color: white;
+        padding: 3rem 4rem;
+        border-radius: 1.5rem;
+        justify-content: center ;
+        
+        h2{
+            // font-size: 1.5rem;
+            margin: 0;
+
+            @media screen and (max-width: $tablet) {
+                    font-size: 1.2rem;
+            }
+            
+        }
+
+        p{
+            @media screen and(max-width: $tablet){
+                font-size: .8rem;
+            }
+        }
+
+    }
+
+    .certificates{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 4rem 5rem 4rem 2rem;
+        border-radius: 1.5rem;
+        justify-content: center ;
+
+        h2{
+            margin: .1rem 0;
+
+            @media screen and(max-width: $tablet){
+                font-size: 1.2rem;
+            }
+        }
+
+        hr{
+            width: 90%;
+            color: gray;
+            margin-left: 0;
+        }
+
+        p{
+            color: gray;
+            margin: .4rem 0;
+
+            @media screen and(max-width: $tablet){
+                font-size: .8rem;
+            }
+        }
+        
+        .cert-btn{
+            width: 15rem;
+            height: 4.5rem;
+            background-color: #3B0E8A;
+            color: white;
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+            font-size: 2.2rem;
+            margin: .8rem 0;
+
+
+            @media screen and (max-width: $tablet) {
+                width: 6rem;
+                height: 2rem;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    
+    .header{
+        
+
+        .welcome{
+            padding: .5rem 2rem;
+        }
+
+        .certificates{
+            padding: .5rem 2rem;
+        }
+    }
+
+}
+
+@media  screen and (max-width: 750px) {
+    .header{
+        grid-template-columns: auto;
+        grid-row-gap: 1rem;
+    }
+
+    .welcome,.certificates{
+        height: 9rem;
+    }
+}

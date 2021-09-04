@@ -1,0 +1,140 @@
+.topbar{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 0rem 2rem;
+    background-color: white;
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 0;
+        img{
+            width: 20rem;
+            height: 10rem;
+        }
+
+        .menuBtn,.closeBtn{
+            display: none;
+            cursor: pointer;
+            font-size: 2rem;
+            margin-left: auto;
+        }
+    }
+
+    .topbarItems{
+        display: flex;
+        justify-content: right;
+
+        .topbarList{
+            display: flex;
+            width: 100%;
+            list-style-type: none;
+            
+            
+    
+            .topbarListItem{
+    
+                margin: auto 2rem;
+                a{
+                    text-decoration: none;
+                    color: #713EA2;
+                    font-weight: 700;
+                    font-size: 2rem;
+                }
+                
+            }
+    
+            :first-child{
+                margin-left: auto;
+            }
+        }
+
+
+        .topbarProfileItems{
+            display: flex;
+    
+            .profileList{
+                display: flex;
+                margin: auto;
+                padding: 0 !important;
+                list-style-type: none;
+                font-size: 1.7rem;
+        
+                .topbarIcons{
+                    font-size: 3rem;
+                    margin: auto 1rem;
+                    color: #9C9B9E;
+                }
+                
+            }
+        }
+    }    
+}
+
+
+@media screen and (max-width: 950px) {
+    
+    .topbar{
+        grid-template-columns: auto;
+        .logo{
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            padding: 0 1rem;
+            .menuBtn,.closeBtn{
+                display: inherit;
+            }
+        }
+
+        .topbarItems{
+            display: none;
+        }
+
+        .topbarItemstab{
+            display: none;
+            display: flex;
+            justify-content: space-between  ;
+            .topbarList{
+                flex-direction: column;
+                align-items: left !important;
+                justify-content: left !important;
+                list-style-type: none;
+                .topbarListItem{
+                    margin-left: 0;
+                    font-size: 1rem;
+                    padding: .5rem;
+
+                    a{
+                        text-decoration: none;
+                        color: #713EA2;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            
+            .topbarProfileItems{
+                display: flex;
+                justify-content: start;
+                align-items: left;
+        
+                .profileList{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 !important;
+                    list-style-type: none;
+                    font-size: 1.7rem;
+                    margin: 0;
+            
+                    .topbarIcons{
+                        margin: auto 1rem;
+                        color: #9C9B9E;
+                    }
+                    
+                }
+            }
+        } 
+    }
+
+}
