@@ -1,18 +1,19 @@
 @import 'assets/styles/sass/variables';
+
 .formCheckCont{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0 1rem 0;
 }
+
 .formCheck{
     display: inline-block;
     min-height: 1.5rem;
     margin-bottom: .125rem;
     margin-right: 70px;
     font-size: 20px;
-    color: #707070;
-    font-family: 'Muli Bold';
+    color: $secondary-color-font;
+    font-family: $font-bold;
     .formCheckedInput {
-        color: black !important;
+        color: $color-font !important;
         font-weight: bold;
     }
 }
@@ -23,7 +24,7 @@
     margin: 0 12px 2px 0;
     vertical-align: text-bottom;
     background-size: contain;
-    border: 3px solid #707070;
+    border: 3px solid $secondary-color-font;
     border-radius: 50%;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -37,8 +38,8 @@
         background-image: url('../../../../assets/images/blackdot.svg') !important;
         background-size: 150%;
         background-position: center;
-        border-color: #000000;
-        color: black;
+        border-color: $color-font;
+        color: $color-font;
         outline: none;
     }
 }

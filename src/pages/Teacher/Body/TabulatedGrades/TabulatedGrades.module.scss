@@ -1,34 +1,35 @@
+@import 'assets/styles/sass/variables';
+
 .d100 {
-  font-family: 'Muli Regular';
-  padding-top: 50px;
+  font-family: $font;
+  padding-top: 25px;
 
   .table{
     border-collapse: collapse;
     width: 100%;
     padding: 15px 0 15px 0;
-    background-color: #faf9fe;
-    border: 2px solid rgb(204, 194, 194);
+    background-color: $background-color;
+    border: $table-border;
 
     thead{
-      border-bottom: 2px solid rgb(204, 194, 194);
+      border-bottom: $table-border;
       th {
         font-size: 18px;
         font-weight: bold;
-        padding: 15px 15px 15px 15px;
+        padding: 15px;
         text-align: left;
       }
     }
 
     tbody {
       tr {
-        position:relative;
-        width: 100%;
+        position: relative;
         display: table-row;
 
         td{
           font-size: 14px;
           text-align: left;
-          color: rgb(102, 102, 102);
+          color: $secondary-color-font;
           padding: 15px 15px 15px 20px;
           
           img {
@@ -40,13 +41,13 @@
             text-decoration: underline;
           }
           &.green{
-            color: #2DA231;
+            color: $status-accepted-color;
           }
           &.orange{
-            color: #F16600;
+            color: $status-pending-color;
           }
           &.red{
-            color: red;
+            color: $status-denied-color;
           }
         }
       }
@@ -54,10 +55,8 @@
       tr:after {
         position: absolute;
         width: 98%;
-        height: 1px;
         content: '';
-        border-bottom: 2px solid #ccc2c2;
-        border: 0%;
+        border-bottom: $table-border;
         left: 1%;
         bottom: 1%;
         margin: 0px auto;
@@ -71,24 +70,21 @@
             font-size: 16px;
             display: flex;
             justify-content: center;
-            
             font-weight: bold;
             padding-top: 25px;
             padding-bottom: 25px;
-            
-            color: #C1C1C1;
+            color: $page-unavailble;
             
             &.orange{
-              color: #F16600 !important;
+              color: $page-availble !important;
             }
 
             svg {
               margin: 6px 6px 0 6px;
               
-              
               &.orange{
                 path {
-                  stroke: #F16600 !important;
+                  stroke: $page-availble !important;
                 }
               }
             }

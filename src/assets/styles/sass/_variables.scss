@@ -1,10 +1,25 @@
 // variables for color
-
 $secondary-color: #fff;
 $primary-color: #3b0e8a;
 $background-color:  #faf9fe;
 $color-font: #000;
+$secondary-color-font: rgb(102, 102, 102);
 
 // variables for fonts
 $font: 'Muli Regular', sans-serif;
+$font-bold: 'Multi Bold', sans-serif;
+$font-bolder: 'Muli Black', sans-serif;
 $font-secondary: 'Ubuntu', sans-serif;
+
+// varibles for tables
+$table-border-color: rgb(204, 194, 194);
+$table-border: 2px solid $table-border-color;
+
+// varibles for status
+$status-accepted-color: #2DA231;
+$status-pending-color: #F16600;
+$status-denied-color: red; 
+
+// varibles for pagination
+$page-unavailble: rgb(204, 194, 194);
+$page-availble: #F16600;

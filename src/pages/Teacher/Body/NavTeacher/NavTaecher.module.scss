@@ -14,15 +14,15 @@
     padding: 0;
     li{
         &.renderedSection {
-            color:black;
+            color: $color-font;
         }
         display: inline-block;
         padding-top: 10px;
         padding-right: 50px;
         padding-bottom: 10px;
         display:inline-block;
-        color: #707070;
-        font-family: Muli Black;
+        color: $secondary-color-font;
+        font-family: $font-bolder;
         font-size: 25px;
         opacity: 90%;
         line-height: 1.2;
