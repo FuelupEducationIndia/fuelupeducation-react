@@ -1,0 +1,31 @@
+@import '../../../assets/styles/sass/variables';
+
+.Button {
+  border-radius: 2rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.6rem;
+
+  &StartLearning {
+    @extend .Button;
+    background: $color-orange;
+    border: none;
+    color: $color-white;
+    &:hover {
+      cursor: pointer;
+      background: $color-orange-light;
+    }
+  }
+
+  &Donate {
+    @extend .Button;
+    background: $color-white;
+    color: $color-orange;
+    font-size: 1.6rem;
+    border: 2px solid $color-orange;
+    &:hover {
+      cursor: pointer;
+      background: $color-orange;
+      color: $color-white;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../../../assets/styles/sass/variables';
+
+.Course {
+  padding: 10rem;
+  max-width: 50%;
+  & h1 {
+    color: $color-header;
+  }
+  & p {
+    color: $color-paragraph;
+    padding: 2rem 0;
+  }
+  &Right {
+    @extend .Course;
+    margin-left: 50%;
+    position: relative;
+    z-index: 10;
+  }
+}
