@@ -5,6 +5,8 @@ import img2 from '../../DevelopImages/ELECTRONIC DEVICES.png'
 import authorImg from '../../DevelopImages/Ellipse 284.png'
 
 import BlockContainer from '../BlockContainer/BlockContainer'
+import ThisWeek from '../ThisWeek/ThisWeek'
+import Lectures from '../Lectures/Lectures'
 
 const ActiveTabRout = () => {
   const content =
@@ -35,7 +37,24 @@ const ActiveTabRout = () => {
 
   const activeTab = useSelector(elem => elem.activeTab)
   if (activeTab === 0) return <div>Test</div>
-  if (activeTab === 1) return <BlockContainer data={data} />
+  if (activeTab === 1)
+    return (
+      <div
+        style={{
+          display: 'flex',
+          height: 'max-content',
+          position: 'relative',
+        }}>
+        <BlockContainer data={data} />
+        <ThisWeek />
+      </div>
+    )
+  if (activeTab === 2)
+    return (
+      <div>
+        <Lectures />
+      </div>
+    )
   return <div />
 }
 

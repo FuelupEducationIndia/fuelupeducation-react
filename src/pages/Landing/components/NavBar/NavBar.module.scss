@@ -94,12 +94,15 @@
     display: block;
     margin-right: 5.8%;
     height: 100%;
+    cursor: pointer;
+
   }
   &_middleContainer {
     display: flex;
     width: 62.5%;
     margin: auto;
     nav {
+      cursor: pointer;
       color: #3b0e8a;
       font-size: 20px;
       margin: auto auto;
@@ -114,6 +117,7 @@
     width: max-content;
     height: 100%;
     img {
+      cursor: pointer;
       height: 80%;
 
       max-height: 41px;
