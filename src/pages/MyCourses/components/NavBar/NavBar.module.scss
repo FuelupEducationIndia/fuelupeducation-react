@@ -1,0 +1,21 @@
+.NavBar{
+  padding-left: 36px;
+  display: flex;
+  width: 100%;
+  height: max-content;
+  nav{
+    display: block;
+    color: #707070;
+    margin-right: 38px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 1000px) {
+  .NavBar{
+    padding-left: 36px;
+    nav{
+      margin-right: 38px;
+      font-size: 18px;
+    }
+  }
+}
