@@ -10,7 +10,7 @@ const Welcome = () => {
       <div>
         <h1>
           Welcome
-          <span>{username}</span>
+          <span> {username}</span>
           <span>!</span>
         </h1>
         <span>Check What&apos;s up with your Schedule...</span>

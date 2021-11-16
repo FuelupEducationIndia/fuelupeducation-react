@@ -5,14 +5,14 @@ import { Route, Switch } from 'react-router-dom'
 import LandingPage from '../pages/Landing'
 import Donate from '../pages/Donate/Donate'
 import Team from '../pages/Team/components/Team'
-import MyCourses from '../pages/MyCourses/MyCourses'
+import Teacher from '../pages/MyCourses/Teacher'
 
 const ROUTES = [
   { path: '/', key: 'ROOT', exact: true, component: LandingPage },
   { path: '/donate', component: Donate },
   { path: '/team', component: Team },
   // For Example
-  { path: '/my-courses', component: MyCourses },
+  { path: '/my-courses', component: Teacher },
   {
     path: '/page1',
     key: 'page1',
