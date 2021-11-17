@@ -2,7 +2,7 @@
 import { donorInformation } from '../actions'
 
 const InitialState = {
-  activeTab: 0,
+  activeTab: 1,
   yourGift: {
     firstRowButtons: {
       oneTimeDonation: true,

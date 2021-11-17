@@ -67,22 +67,5 @@
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.4.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run info && npm run pre-commit && lint-staged ",
-      "pre-add": "npm run pre-commit"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "prettier --write",
-      "eslint --fix",
-      "git add"
-    ],
-    "*.{html,css,less,ejs,json, scss}": [
-      "prettier --write",
-      "git add"
-    ]
   }
 }

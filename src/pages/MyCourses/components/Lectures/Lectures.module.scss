@@ -1,0 +1,22 @@
+.Lectures{
+&_insideContainer{
+  height: max-content;
+  margin-left: 170px;
+  font-size: 18px;
+  color: #3B0E8A;
+  span{
+    display: block;
+    margin: 30px;
+    position: relative;
+    input{
+      position: absolute;
+      left: 300px;
+      padding: 12px;
+      border-radius: 5px;
+      padding-right: 220px;
+      border: 1px solid rgba(0, 0, 0, 0.43);
+    }
+  }
+
+}
+}

@@ -15,6 +15,18 @@
       background: $color-orange-light;
     }
   }
+  &View {
+    @extend .Button;
+    background: $primary-color;
+    border: none;
+    color: $color-white;
+    padding-left: 30px;
+    padding-right: 30px;
+    &:hover {
+      cursor: pointer;
+      background: $color-orange-light;
+    }
+  }
 
   &Donate {
     @extend .Button;

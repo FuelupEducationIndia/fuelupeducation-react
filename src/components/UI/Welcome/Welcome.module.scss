@@ -1,0 +1,30 @@
+.Welcome {
+  width: 93%;
+  height: 135px;
+  border: 1px solid #c698f3;
+  background-color: #e6e0f2;
+  margin: auto auto 50px;
+  position: relative;
+
+  div {
+    margin-left: 39px;
+    color: #3B0E8A;
+
+    h1 {
+      margin-top: 20px;
+      font-size: 30px;
+      span{
+        font-size: 30px;
+      }
+    }
+    span {
+      margin-top: 18px;
+      font-size: 21px;
+    }
+  }
+  img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+}

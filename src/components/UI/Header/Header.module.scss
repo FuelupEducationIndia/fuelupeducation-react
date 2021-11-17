@@ -1,87 +1,3 @@
-// Loading variables for styling
-
-@import '../../../../assets/styles/sass/variables';
-@import '../../../../assets/styles/sass/mixin';
-
-
-.Navigation {
-  position: relative;
-  box-sizing: content-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  font-family: $font-secondary;
-  background-color: $primary-color;
-  color: $color-white;
-  height: 8.4rem;
-  @include center;
-  padding: .6rem 0rem;
-  color: $color-white;
-  font-weight: 500;
-  z-index: 20;
-}
-
-.logo {
-  font-weight: 500;
-  line-height: 1.05;
-  font-size: 1.9rem;
-  flex: 0 0 8.33333%;
-  max-width: 8.33333%;
-  color: $color-white;
-}
-
-.Nav {
-  &Items,
-  &igationSecond {
-    margin-left: 5rem;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    color: $color-white;
-  }
-  &Items {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%;
-    color: $color-white;
-  }
-
-  &Item:not(:last-child) {
-    padding-right: 3rem;
-    line-height: 1.13;
-    color: $color-white;
-    text-decoration: none
-  }
-  &Item {
-    @include center;
-    img {
-      padding-left: 0.5rem;
-    }
-  }
-
-  &Donate{
-    font-size: 1.5rem;
-    font-weight: normal;
-    line-height: 1.13;
-    text-align: center;
-    padding: .7rem;
-    color: $color-orange;
-    border-radius: 2rem;
-    border: solid .1rem $color-orange;
-    background-color: $color-white;
-    text-decoration: none;
-}
-  }
-
-
-.NavigationSecond {
-  justify-content: flex-end;
-}
-.NavSecondItem {
-  padding: 0 2.5rem;
-}
-
-///////////////////////////////////////////////////
-
 .Header {
   height: 100px;
   padding-top: 27px;
@@ -94,15 +10,12 @@
     display: block;
     margin-right: 5.8%;
     height: 100%;
-    cursor: pointer;
-
   }
   &_middleContainer {
     display: flex;
     width: 62.5%;
     margin: auto;
     nav {
-      cursor: pointer;
       color: #3b0e8a;
       font-size: 20px;
       margin: auto auto;
@@ -117,7 +30,6 @@
     width: max-content;
     height: 100%;
     img {
-      cursor: pointer;
       height: 80%;
 
       max-height: 41px;

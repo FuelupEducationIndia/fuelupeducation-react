@@ -1,0 +1,50 @@
+.NavBar{
+  padding-left: 36px;
+  display: flex;
+  width: 100%;
+  height: max-content;
+  margin-bottom: 25px;
+  nav{
+    display: block;
+    margin-right: 38px;
+    cursor: pointer;
+    font-size: 22px;
+    transition-duration: .3s;
+  }
+  &_default{
+    color: #707070;
+    transition-duration: .3s;
+
+    &:after{
+      content: " ";
+      width: 50px;
+      height: 3px;
+      background-color: rgba(0, 0, 0, 0);
+      display: block;
+      position: absolute;
+      transition-duration: .3s;
+    }
+
+  }
+  &_active{
+    color: black;
+    &:after{
+      transition-duration: .3s;
+      content: " ";
+      width: 50px;
+      height: 3px;
+      background-color: #F16600;
+      display: block;
+      position: absolute;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .NavBar{
+    padding-left: 36px;
+    nav{
+      margin-right: 38px;
+      font-size: 18px;
+    }
+  }
+}
