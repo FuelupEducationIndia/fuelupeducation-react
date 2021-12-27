@@ -22,7 +22,7 @@ const App = ({ title }) => {
   const [role, setRole] = useState(true)
   let layoutToDisplay = ''
 
-  layoutToDisplay = role === true ? <Layout /> : <h1> I am ermias</h1>
+  layoutToDisplay = <Layout />
 
   return (
     <Provider store={store}>
