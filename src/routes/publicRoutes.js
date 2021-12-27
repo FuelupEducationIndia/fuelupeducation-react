@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom'
 import LandingPage from '../pages/Landing'
 import Donate from '../pages/Donate/Donate'
 import Team from '../pages/Team/components/Team'
+import Course from '../pages/Landing/components/Course/Course'
 
 const ROUTES = [
   { path: '/', key: 'ROOT', exact: true, component: LandingPage },
@@ -20,7 +21,7 @@ const ROUTES = [
         path: '/page1',
         key: 'PAGE1_ROOT',
         exact: true,
-        component: () => <h1>page1 Index</h1>,
+        component: Course,
       },
       {
         path: '/page1/page1-child',
