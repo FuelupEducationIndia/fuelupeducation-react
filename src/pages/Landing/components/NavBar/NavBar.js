@@ -15,9 +15,7 @@ const NavBar = ({ isAuth }) => {
   return (
     <nav className={styles.Navigation}>
       <div className={styles.logo}>
-        <Link to="/"
-          style={{color:"white",textDecoration:"none"}}
-        >
+        <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
           <strong>Fuelup </strong>
           Education
         </Link>
@@ -31,15 +29,19 @@ const NavBar = ({ isAuth }) => {
           Subjects
           <img src={arrowDown} alt="Subjects" />
         </li>
-        <li className={styles.NavItem}>For Kids</li>
+        {/* <li className={styles.NavItem}> */}
+        <Link to="/for-kids" className={styles.NavItem}>
+          For Kids
+        </Link>
+        {/* </li> */}
         <Link to="/team" className={styles.NavItem}>
           Team
         </Link>
-        <li className={styles.NavItem}>Blog</li>
+        <Link to="/blog" className={styles.NavItem}>
+          Blog
+        </Link>
         <li className={styles.NavItem}>
-          <Link to="/donate"
-            className={styles.NavDonate} 
-          >
+          <Link to="/donate" className={styles.NavDonate}>
             Donate Now
           </Link>
         </li>
